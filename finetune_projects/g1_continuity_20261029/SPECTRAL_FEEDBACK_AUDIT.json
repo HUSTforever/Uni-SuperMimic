@@ -1,0 +1,961 @@
+{
+  "method": "read-only local actor Jacobian frequency response with all29 applied-action history feedback and zero-order hold; only4ankle q/dq perturbed, root/otherjoint/IMU coupling omitted",
+  "reference_case": "physical009_000175",
+  "max_replay_pose_difference": 0.0,
+  "diagnostic_only": true,
+  "stability_proof_claimed": false,
+  "rows": [
+    {
+      "frame": 100,
+      "time_seconds": 2.0,
+      "frequency_hz": 2.0,
+      "local_diagonal_damping": [
+        2.3869377852257623,
+        3.9501527824221796,
+        3.475535759893972,
+        4.471922719770289
+      ],
+      "minimum_symmetric_damping_eigenvalue": 2.236256697139878,
+      "action_history_condition": 3.1536738015484866,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 100,
+      "time_seconds": 2.0,
+      "frequency_hz": 8.0,
+      "local_diagonal_damping": [
+        3.4177259459428297,
+        3.558179370872246,
+        3.4678218516876123,
+        3.5795450236652044
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.28333151043866,
+      "action_history_condition": 1.3722417938253046,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 100,
+      "time_seconds": 2.0,
+      "frequency_hz": 9.0,
+      "local_diagonal_damping": [
+        3.5108484339746626,
+        3.5780624183771454,
+        3.5284605674234126,
+        3.5891511327142656
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.4359861673638266,
+      "action_history_condition": 1.3653473795883408,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 100,
+      "time_seconds": 2.0,
+      "frequency_hz": 10.0,
+      "local_diagonal_damping": [
+        3.567735178719037,
+        3.5870568251087813,
+        3.582893454448527,
+        3.5981835141913385
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.5419233433442248,
+      "action_history_condition": 1.3306464724040032,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 100,
+      "time_seconds": 2.0,
+      "frequency_hz": 12.0,
+      "local_diagonal_damping": [
+        3.6025659347472283,
+        3.583277045815906,
+        3.5888535454937207,
+        3.602244561983538
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.556951761269138,
+      "action_history_condition": 1.237971770513954,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 300,
+      "time_seconds": 6.0,
+      "frequency_hz": 2.0,
+      "local_diagonal_damping": [
+        3.215663044871553,
+        4.069889455297097,
+        3.688959519456102,
+        3.628891373169692
+      ],
+      "minimum_symmetric_damping_eigenvalue": 2.772103959110492,
+      "action_history_condition": 4.417046929304872,
+      "clipped_joint_indices": [
+        11
+      ],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 300,
+      "time_seconds": 6.0,
+      "frequency_hz": 8.0,
+      "local_diagonal_damping": [
+        3.50668617443136,
+        3.460262783330384,
+        3.6360908311434113,
+        3.628891373169692
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.312154236017135,
+      "action_history_condition": 1.8577841984773307,
+      "clipped_joint_indices": [
+        11
+      ],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 300,
+      "time_seconds": 6.0,
+      "frequency_hz": 9.0,
+      "local_diagonal_damping": [
+        3.5669167075763792,
+        3.505799865229768,
+        3.6420126039399747,
+        3.628891373169692
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.382587767061518,
+      "action_history_condition": 1.7248317009344833,
+      "clipped_joint_indices": [
+        11
+      ],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 300,
+      "time_seconds": 6.0,
+      "frequency_hz": 10.0,
+      "local_diagonal_damping": [
+        3.614056908323372,
+        3.5303940104586666,
+        3.6316421380181514,
+        3.628891373169692
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.4473581158375874,
+      "action_history_condition": 1.5974568657069872,
+      "clipped_joint_indices": [
+        11
+      ],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 300,
+      "time_seconds": 6.0,
+      "frequency_hz": 12.0,
+      "local_diagonal_damping": [
+        3.611297385808535,
+        3.5170999843829893,
+        3.622845776719288,
+        3.628891373169692
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.4869725449579088,
+      "action_history_condition": 1.4728115605900327,
+      "clipped_joint_indices": [
+        11
+      ],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 600,
+      "time_seconds": 12.0,
+      "frequency_hz": 2.0,
+      "local_diagonal_damping": [
+        3.7567504575316195,
+        3.5808867652096845,
+        4.444837019190171,
+        5.530201487727394
+      ],
+      "minimum_symmetric_damping_eigenvalue": 2.8356573399876965,
+      "action_history_condition": 11.682820518820577,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 600,
+      "time_seconds": 12.0,
+      "frequency_hz": 8.0,
+      "local_diagonal_damping": [
+        3.581867899679598,
+        3.63906709633035,
+        3.5563655009117117,
+        3.511798119803746
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.3932048902584366,
+      "action_history_condition": 3.339666019765114,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 600,
+      "time_seconds": 12.0,
+      "frequency_hz": 9.0,
+      "local_diagonal_damping": [
+        3.5926061703837413,
+        3.6336435402213434,
+        3.5951256235556897,
+        3.546391668863208
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.46754264356751,
+      "action_history_condition": 3.113734368691997,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 600,
+      "time_seconds": 12.0,
+      "frequency_hz": 10.0,
+      "local_diagonal_damping": [
+        3.6128047141062676,
+        3.651308542011944,
+        3.6195457757996867,
+        3.568396872473066
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.5185417567667185,
+      "action_history_condition": 2.699336175467249,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 600,
+      "time_seconds": 12.0,
+      "frequency_hz": 12.0,
+      "local_diagonal_damping": [
+        3.6043988139869754,
+        3.6172017097594584,
+        3.637752059099481,
+        3.5844821396602793
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.5559636542464617,
+      "action_history_condition": 2.1361166367816864,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1000,
+      "time_seconds": 20.0,
+      "frequency_hz": 2.0,
+      "local_diagonal_damping": [
+        3.937367998220217,
+        3.628891373169692,
+        3.628891373169692,
+        4.059624786448305
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.08871551196599,
+      "action_history_condition": 4.659497643361823,
+      "clipped_joint_indices": [
+        5,
+        10,
+        23
+      ],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1000,
+      "time_seconds": 20.0,
+      "frequency_hz": 8.0,
+      "local_diagonal_damping": [
+        3.4363324493822813,
+        3.628891373169692,
+        3.628891373169692,
+        3.4301804439300434
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.3808018817146785,
+      "action_history_condition": 2.3866133269336887,
+      "clipped_joint_indices": [
+        5,
+        10,
+        23
+      ],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1000,
+      "time_seconds": 20.0,
+      "frequency_hz": 9.0,
+      "local_diagonal_damping": [
+        3.552359007896759,
+        3.628891373169692,
+        3.628891373169692,
+        3.4774452887423677
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.4643171201115788,
+      "action_history_condition": 2.1391016010340387,
+      "clipped_joint_indices": [
+        5,
+        10,
+        23
+      ],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1000,
+      "time_seconds": 20.0,
+      "frequency_hz": 10.0,
+      "local_diagonal_damping": [
+        3.6033819301697645,
+        3.628891373169692,
+        3.628891373169692,
+        3.5324981950857537
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.5195071188766516,
+      "action_history_condition": 1.990441997514272,
+      "clipped_joint_indices": [
+        5,
+        10,
+        23
+      ],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1000,
+      "time_seconds": 20.0,
+      "frequency_hz": 12.0,
+      "local_diagonal_damping": [
+        3.542401709346244,
+        3.628891373169692,
+        3.628891373169692,
+        3.5684320089523163
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.5171075144434183,
+      "action_history_condition": 1.8399740366350732,
+      "clipped_joint_indices": [
+        5,
+        10,
+        23
+      ],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1100,
+      "time_seconds": 22.0,
+      "frequency_hz": 2.0,
+      "local_diagonal_damping": [
+        4.523616964474943,
+        4.208965349109821,
+        3.699722690674231,
+        4.574668721170777
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.5134511420264736,
+      "action_history_condition": 5.781514151805407,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1100,
+      "time_seconds": 22.0,
+      "frequency_hz": 8.0,
+      "local_diagonal_damping": [
+        3.381168635812891,
+        3.5786859233493598,
+        3.5068404649846987,
+        3.6134488427000684
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.1877813963458164,
+      "action_history_condition": 2.1908172210069647,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1100,
+      "time_seconds": 22.0,
+      "frequency_hz": 9.0,
+      "local_diagonal_damping": [
+        3.468831142427155,
+        3.584521113830185,
+        3.547818493090009,
+        3.6108586756527066
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.346380984462737,
+      "action_history_condition": 2.0225714139969653,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1100,
+      "time_seconds": 22.0,
+      "frequency_hz": 10.0,
+      "local_diagonal_damping": [
+        3.574226966721366,
+        3.601414392771271,
+        3.5728424231379314,
+        3.60934398119672
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.4662472300576885,
+      "action_history_condition": 1.9010930069939846,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1100,
+      "time_seconds": 22.0,
+      "frequency_hz": 12.0,
+      "local_diagonal_damping": [
+        3.654678667110212,
+        3.6026855303143144,
+        3.6035398632297118,
+        3.615758822435371
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.550927886532866,
+      "action_history_condition": 1.7582179292822584,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1200,
+      "time_seconds": 24.0,
+      "frequency_hz": 2.0,
+      "local_diagonal_damping": [
+        3.735591461351327,
+        3.934233366246402,
+        3.3661423802196246,
+        1.5314983041556687
+      ],
+      "minimum_symmetric_damping_eigenvalue": 0.03734299624838495,
+      "action_history_condition": 7.366101390633814,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1200,
+      "time_seconds": 24.0,
+      "frequency_hz": 8.0,
+      "local_diagonal_damping": [
+        3.594045637126817,
+        3.570517593469067,
+        3.024742630366919,
+        3.22331584237336
+      ],
+      "minimum_symmetric_damping_eigenvalue": 2.8812366466477237,
+      "action_history_condition": 2.097603771242036,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1200,
+      "time_seconds": 24.0,
+      "frequency_hz": 9.0,
+      "local_diagonal_damping": [
+        3.600769366429543,
+        3.581729005953083,
+        3.2174519680228313,
+        3.306681705596894
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.111952051168139,
+      "action_history_condition": 2.0315882777027015,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1200,
+      "time_seconds": 24.0,
+      "frequency_hz": 10.0,
+      "local_diagonal_damping": [
+        3.609702796937245,
+        3.579295740210792,
+        3.3909998480812424,
+        3.4201011833150314
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.3265316989433114,
+      "action_history_condition": 1.9159226730283103,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1200,
+      "time_seconds": 24.0,
+      "frequency_hz": 12.0,
+      "local_diagonal_damping": [
+        3.5954517164746043,
+        3.577330743292283,
+        3.4443613658061425,
+        3.511464084304423
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.4207569402395257,
+      "action_history_condition": 1.6771644085655741,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1250,
+      "time_seconds": 25.0,
+      "frequency_hz": 2.0,
+      "local_diagonal_damping": [
+        3.462305374795873,
+        4.068416470292341,
+        2.1830231123917794,
+        3.982485587831394
+      ],
+      "minimum_symmetric_damping_eigenvalue": 0.39339264954793884,
+      "action_history_condition": 5.442993039438037,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1250,
+      "time_seconds": 25.0,
+      "frequency_hz": 8.0,
+      "local_diagonal_damping": [
+        3.434493523252962,
+        3.6096469147882613,
+        3.271553497761089,
+        3.4730197111209256
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.043529674286004,
+      "action_history_condition": 1.7411643447626748,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1250,
+      "time_seconds": 25.0,
+      "frequency_hz": 9.0,
+      "local_diagonal_damping": [
+        3.539275774582202,
+        3.6108859119393366,
+        3.3963432350542564,
+        3.4886353919645376
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.2658384564461076,
+      "action_history_condition": 1.6960756282828884,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1250,
+      "time_seconds": 25.0,
+      "frequency_hz": 10.0,
+      "local_diagonal_damping": [
+        3.6116781960984343,
+        3.604288932656708,
+        3.49817150775205,
+        3.519185712803833
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.4308713773486454,
+      "action_history_condition": 1.6092429414983886,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1250,
+      "time_seconds": 25.0,
+      "frequency_hz": 12.0,
+      "local_diagonal_damping": [
+        3.6147105991410307,
+        3.595808125136882,
+        3.4903456491512115,
+        3.568954717905265
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.4338226598036683,
+      "action_history_condition": 1.444705714918375,
+      "clipped_joint_indices": [],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1300,
+      "time_seconds": 26.0,
+      "frequency_hz": 2.0,
+      "local_diagonal_damping": [
+        4.333531515497042,
+        3.628891373169692,
+        3.8690753913935567,
+        3.9457520464496674
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.43025752232113,
+      "action_history_condition": 3.481627094301688,
+      "clipped_joint_indices": [
+        5
+      ],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1300,
+      "time_seconds": 26.0,
+      "frequency_hz": 8.0,
+      "local_diagonal_damping": [
+        3.6830925925106586,
+        3.628891373169692,
+        3.7182626738298667,
+        3.6159811697029096
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.573940189754434,
+      "action_history_condition": 1.8318283609712802,
+      "clipped_joint_indices": [
+        5
+      ],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1300,
+      "time_seconds": 26.0,
+      "frequency_hz": 9.0,
+      "local_diagonal_damping": [
+        3.6810153954069142,
+        3.628891373169692,
+        3.6895837917485266,
+        3.61232403366058
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.593977234851738,
+      "action_history_condition": 1.7031620596277905,
+      "clipped_joint_indices": [
+        5
+      ],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1300,
+      "time_seconds": 26.0,
+      "frequency_hz": 10.0,
+      "local_diagonal_damping": [
+        3.6622151374830723,
+        3.628891373169692,
+        3.66797092423664,
+        3.6142409165828595
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.6057221152278167,
+      "action_history_condition": 1.6281904255701654,
+      "clipped_joint_indices": [
+        5
+      ],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1300,
+      "time_seconds": 26.0,
+      "frequency_hz": 12.0,
+      "local_diagonal_damping": [
+        3.6623743969882887,
+        3.628891373169692,
+        3.6561205708799984,
+        3.6139371471450628
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.607837201617248,
+      "action_history_condition": 1.5350876186733085,
+      "clipped_joint_indices": [
+        5
+      ],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1350,
+      "time_seconds": 27.0,
+      "frequency_hz": 2.0,
+      "local_diagonal_damping": [
+        4.120473330200662,
+        4.239491238905593,
+        0.7831773565079839,
+        -3.8103208372036814
+      ],
+      "minimum_symmetric_damping_eigenvalue": -5.6007315268985876,
+      "action_history_condition": 7.0242666546166515,
+      "clipped_joint_indices": [
+        14
+      ],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1350,
+      "time_seconds": 27.0,
+      "frequency_hz": 8.0,
+      "local_diagonal_damping": [
+        3.6701186386645124,
+        3.5967172272200085,
+        2.869271111478643,
+        3.067657325683887
+      ],
+      "minimum_symmetric_damping_eigenvalue": 2.7007920396714575,
+      "action_history_condition": 2.044990311692377,
+      "clipped_joint_indices": [
+        14
+      ],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1350,
+      "time_seconds": 27.0,
+      "frequency_hz": 9.0,
+      "local_diagonal_damping": [
+        3.67066554626696,
+        3.612426710361014,
+        3.1293186835954176,
+        3.162581249604994
+      ],
+      "minimum_symmetric_damping_eigenvalue": 2.9427552160677584,
+      "action_history_condition": 1.9428673021086547,
+      "clipped_joint_indices": [
+        14
+      ],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1350,
+      "time_seconds": 27.0,
+      "frequency_hz": 10.0,
+      "local_diagonal_damping": [
+        3.6795030637746877,
+        3.6286134450125482,
+        3.3360643739411833,
+        3.257888226618784
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.157596207229961,
+      "action_history_condition": 1.8627075370334463,
+      "clipped_joint_indices": [
+        14
+      ],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    },
+    {
+      "frame": 1350,
+      "time_seconds": 27.0,
+      "frequency_hz": 12.0,
+      "local_diagonal_damping": [
+        3.654125863735329,
+        3.5968310484652415,
+        3.4196121714866954,
+        3.39152750030527
+      ],
+      "minimum_symmetric_damping_eigenvalue": 3.3339261152191764,
+      "action_history_condition": 1.6746231436812866,
+      "clipped_joint_indices": [
+        14
+      ],
+      "passive_pd_damping": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ]
+    }
+  ],
+  "hardware_ready": false,
+  "goal_complete_claimed": false
+}

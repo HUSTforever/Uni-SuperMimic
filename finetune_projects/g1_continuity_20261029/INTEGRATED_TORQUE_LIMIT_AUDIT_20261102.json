@@ -1,0 +1,732 @@
+{
+  "date": "2026-11-02",
+  "scope": "diagnostic from stored actual physics; no control change or causal proof",
+  "source_bundle": "finetune_projects/g1_continuity_20261029/data/fast_integrated_base_v1",
+  "source_trajectory": "finetune_projects/g1_continuity_20261029/evaluation/fast_integrated_initial_base/physics_trajectory.npz",
+  "source_trajectory_sha256": "b7dabfd5fc7d53918d27708a0fd7e08b809f85759796a3f5bd69fd5e10bf649b",
+  "torque_method": "next 5ms command reconstructed from actual held50Hz targets and200Hz q/dq; ignores final control-less row",
+  "rows": [
+    {
+      "phase": "dance",
+      "start_seconds": 5,
+      "end_seconds": 27.96,
+      "samples": 4593,
+      "joints": [
+        {
+          "joint": "left_hip_pitch_joint",
+          "actual_angle_hf_rms": 0.0014719942981827965,
+          "held_target_hf_rms": 0.026463501876536278,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.8799650801616298
+        },
+        {
+          "joint": "left_hip_roll_joint",
+          "actual_angle_hf_rms": 0.0012681376999621238,
+          "held_target_hf_rms": 0.011998263097180925,
+          "target_at_limit_fraction": 0.0034835619420857827,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.577172102976862
+        },
+        {
+          "joint": "left_hip_yaw_joint",
+          "actual_angle_hf_rms": 0.0021743560098381716,
+          "held_target_hf_rms": 0.014974293027571728,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.45568649982260967
+        },
+        {
+          "joint": "left_knee_joint",
+          "actual_angle_hf_rms": 0.0016294703825821815,
+          "held_target_hf_rms": 0.010151594268156766,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.5232749857143427
+        },
+        {
+          "joint": "left_ankle_pitch_joint",
+          "actual_angle_hf_rms": 0.0029090448323823796,
+          "held_target_hf_rms": 0.020028630227594418,
+          "target_at_limit_fraction": 0.10537774874809493,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.6528040483059937
+        },
+        {
+          "joint": "left_ankle_roll_joint",
+          "actual_angle_hf_rms": 0.0018231651515899908,
+          "held_target_hf_rms": 0.008966224145791287,
+          "target_at_limit_fraction": 0.20553015458306118,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.5593648102454328
+        },
+        {
+          "joint": "right_hip_pitch_joint",
+          "actual_angle_hf_rms": 0.0014919760137145478,
+          "held_target_hf_rms": 0.027546433962006175,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.7291510947403324
+        },
+        {
+          "joint": "right_hip_roll_joint",
+          "actual_angle_hf_rms": 0.0013584571130223263,
+          "held_target_hf_rms": 0.011004930510886402,
+          "target_at_limit_fraction": 0.0008708904855214457,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.5852888548143171
+        },
+        {
+          "joint": "right_hip_yaw_joint",
+          "actual_angle_hf_rms": 0.002964229345224192,
+          "held_target_hf_rms": 0.016300767822151875,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.5577963022329057
+        },
+        {
+          "joint": "right_knee_joint",
+          "actual_angle_hf_rms": 0.002690511774539932,
+          "held_target_hf_rms": 0.01292937509758812,
+          "target_at_limit_fraction": 0.0017417809710428913,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.5502353084904547
+        },
+        {
+          "joint": "right_ankle_pitch_joint",
+          "actual_angle_hf_rms": 0.003332572847362363,
+          "held_target_hf_rms": 0.020160785536031817,
+          "target_at_limit_fraction": 0.0705421293272371,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.7652076127959506
+        },
+        {
+          "joint": "right_ankle_roll_joint",
+          "actual_angle_hf_rms": 0.001795087139495846,
+          "held_target_hf_rms": 0.01014641521631044,
+          "target_at_limit_fraction": 0.1698236446766819,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.4374896235038889
+        },
+        {
+          "joint": "waist_yaw_joint",
+          "actual_angle_hf_rms": 0.0013955474914080156,
+          "held_target_hf_rms": 0.01262546123980221,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.2927123811196287
+        },
+        {
+          "joint": "waist_roll_joint",
+          "actual_angle_hf_rms": 0.001391946980625807,
+          "held_target_hf_rms": 0.013096506199983367,
+          "target_at_limit_fraction": 0.033964728935336384,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.6674042764605308
+        },
+        {
+          "joint": "waist_pitch_joint",
+          "actual_angle_hf_rms": 0.001686123379806351,
+          "held_target_hf_rms": 0.009416805608130034,
+          "target_at_limit_fraction": 0.16133246244284782,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.7528158715739083
+        },
+        {
+          "joint": "left_shoulder_pitch_joint",
+          "actual_angle_hf_rms": 0.0008597474726023347,
+          "held_target_hf_rms": 0.010645293063805777,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.2970122911190064
+        },
+        {
+          "joint": "left_shoulder_roll_joint",
+          "actual_angle_hf_rms": 0.0007454826824066473,
+          "held_target_hf_rms": 0.00845971648298908,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.2995668914894076
+        },
+        {
+          "joint": "left_shoulder_yaw_joint",
+          "actual_angle_hf_rms": 0.0005739568765168548,
+          "held_target_hf_rms": 0.006508008482415067,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.1308435705965563
+        },
+        {
+          "joint": "left_elbow_joint",
+          "actual_angle_hf_rms": 0.000731479137429607,
+          "held_target_hf_rms": 0.008440319801056395,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.19034027060892977
+        },
+        {
+          "joint": "left_wrist_roll_joint",
+          "actual_angle_hf_rms": 0.0005146326346375536,
+          "held_target_hf_rms": 0.004411764867651017,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.037181447538238536
+        },
+        {
+          "joint": "left_wrist_pitch_joint",
+          "actual_angle_hf_rms": 0.00024418779028704125,
+          "held_target_hf_rms": 0.0021499909319030413,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.23734690692605306
+        },
+        {
+          "joint": "left_wrist_yaw_joint",
+          "actual_angle_hf_rms": 0.0002475676660126976,
+          "held_target_hf_rms": 0.0024228421041579125,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.1546394875803144
+        },
+        {
+          "joint": "right_shoulder_pitch_joint",
+          "actual_angle_hf_rms": 0.000866208966711427,
+          "held_target_hf_rms": 0.010029193287039427,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.2290455132698674
+        },
+        {
+          "joint": "right_shoulder_roll_joint",
+          "actual_angle_hf_rms": 0.0007374394777025757,
+          "held_target_hf_rms": 0.01038812591958941,
+          "target_at_limit_fraction": 0.024384933594600477,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.31107222092818954
+        },
+        {
+          "joint": "right_shoulder_yaw_joint",
+          "actual_angle_hf_rms": 0.000771894869068217,
+          "held_target_hf_rms": 0.010199536488544221,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.184153076434864
+        },
+        {
+          "joint": "right_elbow_joint",
+          "actual_angle_hf_rms": 0.0005712465008208999,
+          "held_target_hf_rms": 0.012397477240965193,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.17434812549765055
+        },
+        {
+          "joint": "right_wrist_roll_joint",
+          "actual_angle_hf_rms": 0.0005308346115330464,
+          "held_target_hf_rms": 0.005548002541510232,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.042312511274934315
+        },
+        {
+          "joint": "right_wrist_pitch_joint",
+          "actual_angle_hf_rms": 0.000234636919221783,
+          "held_target_hf_rms": 0.0018253078623576373,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.23451182461514924
+        },
+        {
+          "joint": "right_wrist_yaw_joint",
+          "actual_angle_hf_rms": 0.0002715234354082725,
+          "held_target_hf_rms": 0.002715885706231603,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.14251731567589893
+        }
+      ]
+    },
+    {
+      "phase": "worst_source_window",
+      "start_seconds": 25,
+      "end_seconds": 27,
+      "samples": 401,
+      "joints": [
+        {
+          "joint": "left_hip_pitch_joint",
+          "actual_angle_hf_rms": 0.0014953181637312317,
+          "held_target_hf_rms": 0.02370547962576908,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.2883455160180771
+        },
+        {
+          "joint": "left_hip_roll_joint",
+          "actual_angle_hf_rms": 0.0012617694756568076,
+          "held_target_hf_rms": 0.012099262077088415,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.2260373605423682
+        },
+        {
+          "joint": "left_hip_yaw_joint",
+          "actual_angle_hf_rms": 0.001988808677671711,
+          "held_target_hf_rms": 0.018528972076337438,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.3488634551563518
+        },
+        {
+          "joint": "left_knee_joint",
+          "actual_angle_hf_rms": 0.003239740876990789,
+          "held_target_hf_rms": 0.03048199848300643,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.5232749857143427
+        },
+        {
+          "joint": "left_ankle_pitch_joint",
+          "actual_angle_hf_rms": 0.005718205188790196,
+          "held_target_hf_rms": 0.022371495245906974,
+          "target_at_limit_fraction": 0.029925187032418952,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.5768363530680005
+        },
+        {
+          "joint": "left_ankle_roll_joint",
+          "actual_angle_hf_rms": 0.0015208106622418161,
+          "held_target_hf_rms": 0.009626704776937984,
+          "target_at_limit_fraction": 0.5486284289276808,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.19577280194729085
+        },
+        {
+          "joint": "right_hip_pitch_joint",
+          "actual_angle_hf_rms": 0.0013567705533579567,
+          "held_target_hf_rms": 0.027955532164413842,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.47391402170395636
+        },
+        {
+          "joint": "right_hip_roll_joint",
+          "actual_angle_hf_rms": 0.0013168064407220012,
+          "held_target_hf_rms": 0.012853823374728894,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.3474721645279731
+        },
+        {
+          "joint": "right_hip_yaw_joint",
+          "actual_angle_hf_rms": 0.0015635991399493268,
+          "held_target_hf_rms": 0.02632442886190958,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.3208735108565803
+        },
+        {
+          "joint": "right_knee_joint",
+          "actual_angle_hf_rms": 0.002656241849705897,
+          "held_target_hf_rms": 0.01618413132809679,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.5502353084904547
+        },
+        {
+          "joint": "right_ankle_pitch_joint",
+          "actual_angle_hf_rms": 0.007360603249354563,
+          "held_target_hf_rms": 0.016255750891272014,
+          "target_at_limit_fraction": 0.09975062344139651,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.4127631330711432
+        },
+        {
+          "joint": "right_ankle_roll_joint",
+          "actual_angle_hf_rms": 0.0016454289739756434,
+          "held_target_hf_rms": 0.008936704390598323,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.2618486969719756
+        },
+        {
+          "joint": "waist_yaw_joint",
+          "actual_angle_hf_rms": 0.0010314992946769313,
+          "held_target_hf_rms": 0.010978242719302662,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.0777760098480586
+        },
+        {
+          "joint": "waist_roll_joint",
+          "actual_angle_hf_rms": 0.0012191876302886304,
+          "held_target_hf_rms": 0.015942790360589383,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.4992234486182533
+        },
+        {
+          "joint": "waist_pitch_joint",
+          "actual_angle_hf_rms": 0.0015106515543408152,
+          "held_target_hf_rms": 0.015409296602373487,
+          "target_at_limit_fraction": 0.17955112219451372,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.5678903792533464
+        },
+        {
+          "joint": "left_shoulder_pitch_joint",
+          "actual_angle_hf_rms": 0.0014947935407271947,
+          "held_target_hf_rms": 0.022908068742298067,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.19502287453808073
+        },
+        {
+          "joint": "left_shoulder_roll_joint",
+          "actual_angle_hf_rms": 0.0022373614466752335,
+          "held_target_hf_rms": 0.021745470607645215,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.2995668914894076
+        },
+        {
+          "joint": "left_shoulder_yaw_joint",
+          "actual_angle_hf_rms": 0.0009580211731275221,
+          "held_target_hf_rms": 0.019870372060915218,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.1308435705965563
+        },
+        {
+          "joint": "left_elbow_joint",
+          "actual_angle_hf_rms": 0.001991295853289748,
+          "held_target_hf_rms": 0.011950232036256747,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.19034027060892977
+        },
+        {
+          "joint": "left_wrist_roll_joint",
+          "actual_angle_hf_rms": 0.0006865155838641025,
+          "held_target_hf_rms": 0.005750578777114506,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.03103037705942786
+        },
+        {
+          "joint": "left_wrist_pitch_joint",
+          "actual_angle_hf_rms": 0.0005152772854051232,
+          "held_target_hf_rms": 0.003569960058943287,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.23734690692605306
+        },
+        {
+          "joint": "left_wrist_yaw_joint",
+          "actual_angle_hf_rms": 0.00029061396563321055,
+          "held_target_hf_rms": 0.0026572316414863965,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.1546394875803144
+        },
+        {
+          "joint": "right_shoulder_pitch_joint",
+          "actual_angle_hf_rms": 0.0007449253426616389,
+          "held_target_hf_rms": 0.010330656419250388,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.14180564917854513
+        },
+        {
+          "joint": "right_shoulder_roll_joint",
+          "actual_angle_hf_rms": 0.0016184790374841565,
+          "held_target_hf_rms": 0.014145064246805913,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.31107222092818954
+        },
+        {
+          "joint": "right_shoulder_yaw_joint",
+          "actual_angle_hf_rms": 0.0011268439804018482,
+          "held_target_hf_rms": 0.011584939956564365,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.14409582471745833
+        },
+        {
+          "joint": "right_elbow_joint",
+          "actual_angle_hf_rms": 0.0010188413268259109,
+          "held_target_hf_rms": 0.011008604230105296,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.10869821371056076
+        },
+        {
+          "joint": "right_wrist_roll_joint",
+          "actual_angle_hf_rms": 0.0004718997456902201,
+          "held_target_hf_rms": 0.006622754993863364,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.04105850153087918
+        },
+        {
+          "joint": "right_wrist_pitch_joint",
+          "actual_angle_hf_rms": 0.00018728948023847276,
+          "held_target_hf_rms": 0.0020324857941371784,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.15081108471099192
+        },
+        {
+          "joint": "right_wrist_yaw_joint",
+          "actual_angle_hf_rms": 0.00021129833927917247,
+          "held_target_hf_rms": 0.0023354444448186597,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.1132599686461058
+        }
+      ]
+    },
+    {
+      "phase": "early_dance_comparison",
+      "start_seconds": 6,
+      "end_seconds": 8,
+      "samples": 401,
+      "joints": [
+        {
+          "joint": "left_hip_pitch_joint",
+          "actual_angle_hf_rms": 0.0038779088913888037,
+          "held_target_hf_rms": 0.021954388912520356,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.6321152976417261
+        },
+        {
+          "joint": "left_hip_roll_joint",
+          "actual_angle_hf_rms": 0.0015222566951160494,
+          "held_target_hf_rms": 0.019320971898875175,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.28331806786976876
+        },
+        {
+          "joint": "left_hip_yaw_joint",
+          "actual_angle_hf_rms": 0.004592935230405132,
+          "held_target_hf_rms": 0.026464214813108605,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.45568649982260967
+        },
+        {
+          "joint": "left_knee_joint",
+          "actual_angle_hf_rms": 0.004783291658033829,
+          "held_target_hf_rms": 0.025473079268280185,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.38419969260354675
+        },
+        {
+          "joint": "left_ankle_pitch_joint",
+          "actual_angle_hf_rms": 0.006812768754661914,
+          "held_target_hf_rms": 0.022761733560833275,
+          "target_at_limit_fraction": 0.12967581047381546,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.4623360065313906
+        },
+        {
+          "joint": "left_ankle_roll_joint",
+          "actual_angle_hf_rms": 0.0039725586158237056,
+          "held_target_hf_rms": 0.0157231831689027,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.5593648102454328
+        },
+        {
+          "joint": "right_hip_pitch_joint",
+          "actual_angle_hf_rms": 0.0015309612560313684,
+          "held_target_hf_rms": 0.024781836700060636,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.5248660505361702
+        },
+        {
+          "joint": "right_hip_roll_joint",
+          "actual_angle_hf_rms": 0.001472375734344626,
+          "held_target_hf_rms": 0.015319719672349403,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.34661600852946123
+        },
+        {
+          "joint": "right_hip_yaw_joint",
+          "actual_angle_hf_rms": 0.002591054586646076,
+          "held_target_hf_rms": 0.014378111790091335,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.25627748707435694
+        },
+        {
+          "joint": "right_knee_joint",
+          "actual_angle_hf_rms": 0.0020274470184991405,
+          "held_target_hf_rms": 0.02993221466879267,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.3258591256372739
+        },
+        {
+          "joint": "right_ankle_pitch_joint",
+          "actual_angle_hf_rms": 0.0038529204166528014,
+          "held_target_hf_rms": 0.020412470924574908,
+          "target_at_limit_fraction": 0.0399002493765586,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.4148930513337635
+        },
+        {
+          "joint": "right_ankle_roll_joint",
+          "actual_angle_hf_rms": 0.001798319078171127,
+          "held_target_hf_rms": 0.009441092596509812,
+          "target_at_limit_fraction": 0.33915211970074816,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.33516353809965194
+        },
+        {
+          "joint": "waist_yaw_joint",
+          "actual_angle_hf_rms": 0.0018918141952447866,
+          "held_target_hf_rms": 0.013857127457434821,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.14297889583871998
+        },
+        {
+          "joint": "waist_roll_joint",
+          "actual_angle_hf_rms": 0.0014531605678438867,
+          "held_target_hf_rms": 0.015980614723127617,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.39261970769490057
+        },
+        {
+          "joint": "waist_pitch_joint",
+          "actual_angle_hf_rms": 0.0026274041107926054,
+          "held_target_hf_rms": 0.01073785139455098,
+          "target_at_limit_fraction": 0.23192019950124687,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.6683231510615371
+        },
+        {
+          "joint": "left_shoulder_pitch_joint",
+          "actual_angle_hf_rms": 0.0014452873445685935,
+          "held_target_hf_rms": 0.009848166679963613,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.18461151362161757
+        },
+        {
+          "joint": "left_shoulder_roll_joint",
+          "actual_angle_hf_rms": 0.0006504527220471962,
+          "held_target_hf_rms": 0.011271470979396486,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.226364171374854
+        },
+        {
+          "joint": "left_shoulder_yaw_joint",
+          "actual_angle_hf_rms": 0.0006719359014169329,
+          "held_target_hf_rms": 0.00788235904404338,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.09122740984475884
+        },
+        {
+          "joint": "left_elbow_joint",
+          "actual_angle_hf_rms": 0.0008252931244673178,
+          "held_target_hf_rms": 0.012410388851989433,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.07843057301918696
+        },
+        {
+          "joint": "left_wrist_roll_joint",
+          "actual_angle_hf_rms": 0.0006283785053266892,
+          "held_target_hf_rms": 0.005366685776193623,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.025656717382008597
+        },
+        {
+          "joint": "left_wrist_pitch_joint",
+          "actual_angle_hf_rms": 0.0002093490195929121,
+          "held_target_hf_rms": 0.0014083634375919177,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.11916673738941634
+        },
+        {
+          "joint": "left_wrist_yaw_joint",
+          "actual_angle_hf_rms": 0.00022919976559966843,
+          "held_target_hf_rms": 0.002009925160026396,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.08643289712511694
+        },
+        {
+          "joint": "right_shoulder_pitch_joint",
+          "actual_angle_hf_rms": 0.001062311396620247,
+          "held_target_hf_rms": 0.01216654909712535,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.13627776528979993
+        },
+        {
+          "joint": "right_shoulder_roll_joint",
+          "actual_angle_hf_rms": 0.0007756908628043118,
+          "held_target_hf_rms": 0.010315703566983168,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.23485080492888857
+        },
+        {
+          "joint": "right_shoulder_yaw_joint",
+          "actual_angle_hf_rms": 0.0007316708317705718,
+          "held_target_hf_rms": 0.007727743535409475,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.09093551635542209
+        },
+        {
+          "joint": "right_elbow_joint",
+          "actual_angle_hf_rms": 0.0006811871365506974,
+          "held_target_hf_rms": 0.011897640274308926,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.08667128576124544
+        },
+        {
+          "joint": "right_wrist_roll_joint",
+          "actual_angle_hf_rms": 0.0005055777614731687,
+          "held_target_hf_rms": 0.004998515605484015,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.02491929316325365
+        },
+        {
+          "joint": "right_wrist_pitch_joint",
+          "actual_angle_hf_rms": 0.00020885871004626774,
+          "held_target_hf_rms": 0.0013268052644573242,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.12502653170382225
+        },
+        {
+          "joint": "right_wrist_yaw_joint",
+          "actual_angle_hf_rms": 0.0003126293740030575,
+          "held_target_hf_rms": 0.0024465512929746623,
+          "target_at_limit_fraction": 0.0,
+          "torque_saturation_fraction": 0.0,
+          "max_unclipped_torque_limit_ratio": 0.11677720436152753
+        }
+      ]
+    }
+  ],
+  "goal_complete_claimed": false,
+  "hardware_ready": false
+}

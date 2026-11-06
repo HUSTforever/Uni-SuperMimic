@@ -1,0 +1,17 @@
+# 有限时域价值网络：方法与实际结果
+
+2026-11-02完成一次受控对照。源为physical012/125完整checkpoint，参考为fast_integrated_base_v1；源权重、策略归一化、PD与参考不修改。两组均在实际200Hz MuJoCo中收集动作，每20ms决策，32环境×32步，500轮、50轮critic预热，策略LR3e-6、实际速度惩罚20倍、HF权重1/1、困难帧950:1398。
+
+唯一配置差异是critic_clock。启用时，仅训练critic输入增加剩余控制步/100，输出乘1-gamma^remaining；末端值为0。旧权重第一层与归一化原列精确保留，新列零初始化。策略仍使用原有传感历史和未来目标，导出接口不变。使用独立rollout/update生成器，避免不同critic大小消耗初始化随机数导致动作噪声不匹配。
+
+实际CUDA的128步配对审计证明初始动作、物理输入、奖励与HF成本逐值相同；两组前50轮的奖励/HF成本摘要相同。每组512000控制转移、2048000物理子步，源checkpoint、WM、策略归一化和推理参数均保持不变，actor在预热后确实更新。证据为CRITIC_CLOCK_PAIRED_ROLLOUT.json与CRITIC_CLOCK_TRAINING_VERIFICATION.json。
+
+## 结果与限制
+
+预热期平均critic损失由对照的0.10057变为0.01798。该改善不能替代动作质量验证。各18个actor保存点按原始200Hz全阶段/滑窗HF、原动作保真和快速回站逐一完整评估，均未全项通过。满足其他门槛的最佳最差滑窗踝角HF：对照0.008430rad、clock0.008696rad，均高于0.005rad；源基线本身为0.007361rad。clock默认仍关闭，没有把任一新权重设成全局默认。
+
+另补齐旧run014/015各38个actor保存点；四组累计112个actor保存点均无全项通过。25/50轮只更新critic的共8个checkpoint已逐张量证明pi、normalizers与推理参数等同于源，并明确复用源失败证据，而不是重复宣称新物理运行。各组最佳有效候选的指标由主代理再次从原始物理轨迹重算。详见CRITIC_CLOCK_SUMMARY.json、CRITIC_ONLY_CHECKPOINT_REUSE.json。
+
+减小探索噪声的局部诊断仅使平均HF罚项约下降9%，仍有主要物理抖动；不据此盲目换噪声设置。对当前源策略增大踝kd的1.25/1.5/2倍则均触发中途高度偏差保护，不选用。后者以名义baseline逐状态差0为前提，策略与参考hash完全相同；见INTEGRATED_SERVO_RESULTS_20261102.json及INTEGRATED_SERVO_VERIFICATION_20261102.json。
+
+这批实验没有通过新策略的完整simtosim，也没有真机可用声明。下一步检验训练episode最多500步（10秒）是否使策略缺少从初始状态连续运行到25～27秒后段的经验；这是待验证假设，不是已经证明的抖动根因。

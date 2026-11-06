@@ -1,0 +1,21 @@
+{
+  "metrics30": {
+    "frames": 630,
+    "fps": 30,
+    "duration_seconds": 20.966666666666665,
+    "joint_velocity_rms": 1.0382831857182866,
+    "joint_velocity_peak": 6.9174323999999965,
+    "joint_acceleration_rms": 7.389228882176417,
+    "joint_acceleration_peak": 73.26978299999983,
+    "joint_jerk_rms": 84.39071540270092,
+    "joint_jerk_peak": 1314.915929999993,
+    "root_vertical_acceleration_peak": 17.575478999999994
+  },
+  "minimum_foot_height": -8.139218128470904e-09,
+  "maximum_minimum_foot_height": 0.020153705672521314,
+  "root_z_range": [
+    0.63596864,
+    0.83278579
+  ],
+  "clipped_joints": 66
+}

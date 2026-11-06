@@ -1,0 +1,54 @@
+{
+  "norm_return": 0.21567031741142273,
+  "norm_return_framew": 0.21567031741142273,
+  "n_failed": 1,
+  "failed": [
+    "ji_ni_tai_mei"
+  ],
+  "per_clip": {
+    "ji_ni_tai_mei": {
+      "norm_return": 0.21567031741142273,
+      "steps": 606,
+      "failed": true
+    }
+  },
+  "checkpoint": "/home/ytkj/cx/supermimic/runs/demo_kick_smooth_001/ckpt_001000.pt",
+  "checkpoint_iteration": 1000,
+  "checkpoint_sha256": "4d16b149b6b721c98ecd68e4f19ae3d93717ec4c29f5bbdbd74ab10c5c0eb1ee",
+  "backend": "mujoco",
+  "device": "cpu",
+  "clip": "ji_ni_tai_mei",
+  "control_fps": 50,
+  "completed": false,
+  "reference": {
+    "frames": 606,
+    "fps": 50.0,
+    "duration_seconds": 12.1,
+    "joint_velocity_rms": 1.0285042879775983,
+    "joint_velocity_peak": 6.009183079004288,
+    "joint_acceleration_rms": 7.923502508575233,
+    "joint_acceleration_peak": 71.95532321929932,
+    "joint_jerk_rms": 302.2149383547013,
+    "joint_jerk_peak": 2915.2482748031616,
+    "root_vertical_acceleration_peak": 8.220672607421875
+  },
+  "policy": {
+    "frames": 606,
+    "fps": 50.0,
+    "duration_seconds": 12.1,
+    "joint_velocity_rms": 1.447099779461556,
+    "joint_velocity_peak": 23.030222207307816,
+    "joint_acceleration_rms": 39.69205072208891,
+    "joint_acceleration_peak": 1107.1347538381815,
+    "joint_jerk_rms": 2042.563218054871,
+    "joint_jerk_peak": 76655.96390143037,
+    "root_vertical_acceleration_peak": 33.215880393981934
+  },
+  "joint_tracking_rmse": 0.34536123275756836,
+  "motions": [
+    {
+      "path": "/home/ytkj/cx/supermimic/dance_projects/BV1ct4y1n7t9/motion/ji_ni_tai_mei.csv",
+      "sha256": "e6468bb2f3e57772aa87071f820a761b0724d67caf0fa9f2bbb1828e365ea15c"
+    }
+  ]
+}

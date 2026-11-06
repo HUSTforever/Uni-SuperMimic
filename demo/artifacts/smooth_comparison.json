@@ -1,0 +1,219 @@
+{
+  "selected_checkpoint": "/home/ytkj/cx/supermimic/runs/demo_kick_smooth_001/ckpt_001000.pt",
+  "selection_reason": "minimum measured native50Hz acceleration and jerk among complete candidate rollouts; not the last checkpoint",
+  "before": {
+    "norm_return": 0.7736653685569763,
+    "norm_return_framew": 0.7736653685569763,
+    "n_failed": 0,
+    "failed": [],
+    "per_clip": {
+      "kick_rave": {
+        "norm_return": 0.7736653685569763,
+        "steps": 253,
+        "failed": false
+      }
+    },
+    "checkpoint": "/home/ytkj/cx/supermimic/runs/demo_kick_001/ckpt_010000.pt",
+    "checkpoint_iteration": 10000,
+    "checkpoint_sha256": "93eda7c1da6c2a0e48d6b025caf708165046756ce138cfae2fe5ce4bbb025e70",
+    "backend": "mujoco",
+    "device": "cpu",
+    "clip": "kick_rave",
+    "control_fps": 50,
+    "completed": true,
+    "reference": {
+      "frames": 253,
+      "fps": 50.0,
+      "duration_seconds": 5.04,
+      "joint_velocity_rms": 0.7765613749542609,
+      "joint_velocity_peak": 15.47899842262268,
+      "joint_acceleration_rms": 15.5629448247872,
+      "joint_acceleration_peak": 435.3122413158417,
+      "joint_jerk_rms": 1021.3593712502739,
+      "joint_jerk_peak": 26390.396058559418,
+      "root_vertical_acceleration_peak": 13.669431209564209
+    },
+    "policy": {
+      "frames": 253,
+      "fps": 50.0,
+      "duration_seconds": 5.04,
+      "joint_velocity_rms": 2.0969836725683693,
+      "joint_velocity_peak": 25.99601149559021,
+      "joint_acceleration_rms": 45.42513266979873,
+      "joint_acceleration_peak": 877.2858511656523,
+      "joint_jerk_rms": 2134.523390505102,
+      "joint_jerk_peak": 43964.85211327672,
+      "root_vertical_acceleration_peak": 25.941431522369385
+    },
+    "joint_tracking_rmse": 0.337518572807312,
+    "motions": [
+      {
+        "path": "/home/ytkj/cx/supermimic/.tmp/custom_motions/kick_rave.csv",
+        "sha256": "5fedd0419fe22cee0df59f8b9e2642ed4bb7089553b2e91259874d7a2939af40"
+      }
+    ]
+  },
+  "after": {
+    "norm_return": 0.946790337562561,
+    "norm_return_framew": 0.946790337562561,
+    "n_failed": 0,
+    "failed": [],
+    "per_clip": {
+      "kick_rave_smooth": {
+        "norm_return": 0.946790337562561,
+        "steps": 316,
+        "failed": false
+      }
+    },
+    "checkpoint": "/home/ytkj/cx/supermimic/runs/demo_kick_smooth_001/ckpt_001000.pt",
+    "checkpoint_iteration": 1000,
+    "checkpoint_sha256": "4d16b149b6b721c98ecd68e4f19ae3d93717ec4c29f5bbdbd74ab10c5c0eb1ee",
+    "backend": "mujoco",
+    "device": "cpu",
+    "clip": "kick_rave_smooth",
+    "control_fps": 50,
+    "completed": true,
+    "reference": {
+      "frames": 316,
+      "fps": 50.0,
+      "duration_seconds": 6.3,
+      "joint_velocity_rms": 0.4990282740312793,
+      "joint_velocity_peak": 5.568930506706238,
+      "joint_acceleration_rms": 3.040715744253506,
+      "joint_acceleration_peak": 45.257434248924255,
+      "joint_jerk_rms": 115.83271583782118,
+      "joint_jerk_peak": 1647.5170850753784,
+      "root_vertical_acceleration_peak": 3.8057565689086914
+    },
+    "policy": {
+      "frames": 316,
+      "fps": 50.0,
+      "duration_seconds": 6.3,
+      "joint_velocity_rms": 0.6057065161227886,
+      "joint_velocity_peak": 7.9892754554748535,
+      "joint_acceleration_rms": 11.28238949958043,
+      "joint_acceleration_peak": 306.9709287956357,
+      "joint_jerk_rms": 619.1280402633639,
+      "joint_jerk_peak": 22775.190649554133,
+      "root_vertical_acceleration_peak": 11.940300464630127
+    },
+    "joint_tracking_rmse": 0.09632391482591629,
+    "motions": [
+      {
+        "path": "/home/ytkj/cx/supermimic/demo/artifacts/smooth_final/kick_rave_smooth.csv",
+        "sha256": "aa6afb1939359b1982d3b177873ae7a8018e0c61339e4a928eba3640deaf9818"
+      }
+    ]
+  },
+  "mjwarp": {
+    "norm_return": 0.9510915279388428,
+    "norm_return_framew": 0.9510915279388428,
+    "n_failed": 0,
+    "failed": [],
+    "per_clip": {
+      "kick_rave_smooth": {
+        "norm_return": 0.9510915279388428,
+        "steps": 316,
+        "failed": false
+      }
+    },
+    "checkpoint": "/home/ytkj/cx/supermimic/runs/demo_kick_smooth_001/ckpt_001000.pt",
+    "checkpoint_iteration": 1000,
+    "checkpoint_sha256": "4d16b149b6b721c98ecd68e4f19ae3d93717ec4c29f5bbdbd74ab10c5c0eb1ee",
+    "backend": "mjwarp",
+    "device": "cuda:0",
+    "clip": "kick_rave_smooth",
+    "control_fps": 50,
+    "completed": true,
+    "reference": {
+      "frames": 316,
+      "fps": 50.0,
+      "duration_seconds": 6.3,
+      "joint_velocity_rms": 0.4990282740312793,
+      "joint_velocity_peak": 5.568930506706238,
+      "joint_acceleration_rms": 3.040715744253506,
+      "joint_acceleration_peak": 45.257434248924255,
+      "joint_jerk_rms": 115.83271583782118,
+      "joint_jerk_peak": 1647.5170850753784,
+      "root_vertical_acceleration_peak": 3.8057565689086914
+    },
+    "policy": {
+      "frames": 316,
+      "fps": 50.0,
+      "duration_seconds": 6.3,
+      "joint_velocity_rms": 0.5997504334625887,
+      "joint_velocity_peak": 8.432069420814514,
+      "joint_acceleration_rms": 11.454533740914515,
+      "joint_acceleration_peak": 358.4371041506529,
+      "joint_jerk_rms": 644.8657536623399,
+      "joint_jerk_peak": 24102.82107302919,
+      "root_vertical_acceleration_peak": 16.411542892456055
+    },
+    "joint_tracking_rmse": 0.09519601613283157,
+    "motions": [
+      {
+        "path": "/home/ytkj/cx/supermimic/demo/motion/kick_rave_smooth.csv",
+        "sha256": "aa6afb1939359b1982d3b177873ae7a8018e0c61339e4a928eba3640deaf9818"
+      }
+    ]
+  },
+  "reductions": {
+    "joint_acceleration_rms": 0.7516267133088282,
+    "joint_jerk_rms": 0.7099455349061052
+  },
+  "native_duration_seconds": {
+    "before": 5.066666666666666,
+    "after": 6.333333333333333
+  },
+  "reference_phase_joint_rmse": 0.014472075898089352,
+  "checkpoint_candidates": [
+    {
+      "iteration": 250,
+      "completed": true,
+      "norm_return": 0.8707715272903442,
+      "joint_tracking_rmse": 0.1727021336555481,
+      "acceleration_rms": 15.230590898580534,
+      "jerk_rms": 807.701972858426
+    },
+    {
+      "iteration": 500,
+      "completed": true,
+      "norm_return": 0.932336688041687,
+      "joint_tracking_rmse": 0.11620677262544632,
+      "acceleration_rms": 13.015738218822355,
+      "jerk_rms": 701.9478350807113
+    },
+    {
+      "iteration": 750,
+      "completed": true,
+      "norm_return": 0.9504565596580505,
+      "joint_tracking_rmse": 0.09659791737794876,
+      "acceleration_rms": 12.24084318385807,
+      "jerk_rms": 685.1498532557163
+    },
+    {
+      "iteration": 1000,
+      "completed": true,
+      "norm_return": 0.946790337562561,
+      "joint_tracking_rmse": 0.09632391482591629,
+      "acceleration_rms": 11.28238949958043,
+      "jerk_rms": 619.1280402633639
+    },
+    {
+      "iteration": 1500,
+      "completed": true,
+      "norm_return": 0.9477294087409973,
+      "joint_tracking_rmse": 0.09935221821069717,
+      "acceleration_rms": 13.097149113374886,
+      "jerk_rms": 751.5664359996144
+    },
+    {
+      "iteration": 2000,
+      "completed": true,
+      "norm_return": 0.9564834237098694,
+      "joint_tracking_rmse": 0.09031990170478821,
+      "acceleration_rms": 14.02489023749594,
+      "jerk_rms": 855.1265079496885
+    }
+  ]
+}

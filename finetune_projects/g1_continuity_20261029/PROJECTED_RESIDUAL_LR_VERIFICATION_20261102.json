@@ -1,0 +1,122 @@
+{
+  "date": "2026-11-02",
+  "training_result": {
+    "status": "completed",
+    "iterations": 300,
+    "physical_sim_steps": 307200,
+    "total_wall_seconds": 274.6214879350009,
+    "source_checkpoint_unchanged": true,
+    "hardware_ready": false,
+    "world_model_updated": false
+  },
+  "all_saved_frozen_base_wm_verified": [
+    0,
+    25,
+    50,
+    75,
+    100,
+    125,
+    150,
+    175,
+    200,
+    225,
+    250,
+    275,
+    300
+  ],
+  "first50_existing_metrics_identical_to_run020": true,
+  "actor_checkpoints_evaluated": 10,
+  "full_pass_count": 0,
+  "best_with_other_gates_passed": {
+    "iteration": 300,
+    "bundle": "finetune_projects/g1_continuity_20261029/candidates/projected021_000300",
+    "physical_complete": true,
+    "original_style": {
+      "complete": true,
+      "anchor_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa",
+      "dance_joint_rmse_rad": 0.12735812737050176,
+      "main_joint_indices": [
+        0,
+        3,
+        6,
+        9,
+        15,
+        16,
+        17,
+        18,
+        22,
+        23,
+        24,
+        25
+      ],
+      "amplitude_ratios": {
+        "0": 0.8007226709263829,
+        "3": 0.8963146261866118,
+        "6": 0.9542070654092218,
+        "9": 0.8195116779599128,
+        "15": 0.9605567850536322,
+        "16": 0.8800451837680285,
+        "17": 1.0323696684822452,
+        "18": 0.9544707668529274,
+        "22": 1.0185505835978148,
+        "23": 0.9226059278593147,
+        "24": 1.0092647697678705,
+        "25": 1.0288145624606482
+      },
+      "correlations": {
+        "0": 0.938076817758068,
+        "3": 0.9444721843542507,
+        "6": 0.9100646069839841,
+        "9": 0.9298599536290537,
+        "15": 0.9695700859255665,
+        "16": 0.9766253451039972,
+        "17": 0.9570362333235712,
+        "18": 0.9433487814573995,
+        "22": 0.9904570615422295,
+        "23": 0.9881270202219803,
+        "24": 0.9921703407598419,
+        "25": 0.9866377764564378
+      },
+      "limits": {
+        "dance_joint_rmse_rad": 0.13,
+        "amplitude_ratio_min": 0.8,
+        "correlation_min": 0.9
+      },
+      "passed": true
+    },
+    "worst_hf": 0.008125500897410222,
+    "phase_hf": {
+      "dance": 0.00281700580760864,
+      "entry": 0.00327118920111156,
+      "exit": 0.0012761954616874412,
+      "settle": 3.1072471992446497e-06,
+      "standing": 4.87670223040776e-06
+    },
+    "worst_root_hf": 0.0002790628236464706,
+    "finish": {
+      "complete": true,
+      "passed": true,
+      "recovery_seconds": 1.1299999999984962,
+      "max_recovery_seconds": 1.5,
+      "stable_detection_seconds": 0.5,
+      "required_hold_seconds": 10.0,
+      "final_hold_passed": true,
+      "dance_end_seconds": 27.96,
+      "final_joint_error_max": 0.06383326842743456,
+      "final_joint_speed_rms_max": 0.006730078320805022,
+      "final_root_speed_max": 0.0034045885621205104,
+      "final_tilt_max": 0.017984342525220517,
+      "limits": {
+        "joint_rmse_rad": 0.1,
+        "joint_velocity_rms": 0.3,
+        "root_speed": 0.1,
+        "tilt_rad": 0.2
+      }
+    },
+    "full_pass": false
+  },
+  "best_raw_physics_metrics_recomputed": true,
+  "default_policy_promoted": false,
+  "goal_complete_claimed": false,
+  "hardware_ready": false
+}

@@ -1,0 +1,14 @@
+{
+  "frames": 1798,
+  "both_full_physical_runs_completed": true,
+  "qpos_position_max_difference_m": 0.001605099811761046,
+  "qpos_joint_max_difference_rad": 0.00921550837036389,
+  "quaternion_component_max_difference": 0.001351003661548944,
+  "target_max_difference_rad": 0.03039577423711251,
+  "raw_action_max_difference": 0.06851516664028168,
+  "initial_target_difference_rad": 3.087923450273422e-08,
+  "first_pose_divergence_over_1e4_seconds": 26.8,
+  "failure_frames": [],
+  "bitwise_trajectory_equivalence_claimed": false,
+  "hardware_ready": false
+}

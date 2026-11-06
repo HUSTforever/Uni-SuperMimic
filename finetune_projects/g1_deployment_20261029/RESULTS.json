@@ -1,0 +1,918 @@
+{
+  "date": "2026-10-29",
+  "method": "simulation_rl_warm_start_with_deployment_physics",
+  "selected_iteration": 1000,
+  "selected_checkpoint": "finetune_projects/g1_deployment_20261029/run_001/ckpt_001000.pt",
+  "selected_bundle": "finetune_projects/g1_deployment_20261029/candidates/ckpt_001000",
+  "hardware_ready": false,
+  "full_start_dance_stop_sequence_passed": false,
+  "tracking_improvement_verified": true,
+  "training": {
+    "completed": true,
+    "iteration": 1000,
+    "sim_steps": 164096,
+    "wall_time": 324.12835121154785,
+    "wall_h": 0.08999447524547577,
+    "wm_loss": 0.014558949992060661,
+    "wm_err8": 0.020334045998752118,
+    "pi_loss": -9.082844333648682,
+    "v_loss": 0.0007229666132479906,
+    "imag_rew": 0.9138966882228852,
+    "pi_gradnorm": 0.5737962877750397,
+    "imag_survival": 0.9996984434127808,
+    "sim_rew": 0.8983489322662354,
+    "ep_len": 386.73809523809524,
+    "ep_ret_norm": 0.8872762152126857,
+    "term_frac": 0.0,
+    "it_per_s": 4.019970424976496,
+    "lr": 4.999808914933371e-05,
+    "total_wall_seconds": 327.65745463899657,
+    "source_checkpoint_unchanged": true,
+    "hardware_ready": false,
+    "peak_cuda_allocated_bytes": 2417337856
+  },
+  "training_config": {
+    "method": "simulation_rl_warm_start",
+    "policy_normalization_frozen": true,
+    "source_checkpoint": "/home/ytkj/cx/supermimic/dance_projects/BV1ct4y1n7t9/run_002/last.pt",
+    "source_checkpoint_sha256": "baab3cd56178988b7a60314dddcc0649d6171e6322ab574d41808424038861a4",
+    "source_bundle": "/home/ytkj/cx/supermimic/deploy/artifacts/ji_ni_tai_mei/bundle_v3",
+    "source_reference_sha256": "e2e9a316e8a9ffe54a93cfd6e8d03310c3459cb152369dc50f44d7d402a13867",
+    "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+    "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+    "robot_xml_sha256": "423e28bd718b19f7a65cda539b6f794ddbb268b4b9bdbd85f4bd982b30729617",
+    "device": "cuda",
+    "num_envs": 64,
+    "learner": {
+      "iterations": 1000,
+      "buffer_steps": 600,
+      "utd": 0.4,
+      "horizon": 32,
+      "goal_frames": 10,
+      "action_smoothing": 0.35,
+      "hist": 10,
+      "z_dim": 32,
+      "wm_hidden": [
+        2048,
+        2048,
+        2048
+      ],
+      "policy_hidden": [
+        2048,
+        1024,
+        512,
+        256
+      ],
+      "critic_hidden": [
+        256,
+        128
+      ],
+      "wm_window": 8,
+      "wm_batches": 4,
+      "wm_batch": 512,
+      "pi_batch": 512,
+      "lr": 5e-05,
+      "gamma": 0.99,
+      "lam": 0.95,
+      "action_noise": 0.05,
+      "critic_epochs": 5,
+      "critic_minibatches": 4,
+      "no_critic": false,
+      "warmup_steps": 64,
+      "wm_only_iters": 150,
+      "lr_decay_iters": 250000,
+      "ckpt_every": 250,
+      "log_every": 50,
+      "log_backend": "no_print",
+      "seed": 0,
+      "amp": "bf16",
+      "compile": true,
+      "test_hidden_dims": null
+    },
+    "collector": {
+      "physics_hz": 200,
+      "policy_hz": 50,
+      "delay_substeps": [
+        0,
+        1
+      ],
+      "zero_velocity_fraction": 0.25,
+      "friction_range": [
+        0.7,
+        1.1
+      ],
+      "first_frame_fraction": 0.25,
+      "hard_interval_fraction": 0.25,
+      "hard_interval_seconds": [
+        14,
+        18
+      ],
+      "uniform_fraction": 0.5
+    },
+    "hardware_ready": false
+  },
+  "selection": {
+    "selected_iteration": 1000,
+    "native_rank": [
+      3,
+      1.0,
+      -0.11482948716952603
+    ],
+    "ranking_rule": "completed_count,worst_step_fraction,negative_mean_rmse",
+    "source": "deploy/artifacts/ji_ni_tai_mei/bundle_v3",
+    "candidate": "finetune_projects/g1_deployment_20261029/candidates/ckpt_001000",
+    "all_candidates": {
+      "250": [
+        3,
+        1.0,
+        -0.1371612485986827
+      ],
+      "500": [
+        3,
+        1.0,
+        -0.11595740251809901
+      ],
+      "750": [
+        3,
+        1.0,
+        -0.12203899856509902
+      ],
+      "1000": [
+        3,
+        1.0,
+        -0.11482948716952603
+      ]
+    },
+    "hardware_ready": false
+  },
+  "source_native": {
+    "bundle": "/home/ytkj/cx/supermimic/deploy/artifacts/ji_ni_tai_mei/bundle_v3",
+    "cases": {
+      "reference": {
+        "transport": "native_mujoco",
+        "initialization": "reference",
+        "standing_entry_verified": false,
+        "entry": {
+          "attempted": false,
+          "completed": false
+        },
+        "exit": {
+          "attempted": false,
+          "completed": false
+        },
+        "tracking": {
+          "expected_steps": 1048,
+          "steps": 1048,
+          "completed": true,
+          "failure": null
+        },
+        "physics_hz": 200,
+        "policy_hz": 50,
+        "delay_ms": 0,
+        "clipped_target_values": 1583,
+        "effort_saturation_fraction": 0.0005758094235325086,
+        "max_torque_limit_ratio": 1.0,
+        "joint_tracking_rmse_rad": 0.16422465865066074,
+        "joint_velocity_peak_rad_s": 15.806938169333373,
+        "joint_acceleration_rms_rad_s2": 31.495963993017128,
+        "policy_sha256": "cada459a0b0a8b1f631e6864f80aa547cf7abfd46a4fd26fdc7186a0a7f6c9b4",
+        "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+        "hardware_ready": false,
+        "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+        "all_attempted_phases_passed": true
+      },
+      "delayed_5ms": {
+        "transport": "native_mujoco",
+        "initialization": "reference",
+        "standing_entry_verified": false,
+        "entry": {
+          "attempted": false,
+          "completed": false
+        },
+        "exit": {
+          "attempted": false,
+          "completed": false
+        },
+        "tracking": {
+          "expected_steps": 1048,
+          "steps": 819,
+          "completed": false,
+          "failure": "pelvis tilt exceeds 1.2rad"
+        },
+        "physics_hz": 200,
+        "policy_hz": 50,
+        "delay_ms": 5,
+        "clipped_target_values": 1098,
+        "effort_saturation_fraction": 0.0014209928003031452,
+        "max_torque_limit_ratio": 1.0,
+        "joint_tracking_rmse_rad": 0.16586805039104455,
+        "joint_velocity_peak_rad_s": 18.78389498060279,
+        "joint_acceleration_rms_rad_s2": 31.810130675384023,
+        "policy_sha256": "cada459a0b0a8b1f631e6864f80aa547cf7abfd46a4fd26fdc7186a0a7f6c9b4",
+        "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+        "hardware_ready": false,
+        "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+        "all_attempted_phases_passed": false
+      },
+      "zero_velocity": {
+        "transport": "native_mujoco",
+        "initialization": "reference_zero_velocity",
+        "standing_entry_verified": false,
+        "entry": {
+          "attempted": false,
+          "completed": false
+        },
+        "exit": {
+          "attempted": false,
+          "completed": false
+        },
+        "tracking": {
+          "expected_steps": 1048,
+          "steps": 807,
+          "completed": false,
+          "failure": "pelvis tilt exceeds 1.2rad"
+        },
+        "physics_hz": 200,
+        "policy_hz": 50,
+        "delay_ms": 0,
+        "clipped_target_values": 1114,
+        "effort_saturation_fraction": 0.0008973208563004743,
+        "max_torque_limit_ratio": 1.0,
+        "joint_tracking_rmse_rad": 0.16876826093720979,
+        "joint_velocity_peak_rad_s": 18.815413179806196,
+        "joint_acceleration_rms_rad_s2": 34.35891833866593,
+        "policy_sha256": "cada459a0b0a8b1f631e6864f80aa547cf7abfd46a4fd26fdc7186a0a7f6c9b4",
+        "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+        "hardware_ready": false,
+        "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+        "all_attempted_phases_passed": false
+      }
+    },
+    "rank": [
+      1,
+      0.7700381679389313,
+      -0.16628698999297167
+    ],
+    "hardware_ready": false,
+    "ranking_rule": "completed_count, worst_step_fraction, negative_mean_joint_rmse"
+  },
+  "selected_native": {
+    "bundle": "/home/ytkj/cx/supermimic/finetune_projects/g1_deployment_20261029/candidates/ckpt_001000",
+    "cases": {
+      "reference": {
+        "transport": "native_mujoco",
+        "initialization": "reference",
+        "standing_entry_verified": false,
+        "entry": {
+          "attempted": false,
+          "completed": false
+        },
+        "exit": {
+          "attempted": false,
+          "completed": false
+        },
+        "tracking": {
+          "expected_steps": 1048,
+          "steps": 1048,
+          "completed": true,
+          "failure": null
+        },
+        "physics_hz": 200,
+        "policy_hz": 50,
+        "delay_ms": 0,
+        "clipped_target_values": 844,
+        "effort_saturation_fraction": 8.225848907607265e-06,
+        "max_torque_limit_ratio": 1.0,
+        "joint_tracking_rmse_rad": 0.1154255422527129,
+        "joint_velocity_peak_rad_s": 9.208443766129776,
+        "joint_acceleration_rms_rad_s2": 16.034890951961643,
+        "policy_sha256": "6ab2018d34a17c7822f4633f8876ada73707506528d7e6bd75212d0f94dd0f06",
+        "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+        "hardware_ready": false,
+        "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+        "all_attempted_phases_passed": true
+      },
+      "delayed_5ms": {
+        "transport": "native_mujoco",
+        "initialization": "reference",
+        "standing_entry_verified": false,
+        "entry": {
+          "attempted": false,
+          "completed": false
+        },
+        "exit": {
+          "attempted": false,
+          "completed": false
+        },
+        "tracking": {
+          "expected_steps": 1048,
+          "steps": 1048,
+          "completed": true,
+          "failure": null
+        },
+        "physics_hz": 200,
+        "policy_hz": 50,
+        "delay_ms": 5,
+        "clipped_target_values": 834,
+        "effort_saturation_fraction": 8.225848907607265e-06,
+        "max_torque_limit_ratio": 1.0,
+        "joint_tracking_rmse_rad": 0.1134363806203573,
+        "joint_velocity_peak_rad_s": 8.374234057942036,
+        "joint_acceleration_rms_rad_s2": 16.322001147975698,
+        "policy_sha256": "6ab2018d34a17c7822f4633f8876ada73707506528d7e6bd75212d0f94dd0f06",
+        "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+        "hardware_ready": false,
+        "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+        "all_attempted_phases_passed": true
+      },
+      "zero_velocity": {
+        "transport": "native_mujoco",
+        "initialization": "reference_zero_velocity",
+        "standing_entry_verified": false,
+        "entry": {
+          "attempted": false,
+          "completed": false
+        },
+        "exit": {
+          "attempted": false,
+          "completed": false
+        },
+        "tracking": {
+          "expected_steps": 1048,
+          "steps": 1048,
+          "completed": true,
+          "failure": null
+        },
+        "physics_hz": 200,
+        "policy_hz": 50,
+        "delay_ms": 0,
+        "clipped_target_values": 827,
+        "effort_saturation_fraction": 8.225848907607265e-06,
+        "max_torque_limit_ratio": 1.0,
+        "joint_tracking_rmse_rad": 0.11562653863550791,
+        "joint_velocity_peak_rad_s": 8.832020794591871,
+        "joint_acceleration_rms_rad_s2": 16.555478390765455,
+        "policy_sha256": "6ab2018d34a17c7822f4633f8876ada73707506528d7e6bd75212d0f94dd0f06",
+        "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+        "hardware_ready": false,
+        "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+        "all_attempted_phases_passed": true
+      }
+    },
+    "rank": [
+      3,
+      1.0,
+      -0.11482948716952603
+    ],
+    "hardware_ready": false,
+    "ranking_rule": "completed_count, worst_step_fraction, negative_mean_joint_rmse"
+  },
+  "dds_interleaved": {
+    "source": [
+      {
+        "transport": "unitree_sdk2_hg_dds_loopback",
+        "domain": 17,
+        "interface": "lo",
+        "initialization": "reference",
+        "standing_entry_verified": false,
+        "entry": {
+          "attempted": false,
+          "completed": false
+        },
+        "tracking": {
+          "expected_steps": 1048,
+          "steps": 817,
+          "completed": false,
+          "failure": "pelvis tilt exceeds 1.2rad"
+        },
+        "exit": {
+          "attempted": false,
+          "completed": false
+        },
+        "dds": {
+          "received_states": 3275,
+          "sent_commands": 818
+        },
+        "simulator": {
+          "identity": "project headless HG adapter; official SDK2 serialization",
+          "model": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+          "entry": {
+            "attempted": false,
+            "completed": false
+          },
+          "watchdog_triggered": false,
+          "physics_hz": 200,
+          "state_hz": 200,
+          "command_watchdog_ms": 100,
+          "failure": "pelvis tilt exceeds 1.2rad",
+          "failure_tick": 16360,
+          "damping_latched": true,
+          "received_commands": 818,
+          "max_scheduler_lag_ms": 0.0,
+          "effort_saturation_fraction": 0.0013380111044386147,
+          "max_torque_limit_ratio": 1.0
+        },
+        "clipped_target_values": 1090,
+        "watchdog_probe": false,
+        "inference_ms": {
+          "p50": 1.4309185025922488,
+          "p99": 1.910300467279741,
+          "maximum": 3.9474079967476428
+        },
+        "joint_tracking_rmse_rad": 0.16495076062940756,
+        "joint_velocity_peak_rad_s": 18.790760859965815,
+        "joint_acceleration_rms_rad_s2": 31.348556160367096,
+        "policy_sha256": "cada459a0b0a8b1f631e6864f80aa547cf7abfd46a4fd26fdc7186a0a7f6c9b4",
+        "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+        "hardware_ready": false,
+        "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+        "all_attempted_phases_passed": false
+      },
+      {
+        "transport": "unitree_sdk2_hg_dds_loopback",
+        "domain": 17,
+        "interface": "lo",
+        "initialization": "reference",
+        "standing_entry_verified": false,
+        "entry": {
+          "attempted": false,
+          "completed": false
+        },
+        "tracking": {
+          "expected_steps": 1048,
+          "steps": 817,
+          "completed": false,
+          "failure": "pelvis tilt exceeds 1.2rad"
+        },
+        "exit": {
+          "attempted": false,
+          "completed": false
+        },
+        "dds": {
+          "received_states": 3275,
+          "sent_commands": 818
+        },
+        "simulator": {
+          "identity": "project headless HG adapter; official SDK2 serialization",
+          "model": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+          "entry": {
+            "attempted": false,
+            "completed": false
+          },
+          "watchdog_triggered": false,
+          "physics_hz": 200,
+          "state_hz": 200,
+          "command_watchdog_ms": 100,
+          "failure": "pelvis tilt exceeds 1.2rad",
+          "failure_tick": 16360,
+          "damping_latched": true,
+          "received_commands": 818,
+          "max_scheduler_lag_ms": 0.0,
+          "effort_saturation_fraction": 0.0013380111044386147,
+          "max_torque_limit_ratio": 1.0
+        },
+        "clipped_target_values": 1090,
+        "watchdog_probe": false,
+        "inference_ms": {
+          "p50": 1.430727501428919,
+          "p99": 1.9738469390722464,
+          "maximum": 3.989597003965173
+        },
+        "joint_tracking_rmse_rad": 0.16495076062940756,
+        "joint_velocity_peak_rad_s": 18.790760859965815,
+        "joint_acceleration_rms_rad_s2": 31.348556160367096,
+        "policy_sha256": "cada459a0b0a8b1f631e6864f80aa547cf7abfd46a4fd26fdc7186a0a7f6c9b4",
+        "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+        "hardware_ready": false,
+        "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+        "all_attempted_phases_passed": false
+      },
+      {
+        "transport": "unitree_sdk2_hg_dds_loopback",
+        "domain": 17,
+        "interface": "lo",
+        "initialization": "reference",
+        "standing_entry_verified": false,
+        "entry": {
+          "attempted": false,
+          "completed": false
+        },
+        "tracking": {
+          "expected_steps": 1048,
+          "steps": 817,
+          "completed": false,
+          "failure": "pelvis tilt exceeds 1.2rad"
+        },
+        "exit": {
+          "attempted": false,
+          "completed": false
+        },
+        "dds": {
+          "received_states": 3275,
+          "sent_commands": 818
+        },
+        "simulator": {
+          "identity": "project headless HG adapter; official SDK2 serialization",
+          "model": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+          "entry": {
+            "attempted": false,
+            "completed": false
+          },
+          "watchdog_triggered": false,
+          "physics_hz": 200,
+          "state_hz": 200,
+          "command_watchdog_ms": 100,
+          "failure": "pelvis tilt exceeds 1.2rad",
+          "failure_tick": 16360,
+          "damping_latched": true,
+          "received_commands": 818,
+          "max_scheduler_lag_ms": 0.0,
+          "effort_saturation_fraction": 0.0013380111044386147,
+          "max_torque_limit_ratio": 1.0
+        },
+        "clipped_target_values": 1090,
+        "watchdog_probe": false,
+        "inference_ms": {
+          "p50": 1.418769999872893,
+          "p99": 1.8914470236632044,
+          "maximum": 4.0922699990915135
+        },
+        "joint_tracking_rmse_rad": 0.16495076062940756,
+        "joint_velocity_peak_rad_s": 18.790760859965815,
+        "joint_acceleration_rms_rad_s2": 31.348556160367096,
+        "policy_sha256": "cada459a0b0a8b1f631e6864f80aa547cf7abfd46a4fd26fdc7186a0a7f6c9b4",
+        "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+        "hardware_ready": false,
+        "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+        "all_attempted_phases_passed": false
+      }
+    ],
+    "finetuned": [
+      {
+        "transport": "unitree_sdk2_hg_dds_loopback",
+        "domain": 17,
+        "interface": "lo",
+        "initialization": "reference",
+        "standing_entry_verified": false,
+        "entry": {
+          "attempted": false,
+          "completed": false
+        },
+        "tracking": {
+          "expected_steps": 1048,
+          "steps": 1048,
+          "completed": true,
+          "failure": null
+        },
+        "exit": {
+          "attempted": true,
+          "completed": false,
+          "failure": "exit physical fault: pelvis tilt exceeds 1.2rad"
+        },
+        "dds": {
+          "received_states": 4367,
+          "sent_commands": 1091
+        },
+        "simulator": {
+          "identity": "project headless HG adapter; official SDK2 serialization",
+          "model": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+          "entry": {
+            "attempted": false,
+            "completed": false
+          },
+          "watchdog_triggered": false,
+          "physics_hz": 200,
+          "state_hz": 200,
+          "command_watchdog_ms": 100,
+          "failure": "pelvis tilt exceeds 1.2rad",
+          "failure_tick": 21820,
+          "damping_latched": true,
+          "received_commands": 1091,
+          "max_scheduler_lag_ms": 0.0,
+          "effort_saturation_fraction": 7.899830153651696e-06,
+          "max_torque_limit_ratio": 1.0
+        },
+        "clipped_target_values": 834,
+        "watchdog_probe": false,
+        "inference_ms": {
+          "p50": 1.4443340005527716,
+          "p99": 1.8987147974985414,
+          "maximum": 4.146643994317856
+        },
+        "joint_tracking_rmse_rad": 0.11343638148750328,
+        "joint_velocity_peak_rad_s": 8.374234464793972,
+        "joint_acceleration_rms_rad_s2": 16.3220018868641,
+        "policy_sha256": "6ab2018d34a17c7822f4633f8876ada73707506528d7e6bd75212d0f94dd0f06",
+        "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+        "hardware_ready": false,
+        "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+        "all_attempted_phases_passed": false
+      },
+      {
+        "transport": "unitree_sdk2_hg_dds_loopback",
+        "domain": 17,
+        "interface": "lo",
+        "initialization": "reference",
+        "standing_entry_verified": false,
+        "entry": {
+          "attempted": false,
+          "completed": false
+        },
+        "tracking": {
+          "expected_steps": 1048,
+          "steps": 1048,
+          "completed": true,
+          "failure": null
+        },
+        "exit": {
+          "attempted": true,
+          "completed": false,
+          "failure": "exit physical fault: pelvis tilt exceeds 1.2rad"
+        },
+        "dds": {
+          "received_states": 4371,
+          "sent_commands": 1092
+        },
+        "simulator": {
+          "identity": "project headless HG adapter; official SDK2 serialization",
+          "model": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+          "entry": {
+            "attempted": false,
+            "completed": false
+          },
+          "watchdog_triggered": false,
+          "physics_hz": 200,
+          "state_hz": 200,
+          "command_watchdog_ms": 100,
+          "failure": "pelvis tilt exceeds 1.2rad",
+          "failure_tick": 21835,
+          "damping_latched": true,
+          "received_commands": 1092,
+          "max_scheduler_lag_ms": 0.0,
+          "effort_saturation_fraction": 7.892597532774011e-06,
+          "max_torque_limit_ratio": 1.0
+        },
+        "clipped_target_values": 825,
+        "watchdog_probe": false,
+        "inference_ms": {
+          "p50": 1.5897579978627618,
+          "p99": 3.0218064310611212,
+          "maximum": 5.856092000612989
+        },
+        "joint_tracking_rmse_rad": 0.1138020716270839,
+        "joint_velocity_peak_rad_s": 8.853095886435847,
+        "joint_acceleration_rms_rad_s2": 15.96213070409544,
+        "policy_sha256": "6ab2018d34a17c7822f4633f8876ada73707506528d7e6bd75212d0f94dd0f06",
+        "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+        "hardware_ready": false,
+        "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+        "all_attempted_phases_passed": false
+      },
+      {
+        "transport": "unitree_sdk2_hg_dds_loopback",
+        "domain": 17,
+        "interface": "lo",
+        "initialization": "reference",
+        "standing_entry_verified": false,
+        "entry": {
+          "attempted": false,
+          "completed": false
+        },
+        "tracking": {
+          "expected_steps": 1048,
+          "steps": 1048,
+          "completed": true,
+          "failure": null
+        },
+        "exit": {
+          "attempted": true,
+          "completed": false,
+          "failure": "exit physical fault: pelvis tilt exceeds 1.2rad"
+        },
+        "dds": {
+          "received_states": 4363,
+          "sent_commands": 1090
+        },
+        "simulator": {
+          "identity": "project headless HG adapter; official SDK2 serialization",
+          "model": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+          "entry": {
+            "attempted": false,
+            "completed": false
+          },
+          "watchdog_triggered": false,
+          "physics_hz": 200,
+          "state_hz": 200,
+          "command_watchdog_ms": 100,
+          "failure": "pelvis tilt exceeds 1.2rad",
+          "failure_tick": 21790,
+          "damping_latched": true,
+          "received_commands": 1090,
+          "max_scheduler_lag_ms": 0.0,
+          "effort_saturation_fraction": 7.907076042350299e-06,
+          "max_torque_limit_ratio": 1.0
+        },
+        "clipped_target_values": 831,
+        "watchdog_probe": false,
+        "inference_ms": {
+          "p50": 1.4243855002860073,
+          "p99": 1.8875075197865954,
+          "maximum": 4.592754994519055
+        },
+        "joint_tracking_rmse_rad": 0.1134619183173333,
+        "joint_velocity_peak_rad_s": 8.252260200018352,
+        "joint_acceleration_rms_rad_s2": 16.119887040849626,
+        "policy_sha256": "6ab2018d34a17c7822f4633f8876ada73707506528d7e6bd75212d0f94dd0f06",
+        "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+        "hardware_ready": false,
+        "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+        "all_attempted_phases_passed": false
+      }
+    ]
+  },
+  "matched_prefix_frames": 818,
+  "matched_prefix_trials": {
+    "source": [
+      {
+        "frames": 818,
+        "q_rmse_rad": 0.16495076062940756,
+        "acceleration_rms_rad_s2": 31.348556160367096,
+        "jerk_rms_rad_s3": 1780.5503443798111
+      },
+      {
+        "frames": 818,
+        "q_rmse_rad": 0.16495076062940756,
+        "acceleration_rms_rad_s2": 31.348556160367096,
+        "jerk_rms_rad_s3": 1780.5503443798111
+      },
+      {
+        "frames": 818,
+        "q_rmse_rad": 0.16495076062940756,
+        "acceleration_rms_rad_s2": 31.348556160367096,
+        "jerk_rms_rad_s3": 1780.5503443798111
+      }
+    ],
+    "finetuned": [
+      {
+        "frames": 818,
+        "q_rmse_rad": 0.10114909610763129,
+        "acceleration_rms_rad_s2": 15.388964179505502,
+        "jerk_rms_rad_s3": 882.3305008335756
+      },
+      {
+        "frames": 818,
+        "q_rmse_rad": 0.1013561036206711,
+        "acceleration_rms_rad_s2": 15.253661239435628,
+        "jerk_rms_rad_s3": 868.2775482202975
+      },
+      {
+        "frames": 818,
+        "q_rmse_rad": 0.10112651883002859,
+        "acceleration_rms_rad_s2": 15.23783068405081,
+        "jerk_rms_rad_s3": 876.627435651234
+      }
+    ]
+  },
+  "matched_prefix_means": {
+    "source": {
+      "q_rmse_rad": 0.16495076062940756,
+      "acceleration_rms_rad_s2": 31.348556160367096,
+      "jerk_rms_rad_s3": 1780.550344379811
+    },
+    "finetuned": {
+      "q_rmse_rad": 0.101210572852777,
+      "acceleration_rms_rad_s2": 15.293485367663981,
+      "jerk_rms_rad_s3": 875.745161568369
+    }
+  },
+  "standing_entry": {
+    "transport": "native_mujoco",
+    "initialization": "standing",
+    "physics_hz": 200,
+    "policy_hz": 50,
+    "standing_entry_verified": false,
+    "entry": {
+      "attempted": true,
+      "completed": false,
+      "failure": "root height below 0.35m"
+    },
+    "tracking": {
+      "expected_steps": 1048,
+      "steps": 0,
+      "completed": false,
+      "failure": "standing entry failed",
+      "wall_seconds": 6.00994098931551e-07
+    },
+    "exit": {
+      "attempted": false,
+      "completed": false
+    },
+    "perturbation": {
+      "friction": 1.0,
+      "mass_scale": 1.0,
+      "sensor_noise": 0,
+      "seed": 0
+    },
+    "clipped_target_values": 0,
+    "effort_saturation_fraction": 0.0,
+    "max_torque_limit_ratio": 0.3244062530305072,
+    "policy_sha256": "6ab2018d34a17c7822f4633f8876ada73707506528d7e6bd75212d0f94dd0f06",
+    "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+    "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+    "hardware_ready": false,
+    "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+    "all_attempted_phases_passed": false
+  },
+  "perturbation": {
+    "transport": "native_mujoco",
+    "initialization": "reference",
+    "physics_hz": 200,
+    "policy_hz": 50,
+    "standing_entry_verified": false,
+    "entry": {
+      "attempted": false,
+      "completed": false
+    },
+    "tracking": {
+      "expected_steps": 1048,
+      "steps": 1048,
+      "completed": true,
+      "failure": null,
+      "wall_seconds": 2.1265879069978837
+    },
+    "exit": {
+      "attempted": true,
+      "completed": false,
+      "failure": "pelvis tilt exceeds 1.2rad"
+    },
+    "perturbation": {
+      "friction": 0.7,
+      "mass_scale": 1.05,
+      "sensor_noise": 0.003,
+      "seed": 0
+    },
+    "clipped_target_values": 899,
+    "effort_saturation_fraction": 7.945336087716511e-06,
+    "max_torque_limit_ratio": 1.0,
+    "inference_ms": {
+      "p50": 1.3611104986921418,
+      "p99": 3.949416568648302,
+      "maximum": 5.599503994744737
+    },
+    "joint_tracking_rmse_rad": 0.11475572032349173,
+    "joint_velocity_peak_rad_s": 8.664395452396656,
+    "joint_acceleration_rms_rad_s2": 17.15864684693516,
+    "policy_sha256": "6ab2018d34a17c7822f4633f8876ada73707506528d7e6bd75212d0f94dd0f06",
+    "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+    "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+    "hardware_ready": false,
+    "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+    "all_attempted_phases_passed": false
+  },
+  "verification": {
+    "normal_tests_passed": 240,
+    "normal_tests_skipped": 2,
+    "default_slow_deselected": 8,
+    "dds_slow_tests_separately_passed": 2,
+    "independent_review": "noCriticalOrImportantFindings",
+    "video": {
+      "frames": 1048,
+      "fps": 50,
+      "seconds": 20.96,
+      "resolution": [
+        960,
+        540
+      ],
+      "decoded_to_end": true,
+      "visually_inspected": true
+    },
+    "policy_optimizer_steps": [
+      850.0
+    ],
+    "world_model_optimizer_steps": [
+      4000.0
+    ]
+  },
+  "policy_parameter_change_rms": 0.0016266530146822333,
+  "policy_normalization_bitwise_unchanged": true,
+  "reference_sha256": "e2e9a316e8a9ffe54a93cfd6e8d03310c3459cb152369dc50f44d7d402a13867",
+  "video": "finetune_projects/g1_deployment_20261029/artifacts/finetuned_dds.mp4",
+  "scope": "one dance,one training seed; lo-only simulation; no physical robot actions",
+  "root_orientation_error_degrees": {
+    "rms": 2.813385158173253,
+    "median": 2.382081909409883,
+    "p90": 3.793809301638527
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "method": "frozen-time whole70D MuJoCo tangent state +9observation history+previous29appliedactions (990D); actual4PDsubsteps+fullactorJacobian+IMU/poseFD; finite differences copied data only",
+  "frame": 1300,
+  "time_seconds": 26.0,
+  "source_case": "physical009_000175",
+  "prefix_replay_pose_difference": 0.0,
+  "observation_double_vs_controller_max": 1.1467526128683403e-07,
+  "stability_proof_claimed": false,
+  "diagnostic_only": true,
+  "rows": [
+    {
+      "epsilon": 1e-05,
+      "contacts": 2,
+      "torque_saturations": 0,
+      "closed_loop_spectral_radius": 1.061906404427481,
+      "closed_loop_modes_8_12hz": [
+        {
+          "magnitude": 0.7050571210634639,
+          "frequency_hz": 8.968095776230626,
+          "dominant_joints": [
+            "left_shoulder_pitch_joint",
+            "left_shoulder_roll_joint",
+            "left_elbow_joint",
+            "right_shoulder_yaw_joint",
+            "right_shoulder_pitch_joint"
+          ]
+        },
+        {
+          "magnitude": 0.7050571210634639,
+          "frequency_hz": 8.968095776230626,
+          "dominant_joints": [
+            "left_shoulder_pitch_joint",
+            "left_shoulder_roll_joint",
+            "left_elbow_joint",
+            "right_shoulder_yaw_joint",
+            "right_shoulder_pitch_joint"
+          ]
+        },
+        {
+          "magnitude": 0.694643916472697,
+          "frequency_hz": 9.419541642615094,
+          "dominant_joints": [
+            "right_hip_yaw_joint",
+            "right_knee_joint",
+            "right_shoulder_yaw_joint",
+            "right_shoulder_pitch_joint",
+            "left_shoulder_pitch_joint"
+          ]
+        },
+        {
+          "magnitude": 0.694643916472697,
+          "frequency_hz": 9.419541642615094,
+          "dominant_joints": [
+            "right_hip_yaw_joint",
+            "right_knee_joint",
+            "right_shoulder_yaw_joint",
+            "right_shoulder_pitch_joint",
+            "left_shoulder_pitch_joint"
+          ]
+        },
+        {
+          "magnitude": 0.6931870452282463,
+          "frequency_hz": 8.200301087087945,
+          "dominant_joints": [
+            "right_knee_joint",
+            "right_shoulder_pitch_joint",
+            "right_shoulder_yaw_joint",
+            "right_elbow_joint",
+            "right_hip_yaw_joint"
+          ]
+        },
+        {
+          "magnitude": 0.6931870452282463,
+          "frequency_hz": 8.200301087087945,
+          "dominant_joints": [
+            "right_knee_joint",
+            "right_shoulder_pitch_joint",
+            "right_shoulder_yaw_joint",
+            "right_elbow_joint",
+            "right_hip_yaw_joint"
+          ]
+        }
+      ],
+      "passive_pd_max_magnitude_8_12hz": null,
+      "nominal_one_step_pose_error_vs_tape": 0.0
+    },
+    {
+      "epsilon": 1e-06,
+      "contacts": 2,
+      "torque_saturations": 0,
+      "closed_loop_spectral_radius": 1.0619159568228465,
+      "closed_loop_modes_8_12hz": [
+        {
+          "magnitude": 0.7050571156827146,
+          "frequency_hz": 8.968095651209918,
+          "dominant_joints": [
+            "left_shoulder_pitch_joint",
+            "left_shoulder_roll_joint",
+            "left_elbow_joint",
+            "right_shoulder_yaw_joint",
+            "right_shoulder_pitch_joint"
+          ]
+        },
+        {
+          "magnitude": 0.7050571156827146,
+          "frequency_hz": 8.968095651209918,
+          "dominant_joints": [
+            "left_shoulder_pitch_joint",
+            "left_shoulder_roll_joint",
+            "left_elbow_joint",
+            "right_shoulder_yaw_joint",
+            "right_shoulder_pitch_joint"
+          ]
+        },
+        {
+          "magnitude": 0.6946438934959214,
+          "frequency_hz": 9.419542110926256,
+          "dominant_joints": [
+            "right_hip_yaw_joint",
+            "right_knee_joint",
+            "right_shoulder_yaw_joint",
+            "right_shoulder_pitch_joint",
+            "left_shoulder_pitch_joint"
+          ]
+        },
+        {
+          "magnitude": 0.6946438934959214,
+          "frequency_hz": 9.419542110926256,
+          "dominant_joints": [
+            "right_hip_yaw_joint",
+            "right_knee_joint",
+            "right_shoulder_yaw_joint",
+            "right_shoulder_pitch_joint",
+            "left_shoulder_pitch_joint"
+          ]
+        },
+        {
+          "magnitude": 0.6931869420979669,
+          "frequency_hz": 8.200308060715011,
+          "dominant_joints": [
+            "right_knee_joint",
+            "right_shoulder_pitch_joint",
+            "right_shoulder_yaw_joint",
+            "right_elbow_joint",
+            "right_hip_yaw_joint"
+          ]
+        },
+        {
+          "magnitude": 0.6931869420979669,
+          "frequency_hz": 8.200308060715011,
+          "dominant_joints": [
+            "right_knee_joint",
+            "right_shoulder_pitch_joint",
+            "right_shoulder_yaw_joint",
+            "right_elbow_joint",
+            "right_hip_yaw_joint"
+          ]
+        }
+      ],
+      "passive_pd_max_magnitude_8_12hz": null,
+      "nominal_one_step_pose_error_vs_tape": 0.0
+    }
+  ],
+  "hardware_ready": false,
+  "goal_complete_claimed": false
+}

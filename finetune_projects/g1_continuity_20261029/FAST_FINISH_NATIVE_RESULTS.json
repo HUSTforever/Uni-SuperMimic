@@ -1,0 +1,350 @@
+[
+  {
+    "name": "retained",
+    "command_exit_seconds": 0.8,
+    "bundle": "finetune_projects/g1_continuity_20261029/data/fast_finish_retained_0800",
+    "physical_complete": true,
+    "finish": {
+      "complete": true,
+      "passed": true,
+      "recovery_seconds": 1.1299999999984962,
+      "max_recovery_seconds": 1.5,
+      "stable_detection_seconds": 0.5,
+      "required_hold_seconds": 10.0,
+      "final_hold_passed": true,
+      "dance_end_seconds": 27.96,
+      "final_joint_error_max": 0.05038029432569842,
+      "final_joint_speed_rms_max": 0.006388870352361769,
+      "final_root_speed_max": 0.01554792653587309,
+      "final_tilt_max": 0.01580695152467069,
+      "limits": {
+        "joint_rmse_rad": 0.1,
+        "joint_velocity_rms": 0.3,
+        "root_speed": 0.1,
+        "tilt_rad": 0.2
+      }
+    },
+    "exit_continuity": {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 161,
+      "start_time": 27.959999999998722,
+      "end_time": 28.759999999998563,
+      "ankle_hf_position_rms_rad": [
+        0.001101441670368965,
+        0.0007271034756594644,
+        0.0001336060868383217,
+        7.021441715528746e-05
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.35857050824248865,
+        0.13154812103005994,
+        0.009387325328839225,
+        0.006661622066001996
+      ],
+      "ankle_hf_position_max_rad": 0.001101441670368965,
+      "ankle_hf_velocity_max_rad_s": 0.35857050824248865,
+      "root_vertical_hf_position_rms_m": 2.089096505406151e-05,
+      "root_vertical_acceleration_rms": 0.48935595287004435,
+      "root_vertical_acceleration_peak": 1.457298667683431,
+      "joint_acceleration_rms": 12.51005073965752,
+      "joint_jerk_rms": 2102.9028965722564,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    "ending_passed": true,
+    "global_continuity_passed": false,
+    "hardware_ready": false
+  },
+  {
+    "name": "retained",
+    "command_exit_seconds": 1.0,
+    "bundle": "finetune_projects/g1_continuity_20261029/data/fast_finish_retained_1000",
+    "physical_complete": true,
+    "finish": {
+      "complete": true,
+      "passed": true,
+      "recovery_seconds": 1.2199999999984783,
+      "max_recovery_seconds": 1.5,
+      "stable_detection_seconds": 0.5,
+      "required_hold_seconds": 10.0,
+      "final_hold_passed": true,
+      "dance_end_seconds": 27.96,
+      "final_joint_error_max": 0.050235919427771024,
+      "final_joint_speed_rms_max": 0.005930003597951515,
+      "final_root_speed_max": 0.014788450124866011,
+      "final_tilt_max": 0.013311480589162945,
+      "limits": {
+        "joint_rmse_rad": 0.1,
+        "joint_velocity_rms": 0.3,
+        "root_speed": 0.1,
+        "tilt_rad": 0.2
+      }
+    },
+    "exit_continuity": {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 201,
+      "start_time": 27.959999999998722,
+      "end_time": 28.959999999998523,
+      "ankle_hf_position_rms_rad": [
+        0.0011760239969108445,
+        0.0004970633698604834,
+        5.201168718796909e-05,
+        6.982671174941343e-05
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.34544053219577586,
+        0.08541604580903414,
+        0.006539874268108616,
+        0.005153825948139556
+      ],
+      "ankle_hf_position_max_rad": 0.0011760239969108445,
+      "ankle_hf_velocity_max_rad_s": 0.34544053219577586,
+      "root_vertical_hf_position_rms_m": 1.0179022148354169e-05,
+      "root_vertical_acceleration_rms": 0.3727404842686375,
+      "root_vertical_acceleration_peak": 1.1291593421146473,
+      "joint_acceleration_rms": 15.303632601788491,
+      "joint_jerk_rms": 2875.1644234543405,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    "ending_passed": true,
+    "global_continuity_passed": false,
+    "hardware_ready": false
+  },
+  {
+    "name": "retained",
+    "command_exit_seconds": 1.2,
+    "bundle": "finetune_projects/g1_continuity_20261029/data/fast_finish_retained_1200",
+    "physical_complete": true,
+    "finish": {
+      "complete": true,
+      "passed": true,
+      "recovery_seconds": 1.3549999999984514,
+      "max_recovery_seconds": 1.5,
+      "stable_detection_seconds": 0.5,
+      "required_hold_seconds": 10.0,
+      "final_hold_passed": true,
+      "dance_end_seconds": 27.96,
+      "final_joint_error_max": 0.04611161282747221,
+      "final_joint_speed_rms_max": 0.0026426897353792134,
+      "final_root_speed_max": 0.00549050539102596,
+      "final_tilt_max": 0.012443630649339933,
+      "limits": {
+        "joint_rmse_rad": 0.1,
+        "joint_velocity_rms": 0.3,
+        "root_speed": 0.1,
+        "tilt_rad": 0.2
+      }
+    },
+    "exit_continuity": {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 241,
+      "start_time": 27.959999999998722,
+      "end_time": 29.159999999998483,
+      "ankle_hf_position_rms_rad": [
+        0.0010257538302453567,
+        0.00038032082927360846,
+        3.4252835132717636e-05,
+        6.0609063499884504e-05
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.3121082785185091,
+        0.06727737687843253,
+        0.004335396979110433,
+        0.004995345928299391
+      ],
+      "ankle_hf_position_max_rad": 0.0010257538302453567,
+      "ankle_hf_velocity_max_rad_s": 0.3121082785185091,
+      "root_vertical_hf_position_rms_m": 9.930363470386208e-06,
+      "root_vertical_acceleration_rms": 0.5486935888539881,
+      "root_vertical_acceleration_peak": 2.969081319197368,
+      "joint_acceleration_rms": 15.616800126440026,
+      "joint_jerk_rms": 2905.389260360454,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    "ending_passed": true,
+    "global_continuity_passed": false,
+    "hardware_ready": false
+  },
+  {
+    "name": "experimental",
+    "command_exit_seconds": 0.8,
+    "bundle": "finetune_projects/g1_continuity_20261029/data/fast_finish_experimental_0800",
+    "physical_complete": true,
+    "finish": {
+      "complete": true,
+      "passed": true,
+      "recovery_seconds": 1.1199999999984982,
+      "max_recovery_seconds": 1.5,
+      "stable_detection_seconds": 0.5,
+      "required_hold_seconds": 10.0,
+      "final_hold_passed": true,
+      "dance_end_seconds": 27.96,
+      "final_joint_error_max": 0.08604511232582712,
+      "final_joint_speed_rms_max": 0.008998027684801357,
+      "final_root_speed_max": 0.008480251830634536,
+      "final_tilt_max": 0.01449745312788449,
+      "limits": {
+        "joint_rmse_rad": 0.1,
+        "joint_velocity_rms": 0.3,
+        "root_speed": 0.1,
+        "tilt_rad": 0.2
+      }
+    },
+    "exit_continuity": {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 161,
+      "start_time": 27.959999999998722,
+      "end_time": 28.759999999998563,
+      "ankle_hf_position_rms_rad": [
+        0.0009814093879130534,
+        0.00035598757034120297,
+        6.69943848985653e-05,
+        0.00011140747996166686
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.30593500371134696,
+        0.1086664309237266,
+        0.007193176558545542,
+        0.00958567168286478
+      ],
+      "ankle_hf_position_max_rad": 0.0009814093879130534,
+      "ankle_hf_velocity_max_rad_s": 0.30593500371134696,
+      "root_vertical_hf_position_rms_m": 1.7114592277841655e-05,
+      "root_vertical_acceleration_rms": 0.5348779909594001,
+      "root_vertical_acceleration_peak": 1.3677341374415581,
+      "joint_acceleration_rms": 15.857408690853736,
+      "joint_jerk_rms": 2565.213302893825,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    "ending_passed": true,
+    "global_continuity_passed": false,
+    "hardware_ready": false
+  },
+  {
+    "name": "experimental",
+    "command_exit_seconds": 1.0,
+    "bundle": "finetune_projects/g1_continuity_20261029/data/fast_finish_experimental_1000",
+    "physical_complete": true,
+    "finish": {
+      "complete": true,
+      "passed": true,
+      "recovery_seconds": 1.2199999999984783,
+      "max_recovery_seconds": 1.5,
+      "stable_detection_seconds": 0.5,
+      "required_hold_seconds": 10.0,
+      "final_hold_passed": true,
+      "dance_end_seconds": 27.96,
+      "final_joint_error_max": 0.08463387959946471,
+      "final_joint_speed_rms_max": 0.008546027955229862,
+      "final_root_speed_max": 0.008057246569007158,
+      "final_tilt_max": 0.014633180241512084,
+      "limits": {
+        "joint_rmse_rad": 0.1,
+        "joint_velocity_rms": 0.3,
+        "root_speed": 0.1,
+        "tilt_rad": 0.2
+      }
+    },
+    "exit_continuity": {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 201,
+      "start_time": 27.959999999998722,
+      "end_time": 28.959999999998523,
+      "ankle_hf_position_rms_rad": [
+        0.001075182154009555,
+        0.0005199477881357674,
+        5.356005757341191e-05,
+        0.0001141948639361377
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.3583196429218646,
+        0.17170722334046173,
+        0.006682461314978025,
+        0.008454264795826338
+      ],
+      "ankle_hf_position_max_rad": 0.001075182154009555,
+      "ankle_hf_velocity_max_rad_s": 0.3583196429218646,
+      "root_vertical_hf_position_rms_m": 1.4934909997004025e-05,
+      "root_vertical_acceleration_rms": 0.4283415362502569,
+      "root_vertical_acceleration_peak": 1.107701139747555,
+      "joint_acceleration_rms": 16.292454726658004,
+      "joint_jerk_rms": 2754.047875143683,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    "ending_passed": true,
+    "global_continuity_passed": false,
+    "hardware_ready": false
+  },
+  {
+    "name": "experimental",
+    "command_exit_seconds": 1.2,
+    "bundle": "finetune_projects/g1_continuity_20261029/data/fast_finish_experimental_1200",
+    "physical_complete": true,
+    "finish": {
+      "complete": true,
+      "passed": true,
+      "recovery_seconds": 1.3199999999984584,
+      "max_recovery_seconds": 1.5,
+      "stable_detection_seconds": 0.5,
+      "required_hold_seconds": 10.0,
+      "final_hold_passed": true,
+      "dance_end_seconds": 27.96,
+      "final_joint_error_max": 0.0850850855270086,
+      "final_joint_speed_rms_max": 0.006342452768472597,
+      "final_root_speed_max": 0.0039417071487559815,
+      "final_tilt_max": 0.012835501767229768,
+      "limits": {
+        "joint_rmse_rad": 0.1,
+        "joint_velocity_rms": 0.3,
+        "root_speed": 0.1,
+        "tilt_rad": 0.2
+      }
+    },
+    "exit_continuity": {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 241,
+      "start_time": 27.959999999998722,
+      "end_time": 29.159999999998483,
+      "ankle_hf_position_rms_rad": [
+        0.001110161013902505,
+        0.0007459173369856739,
+        5.763004376630219e-05,
+        9.777305425891048e-05
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.38865819608005403,
+        0.2610850448381653,
+        0.006084894717871707,
+        0.007444187925801662
+      ],
+      "ankle_hf_position_max_rad": 0.001110161013902505,
+      "ankle_hf_velocity_max_rad_s": 0.38865819608005403,
+      "root_vertical_hf_position_rms_m": 1.5688750687735325e-05,
+      "root_vertical_acceleration_rms": 0.5070567150923869,
+      "root_vertical_acceleration_peak": 2.8631943215401554,
+      "joint_acceleration_rms": 13.046634008415216,
+      "joint_jerk_rms": 2190.485847653617,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    "ending_passed": true,
+    "global_continuity_passed": false,
+    "hardware_ready": false
+  }
+]

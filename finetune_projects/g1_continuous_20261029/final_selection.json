@@ -1,0 +1,11 @@
+{
+  "run": "run_008",
+  "iteration": 200,
+  "bundle": "finetune_projects/g1_continuous_20261029/candidates/ground008_000200",
+  "warm_start_checkpoint": "finetune_projects/g1_continuous_20261029/run_009_reproduce/last.pt",
+  "warm_start_pi_wm_bit_identical": true,
+  "fallback": "finetune_projects/g1_continuous_20261029/candidates/balance_002000",
+  "reason": "unchanged native quality gates; loaded-contact motion -11.3%; actual DDS3/3 and perturbations pass; posture retained",
+  "results": "GROUND_RESULTS.json",
+  "hardware_ready": false
+}

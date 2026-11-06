@@ -1,0 +1,58 @@
+[
+  {
+    "name": "baseline",
+    "complete": true,
+    "passed": false,
+    "worst": 0.013772846801846043,
+    "phase": 0.00451527065710789
+  },
+  {
+    "name": "ankle_kd_125",
+    "complete": true,
+    "passed": false,
+    "worst": 0.012645976075023182,
+    "phase": 0.003932434509556714
+  },
+  {
+    "name": "ankle_kd_150",
+    "complete": true,
+    "passed": false,
+    "worst": 0.011463861334790593,
+    "phase": 0.0040041659811795955
+  },
+  {
+    "name": "ankle_kd_075",
+    "complete": true,
+    "passed": false,
+    "worst": 0.014113523511294405,
+    "phase": 0.004583500276627472
+  },
+  {
+    "name": "ankle_kp_075",
+    "complete": false,
+    "passed": false,
+    "worst": 0.03689495011126726,
+    "phase": 0.030959028183644783
+  },
+  {
+    "name": "ankle_kp_050",
+    "complete": false,
+    "passed": false,
+    "worst": 0.027561699685192526,
+    "phase": 0.0274204637448667
+  },
+  {
+    "name": "ramp",
+    "complete": true,
+    "passed": false,
+    "worst": 0.012592814498919427,
+    "phase": 0.004235538352337411
+  },
+  {
+    "name": "ramp_kd_125",
+    "complete": true,
+    "passed": false,
+    "worst": 0.02270601930626514,
+    "phase": 0.006285140654845559
+  }
+]

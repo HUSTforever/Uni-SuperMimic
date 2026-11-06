@@ -1,0 +1,4 @@
+# Generated media, checkpoints and intermediate reconstructions stay local.
+artifacts/*
+!artifacts/smooth_comparison.json
+!artifacts/smooth_comparison_recipe.py

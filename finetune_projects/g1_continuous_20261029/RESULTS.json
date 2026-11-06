@@ -1,0 +1,1340 @@
+{
+  "date": "2026-10-29",
+  "sim2sim_passed": true,
+  "hardware_ready": false,
+  "selected_bundle": "finetune_projects/g1_continuous_20261029/candidates/smooth_000600",
+  "selected_checkpoint": "finetune_projects/g1_continuous_20261029/run_002/ckpt_000600.pt",
+  "fallback_bundle": "finetune_projects/g1_continuous_20261029/candidates/selected",
+  "sequence_control_seconds": 35.96,
+  "expected_control_steps": 1798,
+  "expected_state_samples": 1799,
+  "actual_dds": {
+    "sequence": [
+      {
+        "transport": "unitree_sdk2_hg_dds_loopback",
+        "domain": 17,
+        "interface": "lo",
+        "initialization": "sequence",
+        "standing_entry_verified": true,
+        "entry": {
+          "attempted": true,
+          "completed": true
+        },
+        "tracking": {
+          "expected_steps": 1798,
+          "steps": 1798,
+          "completed": true,
+          "failure": null
+        },
+        "exit": {
+          "attempted": true,
+          "completed": true
+        },
+        "initial_velocity_norm": 0.0,
+        "dds": {
+          "received_states": 7195,
+          "sent_commands": 1798
+        },
+        "simulator": {
+          "identity": "project headless HG adapter; official SDK2 serialization",
+          "model": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+          "entry": {
+            "attempted": true,
+            "completed": false
+          },
+          "watchdog_triggered": false,
+          "physics_hz": 200,
+          "state_hz": 200,
+          "command_watchdog_ms": 100,
+          "failure": null,
+          "failure_tick": null,
+          "damping_latched": false,
+          "received_commands": 1798,
+          "max_scheduler_lag_ms": 0.0,
+          "initial_velocity_norm": 0.0,
+          "sequence_mode": true,
+          "effort_saturation_fraction": 0.0,
+          "max_torque_limit_ratio": 0.9976343401622529
+        },
+        "clipped_target_values": 1268,
+        "watchdog_probe": false,
+        "inference_ms": {
+          "p50": 1.4229260001457078,
+          "p99": 2.05789611014552,
+          "maximum": 4.227607000075295
+        },
+        "terminal_sample_recorded": true,
+        "sequence": {
+          "phases": {
+            "dance": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 250,
+              "end_frame": 1398,
+              "joint_rmse_rad": 0.10962603368229333
+            },
+            "entry": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 100,
+              "end_frame": 250,
+              "joint_rmse_rad": 0.05009053577369981
+            },
+            "exit": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 1398,
+              "end_frame": 1548,
+              "joint_rmse_rad": 0.08497142829770411
+            },
+            "settle": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 1548,
+              "end_frame": 1798,
+              "joint_rmse_rad": 0.05561388306032305
+            },
+            "standing": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 0,
+              "end_frame": 100,
+              "joint_rmse_rad": 0.02044616713310696
+            }
+          },
+          "final_hold": {
+            "passed": true,
+            "joint_velocity_rms": 0.0014383909859427768,
+            "root_speed_max": 0.0003007180157754467,
+            "tilt_max_rad": 0.018823292261612147,
+            "standing_joint_rmse": 0.05554127802457962
+          },
+          "complete": true
+        },
+        "joint_tracking_rmse_rad": 0.09452479803633976,
+        "joint_velocity_peak_rad_s": 11.7476646248643,
+        "joint_acceleration_rms_rad_s2": 13.011129050109618,
+        "policy_sha256": "110502291161ffad8ba8ea67f6ae7d0da120988f0b7e7dabae403bb9d3b02991",
+        "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+        "hardware_ready": false,
+        "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+        "all_attempted_phases_passed": true
+      },
+      {
+        "transport": "unitree_sdk2_hg_dds_loopback",
+        "domain": 17,
+        "interface": "lo",
+        "initialization": "sequence",
+        "standing_entry_verified": true,
+        "entry": {
+          "attempted": true,
+          "completed": true
+        },
+        "tracking": {
+          "expected_steps": 1798,
+          "steps": 1798,
+          "completed": true,
+          "failure": null
+        },
+        "exit": {
+          "attempted": true,
+          "completed": true
+        },
+        "initial_velocity_norm": 0.0,
+        "dds": {
+          "received_states": 7195,
+          "sent_commands": 1798
+        },
+        "simulator": {
+          "identity": "project headless HG adapter; official SDK2 serialization",
+          "model": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+          "entry": {
+            "attempted": true,
+            "completed": false
+          },
+          "watchdog_triggered": false,
+          "physics_hz": 200,
+          "state_hz": 200,
+          "command_watchdog_ms": 100,
+          "failure": null,
+          "failure_tick": null,
+          "damping_latched": false,
+          "received_commands": 1798,
+          "max_scheduler_lag_ms": 0.0,
+          "initial_velocity_norm": 0.0,
+          "sequence_mode": true,
+          "effort_saturation_fraction": 0.0,
+          "max_torque_limit_ratio": 0.9618742198766813
+        },
+        "clipped_target_values": 1200,
+        "watchdog_probe": false,
+        "inference_ms": {
+          "p50": 1.4457169999104735,
+          "p99": 2.7437450200068265,
+          "maximum": 4.467818999955853
+        },
+        "terminal_sample_recorded": true,
+        "sequence": {
+          "phases": {
+            "dance": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 250,
+              "end_frame": 1398,
+              "joint_rmse_rad": 0.10875309147771652
+            },
+            "entry": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 100,
+              "end_frame": 250,
+              "joint_rmse_rad": 0.050091884987188154
+            },
+            "exit": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 1398,
+              "end_frame": 1548,
+              "joint_rmse_rad": 0.08480940744976072
+            },
+            "settle": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 1548,
+              "end_frame": 1798,
+              "joint_rmse_rad": 0.060736296980196454
+            },
+            "standing": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 0,
+              "end_frame": 100,
+              "joint_rmse_rad": 0.02044430550794809
+            }
+          },
+          "final_hold": {
+            "passed": true,
+            "joint_velocity_rms": 0.0015954748959395644,
+            "root_speed_max": 0.0004213197105837427,
+            "tilt_max_rad": 0.020021459416726402,
+            "standing_joint_rmse": 0.060491251891298024
+          },
+          "complete": true
+        },
+        "joint_tracking_rmse_rad": 0.09430450238201843,
+        "joint_velocity_peak_rad_s": 8.910516233885362,
+        "joint_acceleration_rms_rad_s2": 12.142162517713183,
+        "policy_sha256": "110502291161ffad8ba8ea67f6ae7d0da120988f0b7e7dabae403bb9d3b02991",
+        "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+        "hardware_ready": false,
+        "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+        "all_attempted_phases_passed": true
+      },
+      {
+        "transport": "unitree_sdk2_hg_dds_loopback",
+        "domain": 17,
+        "interface": "lo",
+        "initialization": "sequence",
+        "standing_entry_verified": true,
+        "entry": {
+          "attempted": true,
+          "completed": true
+        },
+        "tracking": {
+          "expected_steps": 1798,
+          "steps": 1798,
+          "completed": true,
+          "failure": null
+        },
+        "exit": {
+          "attempted": true,
+          "completed": true
+        },
+        "initial_velocity_norm": 0.0,
+        "dds": {
+          "received_states": 7195,
+          "sent_commands": 1798
+        },
+        "simulator": {
+          "identity": "project headless HG adapter; official SDK2 serialization",
+          "model": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+          "entry": {
+            "attempted": true,
+            "completed": false
+          },
+          "watchdog_triggered": false,
+          "physics_hz": 200,
+          "state_hz": 200,
+          "command_watchdog_ms": 100,
+          "failure": null,
+          "failure_tick": null,
+          "damping_latched": false,
+          "received_commands": 1798,
+          "max_scheduler_lag_ms": 0.0,
+          "initial_velocity_norm": 0.0,
+          "sequence_mode": true,
+          "effort_saturation_fraction": 0.0,
+          "max_torque_limit_ratio": 0.9653020068642255
+        },
+        "clipped_target_values": 1178,
+        "watchdog_probe": false,
+        "inference_ms": {
+          "p50": 1.3788805000558568,
+          "p99": 1.9489480499441925,
+          "maximum": 5.027350000091246
+        },
+        "terminal_sample_recorded": true,
+        "sequence": {
+          "phases": {
+            "dance": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 250,
+              "end_frame": 1398,
+              "joint_rmse_rad": 0.10853063244886377
+            },
+            "entry": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 100,
+              "end_frame": 250,
+              "joint_rmse_rad": 0.050091884987188154
+            },
+            "exit": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 1398,
+              "end_frame": 1548,
+              "joint_rmse_rad": 0.08039648982688707
+            },
+            "settle": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 1548,
+              "end_frame": 1798,
+              "joint_rmse_rad": 0.0510527872883963
+            },
+            "standing": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 0,
+              "end_frame": 100,
+              "joint_rmse_rad": 0.02044430550794809
+            }
+          },
+          "final_hold": {
+            "passed": true,
+            "joint_velocity_rms": 0.0014707112070866555,
+            "root_speed_max": 0.0003728869190081917,
+            "tilt_max_rad": 0.018354907470883162,
+            "standing_joint_rmse": 0.05140142289007034
+          },
+          "complete": true
+        },
+        "joint_tracking_rmse_rad": 0.09301516153605376,
+        "joint_velocity_peak_rad_s": 9.902235731134933,
+        "joint_acceleration_rms_rad_s2": 11.913257292743353,
+        "policy_sha256": "110502291161ffad8ba8ea67f6ae7d0da120988f0b7e7dabae403bb9d3b02991",
+        "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+        "hardware_ready": false,
+        "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+        "all_attempted_phases_passed": true
+      },
+      {
+        "transport": "unitree_sdk2_hg_dds_loopback",
+        "domain": 17,
+        "interface": "lo",
+        "initialization": "sequence",
+        "standing_entry_verified": true,
+        "entry": {
+          "attempted": true,
+          "completed": true
+        },
+        "tracking": {
+          "expected_steps": 1798,
+          "steps": 1798,
+          "completed": true,
+          "failure": null
+        },
+        "exit": {
+          "attempted": true,
+          "completed": true
+        },
+        "initial_velocity_norm": 0.0,
+        "dds": {
+          "received_states": 7195,
+          "sent_commands": 1798
+        },
+        "simulator": {
+          "identity": "project headless HG adapter; official SDK2 serialization",
+          "model": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+          "entry": {
+            "attempted": true,
+            "completed": false
+          },
+          "watchdog_triggered": false,
+          "physics_hz": 200,
+          "state_hz": 200,
+          "command_watchdog_ms": 100,
+          "failure": null,
+          "failure_tick": null,
+          "damping_latched": false,
+          "received_commands": 1798,
+          "max_scheduler_lag_ms": 0.0,
+          "initial_velocity_norm": 0.0,
+          "sequence_mode": true,
+          "effort_saturation_fraction": 0.0,
+          "max_torque_limit_ratio": 0.9618742198766813
+        },
+        "clipped_target_values": 1195,
+        "watchdog_probe": false,
+        "inference_ms": {
+          "p50": 1.401970499955496,
+          "p99": 1.948682069867118,
+          "maximum": 4.09044899993205
+        },
+        "terminal_sample_recorded": true,
+        "sequence": {
+          "phases": {
+            "dance": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 250,
+              "end_frame": 1398,
+              "joint_rmse_rad": 0.10847518358728002
+            },
+            "entry": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 100,
+              "end_frame": 250,
+              "joint_rmse_rad": 0.050091884987188154
+            },
+            "exit": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 1398,
+              "end_frame": 1548,
+              "joint_rmse_rad": 0.08218941221563529
+            },
+            "settle": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 1548,
+              "end_frame": 1798,
+              "joint_rmse_rad": 0.04523571085993888
+            },
+            "standing": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 0,
+              "end_frame": 100,
+              "joint_rmse_rad": 0.02044430550794809
+            }
+          },
+          "final_hold": {
+            "passed": true,
+            "joint_velocity_rms": 0.0013906553882626134,
+            "root_speed_max": 0.0002997651246085558,
+            "tilt_max_rad": 0.01711960800366293,
+            "standing_joint_rmse": 0.04550109421631616
+          },
+          "complete": true
+        },
+        "joint_tracking_rmse_rad": 0.09268566064386467,
+        "joint_velocity_peak_rad_s": 9.920947616879328,
+        "joint_acceleration_rms_rad_s2": 12.191687148396296,
+        "policy_sha256": "110502291161ffad8ba8ea67f6ae7d0da120988f0b7e7dabae403bb9d3b02991",
+        "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+        "hardware_ready": false,
+        "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+        "all_attempted_phases_passed": true
+      },
+      {
+        "transport": "unitree_sdk2_hg_dds_loopback",
+        "domain": 17,
+        "interface": "lo",
+        "initialization": "sequence",
+        "standing_entry_verified": true,
+        "entry": {
+          "attempted": true,
+          "completed": true
+        },
+        "tracking": {
+          "expected_steps": 1798,
+          "steps": 1798,
+          "completed": true,
+          "failure": null
+        },
+        "exit": {
+          "attempted": true,
+          "completed": true
+        },
+        "initial_velocity_norm": 0.0,
+        "dds": {
+          "received_states": 7195,
+          "sent_commands": 1798
+        },
+        "simulator": {
+          "identity": "project headless HG adapter; official SDK2 serialization",
+          "model": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+          "entry": {
+            "attempted": true,
+            "completed": false
+          },
+          "watchdog_triggered": false,
+          "physics_hz": 200,
+          "state_hz": 200,
+          "command_watchdog_ms": 100,
+          "failure": null,
+          "failure_tick": null,
+          "damping_latched": false,
+          "received_commands": 1798,
+          "max_scheduler_lag_ms": 0.0,
+          "initial_velocity_norm": 0.0,
+          "sequence_mode": true,
+          "effort_saturation_fraction": 0.0,
+          "max_torque_limit_ratio": 0.9629722207600356
+        },
+        "clipped_target_values": 1247,
+        "watchdog_probe": false,
+        "inference_ms": {
+          "p50": 1.4604420000523533,
+          "p99": 2.0374579899066703,
+          "maximum": 4.553133999934289
+        },
+        "terminal_sample_recorded": true,
+        "sequence": {
+          "phases": {
+            "dance": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 250,
+              "end_frame": 1398,
+              "joint_rmse_rad": 0.1088434209852762
+            },
+            "entry": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 100,
+              "end_frame": 250,
+              "joint_rmse_rad": 0.050091884987188154
+            },
+            "exit": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 1398,
+              "end_frame": 1548,
+              "joint_rmse_rad": 0.082564299031801
+            },
+            "settle": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 1548,
+              "end_frame": 1798,
+              "joint_rmse_rad": 0.0553066377937047
+            },
+            "standing": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 0,
+              "end_frame": 100,
+              "joint_rmse_rad": 0.02044430550794809
+            }
+          },
+          "final_hold": {
+            "passed": true,
+            "joint_velocity_rms": 0.0014989563003082115,
+            "root_speed_max": 0.00034519314719794257,
+            "tilt_max_rad": 0.019087474841890464,
+            "standing_joint_rmse": 0.05546417976957479
+          },
+          "complete": true
+        },
+        "joint_tracking_rmse_rad": 0.09374224776781306,
+        "joint_velocity_peak_rad_s": 9.563824310946007,
+        "joint_acceleration_rms_rad_s2": 12.314949072252482,
+        "policy_sha256": "110502291161ffad8ba8ea67f6ae7d0da120988f0b7e7dabae403bb9d3b02991",
+        "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+        "hardware_ready": false,
+        "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+        "all_attempted_phases_passed": true
+      }
+    ],
+    "smooth": [
+      {
+        "transport": "unitree_sdk2_hg_dds_loopback",
+        "domain": 17,
+        "interface": "lo",
+        "initialization": "sequence",
+        "standing_entry_verified": true,
+        "entry": {
+          "attempted": true,
+          "completed": true
+        },
+        "tracking": {
+          "expected_steps": 1798,
+          "steps": 1798,
+          "completed": true,
+          "failure": null
+        },
+        "exit": {
+          "attempted": true,
+          "completed": true
+        },
+        "initial_velocity_norm": 0.0,
+        "dds": {
+          "received_states": 7195,
+          "sent_commands": 1798
+        },
+        "simulator": {
+          "identity": "project headless HG adapter; official SDK2 serialization",
+          "model": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+          "entry": {
+            "attempted": true,
+            "completed": false
+          },
+          "watchdog_triggered": false,
+          "physics_hz": 200,
+          "state_hz": 200,
+          "command_watchdog_ms": 100,
+          "failure": null,
+          "failure_tick": null,
+          "damping_latched": false,
+          "received_commands": 1798,
+          "max_scheduler_lag_ms": 1.6183189995899738,
+          "initial_velocity_norm": 0.0,
+          "sequence_mode": true,
+          "effort_saturation_fraction": 0.0,
+          "max_torque_limit_ratio": 0.9112970954282574
+        },
+        "clipped_target_values": 1074,
+        "watchdog_probe": false,
+        "inference_ms": {
+          "p50": 1.4642059998095647,
+          "p99": 2.1104681196993624,
+          "maximum": 6.171453000206384
+        },
+        "terminal_sample_recorded": true,
+        "sequence": {
+          "phases": {
+            "dance": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 250,
+              "end_frame": 1398,
+              "joint_rmse_rad": 0.10923429435670773
+            },
+            "entry": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 100,
+              "end_frame": 250,
+              "joint_rmse_rad": 0.05469363181213719
+            },
+            "exit": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 1398,
+              "end_frame": 1548,
+              "joint_rmse_rad": 0.10154029431672701
+            },
+            "settle": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 1548,
+              "end_frame": 1798,
+              "joint_rmse_rad": 0.045457029685955434
+            },
+            "standing": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 0,
+              "end_frame": 100,
+              "joint_rmse_rad": 0.03185958554809549
+            }
+          },
+          "final_hold": {
+            "passed": true,
+            "joint_velocity_rms": 0.002108764604172735,
+            "root_speed_max": 0.0013649283584730497,
+            "tilt_max_rad": 0.012190993653357931,
+            "standing_joint_rmse": 0.0453108371639713
+          },
+          "complete": true
+        },
+        "joint_tracking_rmse_rad": 0.09521934918355829,
+        "joint_velocity_peak_rad_s": 9.513886904120833,
+        "joint_acceleration_rms_rad_s2": 12.813669220247487,
+        "policy_sha256": "43346edbc5caf56ce6d10ca13b0e10ab3f9ef6b35e5702e866a3ce47e08bb5d5",
+        "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+        "hardware_ready": false,
+        "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+        "all_attempted_phases_passed": true
+      },
+      {
+        "transport": "unitree_sdk2_hg_dds_loopback",
+        "domain": 17,
+        "interface": "lo",
+        "initialization": "sequence",
+        "standing_entry_verified": true,
+        "entry": {
+          "attempted": true,
+          "completed": true
+        },
+        "tracking": {
+          "expected_steps": 1798,
+          "steps": 1798,
+          "completed": true,
+          "failure": null
+        },
+        "exit": {
+          "attempted": true,
+          "completed": true
+        },
+        "initial_velocity_norm": 0.0,
+        "dds": {
+          "received_states": 7195,
+          "sent_commands": 1798
+        },
+        "simulator": {
+          "identity": "project headless HG adapter; official SDK2 serialization",
+          "model": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+          "entry": {
+            "attempted": true,
+            "completed": false
+          },
+          "watchdog_triggered": false,
+          "physics_hz": 200,
+          "state_hz": 200,
+          "command_watchdog_ms": 100,
+          "failure": null,
+          "failure_tick": null,
+          "damping_latched": false,
+          "received_commands": 1798,
+          "max_scheduler_lag_ms": 0.08614799935457995,
+          "initial_velocity_norm": 0.0,
+          "sequence_mode": true,
+          "effort_saturation_fraction": 0.0,
+          "max_torque_limit_ratio": 0.9524677173817504
+        },
+        "clipped_target_values": 1043,
+        "watchdog_probe": false,
+        "inference_ms": {
+          "p50": 1.4923445000931679,
+          "p99": 2.6829168696849583,
+          "maximum": 4.184629000064888
+        },
+        "terminal_sample_recorded": true,
+        "sequence": {
+          "phases": {
+            "dance": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 250,
+              "end_frame": 1398,
+              "joint_rmse_rad": 0.1094557505187515
+            },
+            "entry": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 100,
+              "end_frame": 250,
+              "joint_rmse_rad": 0.05448016255071609
+            },
+            "exit": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 1398,
+              "end_frame": 1548,
+              "joint_rmse_rad": 0.10555552903848459
+            },
+            "settle": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 1548,
+              "end_frame": 1798,
+              "joint_rmse_rad": 0.046059575538433074
+            },
+            "standing": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 0,
+              "end_frame": 100,
+              "joint_rmse_rad": 0.031859856319946395
+            }
+          },
+          "final_hold": {
+            "passed": true,
+            "joint_velocity_rms": 0.0020725883326193537,
+            "root_speed_max": 0.0013099145388852345,
+            "tilt_max_rad": 0.012083349487825768,
+            "standing_joint_rmse": 0.04574439110264825
+          },
+          "complete": true
+        },
+        "joint_tracking_rmse_rad": 0.09577827733526868,
+        "joint_velocity_peak_rad_s": 9.103195737857872,
+        "joint_acceleration_rms_rad_s2": 12.010685484378628,
+        "policy_sha256": "43346edbc5caf56ce6d10ca13b0e10ab3f9ef6b35e5702e866a3ce47e08bb5d5",
+        "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+        "hardware_ready": false,
+        "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+        "all_attempted_phases_passed": true
+      },
+      {
+        "transport": "unitree_sdk2_hg_dds_loopback",
+        "domain": 17,
+        "interface": "lo",
+        "initialization": "sequence",
+        "standing_entry_verified": true,
+        "entry": {
+          "attempted": true,
+          "completed": true
+        },
+        "tracking": {
+          "expected_steps": 1798,
+          "steps": 1798,
+          "completed": true,
+          "failure": null
+        },
+        "exit": {
+          "attempted": true,
+          "completed": true
+        },
+        "initial_velocity_norm": 0.0,
+        "dds": {
+          "received_states": 7195,
+          "sent_commands": 1798
+        },
+        "simulator": {
+          "identity": "project headless HG adapter; official SDK2 serialization",
+          "model": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+          "entry": {
+            "attempted": true,
+            "completed": false
+          },
+          "watchdog_triggered": false,
+          "physics_hz": 200,
+          "state_hz": 200,
+          "command_watchdog_ms": 100,
+          "failure": null,
+          "failure_tick": null,
+          "damping_latched": false,
+          "received_commands": 1798,
+          "max_scheduler_lag_ms": 1.9596140004978224,
+          "initial_velocity_norm": 0.0,
+          "sequence_mode": true,
+          "effort_saturation_fraction": 0.0,
+          "max_torque_limit_ratio": 0.9524677173817504
+        },
+        "clipped_target_values": 1081,
+        "watchdog_probe": false,
+        "inference_ms": {
+          "p50": 1.434962500070469,
+          "p99": 2.0526795800515174,
+          "maximum": 4.804252999747405
+        },
+        "terminal_sample_recorded": true,
+        "sequence": {
+          "phases": {
+            "dance": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 250,
+              "end_frame": 1398,
+              "joint_rmse_rad": 0.10992548091444942
+            },
+            "entry": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 100,
+              "end_frame": 250,
+              "joint_rmse_rad": 0.05448016255071609
+            },
+            "exit": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 1398,
+              "end_frame": 1548,
+              "joint_rmse_rad": 0.09858771582154992
+            },
+            "settle": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 1548,
+              "end_frame": 1798,
+              "joint_rmse_rad": 0.04442565442751338
+            },
+            "standing": {
+              "completed": true,
+              "passed": true,
+              "start_frame": 0,
+              "end_frame": 100,
+              "joint_rmse_rad": 0.031859856319946395
+            }
+          },
+          "final_hold": {
+            "passed": true,
+            "joint_velocity_rms": 0.0020433420822817995,
+            "root_speed_max": 0.001436966969785827,
+            "tilt_max_rad": 0.011912185335577327,
+            "standing_joint_rmse": 0.04450862931412685
+          },
+          "complete": true
+        },
+        "joint_tracking_rmse_rad": 0.09539014444656654,
+        "joint_velocity_peak_rad_s": 10.091220913552817,
+        "joint_acceleration_rms_rad_s2": 12.659263658641828,
+        "policy_sha256": "43346edbc5caf56ce6d10ca13b0e10ab3f9ef6b35e5702e866a3ce47e08bb5d5",
+        "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+        "hardware_ready": false,
+        "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+        "all_attempted_phases_passed": true
+      }
+    ]
+  },
+  "native_delay": {
+    "transport": "native_sequence",
+    "initialization": "stationary_sequence_zero_velocity",
+    "initial_velocity_norm": 0.0,
+    "standing_entry_verified": true,
+    "entry": {
+      "attempted": true,
+      "completed": true
+    },
+    "exit": {
+      "attempted": true,
+      "completed": true
+    },
+    "tracking": {
+      "expected_steps": 1798,
+      "steps": 1798,
+      "completed": true,
+      "failure": null
+    },
+    "delay_ms": 5,
+    "perturbation": {
+      "friction": 1.0,
+      "mass_scale": 1.0,
+      "noise": 0.0,
+      "seed": 0
+    },
+    "terminal_sample_recorded": true,
+    "sequence": {
+      "phases": {
+        "dance": {
+          "completed": true,
+          "passed": true,
+          "start_frame": 250,
+          "end_frame": 1398,
+          "joint_rmse_rad": 0.10992547958807408
+        },
+        "entry": {
+          "completed": true,
+          "passed": true,
+          "start_frame": 100,
+          "end_frame": 250,
+          "joint_rmse_rad": 0.05448015899216332
+        },
+        "exit": {
+          "completed": true,
+          "passed": true,
+          "start_frame": 1398,
+          "end_frame": 1548,
+          "joint_rmse_rad": 0.09858779547704456
+        },
+        "settle": {
+          "completed": true,
+          "passed": true,
+          "start_frame": 1548,
+          "end_frame": 1798,
+          "joint_rmse_rad": 0.04442594268196769
+        },
+        "standing": {
+          "completed": true,
+          "passed": true,
+          "start_frame": 0,
+          "end_frame": 100,
+          "joint_rmse_rad": 0.03185985588562467
+        }
+      },
+      "final_hold": {
+        "passed": true,
+        "joint_velocity_rms": 0.002043357354517334,
+        "root_speed_max": 0.001436991061054208,
+        "tilt_max_rad": 0.011912237601526468,
+        "standing_joint_rmse": 0.044508787697321396
+      },
+      "complete": true
+    },
+    "clipped_target_values": 1081,
+    "joint_tracking_rmse_rad": 0.09539016877044768,
+    "joint_velocity_peak_rad_s": 10.09122232591499,
+    "joint_acceleration_rms_rad_s2": 12.65926076336888,
+    "policy_sha256": "43346edbc5caf56ce6d10ca13b0e10ab3f9ef6b35e5702e866a3ce47e08bb5d5",
+    "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+    "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+    "hardware_ready": false,
+    "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+    "all_attempted_phases_passed": true
+  },
+  "native_perturbation": {
+    "transport": "native_sequence",
+    "initialization": "stationary_sequence_zero_velocity",
+    "initial_velocity_norm": 0.0,
+    "standing_entry_verified": true,
+    "entry": {
+      "attempted": true,
+      "completed": true
+    },
+    "exit": {
+      "attempted": true,
+      "completed": true
+    },
+    "tracking": {
+      "expected_steps": 1798,
+      "steps": 1798,
+      "completed": true,
+      "failure": null
+    },
+    "delay_ms": 0,
+    "perturbation": {
+      "friction": 0.7,
+      "mass_scale": 1.05,
+      "noise": 0.003,
+      "seed": 0
+    },
+    "terminal_sample_recorded": true,
+    "sequence": {
+      "phases": {
+        "dance": {
+          "completed": true,
+          "passed": true,
+          "start_frame": 250,
+          "end_frame": 1398,
+          "joint_rmse_rad": 0.11079311425776331
+        },
+        "entry": {
+          "completed": true,
+          "passed": true,
+          "start_frame": 100,
+          "end_frame": 250,
+          "joint_rmse_rad": 0.055712619454686765
+        },
+        "exit": {
+          "completed": true,
+          "passed": true,
+          "start_frame": 1398,
+          "end_frame": 1548,
+          "joint_rmse_rad": 0.10862097970375605
+        },
+        "settle": {
+          "completed": true,
+          "passed": true,
+          "start_frame": 1548,
+          "end_frame": 1798,
+          "joint_rmse_rad": 0.05171926809410525
+        },
+        "standing": {
+          "completed": true,
+          "passed": true,
+          "start_frame": 0,
+          "end_frame": 100,
+          "joint_rmse_rad": 0.03292845319446889
+        }
+      },
+      "final_hold": {
+        "passed": true,
+        "joint_velocity_rms": 0.00242772781195888,
+        "root_speed_max": 0.002774039800813782,
+        "tilt_max_rad": 0.01220379876385512,
+        "standing_joint_rmse": 0.050431384310614
+      },
+      "complete": true
+    },
+    "clipped_target_values": 1207,
+    "joint_tracking_rmse_rad": 0.09750806883672765,
+    "joint_velocity_peak_rad_s": 8.902444086700505,
+    "joint_acceleration_rms_rad_s2": 13.802728935301822,
+    "policy_sha256": "43346edbc5caf56ce6d10ca13b0e10ab3f9ef6b35e5702e866a3ce47e08bb5d5",
+    "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+    "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+    "hardware_ready": false,
+    "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+    "all_attempted_phases_passed": true
+  },
+  "baseline": {
+    "transport": "native_sequence",
+    "initialization": "stationary_sequence_zero_velocity",
+    "initial_velocity_norm": 0.0,
+    "standing_entry_verified": false,
+    "entry": {
+      "attempted": true,
+      "completed": false
+    },
+    "exit": {
+      "attempted": true,
+      "completed": false
+    },
+    "tracking": {
+      "expected_steps": 1798,
+      "steps": 1452,
+      "completed": false,
+      "failure": "reference height deviation exceeds 0.25m"
+    },
+    "delay_ms": 0,
+    "perturbation": {
+      "friction": 1.0,
+      "mass_scale": 1.0,
+      "noise": 0.0,
+      "seed": 0
+    },
+    "terminal_sample_recorded": true,
+    "sequence": {
+      "phases": {
+        "standing": {
+          "completed": true,
+          "passed": false,
+          "start_frame": 0,
+          "end_frame": 100,
+          "joint_rmse_rad": 0.325982163757241
+        },
+        "entry": {
+          "completed": true,
+          "passed": false,
+          "start_frame": 100,
+          "end_frame": 250,
+          "joint_rmse_rad": 0.2984814843237316
+        },
+        "dance": {
+          "completed": true,
+          "passed": true,
+          "start_frame": 250,
+          "end_frame": 1398,
+          "joint_rmse_rad": 0.18120578436623128
+        },
+        "exit": {
+          "completed": false,
+          "passed": false,
+          "start_frame": 1398,
+          "end_frame": 1548,
+          "joint_rmse_rad": 0.5992785609338775
+        },
+        "settle": {
+          "completed": false,
+          "passed": false,
+          "start_frame": 1548,
+          "end_frame": 1798,
+          "joint_rmse_rad": null
+        }
+      },
+      "final_hold": {
+        "passed": false
+      },
+      "complete": false
+    },
+    "clipped_target_values": 1302,
+    "joint_tracking_rmse_rad": 0.23670466589406905,
+    "joint_velocity_peak_rad_s": 19.457612237864605,
+    "joint_acceleration_rms_rad_s2": 26.028435042996286,
+    "policy_sha256": "6ab2018d34a17c7822f4633f8876ada73707506528d7e6bd75212d0f94dd0f06",
+    "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+    "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+    "hardware_ready": false,
+    "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+    "all_attempted_phases_passed": false
+  },
+  "round1_training": {
+    "completed": true,
+    "iteration": 1500,
+    "sim_steps": 244096,
+    "wall_time": 459.59984827041626,
+    "wall_h": 0.12762816230456034,
+    "wm_loss": 0.009861326720565557,
+    "wm_err8": 0.01330457415431738,
+    "pi_loss": -9.481682586669923,
+    "v_loss": 0.0006090702128130943,
+    "imag_rew": 0.9489601516723633,
+    "pi_gradnorm": 0.6512914997339249,
+    "imag_survival": 0.9997815382480622,
+    "sim_rew": 0.9422622909545898,
+    "ep_len": 438.75,
+    "ep_ret_norm": 0.9479616284370422,
+    "term_frac": 0.0,
+    "it_per_s": 4.0368541730048735,
+    "lr": 4.9995697787089874e-05,
+    "total_wall_seconds": 463.590179046,
+    "source_checkpoint_unchanged": true,
+    "hardware_ready": false,
+    "peak_cuda_allocated_bytes": 2418348032
+  },
+  "round2_training": {
+    "completed": true,
+    "iteration": 600,
+    "sim_steps": 100096,
+    "wall_time": 166.38351011276245,
+    "wall_h": 0.04617679152223799,
+    "wm_loss": 0.00998962776735425,
+    "wm_err8": 0.013185771070420743,
+    "pi_loss": -9.371545238494873,
+    "v_loss": 0.0006035166897345334,
+    "imag_rew": 0.9351982593536377,
+    "pi_gradnorm": 0.41900028228759767,
+    "imag_survival": 0.9997684431076049,
+    "sim_rew": 0.919163191318512,
+    "ep_len": 482.625,
+    "ep_ret_norm": 0.9345566257834435,
+    "term_frac": 0.0,
+    "it_per_s": 3.880454687493755,
+    "lr": 2.4999656502900788e-05,
+    "total_wall_seconds": 169.83245309900008,
+    "source_checkpoint_unchanged": true,
+    "hardware_ready": false,
+    "peak_cuda_allocated_bytes": 2421661184
+  },
+  "matched_core": {
+    "source_frames": [
+      50,
+      998
+    ],
+    "sequence_frames": [
+      350,
+      1298
+    ],
+    "frames": 949,
+    "previous": {
+      "acceleration_rms": 15.415152973580764,
+      "jerk_rms": 898.0224961457675
+    },
+    "final_trials": [
+      {
+        "velocity_peak": 9.513886904120833,
+        "acceleration_rms": 14.308766115253942,
+        "jerk_rms": 845.3992687637016
+      },
+      {
+        "velocity_peak": 9.103195737857872,
+        "acceleration_rms": 14.07769658752317,
+        "jerk_rms": 814.4370124607362
+      },
+      {
+        "velocity_peak": 10.091220913552817,
+        "acceleration_rms": 14.030395639957261,
+        "jerk_rms": 809.4713461308957
+      }
+    ],
+    "final_means": {
+      "velocity_peak": 9.569434518510507,
+      "acceleration_rms": 14.138952780911458,
+      "jerk_rms": 823.1025424517778
+    }
+  },
+  "verification": {
+    "normal_passed": 243,
+    "skipped": 2,
+    "slow_deselected": 9,
+    "actual_dds_slow_passed": 3,
+    "independent_review": "Important terminal endpoint omission reproduced and repaired; no unresolved Important",
+    "media": {
+      "frames": 1799,
+      "fps": 50,
+      "seconds": 35.98,
+      "resolution": [
+        960,
+        540
+      ],
+      "decoded_to_end": true,
+      "visually_inspected": true
+    },
+    "actual_sample_jitter": {
+      "dds_sequence_0": {
+        "max_interval_error_ms": 1.0231399061311208e-11,
+        "affected_intervals": 0
+      },
+      "dds_sequence_1": {
+        "max_interval_error_ms": 1.0231399061311208e-11,
+        "affected_intervals": 0
+      },
+      "dds_sequence_2": {
+        "max_interval_error_ms": 1.0231399061311208e-11,
+        "affected_intervals": 0
+      },
+      "dds_sequence_3": {
+        "max_interval_error_ms": 1.0231399061311208e-11,
+        "affected_intervals": 0
+      },
+      "dds_sequence_4": {
+        "max_interval_error_ms": 1.0231399061311208e-11,
+        "affected_intervals": 0
+      },
+      "dds_smooth_0": {
+        "max_interval_error_ms": 5.00000000000032,
+        "affected_intervals": 2
+      },
+      "dds_smooth_1": {
+        "max_interval_error_ms": 1.0231399061311208e-11,
+        "affected_intervals": 0
+      },
+      "dds_smooth_2": {
+        "max_interval_error_ms": 5.00000000001279,
+        "affected_intervals": 2
+      }
+    },
+    "no_training_or_dds_process_remaining": true
+  },
+  "scope": "official G1 model and stated local simulation scenarios; no physical robot connected",
+  "policy_sha256": "43346edbc5caf56ce6d10ca13b0e10ab3f9ef6b35e5702e866a3ce47e08bb5d5",
+  "reference_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa",
+  "checkpoint_sha256": "8f474fe501a9237fef9bb6be27a48fd5c3f726be836362be5ef4709bd3835d51",
+  "generator": {
+    "core_numeric_tolerance_rad": 2e-05,
+    "core_output": [
+      350,
+      1298
+    ],
+    "core_source": [
+      50,
+      998
+    ],
+    "edge_source_frames": 50,
+    "edge_timewarp": "C2 rate0->1->0;core copied exactly",
+    "generation_robot_xml_sha256": "423e28bd718b19f7a65cda539b6f794ddbb268b4b9bdbd85f4bd982b30729617",
+    "generation_scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+    "generation_scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+    "initial_velocity": "zero",
+    "segments": {
+      "dance": [
+        250,
+        1398
+      ],
+      "entry": [
+        100,
+        250
+      ],
+      "exit": [
+        1398,
+        1548
+      ],
+      "settle": [
+        1548,
+        1798
+      ],
+      "standing": [
+        0,
+        100
+      ]
+    },
+    "source_frames": 1049,
+    "source_reference_sha256": "e2e9a316e8a9ffe54a93cfd6e8d03310c3459cb152369dc50f44d7d402a13867"
+  },
+  "root_orientation_rms_degrees": 2.9539308598816345
+}

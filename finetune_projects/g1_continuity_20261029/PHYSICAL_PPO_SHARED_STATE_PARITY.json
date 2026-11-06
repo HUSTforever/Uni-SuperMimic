@@ -1,0 +1,12 @@
+{
+  "frames": 1798,
+  "shared_actual_states": true,
+  "previous_action": "actual projected action supplied identically",
+  "maximum_errors": {
+    "raw_action": 9.5367431640625e-07,
+    "target": 2.0912996046007493e-07,
+    "observation": 4.76837158203125e-07,
+    "goal": 0.0
+  },
+  "hardware_ready": false
+}

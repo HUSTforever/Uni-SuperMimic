@@ -56,6 +56,7 @@ def load_policy(
         z_dim=int(args["z_dim"]),
         num_joints=mdp.num_joints,
         hidden=tuple(hidden),
+        action_smoothing=float(args.get("action_smoothing", 1.0)),
     ).to(device)
     policy.load_state_dict(checkpoint["pi"])
     policy.eval()
@@ -254,29 +255,61 @@ def watch(
         time.sleep(poll_seconds)
 
 
-def make_eval_env(run_dir: Path, backend: str = "mjwarp") -> SuperMimicManagerBasedRlEnv:
+def evaluation_config(run_dir: Path, backend: str = "mjwarp", *, motion_files=None):
     from hydra import compose, initialize_config_dir
-    from unilab.base.config_adapter import create_env
-    from unilab.base.process_device import configure_backend_process_device
-    from unilab.training import ensure_registries
-    from unilab.utils.device import get_default_device
+    from omegaconf import OmegaConf
 
     import unisupermimic
-    from unisupermimic.scripts.train_supermimic import build_env_override
-    from unisupermimic.sim2sim import resolve_sim2sim_config
 
     config_dir = Path(unisupermimic.__file__).resolve().parent / "conf" / "supermimic"
     overrides = ["training.play_only=true", f"task=g1_super_mimic/{backend}"]
     with initialize_config_dir(version_base="1.3", config_dir=str(config_dir)):
         cfg = compose(config_name="config", overrides=overrides)
+    path = Path(run_dir) / "run_config.json"
+    if path.is_file():
+        recorded = json.loads(path.read_text()).get("config", {})
+        # Keep backend-specific capacity/device settings from the target owner.
+        saved_env = dict(recorded.get("env", {}))
+        for key in list(saved_env):
+            if key.startswith(("mjwarp_", "motrix_")):
+                saved_env.pop(key)
+        cfg = OmegaConf.merge(cfg, {"algo": recorded.get("algo", {}), "env": saved_env})
+    if motion_files is not None:
+        if not motion_files:
+            raise ValueError("motion_files must not be empty")
+        OmegaConf.update(cfg, "env.commands.motion.motion_files", list(motion_files))
+    return cfg
+
+
+def make_eval_env(
+    run_dir: Path,
+    backend: str = "mjwarp",
+    *,
+    motion_files=None,
+    device=None,
+) -> SuperMimicManagerBasedRlEnv:
+    from unilab.base.config_adapter import create_env
+    from unilab.base.process_device import configure_backend_process_device
+    from unilab.training import ensure_registries
+    from unilab.utils.device import get_default_device
+
+    from unisupermimic.scripts.train_supermimic import build_env_override
+    from unisupermimic.sim2sim import resolve_sim2sim_config
+
+    cfg = evaluation_config(run_dir, backend, motion_files=motion_files)
     ensure_registries()
+    contract_cfg = cfg
+    if motion_files is not None:
+        # Explicit evaluation of a new reference is allowed; retain every other
+        # structural contract check, and never rewrite the source run snapshot.
+        contract_cfg = evaluation_config(run_dir, backend)
     resolve_sim2sim_config(
         run_dir,
-        cfg,
+        contract_cfg,
         algo_name="supermimic",
         strict=bool(cfg.training.sim2sim_strict),
     )
-    device = get_default_device()
+    device = get_default_device() if device is None else device
     bound_device = configure_backend_process_device(str(cfg.training.sim_backend), device)
     if bound_device is not None:
         device = bound_device

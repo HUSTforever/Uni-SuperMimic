@@ -151,3 +151,15 @@ def test_run_mlp_autocasts_on_mps() -> None:
         torch.testing.assert_close(out.cpu(), net.cpu()(x.cpu()), rtol=2e-2, atol=2e-3)
     finally:
         networks.AMP_DTYPE = previous
+
+
+def test_policy_smooths_against_previous_applied_action_in_observation():
+    policy = Policy(obs_dim=99, goal_dim=73, hist=2, hidden=(8,), action_smoothing=0.25)
+    for parameter in policy.parameters():
+        parameter.data.zero_()
+    history = torch.zeros(1, 2, 99)
+    history[:, -1, 64:93] = 0.4
+    output = policy(history, torch.zeros(1, 73))
+    torch.testing.assert_close(output, torch.full((1, 29), 0.3))
+    output.sum().backward()
+    assert policy.dec[-1].bias.grad.abs().sum() > 0

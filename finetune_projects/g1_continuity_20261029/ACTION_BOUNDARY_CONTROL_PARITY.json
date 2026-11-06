@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-02",
+  "configuration_differences": {
+    "action_bound_weight": [
+      0.0,
+      1.0
+    ]
+  },
+  "same_source_checkpoint_reference_scene": true,
+  "first50_pre_actor_updates_all_existing_metrics_bit_identical": true,
+  "compared_metrics": [
+    "physical_sim_steps",
+    "policy_loss",
+    "anchor_loss",
+    "approx_kl",
+    "clip_fraction",
+    "value_loss",
+    "actor_updates",
+    "reward_mean",
+    "hf_penalty_mean",
+    "hf_ankle_cost_mean",
+    "hf_root_cost_mean"
+  ],
+  "prior_run": "run_018_clock_full_episode",
+  "new_run": "run_019_bound_mean",
+  "physical_control_transitions_with_matching_warmup_summaries": 51200,
+  "hardware_ready": false
+}

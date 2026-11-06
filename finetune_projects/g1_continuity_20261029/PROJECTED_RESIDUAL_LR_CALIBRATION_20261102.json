@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-02",
+  "scope": "same actual1024-transition rollout one-update optimizer calibration; not candidate acceptance",
+  "source_checkpoint": "finetune_projects/g1_continuity_20261029/run_020_projected_residual/ckpt_000050.pt",
+  "source_sha256": "938ea3da2707c4c8efb45e81090814f2d92bf177bf3c5e3a2cd9a9eba34859b9",
+  "source_critic_is_actual50iteration_warmup": true,
+  "actor_base_and_residual_initialization_same": true,
+  "target_kl": 0.015,
+  "rows": [
+    {
+      "lr": 3e-06,
+      "pre_update_rollout_identical": true,
+      "update_statistics": {
+        "policy_loss": -0.005645508295856416,
+        "anchor_loss": 4.916248024677827e-06,
+        "action_bound_loss": 0.0,
+        "approx_kl": 0.0003480571322143078,
+        "clip_fraction": 0.00146484375,
+        "value_loss": 0.1983045688830316,
+        "actor_updates": 16.0,
+        "reward_mean": 0.03444788232445717,
+        "hf_penalty_mean": 0.03972052037715912,
+        "hf_ankle_cost_mean": 1.659017562866211,
+        "hf_root_cost_mean": 0.32700836658477783
+      },
+      "post_update_full_batch_approx_kl": 0.0003517015720717609,
+      "physical_target_delta_rms": 4.8930501842388115e-05,
+      "physical_target_delta_max": 0.00030025407552536354
+    },
+    {
+      "lr": 1e-05,
+      "pre_update_rollout_identical": true,
+      "update_statistics": {
+        "policy_loss": -0.011874156072735786,
+        "anchor_loss": 3.957713570912347e-05,
+        "action_bound_loss": 0.0,
+        "approx_kl": 0.0020372229628264904,
+        "clip_fraction": 0.0439453125,
+        "value_loss": 0.1983045688830316,
+        "actor_updates": 16.0,
+        "reward_mean": 0.03444788232445717,
+        "hf_penalty_mean": 0.03972052037715912,
+        "hf_ankle_cost_mean": 1.659017562866211,
+        "hf_root_cost_mean": 0.32700836658477783
+      },
+      "post_update_full_batch_approx_kl": 0.0020227159839123487,
+      "physical_target_delta_rms": 0.00012478201073816734,
+      "physical_target_delta_max": 0.0008462595846059351
+    },
+    {
+      "lr": 3e-05,
+      "pre_update_rollout_identical": true,
+      "update_statistics": {
+        "policy_loss": -0.01683529873844236,
+        "anchor_loss": 0.00019992047100458876,
+        "action_bound_loss": 0.0,
+        "approx_kl": 0.007622654549777508,
+        "clip_fraction": 0.16796875,
+        "value_loss": 0.1983045688830316,
+        "actor_updates": 16.0,
+        "reward_mean": 0.03444788232445717,
+        "hf_penalty_mean": 0.03972052037715912,
+        "hf_ankle_cost_mean": 1.659017562866211,
+        "hf_root_cost_mean": 0.32700836658477783
+      },
+      "post_update_full_batch_approx_kl": 0.007908545434474945,
+      "physical_target_delta_rms": 0.0002531014133565795,
+      "physical_target_delta_max": 0.001783705026496496
+    }
+  ],
+  "models_saved": false,
+  "hardware_ready": false,
+  "goal_complete_claimed": false
+}

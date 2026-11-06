@@ -1,0 +1,18 @@
+# Rebuildable media, reconstructions and trained weights remain local.
+**/inputs/
+**/clips/
+**/upstream/
+**/run*/
+**/artifacts/
+**/motion/
+**/notes/*.log
+**/notes/*.jpg
+**/notes/*.png
+**/notes/*.npz
+**/reproduction*/
+**/*.mp4
+**/*.m4s
+**/*.npz
+**/policy*.ts
+**/upstream*/
+**/motion*/

@@ -1,0 +1,137 @@
+{
+  "method": "read-only replay of all200Hz physical pose errors through causal fourth-order8Hz filter; no output/state filtering",
+  "diagnostic_only": true,
+  "rows": [
+    {
+      "case": "physical008_000000",
+      "samples": 7193,
+      "physics_sha256": "e1b00457a9645255d5add1a84d2f3c17ca1107e8a92f672ac51a101ff76ffa60",
+      "phase_costs": {
+        "dance": {
+          "mean_cost": [
+            0.35607825580630154,
+            0.07120814837756055
+          ],
+          "mean_penalty_at_weights_02": 0.0017091456167354479
+        },
+        "entry": {
+          "mean_cost": [
+            0.06592716064344138,
+            0.0011576050892612062
+          ],
+          "mean_penalty_at_weights_02": 0.00026833906293081055
+        },
+        "exit": {
+          "mean_cost": [
+            0.0454054426433671,
+            0.0031407254879523535
+          ],
+          "mean_penalty_at_weights_02": 0.00019418467252527754
+        },
+        "settle": {
+          "mean_cost": [
+            5.2570489416799025e-05,
+            2.970227185261763e-06
+          ],
+          "mean_penalty_at_weights_02": 2.22162866408243e-07
+        },
+        "standing": {
+          "mean_cost": [
+            0.016140431417132034,
+            0.008284025983382248
+          ],
+          "mean_penalty_at_weights_02": 9.76978296020571e-05
+        }
+      },
+      "worst_hann_hf": 0.008969712506762484
+    },
+    {
+      "case": "physical008_000025",
+      "samples": 7193,
+      "physics_sha256": "0747c20544337794f4d74be04b7671168dfa8faf0506603912e0575ac7bfe6fe",
+      "phase_costs": {
+        "dance": {
+          "mean_cost": [
+            0.37215156455613674,
+            0.07563691229418287
+          ],
+          "mean_penalty_at_weights_02": 0.0017911539074012813
+        },
+        "entry": {
+          "mean_cost": [
+            0.08115490088880833,
+            0.000984156589958565
+          ],
+          "mean_penalty_at_weights_02": 0.00032855622991506754
+        },
+        "exit": {
+          "mean_cost": [
+            0.10406442311698715,
+            0.014130238413574627
+          ],
+          "mean_penalty_at_weights_02": 0.0004727786461222472
+        },
+        "settle": {
+          "mean_cost": [
+            5.658338614093324e-07,
+            1.2955571561399557e-07
+          ],
+          "mean_penalty_at_weights_02": 2.781558308093321e-09
+        },
+        "standing": {
+          "mean_cost": [
+            0.014827953056772914,
+            0.008454952121805826
+          ],
+          "mean_penalty_at_weights_02": 9.313162071431496e-05
+        }
+      },
+      "worst_hann_hf": 0.008456014762335278
+    },
+    {
+      "case": "physical009_000175",
+      "samples": 7193,
+      "physics_sha256": "375d25b3f9d64d4fb04542c37b003dcb7ebb4f93b4987b0bd25236a5cd4db21e",
+      "phase_costs": {
+        "dance": {
+          "mean_cost": [
+            0.3757420555053661,
+            0.07820815143946742
+          ],
+          "mean_penalty_at_weights_02": 0.0018158008277793319
+        },
+        "entry": {
+          "mean_cost": [
+            0.08511985498883133,
+            0.0014253704396379448
+          ],
+          "mean_penalty_at_weights_02": 0.00034618090171387704
+        },
+        "exit": {
+          "mean_cost": [
+            0.05150657248219328,
+            0.004315753653988938
+          ],
+          "mean_penalty_at_weights_02": 0.0002232893045447289
+        },
+        "settle": {
+          "mean_cost": [
+            3.604756897441281e-05,
+            1.7883820815888196e-06
+          ],
+          "mean_penalty_at_weights_02": 1.5134380422400642e-07
+        },
+        "standing": {
+          "mean_cost": [
+            0.01532363750257504,
+            0.008452190296236346
+          ],
+          "mean_penalty_at_weights_02": 9.510331119524553e-05
+        }
+      },
+      "worst_hann_hf": 0.008126190170383418
+    }
+  ],
+  "hardware_ready": false,
+  "goal_complete_claimed": false
+}

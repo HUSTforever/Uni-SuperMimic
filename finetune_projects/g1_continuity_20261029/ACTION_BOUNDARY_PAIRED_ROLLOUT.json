@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-02",
+  "purpose": "optional boundary loss initial actual CUDA physics rollout audit",
+  "matched": {
+    "actions": true,
+    "mean": true,
+    "history": true,
+    "goal": true,
+    "applied_actions": true,
+    "reward": true,
+    "spectral_cost": true,
+    "critic_input": true,
+    "value": true,
+    "next_value": true,
+    "done": true,
+    "terminal": true
+  },
+  "control_transitions_per_arm": 128,
+  "source_checkpoint_sha256": "260e5e9559455096bc700711a0ec5e1daf9354fc4724a27a5d9597438a39736b",
+  "physical_policy_before_actor_update_unchanged": true,
+  "hardware_ready": false
+}

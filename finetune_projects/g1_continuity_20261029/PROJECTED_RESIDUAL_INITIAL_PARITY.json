@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-02",
+  "source_checkpoint": "finetune_projects/g1_continuity_20261029/run_012_focus_spectral/ckpt_000125.pt",
+  "source_checkpoint_sha256": "260e5e9559455096bc700711a0ec5e1daf9354fc4724a27a5d9597438a39736b",
+  "source_bundle": "finetune_projects/g1_continuity_20261029/data/fast_integrated_base_v1",
+  "projected_initial_bundle": "finetune_projects/g1_continuity_20261029/candidates/projected_initial_000000",
+  "projected_initial_checkpoint": "finetune_projects/g1_continuity_20261029/run_projected_initial/ckpt_000000.pt",
+  "output": "finetune_projects/g1_continuity_20261029/evaluation/projected_initial_000000",
+  "zero_residual_actual_full_native_parity_passed": true,
+  "maximum_absolute_differences": {
+    "trajectory.npz:qpos": 0.0,
+    "trajectory.npz:target": 0.0,
+    "trajectory.npz:reference_frame": 0.0,
+    "trajectory.npz:sample_time": 0.0,
+    "physics_trajectory.npz:qpos": 0.0,
+    "physics_trajectory.npz:joint_velocity": 0.0,
+    "physics_trajectory.npz:root_velocity": 0.0,
+    "physics_trajectory.npz:sample_time": 0.0
+  },
+  "source_base_tensors_exact": true,
+  "trainable_residual_parameters": 134685,
+  "frozen_base_parameters": 9116477,
+  "physical_complete": true,
+  "original_style_passed": true,
+  "global_continuity_passed": false,
+  "goal_complete_claimed": false,
+  "hardware_ready": false
+}

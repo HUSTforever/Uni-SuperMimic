@@ -1,0 +1,10 @@
+{
+  "verified": true,
+  "source": "run_008/ckpt_000200.pt",
+  "full_warm_start": "run_009_reproduce/last.pt",
+  "pi_wm_bit_identical": true,
+  "critic_and_optimizer_states_present": true,
+  "extra_reproduction_iterations": 200,
+  "full_checkpoint_sha256": "fdb79c7a0f4273788f74bf1cd30a220634f51ced81e5e900c258f6121e6850bf",
+  "policy_normalization_unchanged": true
+}

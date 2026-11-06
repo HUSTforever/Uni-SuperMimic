@@ -35,6 +35,7 @@ class SuperMimicConfig:
     utd: float = 0.4
     horizon: int = 32
     goal_frames: int = 10
+    action_smoothing: float = 1.0
     hist: int = 10
     z_dim: int = 32
     wm_hidden: tuple[int, ...] = (2048, 2048, 2048)
@@ -202,6 +203,7 @@ class SuperMimicLearner:
             z_dim=self.cfg.z_dim,
             num_joints=self.mdp.num_joints,
             hidden=self.cfg.policy_hidden,
+            action_smoothing=self.cfg.action_smoothing,
         )
         if self.cfg.test_hidden_dims is not None:
             enc_output = policy.enc[-1]
@@ -576,6 +578,14 @@ class SuperMimicLearner:
         self.iteration = checkpoint["iteration"]
         self.wall_time = checkpoint["wall_time"]
         self.sim_steps = checkpoint["sim_steps"]
+
+    def initialize_weights(self, path: str | Path) -> None:
+        """Warm-start a new task/run, without restoring old optimizer or counters."""
+        checkpoint = torch.load(path, map_location=self.device, weights_only=True)
+        self.wm.load_state_dict(checkpoint["wm"])
+        self.pi.load_state_dict(checkpoint["pi"])
+        if "critic" in checkpoint:
+            self.critic.load_state_dict(checkpoint["critic"])
 
     @staticmethod
     def _mean(values: list[torch.Tensor]) -> float:

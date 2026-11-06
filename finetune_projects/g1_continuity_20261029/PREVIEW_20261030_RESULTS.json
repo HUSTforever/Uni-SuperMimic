@@ -1,0 +1,164 @@
+{
+  "cases": [
+    {
+      "name": "retained",
+      "bundle": "finetune_projects/g1_continuous_20261029/candidates/ground008_000200",
+      "policy_sha256": "69afd3cadd13abf18e24908b54fc63834eafaa36c56b535b720ab8676cf75c86",
+      "frames": 1799,
+      "physics_states": 7193,
+      "physical_complete": true,
+      "failure": null,
+      "watchdog_triggered": false,
+      "effort_saturation_fraction": 0.0,
+      "worst_ankle_hf_rms_rad": 0.0126666505217957,
+      "worst_interval": [
+        25.0,
+        27.0
+      ],
+      "continuity_passed": false,
+      "original_style": {
+        "complete": true,
+        "anchor_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa",
+        "dance_joint_rmse_rad": 0.12086518114863772,
+        "main_joint_indices": [
+          0,
+          3,
+          6,
+          9,
+          15,
+          16,
+          17,
+          18,
+          22,
+          23,
+          24,
+          25
+        ],
+        "amplitude_ratios": {
+          "0": 0.8392953899878318,
+          "3": 0.9576617076892296,
+          "6": 0.9452649048440583,
+          "9": 0.8863847285272453,
+          "15": 0.9416926324577166,
+          "16": 0.9426495836672477,
+          "17": 1.054311993056754,
+          "18": 1.0087699109213575,
+          "22": 1.046650425503672,
+          "23": 0.9149607622926587,
+          "24": 1.0239707240984,
+          "25": 1.1006041250142022
+        },
+        "correlations": {
+          "0": 0.9487801259024656,
+          "3": 0.9400393398730197,
+          "6": 0.9250771296822493,
+          "9": 0.9407805203642887,
+          "15": 0.9784649537136447,
+          "16": 0.9806619696375476,
+          "17": 0.9504488929604441,
+          "18": 0.9539509729185229,
+          "22": 0.9915414635946513,
+          "23": 0.9933064408370805,
+          "24": 0.9926174600074771,
+          "25": 0.9822621244883742
+        },
+        "limits": {
+          "dance_joint_rmse_rad": 0.13,
+          "amplitude_ratio_min": 0.8,
+          "correlation_min": 0.9
+        },
+        "passed": true
+      },
+      "fully_accepted": false,
+      "hardware_ready": false
+    },
+    {
+      "name": "project006_v3_200",
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/project006_v3_000200",
+      "policy_sha256": "d17d3605c3ea62ae4f5468c0de3c5c52882cd851ad54f1f4cb5f83b19d4ff05e",
+      "frames": 1799,
+      "physics_states": 7193,
+      "physical_complete": true,
+      "failure": null,
+      "watchdog_triggered": false,
+      "effort_saturation_fraction": 0.0,
+      "worst_ankle_hf_rms_rad": 0.007731600704035128,
+      "worst_interval": [
+        25.0,
+        27.0
+      ],
+      "continuity_passed": false,
+      "original_style": {
+        "complete": true,
+        "anchor_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa",
+        "dance_joint_rmse_rad": 0.14432705241458418,
+        "main_joint_indices": [
+          0,
+          3,
+          6,
+          9,
+          15,
+          16,
+          17,
+          18,
+          22,
+          23,
+          24,
+          25
+        ],
+        "amplitude_ratios": {
+          "0": 0.7995637551539938,
+          "3": 0.9448113329741445,
+          "6": 0.9818343027536223,
+          "9": 0.8094912917638264,
+          "15": 1.0024110300865567,
+          "16": 0.9162503467015303,
+          "17": 1.052606071881736,
+          "18": 1.0304877043519844,
+          "22": 1.1216195886589764,
+          "23": 0.9496215438607929,
+          "24": 1.0260529073658682,
+          "25": 1.0724232800987255
+        },
+        "correlations": {
+          "0": 0.9230326015799074,
+          "3": 0.9212128526920181,
+          "6": 0.8944290332335106,
+          "9": 0.9220771803954103,
+          "15": 0.9700967706819036,
+          "16": 0.9751624317412152,
+          "17": 0.9415341218213555,
+          "18": 0.9294044773177645,
+          "22": 0.9899705935625837,
+          "23": 0.9941150841972731,
+          "24": 0.9926823579942354,
+          "25": 0.983234796505423
+        },
+        "limits": {
+          "dance_joint_rmse_rad": 0.13,
+          "amplitude_ratio_min": 0.8,
+          "correlation_min": 0.9
+        },
+        "passed": false
+      },
+      "fully_accepted": false,
+      "hardware_ready": false
+    }
+  ],
+  "preview": "artifacts/preview_20261030_project006_v3_200.mp4",
+  "loopback_only": true,
+  "goal_complete_claimed": false,
+  "video": {
+    "path": "finetune_projects/g1_continuity_20261029/artifacts/preview_20261030_project006_v3_200.mp4",
+    "sha256": "2bf5c36561d32560fe2e91d18f0f350fcd0b76d769688dab77d0bb35a31f0952",
+    "trajectory_sha256": "971da59c7282da0159582b7d6d40f4afb61131f28a1a973e32d25da4c04021c3",
+    "frames": 1799,
+    "fps": 50,
+    "duration_seconds": 35.98,
+    "width": 960,
+    "height": 540,
+    "full_decode_verified": true,
+    "trajectory_filtering": "none"
+  },
+  "native_window": "Raw recorded DDS result replay opened successfully; bounded180s window has closed"
+}

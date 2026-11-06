@@ -1,0 +1,861 @@
+{
+  "selected_run": "run_008",
+  "selected_iteration": 200,
+  "selected_bundle": "finetune_projects/g1_continuous_20261029/candidates/ground008_000200",
+  "selected_checkpoint_sha256": "8c219b0aac728ddf537e212158c67f1eb4762ae5cb4a6e0d7c0e75b40986e57d",
+  "selected_policy_sha256": "69afd3cadd13abf18e24908b54fc63834eafaa36c56b535b720ab8676cf75c86",
+  "reference_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa",
+  "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+  "tuning_iterations": 4000,
+  "training_results": {
+    "run_005": {
+      "completed": true,
+      "iteration": 1000,
+      "sim_steps": 164096,
+      "wall_time": 385.8838996887207,
+      "wall_h": 0.10715213669670953,
+      "wm_loss": 0.007946398751810193,
+      "wm_err8": 0.010250279065221548,
+      "pi_loss": -9.47275520324707,
+      "v_loss": 0.0005454327532788738,
+      "imag_rew": 0.9425148499011994,
+      "pi_gradnorm": 0.3610553586483002,
+      "imag_survival": 0.999742431640625,
+      "sim_rew": 0.9325439462661743,
+      "ep_len": 407.53846153846155,
+      "ep_ret_norm": 0.9505795469650855,
+      "term_frac": 0.0,
+      "it_per_s": 3.774743997939575,
+      "lr": 9.999617829866744e-06,
+      "total_wall_seconds": 390.168476838,
+      "source_checkpoint_unchanged": true,
+      "hardware_ready": false,
+      "peak_cuda_allocated_bytes": 2437515776
+    },
+    "run_006": {
+      "completed": true,
+      "iteration": 1500,
+      "sim_steps": 244096,
+      "wall_time": 449.61321663856506,
+      "wall_h": 0.12485582444402907,
+      "wm_loss": 0.007682390799745917,
+      "wm_err8": 0.010049794819205999,
+      "pi_loss": -9.170118255615234,
+      "v_loss": 0.0006894924223888665,
+      "imag_rew": 0.9161734354496002,
+      "pi_gradnorm": 0.39701133251190185,
+      "imag_survival": 0.9997590816020966,
+      "sim_rew": 0.9070582242012024,
+      "ep_len": 465.7857142857143,
+      "ep_ret_norm": 0.9131407311984471,
+      "term_frac": 0.0,
+      "it_per_s": 3.751645340397961,
+      "lr": 9.999139557417975e-06,
+      "total_wall_seconds": 453.234254297,
+      "source_checkpoint_unchanged": true,
+      "hardware_ready": false,
+      "peak_cuda_allocated_bytes": 2436984832
+    },
+    "run_007": {
+      "completed": true,
+      "iteration": 1000,
+      "sim_steps": 164096,
+      "wall_time": 296.89805006980896,
+      "wall_h": 0.08242172804143694,
+      "wm_loss": 0.0074401356652379035,
+      "wm_err8": 0.009752752650529146,
+      "pi_loss": -9.293138027191162,
+      "v_loss": 0.0006792022963054478,
+      "imag_rew": 0.9239424037933349,
+      "pi_gradnorm": 0.38095784962177276,
+      "imag_survival": 0.9997164690494538,
+      "sim_rew": 0.906106788635254,
+      "ep_len": 408.2307692307692,
+      "ep_ret_norm": 0.9253643338496869,
+      "term_frac": 0.0,
+      "it_per_s": 3.516266306362401,
+      "lr": 9.999617829866744e-06,
+      "total_wall_seconds": 300.53398630800007,
+      "source_checkpoint_unchanged": true,
+      "hardware_ready": false,
+      "peak_cuda_allocated_bytes": 2437371904
+    },
+    "run_008": {
+      "completed": true,
+      "iteration": 500,
+      "sim_steps": 84096,
+      "wall_time": 161.042573928833,
+      "wall_h": 0.04469648765193091,
+      "wm_loss": 0.0094290810264647,
+      "wm_err8": 0.012363403216004371,
+      "pi_loss": -9.239161548614502,
+      "v_loss": 0.0009245873987674713,
+      "imag_rew": 0.9180952024459839,
+      "pi_gradnorm": 0.5241550934314728,
+      "imag_survival": 0.99972571849823,
+      "sim_rew": 0.8986714563369751,
+      "ep_len": 430.3333333333333,
+      "ep_ret_norm": 0.9344993233680725,
+      "term_frac": 0.0,
+      "it_per_s": 3.723717489370729,
+      "lr": 9.999904647707465e-06,
+      "total_wall_seconds": 164.62096292599995,
+      "source_checkpoint_unchanged": true,
+      "hardware_ready": false,
+      "peak_cuda_allocated_bytes": 2437371904
+    }
+  },
+  "native_selection": {
+    "run": "run_008",
+    "iteration": 200,
+    "bundle": "finetune_projects/g1_continuous_20261029/candidates/ground008_000200",
+    "complete": true,
+    "dance_joint_rmse": 0.12145702909625745,
+    "metrics": {
+      "dance": {
+        "samples": 1148,
+        "window_seconds": [
+          5.019999999999915,
+          27.959999999998722
+        ],
+        "gravity_error_rms_deg": 1.4515965744450439,
+        "gravity_error_p95_deg": 2.7224011772158807,
+        "body_angular_velocity_error_rms_rad_s": 0.12285997643850789,
+        "body_angular_acceleration_rms_rad_s2": 3.8521760122363853,
+        "near_ground_point_speed_rms_m_s": 0.427614689671529,
+        "reference_stance_point_speed_rms_m_s": 0.04434644392830599,
+        "no_near_ground_point_fraction": 0.0,
+        "geometry_only": true
+      },
+      "hard_20_24": {
+        "samples": 201,
+        "window_seconds": [
+          20.000000000000306,
+          23.99999999999951
+        ],
+        "gravity_error_rms_deg": 1.8599874443316813,
+        "gravity_error_p95_deg": 3.3767182414190247,
+        "body_angular_velocity_error_rms_rad_s": 0.1584886676519966,
+        "body_angular_acceleration_rms_rad_s2": 4.639224952718806,
+        "near_ground_point_speed_rms_m_s": 0.2105380335514887,
+        "reference_stance_point_speed_rms_m_s": 0.060873203656962714,
+        "no_near_ground_point_fraction": 0.0,
+        "geometry_only": true
+      },
+      "hard_26_30": {
+        "samples": 200,
+        "window_seconds": [
+          26.019999999999108,
+          29.999999999998316
+        ],
+        "gravity_error_rms_deg": 1.2680998471258966,
+        "gravity_error_p95_deg": 2.4187524071646487,
+        "body_angular_velocity_error_rms_rad_s": 0.07369175791111583,
+        "body_angular_acceleration_rms_rad_s2": 2.166179894740571,
+        "near_ground_point_speed_rms_m_s": 0.13951696107198036,
+        "reference_stance_point_speed_rms_m_s": 0.12357752851613485,
+        "no_near_ground_point_fraction": 0.0,
+        "geometry_only": true
+      }
+    },
+    "contact": {
+      "bundle": "finetune_projects/g1_continuous_20261029/candidates/ground008_000200",
+      "physics_hz": 200,
+      "sample_hz": 50,
+      "criterion": "floor/sole contact normal force >1N at completed policy boundaries; solver diagnostics only",
+      "completed": true,
+      "failure": null,
+      "force_weighted_contact_speed_rms_m_s": 0.19883986833937192,
+      "no_loaded_sole_contact_fraction": 0.0008703220191470844,
+      "mean_normal_force_N": 342.63649499286583
+    },
+    "score": 1.0434635443132867,
+    "eligible": true,
+    "report": {
+      "transport": "native_sequence",
+      "initialization": "stationary_sequence_zero_velocity",
+      "initial_velocity_norm": 0.0,
+      "standing_entry_verified": true,
+      "entry": {
+        "attempted": true,
+        "completed": true
+      },
+      "exit": {
+        "attempted": true,
+        "completed": true
+      },
+      "tracking": {
+        "expected_steps": 1798,
+        "steps": 1798,
+        "completed": true,
+        "failure": null
+      },
+      "delay_ms": 0,
+      "perturbation": {
+        "friction": 1.0,
+        "mass_scale": 1.0,
+        "noise": 0.0,
+        "seed": 0
+      },
+      "terminal_sample_recorded": true,
+      "sequence": {
+        "phases": {
+          "dance": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 250,
+            "end_frame": 1398,
+            "joint_rmse_rad": 0.12145702909625745
+          },
+          "entry": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 100,
+            "end_frame": 250,
+            "joint_rmse_rad": 0.07042188866197431
+          },
+          "exit": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 1398,
+            "end_frame": 1548,
+            "joint_rmse_rad": 0.08081628873166033
+          },
+          "settle": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 1548,
+            "end_frame": 1798,
+            "joint_rmse_rad": 0.05506849530326552
+          },
+          "standing": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 0,
+            "end_frame": 100,
+            "joint_rmse_rad": 0.029413838547562653
+          }
+        },
+        "final_hold": {
+          "passed": true,
+          "joint_velocity_rms": 0.00044427798693325477,
+          "root_speed_max": 0.00028374839644603264,
+          "tilt_max_rad": 0.01173875032929187,
+          "standing_joint_rmse": 0.054872351180629594
+        },
+        "complete": true
+      },
+      "clipped_target_values": 926,
+      "joint_tracking_rmse_rad": 0.104133019261529,
+      "joint_velocity_peak_rad_s": 10.143189642032652,
+      "joint_acceleration_rms_rad_s2": 10.522891813688693,
+      "policy_sha256": "69afd3cadd13abf18e24908b54fc63834eafaa36c56b535b720ab8676cf75c86",
+      "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+      "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+      "hardware_ready": false,
+      "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+      "all_attempted_phases_passed": true
+    }
+  },
+  "contact_before": {
+    "bundle": "finetune_projects/g1_continuous_20261029/candidates/balance_002000",
+    "physics_hz": 200,
+    "sample_hz": 50,
+    "criterion": "floor/sole contact normal force >1N at completed policy boundaries; solver diagnostics only",
+    "completed": true,
+    "failure": null,
+    "force_weighted_contact_speed_rms_m_s": 0.2242555085043787,
+    "no_loaded_sole_contact_fraction": 0.005221932114882507,
+    "mean_normal_force_N": 341.51580354950437
+  },
+  "contact_reduction_percent": 11.333340409121107,
+  "dds_passed": 3,
+  "dds_attempted": 3,
+  "dds_means": {
+    "before": {
+      "gravity_error_rms_deg": 1.3791713099186225,
+      "body_angular_velocity_error_rms_rad_s": 0.1452647742621992,
+      "body_angular_acceleration_rms_rad_s2": 9.469078639600156,
+      "reference_stance_point_speed_rms_m_s": 0.05103410828142966,
+      "near_ground_point_speed_rms_m_s": 0.4624822983244076,
+      "core_acceleration_rms": 13.40385949961212,
+      "core_jerk_rms": 748.8545126045883,
+      "dance_joint_rmse": 0.11826777333293816
+    },
+    "after": {
+      "gravity_error_rms_deg": 1.3740261806442706,
+      "body_angular_velocity_error_rms_rad_s": 0.14589886279664965,
+      "body_angular_acceleration_rms_rad_s2": 9.188398356965719,
+      "reference_stance_point_speed_rms_m_s": 0.04307068837086229,
+      "near_ground_point_speed_rms_m_s": 0.44794953899358947,
+      "core_acceleration_rms": 13.091586704565579,
+      "core_jerk_rms": 744.5211103199599,
+      "dance_joint_rmse": 0.12148848830943239
+    },
+    "reduction_percent": {
+      "gravity_error_rms_deg": 0.3730594769010498,
+      "body_angular_velocity_error_rms_rad_s": -0.43650536592301226,
+      "body_angular_acceleration_rms_rad_s2": 2.9641773325296716,
+      "reference_stance_point_speed_rms_m_s": 15.604112972157303,
+      "near_ground_point_speed_rms_m_s": 3.1423385032186,
+      "core_acceleration_rms": 2.329722980575688,
+      "core_jerk_rms": 0.5786707847371342,
+      "dance_joint_rmse": -2.7232397175750656
+    }
+  },
+  "cases": {
+    "dds_balance_run3_2000": {
+      "dance": {
+        "samples": 4593,
+        "window_seconds": [
+          5.0,
+          27.96
+        ],
+        "gravity_error_rms_deg": 1.3883248573494362,
+        "gravity_error_p95_deg": 2.4500896770810896,
+        "body_angular_velocity_error_rms_rad_s": 0.14245189303409964,
+        "body_angular_acceleration_rms_rad_s2": 9.176849926059672,
+        "near_ground_point_speed_rms_m_s": 0.45946404793442214,
+        "reference_stance_point_speed_rms_m_s": 0.04520014948267557,
+        "no_near_ground_point_fraction": 0.0,
+        "geometry_only": true
+      },
+      "core_acceleration_rms": 13.245452141885846,
+      "core_jerk_rms": 721.663016094839,
+      "core_dt_counts_ms": {
+        "20": 948
+      },
+      "dance_joint_rmse": 0.11843921792693156,
+      "final_hold": {
+        "passed": true,
+        "joint_velocity_rms": 0.0006533566910432309,
+        "root_speed_max": 0.00014628979566042364,
+        "tilt_max_rad": 0.006774492212841346,
+        "standing_joint_rmse": 0.0758872356896131
+      },
+      "physics": {
+        "identity": "project headless HG adapter; official SDK2 serialization",
+        "model": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "entry": {
+          "attempted": true,
+          "completed": false
+        },
+        "watchdog_triggered": false,
+        "physics_hz": 200,
+        "state_hz": 200,
+        "command_watchdog_ms": 100,
+        "failure": null,
+        "failure_tick": null,
+        "damping_latched": false,
+        "received_commands": 1798,
+        "max_scheduler_lag_ms": 0.0,
+        "initial_velocity_norm": 0.0,
+        "sequence_mode": true,
+        "effort_saturation_fraction": 0.0,
+        "max_torque_limit_ratio": 0.812807623533292
+      },
+      "report": "finetune_projects/g1_continuous_20261029/evaluation/dds_balance_run3_2000/report.json",
+      "trajectory": "finetune_projects/g1_continuous_20261029/evaluation/dds_balance_run3_2000/simulator_trajectory.npz"
+    },
+    "dds_balance_run3_2000_repeat1": {
+      "dance": {
+        "samples": 4593,
+        "window_seconds": [
+          5.0,
+          27.96
+        ],
+        "gravity_error_rms_deg": 1.3779646072532006,
+        "gravity_error_p95_deg": 2.4286391085593237,
+        "body_angular_velocity_error_rms_rad_s": 0.1454697441468421,
+        "body_angular_acceleration_rms_rad_s2": 9.454969733239777,
+        "near_ground_point_speed_rms_m_s": 0.46350224009512264,
+        "reference_stance_point_speed_rms_m_s": 0.05720299430353044,
+        "no_near_ground_point_fraction": 0.0,
+        "geometry_only": true
+      },
+      "core_acceleration_rms": 13.42953913945246,
+      "core_jerk_rms": 763.6792083680965,
+      "core_dt_counts_ms": {
+        "20": 948
+      },
+      "dance_joint_rmse": 0.11819495999611243,
+      "final_hold": {
+        "passed": true,
+        "joint_velocity_rms": 0.0005891288622240407,
+        "root_speed_max": 0.00012869220781582826,
+        "tilt_max_rad": 0.006920587665347777,
+        "standing_joint_rmse": 0.07775363508670485
+      },
+      "physics": {
+        "identity": "project headless HG adapter; official SDK2 serialization",
+        "model": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "entry": {
+          "attempted": true,
+          "completed": false
+        },
+        "watchdog_triggered": false,
+        "physics_hz": 200,
+        "state_hz": 200,
+        "command_watchdog_ms": 100,
+        "failure": null,
+        "failure_tick": null,
+        "damping_latched": false,
+        "received_commands": 1798,
+        "max_scheduler_lag_ms": 0.9493840007053223,
+        "initial_velocity_norm": 0.0,
+        "sequence_mode": true,
+        "effort_saturation_fraction": 0.0,
+        "max_torque_limit_ratio": 0.8356608556340362
+      },
+      "report": "finetune_projects/g1_continuous_20261029/evaluation/dds_balance_run3_2000_repeat1/report.json",
+      "trajectory": "finetune_projects/g1_continuous_20261029/evaluation/dds_balance_run3_2000_repeat1/simulator_trajectory.npz"
+    },
+    "dds_balance_run3_2000_repeat2": {
+      "dance": {
+        "samples": 4593,
+        "window_seconds": [
+          5.0,
+          27.96
+        ],
+        "gravity_error_rms_deg": 1.3712244651532302,
+        "gravity_error_p95_deg": 2.4301108557039246,
+        "body_angular_velocity_error_rms_rad_s": 0.14787268560565578,
+        "body_angular_acceleration_rms_rad_s2": 9.77541625950102,
+        "near_ground_point_speed_rms_m_s": 0.46448060694367793,
+        "reference_stance_point_speed_rms_m_s": 0.050699181058082986,
+        "no_near_ground_point_fraction": 0.0,
+        "geometry_only": true
+      },
+      "core_acceleration_rms": 13.536587217498054,
+      "core_jerk_rms": 761.2213133508294,
+      "core_dt_counts_ms": {
+        "15": 2,
+        "20": 944,
+        "25": 2
+      },
+      "dance_joint_rmse": 0.11816914207577052,
+      "final_hold": {
+        "passed": true,
+        "joint_velocity_rms": 0.0005661647486210308,
+        "root_speed_max": 0.00010688420948724378,
+        "tilt_max_rad": 0.006944281917746424,
+        "standing_joint_rmse": 0.07818729028741103
+      },
+      "physics": {
+        "identity": "project headless HG adapter; official SDK2 serialization",
+        "model": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "entry": {
+          "attempted": true,
+          "completed": false
+        },
+        "watchdog_triggered": false,
+        "physics_hz": 200,
+        "state_hz": 200,
+        "command_watchdog_ms": 100,
+        "failure": null,
+        "failure_tick": null,
+        "damping_latched": false,
+        "received_commands": 1798,
+        "max_scheduler_lag_ms": 1.015169000311289,
+        "initial_velocity_norm": 0.0,
+        "sequence_mode": true,
+        "effort_saturation_fraction": 0.0,
+        "max_torque_limit_ratio": 0.829807259991988
+      },
+      "report": "finetune_projects/g1_continuous_20261029/evaluation/dds_balance_run3_2000_repeat2/report.json",
+      "trajectory": "finetune_projects/g1_continuous_20261029/evaluation/dds_balance_run3_2000_repeat2/simulator_trajectory.npz"
+    },
+    "dds_ground008_200_initial": {
+      "dance": {
+        "samples": 4593,
+        "window_seconds": [
+          5.0,
+          27.96
+        ],
+        "gravity_error_rms_deg": 1.3785601413463608,
+        "gravity_error_p95_deg": 2.558987964531627,
+        "body_angular_velocity_error_rms_rad_s": 0.14844866626372497,
+        "body_angular_acceleration_rms_rad_s2": 9.402622621522832,
+        "near_ground_point_speed_rms_m_s": 0.44655048220013194,
+        "reference_stance_point_speed_rms_m_s": 0.04158279385660785,
+        "no_near_ground_point_fraction": 0.0,
+        "geometry_only": true
+      },
+      "core_acceleration_rms": 13.208580921217695,
+      "core_jerk_rms": 749.0852267049762,
+      "core_dt_counts_ms": {
+        "20": 948
+      },
+      "dance_joint_rmse": 0.12165632920094814,
+      "final_hold": {
+        "passed": true,
+        "joint_velocity_rms": 0.00039480750752050815,
+        "root_speed_max": 0.00016314227692660374,
+        "tilt_max_rad": 0.01139534750554458,
+        "standing_joint_rmse": 0.05126788755583312
+      },
+      "physics": {
+        "identity": "project headless HG adapter; official SDK2 serialization",
+        "model": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "entry": {
+          "attempted": true,
+          "completed": false
+        },
+        "watchdog_triggered": false,
+        "physics_hz": 200,
+        "state_hz": 200,
+        "command_watchdog_ms": 100,
+        "failure": null,
+        "failure_tick": null,
+        "damping_latched": false,
+        "received_commands": 1798,
+        "max_scheduler_lag_ms": 8.318383000187168,
+        "initial_velocity_norm": 0.0,
+        "sequence_mode": true,
+        "effort_saturation_fraction": 0.0,
+        "max_torque_limit_ratio": 0.8555833844376053
+      },
+      "report": "finetune_projects/g1_continuous_20261029/evaluation/dds_ground008_200_initial/report.json",
+      "trajectory": "finetune_projects/g1_continuous_20261029/evaluation/dds_ground008_200_initial/simulator_trajectory.npz"
+    },
+    "dds_ground008_200_repeat1": {
+      "dance": {
+        "samples": 4593,
+        "window_seconds": [
+          5.0,
+          27.96
+        ],
+        "gravity_error_rms_deg": 1.3625502365793973,
+        "gravity_error_p95_deg": 2.5323810744365796,
+        "body_angular_velocity_error_rms_rad_s": 0.146201502839232,
+        "body_angular_acceleration_rms_rad_s2": 9.132350971110977,
+        "near_ground_point_speed_rms_m_s": 0.44713644686790827,
+        "reference_stance_point_speed_rms_m_s": 0.04444251753966495,
+        "no_near_ground_point_fraction": 0.0,
+        "geometry_only": true
+      },
+      "core_acceleration_rms": 13.023381785094653,
+      "core_jerk_rms": 740.7124480515598,
+      "core_dt_counts_ms": {
+        "20": 948
+      },
+      "dance_joint_rmse": 0.12139225574518131,
+      "final_hold": {
+        "passed": true,
+        "joint_velocity_rms": 0.00041028261755448816,
+        "root_speed_max": 0.00016211618787942975,
+        "tilt_max_rad": 0.01153337492577501,
+        "standing_joint_rmse": 0.051572054587796665
+      },
+      "physics": {
+        "identity": "project headless HG adapter; official SDK2 serialization",
+        "model": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "entry": {
+          "attempted": true,
+          "completed": false
+        },
+        "watchdog_triggered": false,
+        "physics_hz": 200,
+        "state_hz": 200,
+        "command_watchdog_ms": 100,
+        "failure": null,
+        "failure_tick": null,
+        "damping_latched": false,
+        "received_commands": 1798,
+        "max_scheduler_lag_ms": 0.5842229998052062,
+        "initial_velocity_norm": 0.0,
+        "sequence_mode": true,
+        "effort_saturation_fraction": 0.0,
+        "max_torque_limit_ratio": 0.8127472440658695
+      },
+      "report": "finetune_projects/g1_continuous_20261029/evaluation/dds_ground008_200_repeat1/report.json",
+      "trajectory": "finetune_projects/g1_continuous_20261029/evaluation/dds_ground008_200_repeat1/simulator_trajectory.npz"
+    },
+    "dds_ground008_200_repeat2": {
+      "dance": {
+        "samples": 4593,
+        "window_seconds": [
+          5.0,
+          27.96
+        ],
+        "gravity_error_rms_deg": 1.3809681640070535,
+        "gravity_error_p95_deg": 2.5562473317824317,
+        "body_angular_velocity_error_rms_rad_s": 0.14304641928699202,
+        "body_angular_acceleration_rms_rad_s2": 9.030221478263341,
+        "near_ground_point_speed_rms_m_s": 0.4501616879127281,
+        "reference_stance_point_speed_rms_m_s": 0.04318675371631406,
+        "no_near_ground_point_fraction": 0.0,
+        "geometry_only": true
+      },
+      "core_acceleration_rms": 13.04279740738439,
+      "core_jerk_rms": 743.7656562033435,
+      "core_dt_counts_ms": {
+        "20": 948
+      },
+      "dance_joint_rmse": 0.12141687998216771,
+      "final_hold": {
+        "passed": true,
+        "joint_velocity_rms": 0.0004004141225390301,
+        "root_speed_max": 0.00019244325431123596,
+        "tilt_max_rad": 0.01162734733266441,
+        "standing_joint_rmse": 0.053012172555185026
+      },
+      "physics": {
+        "identity": "project headless HG adapter; official SDK2 serialization",
+        "model": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+        "entry": {
+          "attempted": true,
+          "completed": false
+        },
+        "watchdog_triggered": false,
+        "physics_hz": 200,
+        "state_hz": 200,
+        "command_watchdog_ms": 100,
+        "failure": null,
+        "failure_tick": null,
+        "damping_latched": false,
+        "received_commands": 1798,
+        "max_scheduler_lag_ms": 0.0,
+        "initial_velocity_norm": 0.0,
+        "sequence_mode": true,
+        "effort_saturation_fraction": 0.0,
+        "max_torque_limit_ratio": 0.8114751300278619
+      },
+      "report": "finetune_projects/g1_continuous_20261029/evaluation/dds_ground008_200_repeat2/report.json",
+      "trajectory": "finetune_projects/g1_continuous_20261029/evaluation/dds_ground008_200_repeat2/simulator_trajectory.npz"
+    }
+  },
+  "perturbation": {
+    "ground008_200_delay5": {
+      "transport": "native_sequence",
+      "initialization": "stationary_sequence_zero_velocity",
+      "initial_velocity_norm": 0.0,
+      "standing_entry_verified": true,
+      "entry": {
+        "attempted": true,
+        "completed": true
+      },
+      "exit": {
+        "attempted": true,
+        "completed": true
+      },
+      "tracking": {
+        "expected_steps": 1798,
+        "steps": 1798,
+        "completed": true,
+        "failure": null
+      },
+      "delay_ms": 5,
+      "perturbation": {
+        "friction": 1.0,
+        "mass_scale": 1.0,
+        "noise": 0.0,
+        "seed": 0
+      },
+      "terminal_sample_recorded": true,
+      "sequence": {
+        "phases": {
+          "dance": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 250,
+            "end_frame": 1398,
+            "joint_rmse_rad": 0.1214174301901213
+          },
+          "entry": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 100,
+            "end_frame": 250,
+            "joint_rmse_rad": 0.07129000371257925
+          },
+          "exit": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 1398,
+            "end_frame": 1548,
+            "joint_rmse_rad": 0.07981231249512517
+          },
+          "settle": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 1548,
+            "end_frame": 1798,
+            "joint_rmse_rad": 0.05330340267753617
+          },
+          "standing": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 0,
+            "end_frame": 100,
+            "joint_rmse_rad": 0.029599684442846833
+          }
+        },
+        "final_hold": {
+          "passed": true,
+          "joint_velocity_rms": 0.0003680108855490858,
+          "root_speed_max": 0.00016553012858214254,
+          "tilt_max_rad": 0.011542909427886858,
+          "standing_joint_rmse": 0.053172921828741206
+        },
+        "complete": true
+      },
+      "clipped_target_values": 972,
+      "joint_tracking_rmse_rad": 0.10396473354760226,
+      "joint_velocity_peak_rad_s": 9.498857184750554,
+      "joint_acceleration_rms_rad_s2": 10.35838867557342,
+      "policy_sha256": "69afd3cadd13abf18e24908b54fc63834eafaa36c56b535b720ab8676cf75c86",
+      "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+      "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+      "hardware_ready": false,
+      "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+      "all_attempted_phases_passed": true
+    },
+    "ground008_200_perturbation": {
+      "transport": "native_sequence",
+      "initialization": "stationary_sequence_zero_velocity",
+      "initial_velocity_norm": 0.0,
+      "standing_entry_verified": true,
+      "entry": {
+        "attempted": true,
+        "completed": true
+      },
+      "exit": {
+        "attempted": true,
+        "completed": true
+      },
+      "tracking": {
+        "expected_steps": 1798,
+        "steps": 1798,
+        "completed": true,
+        "failure": null
+      },
+      "delay_ms": 0,
+      "perturbation": {
+        "friction": 0.7,
+        "mass_scale": 1.05,
+        "noise": 0.003,
+        "seed": 0
+      },
+      "terminal_sample_recorded": true,
+      "sequence": {
+        "phases": {
+          "dance": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 250,
+            "end_frame": 1398,
+            "joint_rmse_rad": 0.12067145332599971
+          },
+          "entry": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 100,
+            "end_frame": 250,
+            "joint_rmse_rad": 0.06710517264836119
+          },
+          "exit": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 1398,
+            "end_frame": 1548,
+            "joint_rmse_rad": 0.08241821386359471
+          },
+          "settle": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 1548,
+            "end_frame": 1798,
+            "joint_rmse_rad": 0.047497122602425404
+          },
+          "standing": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 0,
+            "end_frame": 100,
+            "joint_rmse_rad": 0.0323032037551053
+          }
+        },
+        "final_hold": {
+          "passed": true,
+          "joint_velocity_rms": 0.001221461891283068,
+          "root_speed_max": 0.002846844644202058,
+          "tilt_max_rad": 0.010086976436670737,
+          "standing_joint_rmse": 0.046839325738796594
+        },
+        "complete": true
+      },
+      "clipped_target_values": 1084,
+      "joint_tracking_rmse_rad": 0.10299416412550817,
+      "joint_velocity_peak_rad_s": 9.606657266685492,
+      "joint_acceleration_rms_rad_s2": 10.890949094931576,
+      "policy_sha256": "69afd3cadd13abf18e24908b54fc63834eafaa36c56b535b720ab8676cf75c86",
+      "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+      "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+      "hardware_ready": false,
+      "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+      "all_attempted_phases_passed": true
+    }
+  },
+  "tests": {
+    "regular_passed": 261,
+    "skipped": 2,
+    "slow_dds_passed": 3,
+    "manual_CPU_CUDA_cost_gradient_equal": true
+  },
+  "reward_source_sha256": "b018b2a409629ecaf066ff0b2b506c0ce0bdae53f11e1d1d68ec22bcbf7695f8",
+  "hardware_ready": false,
+  "video": "artifacts/ground008_200_dds.mp4",
+  "comparison": "artifacts/ground008_before_after.mp4",
+  "hard_comparison": "artifacts/ground008_6_14_compare.mp4",
+  "scope": "native force diagnostic at 50Hz completed boundaries; actual DDS kinematic metrics at200Hz; tested official model/reference/loopback only",
+  "reproduction": {
+    "verified": true,
+    "source": "run_008/ckpt_000200.pt",
+    "full_warm_start": "run_009_reproduce/last.pt",
+    "pi_wm_bit_identical": true,
+    "critic_and_optimizer_states_present": true,
+    "extra_reproduction_iterations": 200,
+    "full_checkpoint_sha256": "fdb79c7a0f4273788f74bf1cd30a220634f51ced81e5e900c258f6121e6850bf",
+    "policy_normalization_unchanged": true
+  },
+  "extra_reproduction_training_result": {
+    "completed": true,
+    "iteration": 200,
+    "sim_steps": 36096,
+    "wall_time": 55.94406843185425,
+    "wall_h": 0.015474901066886055,
+    "wm_loss": 0.008596354965120553,
+    "wm_err8": 0.011132224909961224,
+    "pi_loss": -9.303533458709717,
+    "v_loss": 0.0006702884170226753,
+    "imag_rew": 0.9257920515537262,
+    "pi_gradnorm": 0.3952116370201111,
+    "imag_survival": 0.9997312235832214,
+    "sim_rew": 0.8961120467185975,
+    "ep_len": 334.1666717529297,
+    "ep_ret_norm": 0.940731813510259,
+    "term_frac": 0.0,
+    "it_per_s": 3.5669112122719113,
+    "lr": 9.999984835175193e-06,
+    "total_wall_seconds": 60.092295392000324,
+    "source_checkpoint_unchanged": true,
+    "hardware_ready": false,
+    "peak_cuda_allocated_bytes": 2434433024
+  },
+  "promoted": true,
+  "media_verified": {
+    "frames": 1799,
+    "fps": 50,
+    "duration_seconds": 35.98,
+    "width": 960,
+    "height": 540,
+    "full_decode_passed": true,
+    "comparison_full_decode_passed": true,
+    "hard_clip_frames": 400,
+    "hard_clip_seconds": 8,
+    "no_trajectory_filter": true,
+    "raw_trajectory_sha256": "b54298daf088eb37940c315480445552984b3437fe5f42e2268fcd0296b9f135",
+    "video_sha256": "6f7a82dd1f2319df5b16114f759de8d449af75d39eebdfa57432081d60f55e46"
+  }
+}

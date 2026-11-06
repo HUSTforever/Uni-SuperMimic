@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-02",
+  "scope": "source-policy local diagnostic only; no candidate acceptance",
+  "same_initial_physics": true,
+  "randomize": false,
+  "seed": 0,
+  "initial_history": "repeat first observation",
+  "highpass_warmup_controls": 32,
+  "source_checkpoint": "finetune_projects/g1_continuity_20261029/run_012_focus_spectral/ckpt_000125.pt",
+  "source_sha256": "260e5e9559455096bc700711a0ec5e1daf9354fc4724a27a5d9597438a39736b",
+  "rows": [
+    {
+      "action_std": 0.03,
+      "ankle_cost_mean": 0.6781690120697021,
+      "root_cost_mean": 0.22834810614585876,
+      "penalty_mean": 0.018130343407392502,
+      "reward_mean": 0.061810653656721115,
+      "done_count": 0,
+      "frames_start": [
+        950,
+        1050,
+        1150,
+        1250
+      ],
+      "transitions": 2048,
+      "analyzed_after_warmup": 1536
+    },
+    {
+      "action_std": 0.01,
+      "ankle_cost_mean": 0.7005536556243896,
+      "root_cost_mean": 0.20344072580337524,
+      "penalty_mean": 0.018079888075590134,
+      "reward_mean": 0.06254999339580536,
+      "done_count": 0,
+      "frames_start": [
+        950,
+        1050,
+        1150,
+        1250
+      ],
+      "transitions": 2048,
+      "analyzed_after_warmup": 1536
+    },
+    {
+      "action_std": 0.003,
+      "ankle_cost_mean": 0.6322421431541443,
+      "root_cost_mean": 0.20516586303710938,
+      "penalty_mean": 0.016748160123825073,
+      "reward_mean": 0.06461295485496521,
+      "done_count": 0,
+      "frames_start": [
+        950,
+        1050,
+        1150,
+        1250
+      ],
+      "transitions": 2048,
+      "analyzed_after_warmup": 1536
+    },
+    {
+      "action_std": 1e-09,
+      "ankle_cost_mean": 0.6196982264518738,
+      "root_cost_mean": 0.2023312896490097,
+      "penalty_mean": 0.016440588980913162,
+      "reward_mean": 0.06432715803384781,
+      "done_count": 0,
+      "frames_start": [
+        950,
+        1050,
+        1150,
+        1250
+      ],
+      "transitions": 2048,
+      "analyzed_after_warmup": 1536
+    }
+  ],
+  "source_and_policy_updated": false,
+  "hardware_ready": false
+}

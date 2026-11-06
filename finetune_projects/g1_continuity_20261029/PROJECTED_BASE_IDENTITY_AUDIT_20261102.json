@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-02",
+  "scope": "parameterization feasibility probe only; no new network/training/physics acceptance",
+  "recorded_source_targets": 2038,
+  "deterministic_recorded_targets_bit_identical": true,
+  "max_target_difference": 0.0,
+  "projection": "float64 physical raw bounds rounded outward one float32 ULP before adding a future learned correction",
+  "gaussian_std": 0.03,
+  "samples_per_extreme_joint": 20000,
+  "rows": [
+    {
+      "joint": "left_ankle_pitch_joint",
+      "frame": 1139,
+      "original_mean_excess_std": 23.663352589255886,
+      "original_unique_explored_raw_actions": 1,
+      "projected_center_unique_explored_raw_actions": 10041,
+      "original_action_std": 8.881784197001252e-16,
+      "projected_center_action_std": 0.01740308490744231
+    },
+    {
+      "joint": "left_ankle_roll_joint",
+      "frame": 867,
+      "original_mean_excess_std": 10.729604502452691,
+      "original_unique_explored_raw_actions": 1,
+      "projected_center_unique_explored_raw_actions": 9998,
+      "original_action_std": 1.1102230246251565e-16,
+      "projected_center_action_std": 0.01765775662770798
+    },
+    {
+      "joint": "right_ankle_pitch_joint",
+      "frame": 1295,
+      "original_mean_excess_std": 16.95170269454153,
+      "original_unique_explored_raw_actions": 1,
+      "projected_center_unique_explored_raw_actions": 10025,
+      "original_action_std": 8.881784197001252e-16,
+      "projected_center_action_std": 0.01753717258165999
+    },
+    {
+      "joint": "right_ankle_roll_joint",
+      "frame": 857,
+      "original_mean_excess_std": 14.18118232482004,
+      "original_unique_explored_raw_actions": 1,
+      "projected_center_unique_explored_raw_actions": 9948,
+      "original_action_std": 1.1102230246251565e-16,
+      "projected_center_action_std": 0.017470031972140355
+    }
+  ],
+  "full_new_actor_replay_performed": false,
+  "architecture_implemented": false,
+  "hardware_ready": false
+}

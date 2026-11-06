@@ -1,0 +1,13 @@
+{
+  "source_bundle": "finetune_projects/g1_continuity_20261029/candidates/run002_000250",
+  "source_checkpoint": "finetune_projects/g1_continuity_20261029/run_003_reproduce/last.pt",
+  "frames": 1798,
+  "qpos_max_difference": 0.00921550837036389,
+  "target_max_difference": 0.4126379437489144,
+  "raw_action_max_difference": 0.06851516664028168,
+  "wall_seconds": 12.688881219997711,
+  "hardware_ready": false,
+  "diagnostic_valid": false,
+  "diagnostic_issue": "target comparison included previous_targets after terminal auto-reset; superseded by direct pre-step target comparison",
+  "superseded_by": "PHYSICAL_PPO_AUTONOMOUS_PARITY.json"
+}

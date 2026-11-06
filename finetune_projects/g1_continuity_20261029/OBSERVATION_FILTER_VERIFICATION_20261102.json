@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-02",
+  "rows": [
+    {
+      "name": "baseline",
+      "raw_physics_metrics_rechecked": true,
+      "full_native_pass": false,
+      "worst_hf": 0.00736060324935456
+    },
+    {
+      "name": "dq08",
+      "raw_physics_metrics_rechecked": true,
+      "full_native_pass": false,
+      "worst_hf": 0.007803386289207996
+    },
+    {
+      "name": "dq12",
+      "raw_physics_metrics_rechecked": true,
+      "full_native_pass": false,
+      "worst_hf": 0.008803233443963205
+    },
+    {
+      "name": "gyro08",
+      "raw_physics_metrics_rechecked": true,
+      "full_native_pass": false,
+      "worst_hf": 0.015418181783423097
+    },
+    {
+      "name": "both08",
+      "raw_physics_metrics_rechecked": true,
+      "full_native_pass": false,
+      "worst_hf": 0.015641021396909805
+    }
+  ],
+  "production_filter_added": false,
+  "hardware_ready": false
+}

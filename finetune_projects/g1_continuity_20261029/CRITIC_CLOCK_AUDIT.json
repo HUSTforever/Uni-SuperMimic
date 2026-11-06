@@ -1,0 +1,22 @@
+{
+  "frames": [
+    1450,
+    2037
+  ],
+  "remaining_steps": [
+    588,
+    1
+  ],
+  "critic_input_max_difference": 0.0,
+  "ideal_static_step_reward": [
+    0.09999962896108627,
+    0.09999962896108627
+  ],
+  "discounted_static_reference_return": [
+    9.972830208666261,
+    0.09999962896108627
+  ],
+  "design_limitation": "finite clip termination is not represented in the critic input during identical static tail states",
+  "diagnostic_only": true,
+  "hardware_ready": false
+}

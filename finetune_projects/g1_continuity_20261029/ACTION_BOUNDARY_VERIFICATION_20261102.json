@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-02",
+  "training_result": {
+    "status": "completed",
+    "iterations": 500,
+    "physical_sim_steps": 512000,
+    "total_wall_seconds": 444.7002779980003,
+    "source_checkpoint_unchanged": true,
+    "hardware_ready": false,
+    "world_model_updated": false
+  },
+  "configuration_delta": "action_bound_weight0->1; all other run018 settings unchanged",
+  "warmup_0_25_50_pi_identical_to_source": true,
+  "world_model_and_normalizers_unchanged": true,
+  "actor_changed": true,
+  "source_sha256": "260e5e9559455096bc700711a0ec5e1daf9354fc4724a27a5d9597438a39736b",
+  "actor_checkpoints_evaluated": 18,
+  "physical_complete_count": 5,
+  "style_pass_count": 1,
+  "finish_pass_count": 7,
+  "full_pass_count": 0,
+  "best_all_other_gates_passed": {
+    "iteration": 100,
+    "bundle": "finetune_projects/g1_continuity_20261029/candidates/bound019_000100",
+    "physical_complete": true,
+    "original_style": {
+      "complete": true,
+      "anchor_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa",
+      "dance_joint_rmse_rad": 0.12949113017261957,
+      "main_joint_indices": [
+        0,
+        3,
+        6,
+        9,
+        15,
+        16,
+        17,
+        18,
+        22,
+        23,
+        24,
+        25
+      ],
+      "amplitude_ratios": {
+        "0": 0.851347239403624,
+        "3": 0.8861367182289193,
+        "6": 0.9661575086934732,
+        "9": 0.8306568633061993,
+        "15": 0.9707447324060254,
+        "16": 0.8985465826570914,
+        "17": 1.0552909642023987,
+        "18": 0.9636962820101681,
+        "22": 1.0381040287898302,
+        "23": 0.92036186621896,
+        "24": 1.0264128562289552,
+        "25": 1.0504897615710787
+      },
+      "correlations": {
+        "0": 0.933467081046853,
+        "3": 0.9447012119980573,
+        "6": 0.9007070932317187,
+        "9": 0.9086144734698374,
+        "15": 0.9681038288890781,
+        "16": 0.9784478370391624,
+        "17": 0.9570394009878332,
+        "18": 0.9365716719122387,
+        "22": 0.9917986201052227,
+        "23": 0.9888767577061057,
+        "24": 0.9921195203106038,
+        "25": 0.9866526308240982
+      },
+      "limits": {
+        "dance_joint_rmse_rad": 0.13,
+        "amplitude_ratio_min": 0.8,
+        "correlation_min": 0.9
+      },
+      "passed": true
+    },
+    "worst_hf": 0.010810316415346482,
+    "phase_hf": {
+      "dance": 0.0037642795949841264,
+      "entry": 0.0028641655578072506,
+      "exit": 0.0038916370626427793,
+      "settle": 9.815029956434558e-07,
+      "standing": 4.429418142362174e-06
+    },
+    "worst_root_hf": 0.0002667581899668298,
+    "finish": {
+      "complete": true,
+      "passed": true,
+      "recovery_seconds": 1.1749999999984873,
+      "max_recovery_seconds": 1.5,
+      "stable_detection_seconds": 0.5,
+      "required_hold_seconds": 10.0,
+      "final_hold_passed": true,
+      "dance_end_seconds": 27.96,
+      "final_joint_error_max": 0.05097425292693186,
+      "final_joint_speed_rms_max": 0.0040943201767630845,
+      "final_root_speed_max": 0.0022238648379180603,
+      "final_tilt_max": 0.018880656993826427,
+      "limits": {
+        "joint_rmse_rad": 0.1,
+        "joint_velocity_rms": 0.3,
+        "root_speed": 0.1,
+        "tilt_rad": 0.2
+      }
+    },
+    "full_pass": false
+  },
+  "regular_tests_passed": 386,
+  "skipped": 2,
+  "slow_deselected": 9,
+  "global_default_policy_promoted": false,
+  "feature_default_weight": 0.0,
+  "goal_complete_claimed": false,
+  "hardware_ready": false,
+  "best_raw_physics_metrics_recomputed": true
+}

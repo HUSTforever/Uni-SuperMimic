@@ -1,0 +1,7 @@
+**/run_*/
+**/smoke_*/
+**/artifacts/
+**/data/
+**/candidates/
+**/evaluation/
+**/*.log

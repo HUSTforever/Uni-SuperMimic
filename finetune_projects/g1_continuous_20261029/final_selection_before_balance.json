@@ -1,0 +1,8 @@
+{
+  "run": "run_002",
+  "iteration": 600,
+  "bundle": "finetune_projects/g1_continuous_20261029/candidates/smooth_000600",
+  "fallback": "finetune_projects/g1_continuous_20261029/candidates/selected",
+  "reason": "all native phase/final-hold gates; danceRMSE<.13; lowest core acceleration/jerk of smoothing candidates",
+  "hardware_ready": false
+}

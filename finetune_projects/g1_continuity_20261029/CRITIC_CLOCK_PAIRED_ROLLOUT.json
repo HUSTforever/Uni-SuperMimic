@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-02",
+  "purpose": "paired initial actual CUDA physics rollout audit",
+  "matched": {
+    "actions": true,
+    "mean": true,
+    "history": true,
+    "goal": true,
+    "applied_actions": true,
+    "reward": true,
+    "spectral_cost": true,
+    "done": true,
+    "terminal": true
+  },
+  "critic_old_columns_identical": true,
+  "physics_control_transitions_per_arm": 128,
+  "seed": 0,
+  "update_seed": 1,
+  "source_checkpoint": "finetune_projects/g1_continuity_20261029/run_012_focus_spectral/ckpt_000125.pt",
+  "source_checkpoint_sha256": "260e5e9559455096bc700711a0ec5e1daf9354fc4724a27a5d9597438a39736b",
+  "clock_only_changes_values": true,
+  "hardware_ready": false
+}

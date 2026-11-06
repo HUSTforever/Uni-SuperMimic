@@ -1,0 +1,17 @@
+{
+  "frames": 504,
+  "kp_shape": [
+    504,
+    17,
+    3
+  ],
+  "confidence_median": 0.921875,
+  "confidence_p10": 0.828125,
+  "ankle_confidence_median": 0.8984375,
+  "ankle_low_fraction": 0.0,
+  "clip_source_start": 13.4,
+  "clip_source_end": 30.2,
+  "clip_fps": 30,
+  "main_body_inspection": "Mesh overlay inspected at six phases: dribble, forward/back turn, side step, shoulder gesture. No subject identity switch observed.",
+  "scope": "2D keypoint detection quality only; does not validate camera/world heading"
+}

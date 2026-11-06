@@ -1,0 +1,216 @@
+[
+  {
+    "label": "050",
+    "support": {
+      "dance": {
+        "samples": 1149,
+        "assessed_samples": 1148,
+        "no_near_sole_fraction": 0.0,
+        "outside_2cm_fraction": 0.6463414634146342,
+        "outside_5cm_fraction": 0.524390243902439,
+        "outside_rms_m": 0.12437766635681698,
+        "outside_peak_m": 0.6031860945542189
+      },
+      "entry": {
+        "samples": 151,
+        "assessed_samples": 151,
+        "no_near_sole_fraction": 0.0,
+        "outside_2cm_fraction": 0.0,
+        "outside_5cm_fraction": 0.0,
+        "outside_rms_m": 0.0,
+        "outside_peak_m": 0.0
+      },
+      "exit": {
+        "samples": 151,
+        "assessed_samples": 151,
+        "no_near_sole_fraction": 0.0,
+        "outside_2cm_fraction": 0.4768211920529801,
+        "outside_5cm_fraction": 0.09271523178807947,
+        "outside_rms_m": 0.03361136857022555,
+        "outside_peak_m": 0.05290680463527952
+      },
+      "settle": {
+        "samples": 251,
+        "assessed_samples": 251,
+        "no_near_sole_fraction": 0.0,
+        "outside_2cm_fraction": 0.0,
+        "outside_5cm_fraction": 0.0,
+        "outside_rms_m": 0.0,
+        "outside_peak_m": 0.0
+      },
+      "standing": {
+        "samples": 101,
+        "assessed_samples": 101,
+        "no_near_sole_fraction": 0.0,
+        "outside_2cm_fraction": 0.0,
+        "outside_5cm_fraction": 0.0,
+        "outside_rms_m": 0.0,
+        "outside_peak_m": 0.0
+      }
+    },
+    "physical": true,
+    "new_reference_rmse": 0.10500788246173262,
+    "original_style": {
+      "complete": true,
+      "anchor_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa",
+      "dance_joint_rmse_rad": 0.12810991125319526,
+      "main_joint_indices": [
+        0,
+        3,
+        6,
+        9,
+        15,
+        16,
+        17,
+        18,
+        22,
+        23,
+        24,
+        25
+      ],
+      "amplitude_ratios": {
+        "0": 0.8163317636947933,
+        "3": 0.9176942573128479,
+        "6": 0.9459498122709558,
+        "9": 0.8481590099191111,
+        "15": 0.963639930158804,
+        "16": 0.8965322697063995,
+        "17": 1.0493461705498983,
+        "18": 0.9807032554764736,
+        "22": 1.0720611638283186,
+        "23": 0.9053712770661588,
+        "24": 1.023756348162311,
+        "25": 1.059858627405521
+      },
+      "correlations": {
+        "0": 0.939713349490504,
+        "3": 0.939625004935501,
+        "6": 0.9079891960872536,
+        "9": 0.9351855191186167,
+        "15": 0.9668452222764223,
+        "16": 0.9765059734077567,
+        "17": 0.9493856093469658,
+        "18": 0.9328935329504202,
+        "22": 0.9876574457421301,
+        "23": 0.9910662795448447,
+        "24": 0.9928170416595429,
+        "25": 0.9868868689636052
+      },
+      "limits": {
+        "dance_joint_rmse_rad": 0.13,
+        "amplitude_ratio_min": 0.8,
+        "correlation_min": 0.9
+      },
+      "passed": true
+    },
+    "worst_hf": 0.009107994496330648,
+    "full_pass": false
+  },
+  {
+    "label": "075",
+    "support": {
+      "dance": {
+        "samples": 1149,
+        "assessed_samples": 1149,
+        "no_near_sole_fraction": 0.0,
+        "outside_2cm_fraction": 0.1061792863359443,
+        "outside_5cm_fraction": 0.0557006092254134,
+        "outside_rms_m": 0.03341087913330087,
+        "outside_peak_m": 0.286168120675049
+      },
+      "entry": {
+        "samples": 151,
+        "assessed_samples": 151,
+        "no_near_sole_fraction": 0.0,
+        "outside_2cm_fraction": 0.0,
+        "outside_5cm_fraction": 0.0,
+        "outside_rms_m": 0.0,
+        "outside_peak_m": 0.0
+      },
+      "exit": {
+        "samples": 151,
+        "assessed_samples": 151,
+        "no_near_sole_fraction": 0.0,
+        "outside_2cm_fraction": 0.0,
+        "outside_5cm_fraction": 0.0,
+        "outside_rms_m": 0.0027311508761281257,
+        "outside_peak_m": 0.013577279691634473
+      },
+      "settle": {
+        "samples": 251,
+        "assessed_samples": 251,
+        "no_near_sole_fraction": 0.0,
+        "outside_2cm_fraction": 0.0,
+        "outside_5cm_fraction": 0.0,
+        "outside_rms_m": 0.0,
+        "outside_peak_m": 0.0
+      },
+      "standing": {
+        "samples": 101,
+        "assessed_samples": 101,
+        "no_near_sole_fraction": 0.0,
+        "outside_2cm_fraction": 0.0,
+        "outside_5cm_fraction": 0.0,
+        "outside_rms_m": 0.0,
+        "outside_peak_m": 0.0
+      }
+    },
+    "physical": true,
+    "new_reference_rmse": 0.1008395725257274,
+    "original_style": {
+      "complete": true,
+      "anchor_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa",
+      "dance_joint_rmse_rad": 0.1299669338786526,
+      "main_joint_indices": [
+        0,
+        3,
+        6,
+        9,
+        15,
+        16,
+        17,
+        18,
+        22,
+        23,
+        24,
+        25
+      ],
+      "amplitude_ratios": {
+        "0": 0.7964077890088299,
+        "3": 0.9190554457910608,
+        "6": 0.9330662079560458,
+        "9": 0.839941008991553,
+        "15": 0.9758519726198189,
+        "16": 0.9070381139478689,
+        "17": 1.0372353831215881,
+        "18": 0.9789147061656346,
+        "22": 1.0733627597467943,
+        "23": 0.9034673354862274,
+        "24": 1.0136477484944837,
+        "25": 1.0896372919202084
+      },
+      "correlations": {
+        "0": 0.9339737304033365,
+        "3": 0.93206581233289,
+        "6": 0.901790339295941,
+        "9": 0.9319884144301306,
+        "15": 0.967035076520002,
+        "16": 0.9740364947514161,
+        "17": 0.9487789869981175,
+        "18": 0.9327547830666405,
+        "22": 0.9881707614309411,
+        "23": 0.9916514002804621,
+        "24": 0.9927689456358547,
+        "25": 0.9856242010182568
+      },
+      "limits": {
+        "dance_joint_rmse_rad": 0.13,
+        "amplitude_ratio_min": 0.8,
+        "correlation_min": 0.9
+      },
+      "passed": false
+    },
+    "worst_hf": 0.008986385672514195,
+    "full_pass": false
+  }
+]

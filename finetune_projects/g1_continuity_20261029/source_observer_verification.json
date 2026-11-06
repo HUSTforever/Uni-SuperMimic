@@ -1,0 +1,6 @@
+{
+  "same_run_200hz_vs_50hz_position_joint_error": 0.0,
+  "quaternion_sign_invariant_error": 2.6702821287472034e-07,
+  "observer_vs_unobserved_max_error": 9.950250387191772e-06,
+  "notes": "Raw quaternion sign is preserved; q and -q encode the same rotation. No extra mj_forward."
+}

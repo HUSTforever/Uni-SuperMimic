@@ -1,0 +1,405 @@
+{
+  "goal_complete": false,
+  "selected_for_delivery": null,
+  "hardware_ready": false,
+  "default_kept": "finetune_projects/g1_continuous_20261029/candidates/ground008_000200",
+  "retained_experimental": "candidates/run002_000250",
+  "completed_training_iterations": 3300,
+  "candidates": [
+    {
+      "run": "run_001",
+      "iteration": 250,
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/run001_000250",
+      "physical_complete": true,
+      "dance_joint_rmse": 0.13442086973739337,
+      "worst_ankle_hf_rms": 0.013689444928731455,
+      "continuity_passed": false,
+      "full_pass": false,
+      "report": "finetune_projects/g1_continuity_20261029/evaluation/run001_000250/report.json"
+    },
+    {
+      "run": "run_001",
+      "iteration": 500,
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/run001_000500",
+      "physical_complete": true,
+      "dance_joint_rmse": 0.1371291160119457,
+      "worst_ankle_hf_rms": 0.013182540076157887,
+      "continuity_passed": false,
+      "full_pass": false,
+      "report": "finetune_projects/g1_continuity_20261029/evaluation/run001_000500/report.json"
+    },
+    {
+      "run": "run_001",
+      "iteration": 750,
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/run001_000750",
+      "physical_complete": true,
+      "dance_joint_rmse": 0.13985301419118087,
+      "worst_ankle_hf_rms": 0.014366211997186037,
+      "continuity_passed": false,
+      "full_pass": false,
+      "report": "finetune_projects/g1_continuity_20261029/evaluation/run001_000750/report.json"
+    },
+    {
+      "run": "run_001",
+      "iteration": 1000,
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/run001_001000",
+      "physical_complete": true,
+      "dance_joint_rmse": 0.14628022962153836,
+      "worst_ankle_hf_rms": 0.012996786222532187,
+      "continuity_passed": false,
+      "full_pass": false,
+      "report": "finetune_projects/g1_continuity_20261029/evaluation/run001_001000/report.json"
+    },
+    {
+      "run": "run_002",
+      "iteration": 250,
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/run002_000250",
+      "physical_complete": true,
+      "dance_joint_rmse": 0.12690851354330748,
+      "worst_ankle_hf_rms": 0.008969712506762484,
+      "continuity_passed": false,
+      "full_pass": false,
+      "report": "finetune_projects/g1_continuity_20261029/evaluation/run002_000250/report.json"
+    },
+    {
+      "run": "run_002",
+      "iteration": 500,
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/run002_000500",
+      "physical_complete": true,
+      "dance_joint_rmse": 0.12730363761473282,
+      "worst_ankle_hf_rms": 0.009226125512746295,
+      "continuity_passed": false,
+      "full_pass": false,
+      "report": "finetune_projects/g1_continuity_20261029/evaluation/run002_000500/report.json"
+    },
+    {
+      "run": "run_002",
+      "iteration": 750,
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/run002_000750",
+      "physical_complete": true,
+      "dance_joint_rmse": 0.13220715426720767,
+      "worst_ankle_hf_rms": 0.011823764782681443,
+      "continuity_passed": false,
+      "full_pass": false,
+      "report": "finetune_projects/g1_continuity_20261029/evaluation/run002_000750/report.json"
+    },
+    {
+      "run": "run_002",
+      "iteration": 1000,
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/run002_001000",
+      "physical_complete": true,
+      "dance_joint_rmse": 0.1355381899513881,
+      "worst_ankle_hf_rms": 0.010860343050448282,
+      "continuity_passed": false,
+      "full_pass": false,
+      "report": "finetune_projects/g1_continuity_20261029/evaluation/run002_001000/report.json"
+    },
+    {
+      "run": "run_002",
+      "iteration": 1250,
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/run002_001250",
+      "physical_complete": true,
+      "dance_joint_rmse": 0.13174105009471407,
+      "worst_ankle_hf_rms": 0.009387715059338317,
+      "continuity_passed": false,
+      "full_pass": false,
+      "report": "finetune_projects/g1_continuity_20261029/evaluation/run002_001250/report.json"
+    },
+    {
+      "run": "run_002",
+      "iteration": 1500,
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/run002_001500",
+      "physical_complete": true,
+      "dance_joint_rmse": 0.13231958157898005,
+      "worst_ankle_hf_rms": 0.011891684682875183,
+      "continuity_passed": false,
+      "full_pass": false,
+      "report": "finetune_projects/g1_continuity_20261029/evaluation/run002_001500/report.json"
+    },
+    {
+      "run": "run_004_slow090",
+      "iteration": 100,
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/slow004_000100",
+      "physical_complete": true,
+      "dance_joint_rmse": 0.13242351102360936,
+      "worst_ankle_hf_rms": 0.010631373584022604,
+      "continuity_passed": false,
+      "full_pass": false,
+      "report": "finetune_projects/g1_continuity_20261029/evaluation/slow004_000100/report.json"
+    },
+    {
+      "run": "run_004_slow090",
+      "iteration": 200,
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/slow004_000200",
+      "physical_complete": true,
+      "dance_joint_rmse": 0.13264868329017934,
+      "worst_ankle_hf_rms": 0.009256864991968095,
+      "continuity_passed": false,
+      "full_pass": false,
+      "report": "finetune_projects/g1_continuity_20261029/evaluation/slow004_000200/report.json"
+    },
+    {
+      "run": "run_004_slow090",
+      "iteration": 300,
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/slow004_000300",
+      "physical_complete": true,
+      "dance_joint_rmse": 0.13291002877894947,
+      "worst_ankle_hf_rms": 0.00800792036751038,
+      "continuity_passed": false,
+      "full_pass": false,
+      "report": "finetune_projects/g1_continuity_20261029/evaluation/slow004_000300/report.json"
+    },
+    {
+      "run": "run_004_slow090",
+      "iteration": 400,
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/slow004_000400",
+      "physical_complete": true,
+      "dance_joint_rmse": 0.1351806706162288,
+      "worst_ankle_hf_rms": 0.009316108146590632,
+      "continuity_passed": false,
+      "full_pass": false,
+      "report": "finetune_projects/g1_continuity_20261029/evaluation/slow004_000400/report.json"
+    },
+    {
+      "run": "run_004_slow090",
+      "iteration": 500,
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/slow004_000500",
+      "physical_complete": true,
+      "dance_joint_rmse": 0.13420915207812786,
+      "worst_ankle_hf_rms": 0.010701889155515147,
+      "continuity_passed": false,
+      "full_pass": false,
+      "report": "finetune_projects/g1_continuity_20261029/evaluation/slow004_000500/report.json"
+    },
+    {
+      "run": "run_004_slow090",
+      "iteration": 600,
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/slow004_000600",
+      "physical_complete": true,
+      "dance_joint_rmse": 0.14119766714949075,
+      "worst_ankle_hf_rms": 0.010294907140129424,
+      "continuity_passed": false,
+      "full_pass": false,
+      "report": "finetune_projects/g1_continuity_20261029/evaluation/slow004_000600/report.json"
+    },
+    {
+      "run": "run_004_slow090",
+      "iteration": 700,
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/slow004_000700",
+      "physical_complete": true,
+      "dance_joint_rmse": 0.13606745908960227,
+      "worst_ankle_hf_rms": 0.010118647452272799,
+      "continuity_passed": false,
+      "full_pass": false,
+      "report": "finetune_projects/g1_continuity_20261029/evaluation/slow004_000700/report.json"
+    },
+    {
+      "run": "run_004_slow090",
+      "iteration": 800,
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/slow004_000800",
+      "physical_complete": true,
+      "dance_joint_rmse": 0.13776470036125452,
+      "worst_ankle_hf_rms": 0.008661033895858287,
+      "continuity_passed": false,
+      "full_pass": false,
+      "report": "finetune_projects/g1_continuity_20261029/evaluation/slow004_000800/report.json"
+    }
+  ],
+  "retiming_unadapted_probes": [
+    {
+      "name": "s090",
+      "physical_complete": true,
+      "dance_rmse": 0.1314453487825084,
+      "worst_hf": 0.01066860619406022,
+      "phase_hf": {
+        "dance": 0.0028009636206166076,
+        "entry": 0.002933374325390375,
+        "exit": 0.0019185651862673716,
+        "settle": 1.310496786617476e-07,
+        "standing": 6.050477900609426e-06
+      },
+      "continuity_passed": false,
+      "full_pass": false
+    },
+    {
+      "name": "s080",
+      "physical_complete": true,
+      "dance_rmse": 0.14097660041591958,
+      "worst_hf": 0.016362648962078282,
+      "phase_hf": {
+        "dance": 0.004107913775965567,
+        "entry": 0.0026481255839094194,
+        "exit": 0.002493605612855904,
+        "settle": 3.307653303781396e-07,
+        "standing": 6.050417016739778e-06
+      },
+      "continuity_passed": false,
+      "full_pass": false
+    }
+  ],
+  "next_experiment": {
+    "status": "physical_model_diagnosis_completed_policy_retraining_pending",
+    "orchestrator": "train_retime.py",
+    "reproduction": "run_003_reproduce",
+    "training": "run_004_slow090",
+    "training_completed": true,
+    "selected_for_delivery": null
+  },
+  "comparison_video": "artifacts/run002_250_dds_24_28_compare.mp4",
+  "method": "CONTINUITY_METHOD.md",
+  "tests": {
+    "passed": 289,
+    "skipped": 2,
+    "slow_deselected": 9
+  },
+  "reproduction_iterations": 250,
+  "world_model_audit": {
+    "physical_replay_max_qpos_error": 0.0,
+    "horizons_steps": {
+      "1": {
+        "dance": {
+          "samples": 230,
+          "joint_position_rmse_rad": 0.0015304054832085967,
+          "ankle_velocity_rmse_rad_s": 0.4435183107852936,
+          "root_vertical_velocity_rmse_m_s": 0.008030304685235023,
+          "predicted_ankle_velocity_cost": 0.10964406281709671,
+          "actual_ankle_velocity_cost": 0.14823420345783234,
+          "cost_ratio": 0.7396677732467651
+        },
+        "entry": {
+          "samples": 30,
+          "joint_position_rmse_rad": 0.0006992317503318191,
+          "ankle_velocity_rmse_rad_s": 0.29367274045944214,
+          "root_vertical_velocity_rmse_m_s": 0.0033590062521398067,
+          "predicted_ankle_velocity_cost": 0.004732836503535509,
+          "actual_ankle_velocity_cost": 0.017488369718194008,
+          "cost_ratio": 0.2706276476383209
+        },
+        "exit": {
+          "samples": 30,
+          "joint_position_rmse_rad": 0.0007848372333683074,
+          "ankle_velocity_rmse_rad_s": 0.11807790398597717,
+          "root_vertical_velocity_rmse_m_s": 0.0038519303780049086,
+          "predicted_ankle_velocity_cost": 0.005794741678982973,
+          "actual_ankle_velocity_cost": 0.009233907796442509,
+          "cost_ratio": 0.6275503039360046
+        },
+        "settle": {
+          "samples": 50,
+          "joint_position_rmse_rad": 0.0003898545110132545,
+          "ankle_velocity_rmse_rad_s": 0.02364077977836132,
+          "root_vertical_velocity_rmse_m_s": 0.006605057045817375,
+          "predicted_ankle_velocity_cost": 0.00016515908646397293,
+          "actual_ankle_velocity_cost": 1.6082367437775247e-05,
+          "cost_ratio": 10.269575119018555
+        },
+        "standing": {
+          "samples": 20,
+          "joint_position_rmse_rad": 0.0006304255803115666,
+          "ankle_velocity_rmse_rad_s": 0.04773559793829918,
+          "root_vertical_velocity_rmse_m_s": 0.005719967186450958,
+          "predicted_ankle_velocity_cost": 0.00044525618432089686,
+          "actual_ankle_velocity_cost": 0.001057591987773776,
+          "cost_ratio": 0.4210094213485718
+        }
+      },
+      "8": {
+        "dance": {
+          "samples": 229,
+          "joint_position_rmse_rad": 0.004624033812433481,
+          "ankle_velocity_rmse_rad_s": 0.48099657893180847,
+          "root_vertical_velocity_rmse_m_s": 0.010158941149711609,
+          "predicted_ankle_velocity_cost": 0.1115359514951706,
+          "actual_ankle_velocity_cost": 0.15826764702796936,
+          "cost_ratio": 0.7047299742698669
+        },
+        "entry": {
+          "samples": 29,
+          "joint_position_rmse_rad": 0.003927580080926418,
+          "ankle_velocity_rmse_rad_s": 0.35521289706230164,
+          "root_vertical_velocity_rmse_m_s": 0.004031020682305098,
+          "predicted_ankle_velocity_cost": 0.0033564320765435696,
+          "actual_ankle_velocity_cost": 0.033454302698373795,
+          "cost_ratio": 0.10032886266708374
+        },
+        "exit": {
+          "samples": 29,
+          "joint_position_rmse_rad": 0.004046505317091942,
+          "ankle_velocity_rmse_rad_s": 0.19049614667892456,
+          "root_vertical_velocity_rmse_m_s": 0.006487680599093437,
+          "predicted_ankle_velocity_cost": 0.004399581346660852,
+          "actual_ankle_velocity_cost": 0.015094039961695671,
+          "cost_ratio": 0.2914780378341675
+        },
+        "settle": {
+          "samples": 49,
+          "joint_position_rmse_rad": 0.0025847633369266987,
+          "ankle_velocity_rmse_rad_s": 0.01131380070000887,
+          "root_vertical_velocity_rmse_m_s": 0.0010812514228746295,
+          "predicted_ankle_velocity_cost": 5.727136158384383e-05,
+          "actual_ankle_velocity_cost": 1.4705628927913494e-05,
+          "cost_ratio": 3.894519805908203
+        },
+        "standing": {
+          "samples": 19,
+          "joint_position_rmse_rad": 0.0034168658312410116,
+          "ankle_velocity_rmse_rad_s": 0.01376320980489254,
+          "root_vertical_velocity_rmse_m_s": 0.0006804150179959834,
+          "predicted_ankle_velocity_cost": 0.00016894805594347417,
+          "actual_ankle_velocity_cost": 9.127202065428719e-05,
+          "cost_ratio": 1.8510388135910034
+        }
+      },
+      "32": {
+        "dance": {
+          "samples": 224,
+          "joint_position_rmse_rad": 0.0159740149974823,
+          "ankle_velocity_rmse_rad_s": 0.6071767807006836,
+          "root_vertical_velocity_rmse_m_s": 0.02884221076965332,
+          "predicted_ankle_velocity_cost": 0.1220872774720192,
+          "actual_ankle_velocity_cost": 0.18722030520439148,
+          "cost_ratio": 0.652104914188385
+        },
+        "entry": {
+          "samples": 24,
+          "joint_position_rmse_rad": 0.01019495353102684,
+          "ankle_velocity_rmse_rad_s": 0.3210058808326721,
+          "root_vertical_velocity_rmse_m_s": 0.0047619035467505455,
+          "predicted_ankle_velocity_cost": 0.004202903714030981,
+          "actual_ankle_velocity_cost": 0.030286753550171852,
+          "cost_ratio": 0.13877035677433014
+        },
+        "exit": {
+          "samples": 24,
+          "joint_position_rmse_rad": 0.010383863933384418,
+          "ankle_velocity_rmse_rad_s": 0.15804146230220795,
+          "root_vertical_velocity_rmse_m_s": 0.006276555359363556,
+          "predicted_ankle_velocity_cost": 0.010572460480034351,
+          "actual_ankle_velocity_cost": 0.018202384933829308,
+          "cost_ratio": 0.5808283090591431
+        },
+        "settle": {
+          "samples": 44,
+          "joint_position_rmse_rad": 0.006527571473270655,
+          "ankle_velocity_rmse_rad_s": 0.02373536303639412,
+          "root_vertical_velocity_rmse_m_s": 9.923322795657441e-05,
+          "predicted_ankle_velocity_cost": 0.0001638360263314098,
+          "actual_ankle_velocity_cost": 3.196268608007813e-06,
+          "cost_ratio": 51.25852966308594
+        },
+        "standing": {
+          "samples": 14,
+          "joint_position_rmse_rad": 0.010965300723910332,
+          "ankle_velocity_rmse_rad_s": 0.017936937510967255,
+          "root_vertical_velocity_rmse_m_s": 0.0013552141608670354,
+          "predicted_ankle_velocity_cost": 7.328237552428618e-05,
+          "actual_ankle_velocity_cost": 9.032228263095021e-06,
+          "cost_ratio": 8.113432884216309
+        }
+      }
+    },
+    "explanation": "Open-loop predicted states use recorded physical actions; no policy optimization or promotion.",
+    "goal_complete_claimed": false,
+    "hardware_ready": false
+  }
+}

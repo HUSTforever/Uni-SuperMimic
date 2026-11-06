@@ -1,0 +1,2283 @@
+{
+  "metrics_version": 2,
+  "complete": true,
+  "expected_samples": 7193,
+  "recorded_samples": 7193,
+  "physics_hz": 200.0,
+  "limits": {
+    "frequency_hz": 8.0,
+    "phase_ankle_angle_rms": 0.0025,
+    "window_ankle_angle_rms": 0.005,
+    "phase_root_z_rms": 0.0005,
+    "window_root_z_rms": 0.001,
+    "window_seconds": 2.0,
+    "hop_seconds": 0.5
+  },
+  "phases": {
+    "dance": {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 4593,
+      "start_time": 5.0,
+      "end_time": 27.96,
+      "ankle_hf_position_rms_rad": [
+        0.003037414076798764,
+        0.0022871186615711792,
+        0.0039596316803124565,
+        0.0023473006967984975
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.40674687768014745,
+        0.2849021714764574,
+        0.5514376297295891,
+        0.2825868624022033
+      ],
+      "ankle_hf_position_max_rad": 0.0039596316803124565,
+      "ankle_hf_velocity_max_rad_s": 0.5514376297295891,
+      "root_vertical_hf_position_rms_m": 0.00012499891775586024,
+      "root_vertical_acceleration_rms": 2.3672328534947153,
+      "root_vertical_acceleration_peak": 25.264101935946762,
+      "joint_acceleration_rms": 30.91956177796135,
+      "joint_jerk_rms": 5100.287594226898,
+      "ankle_passed": false,
+      "root_vertical_passed": true,
+      "passed": false
+    },
+    "entry": {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 601,
+      "start_time": 2.0,
+      "end_time": 5.0,
+      "ankle_hf_position_rms_rad": [
+        0.0031713779805193315,
+        0.0005967911298416479,
+        6.216927634262295e-05,
+        0.00020600402309070814
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.6252822396580121,
+        0.1183655915519752,
+        0.006071197165206416,
+        0.024028053294815468
+      ],
+      "ankle_hf_position_max_rad": 0.0031713779805193315,
+      "ankle_hf_velocity_max_rad_s": 0.6252822396580121,
+      "root_vertical_hf_position_rms_m": 1.1203976796464265e-05,
+      "root_vertical_acceleration_rms": 0.22793318570989987,
+      "root_vertical_acceleration_peak": 1.1012272259523102,
+      "joint_acceleration_rms": 16.404197851178022,
+      "joint_jerk_rms": 2945.1138540977154,
+      "ankle_passed": false,
+      "root_vertical_passed": true,
+      "passed": false
+    },
+    "exit": {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 601,
+      "start_time": 27.96,
+      "end_time": 30.96,
+      "ankle_hf_position_rms_rad": [
+        0.0012871671402485978,
+        0.0007274205499357328,
+        0.0011072356449645198,
+        0.0005650221424489231
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.3145309946476962,
+        0.09112153998309039,
+        0.2679674263670485,
+        0.05595213756797405
+      ],
+      "ankle_hf_position_max_rad": 0.0012871671402485978,
+      "ankle_hf_velocity_max_rad_s": 0.3145309946476962,
+      "root_vertical_hf_position_rms_m": 6.641077732549828e-05,
+      "root_vertical_acceleration_rms": 0.4492412615239845,
+      "root_vertical_acceleration_peak": 4.638811393409576,
+      "joint_acceleration_rms": 12.892315429955499,
+      "joint_jerk_rms": 2297.390546443474,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    "settle": {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 1001,
+      "start_time": 30.96,
+      "end_time": 35.96,
+      "ankle_hf_position_rms_rad": [
+        1.9299104492988885e-07,
+        3.830015660953264e-07,
+        1.9622107776896468e-07,
+        4.110592191855404e-07
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        2.803210963997515e-05,
+        4.5594808352035513e-05,
+        1.5527563934800684e-05,
+        3.13959751169607e-05
+      ],
+      "ankle_hf_position_max_rad": 4.110592191855404e-07,
+      "ankle_hf_velocity_max_rad_s": 4.5594808352035513e-05,
+      "root_vertical_hf_position_rms_m": 1.367705003690785e-08,
+      "root_vertical_acceleration_rms": 0.0006101951195799098,
+      "root_vertical_acceleration_peak": 0.0046668824329916675,
+      "joint_acceleration_rms": 0.014903800671488708,
+      "joint_jerk_rms": 0.9250976753271364,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    "standing": {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "ankle_hf_position_rms_rad": [
+        5.505413461828665e-06,
+        1.2250492158936323e-06,
+        5.331019323899668e-06,
+        6.271063708391917e-06
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.00017930731239200782,
+        0.00012390845736432636,
+        0.0003800356420342867,
+        0.0013802187968866028
+      ],
+      "ankle_hf_position_max_rad": 6.271063708391917e-06,
+      "ankle_hf_velocity_max_rad_s": 0.0013802187968866028,
+      "root_vertical_hf_position_rms_m": 9.621164816867341e-07,
+      "root_vertical_acceleration_rms": 0.648979650493845,
+      "root_vertical_acceleration_peak": 7.534679896622764,
+      "joint_acceleration_rms": 4.417465180690159,
+      "joint_jerk_rms": 800.4544674520497,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    }
+  },
+  "windows": [
+    {
+      "spectral_extension": "odd_reflection_start",
+      "completed": true,
+      "samples": 201,
+      "start_time": 0.0,
+      "end_time": 1.0,
+      "ankle_hf_position_rms_rad": [
+        0.0020162717562357984,
+        0.00021755662137060136,
+        0.0028501554489859526,
+        0.00012399180745177555
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.12548507158468022,
+        0.03411222980951282,
+        0.22559443504573154,
+        0.02518547840003392
+      ],
+      "ankle_hf_position_max_rad": 0.0028501554489859526,
+      "ankle_hf_velocity_max_rad_s": 0.22559443504573154,
+      "root_vertical_hf_position_rms_m": 0.00011074227619260335,
+      "root_vertical_acceleration_rms": 0.9166535481186474,
+      "root_vertical_acceleration_peak": 7.534679896622764,
+      "joint_acceleration_rms": 6.239462769569383,
+      "joint_jerk_rms": 1130.604678645072,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 0.0,
+      "end_time": 2.0,
+      "ankle_hf_position_rms_rad": [
+        5.505413461828665e-06,
+        1.2250492158936323e-06,
+        5.331019323899668e-06,
+        6.271063708391917e-06
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.00017930731239200782,
+        0.00012390845736432636,
+        0.0003800356420342867,
+        0.0013802187968866028
+      ],
+      "ankle_hf_position_max_rad": 6.271063708391917e-06,
+      "ankle_hf_velocity_max_rad_s": 0.0013802187968866028,
+      "root_vertical_hf_position_rms_m": 9.621164816867341e-07,
+      "root_vertical_acceleration_rms": 0.648979650493845,
+      "root_vertical_acceleration_peak": 7.534679896622764,
+      "joint_acceleration_rms": 4.417465180690159,
+      "joint_jerk_rms": 800.4544674520497,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 0.5,
+      "end_time": 2.5,
+      "ankle_hf_position_rms_rad": [
+        1.6252437772797728e-07,
+        3.869883481982315e-07,
+        1.9323191729303384e-07,
+        6.053945534037297e-07
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        2.8705189538002715e-05,
+        2.6689139264332723e-05,
+        2.3087513607851972e-05,
+        7.50354637453472e-05
+      ],
+      "ankle_hf_position_max_rad": 6.053945534037297e-07,
+      "ankle_hf_velocity_max_rad_s": 7.50354637453472e-05,
+      "root_vertical_hf_position_rms_m": 1.3736491875928822e-08,
+      "root_vertical_acceleration_rms": 0.004480181004428609,
+      "root_vertical_acceleration_peak": 0.03682703440686899,
+      "joint_acceleration_rms": 0.09690546570561402,
+      "joint_jerk_rms": 10.051663594451968,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 1.0,
+      "end_time": 3.0,
+      "ankle_hf_position_rms_rad": [
+        2.404218525212176e-06,
+        5.335924211798592e-06,
+        2.2428860290647593e-06,
+        3.581623414325029e-06
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.00020022561331241537,
+        0.0005163837419763972,
+        0.00020913466193465434,
+        0.00042043459662179723
+      ],
+      "ankle_hf_position_max_rad": 5.335924211798592e-06,
+      "ankle_hf_velocity_max_rad_s": 0.0005163837419763972,
+      "root_vertical_hf_position_rms_m": 4.823134910238815e-07,
+      "root_vertical_acceleration_rms": 0.030530962110240617,
+      "root_vertical_acceleration_peak": 0.13872437879028332,
+      "joint_acceleration_rms": 0.37680400777105993,
+      "joint_jerk_rms": 57.651968731049735,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 1.5,
+      "end_time": 3.5,
+      "ankle_hf_position_rms_rad": [
+        0.00025314862643645454,
+        7.735666083220822e-05,
+        1.9213899371741507e-05,
+        4.8313310401901254e-05
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.05621293943878557,
+        0.011124604046967046,
+        0.0021199249623655016,
+        0.008268453571392909
+      ],
+      "ankle_hf_position_max_rad": 0.00025314862643645454,
+      "ankle_hf_velocity_max_rad_s": 0.05621293943878557,
+      "root_vertical_hf_position_rms_m": 1.8977224740210761e-06,
+      "root_vertical_acceleration_rms": 0.15707294712103387,
+      "root_vertical_acceleration_peak": 1.0861202226598632,
+      "joint_acceleration_rms": 12.229060030310807,
+      "joint_jerk_rms": 2173.174672846393,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 2.0,
+      "end_time": 4.0,
+      "ankle_hf_position_rms_rad": [
+        0.0024861521505349375,
+        0.0004380294791694787,
+        6.180203315632136e-05,
+        0.00011626870851622864
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.4908628720808308,
+        0.07412528468756506,
+        0.005886481812089523,
+        0.019584109473585055
+      ],
+      "ankle_hf_position_max_rad": 0.0024861521505349375,
+      "ankle_hf_velocity_max_rad_s": 0.4908628720808308,
+      "root_vertical_hf_position_rms_m": 7.316271074056134e-06,
+      "root_vertical_acceleration_rms": 0.1943144626150981,
+      "root_vertical_acceleration_peak": 1.0861202226598632,
+      "joint_acceleration_rms": 13.34385085015191,
+      "joint_jerk_rms": 2415.7573807462104,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 2.5,
+      "end_time": 4.5,
+      "ankle_hf_position_rms_rad": [
+        0.0033904061144914175,
+        0.0005822422277430579,
+        6.677186828991302e-05,
+        0.00021561602595939947
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.6519680908018758,
+        0.1101919178390891,
+        0.006369209923152757,
+        0.025108823160435504
+      ],
+      "ankle_hf_position_max_rad": 0.0033904061144914175,
+      "ankle_hf_velocity_max_rad_s": 0.6519680908018758,
+      "root_vertical_hf_position_rms_m": 9.911050926834532e-06,
+      "root_vertical_acceleration_rms": 0.242546326780787,
+      "root_vertical_acceleration_peak": 1.0861202226598632,
+      "joint_acceleration_rms": 17.348466555292543,
+      "joint_jerk_rms": 3085.4439687055374,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 3.0,
+      "end_time": 5.0,
+      "ankle_hf_position_rms_rad": [
+        0.0031045689765512234,
+        0.0007273022539658206,
+        4.0151845289232085e-05,
+        0.00023422913803127418
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.6608459883429538,
+        0.16224757989204341,
+        0.0050567936441055636,
+        0.024039174810300858
+      ],
+      "ankle_hf_position_max_rad": 0.0031045689765512234,
+      "ankle_hf_velocity_max_rad_s": 0.6608459883429538,
+      "root_vertical_hf_position_rms_m": 1.5928105265438446e-05,
+      "root_vertical_acceleration_rms": 0.27739267188428696,
+      "root_vertical_acceleration_peak": 1.1012272259523102,
+      "joint_acceleration_rms": 20.079088268611216,
+      "joint_jerk_rms": 3605.0539803161155,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 3.5,
+      "end_time": 5.5,
+      "ankle_hf_position_rms_rad": [
+        0.0032321076109804964,
+        0.0007367835336648288,
+        3.3662632696202996e-05,
+        7.863337406697622e-05
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.6331073289753695,
+        0.15415970357783376,
+        0.003746991205697194,
+        0.007956369944497409
+      ],
+      "ankle_hf_position_max_rad": 0.0032321076109804964,
+      "ankle_hf_velocity_max_rad_s": 0.6331073289753695,
+      "root_vertical_hf_position_rms_m": 2.0933347700508536e-05,
+      "root_vertical_acceleration_rms": 0.2576370914857585,
+      "root_vertical_acceleration_peak": 1.1012272259523102,
+      "joint_acceleration_rms": 16.2162615307666,
+      "joint_jerk_rms": 2919.5209147715054,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 4.0,
+      "end_time": 6.0,
+      "ankle_hf_position_rms_rad": [
+        0.0025036735451336666,
+        0.0005374037180654251,
+        6.044061124117882e-05,
+        2.8190927393702708e-05
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.40933769255440766,
+        0.0943377350204996,
+        0.003577451420764613,
+        0.0024876537559787777
+      ],
+      "ankle_hf_position_max_rad": 0.0025036735451336666,
+      "ankle_hf_velocity_max_rad_s": 0.40933769255440766,
+      "root_vertical_hf_position_rms_m": 1.575469705124458e-05,
+      "root_vertical_acceleration_rms": 0.4768482305192624,
+      "root_vertical_acceleration_peak": 2.8426523195430935,
+      "joint_acceleration_rms": 21.343403810098525,
+      "joint_jerk_rms": 3727.420221387267,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 4.5,
+      "end_time": 6.5,
+      "ankle_hf_position_rms_rad": [
+        0.002489672176272766,
+        0.0008349864632995237,
+        0.0026987569744777403,
+        0.000978243759200131
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.6071611826999522,
+        0.07746460212321471,
+        0.2110017142478,
+        0.1885644972468943
+      ],
+      "ankle_hf_position_max_rad": 0.0026987569744777403,
+      "ankle_hf_velocity_max_rad_s": 0.6071611826999522,
+      "root_vertical_hf_position_rms_m": 2.8802332715848856e-05,
+      "root_vertical_acceleration_rms": 1.0399061139196137,
+      "root_vertical_acceleration_peak": 5.771166816394494,
+      "joint_acceleration_rms": 29.889289426572514,
+      "joint_jerk_rms": 5026.394148821706,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 5.0,
+      "end_time": 7.0,
+      "ankle_hf_position_rms_rad": [
+        0.0028672014791677647,
+        0.0014587468684315338,
+        0.005458530861220376,
+        0.0034753349445766505
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.6629441589332202,
+        0.13025139852838416,
+        0.7733715587903656,
+        0.679635434899895
+      ],
+      "ankle_hf_position_max_rad": 0.005458530861220376,
+      "ankle_hf_velocity_max_rad_s": 0.7733715587903656,
+      "root_vertical_hf_position_rms_m": 0.00011864220712643389,
+      "root_vertical_acceleration_rms": 1.6980761866907788,
+      "root_vertical_acceleration_peak": 7.885772515972583,
+      "joint_acceleration_rms": 31.04221191717476,
+      "joint_jerk_rms": 5068.144125665421,
+      "ankle_passed": false,
+      "root_vertical_passed": true,
+      "passed": false
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 5.5,
+      "end_time": 7.5,
+      "ankle_hf_position_rms_rad": [
+        0.003608847776040677,
+        0.0019178205514970596,
+        0.0037644766828438376,
+        0.003388978560539766
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.42227472692457635,
+        0.18465440092767407,
+        0.8742760138854402,
+        0.6348879015031129
+      ],
+      "ankle_hf_position_max_rad": 0.0037644766828438376,
+      "ankle_hf_velocity_max_rad_s": 0.8742760138854402,
+      "root_vertical_hf_position_rms_m": 0.00020683126186102533,
+      "root_vertical_acceleration_rms": 2.5364264920602415,
+      "root_vertical_acceleration_peak": 10.38036629364746,
+      "joint_acceleration_rms": 42.10885193371493,
+      "joint_jerk_rms": 6895.002585891565,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 6.0,
+      "end_time": 8.0,
+      "ankle_hf_position_rms_rad": [
+        0.006199726967638114,
+        0.005712483616493021,
+        0.0034675669647967165,
+        0.002411428683385852
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.9374202290877705,
+        0.7488318240472726,
+        0.6178004743241247,
+        0.2966800676234882
+      ],
+      "ankle_hf_position_max_rad": 0.006199726967638114,
+      "ankle_hf_velocity_max_rad_s": 0.9374202290877705,
+      "root_vertical_hf_position_rms_m": 0.00022015769603094258,
+      "root_vertical_acceleration_rms": 2.6853076129452615,
+      "root_vertical_acceleration_peak": 10.38036629364746,
+      "joint_acceleration_rms": 42.33973650993382,
+      "joint_jerk_rms": 6906.974156268155,
+      "ankle_passed": false,
+      "root_vertical_passed": true,
+      "passed": false
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 6.5,
+      "end_time": 8.5,
+      "ankle_hf_position_rms_rad": [
+        0.005602507261294709,
+        0.00605104426887877,
+        0.006911818977367899,
+        0.0026993140708372835
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.93866163822875,
+        0.8366925003008832,
+        0.6081811780942374,
+        0.294720283728137
+      ],
+      "ankle_hf_position_max_rad": 0.006911818977367899,
+      "ankle_hf_velocity_max_rad_s": 0.93866163822875,
+      "root_vertical_hf_position_rms_m": 0.00016938122495163623,
+      "root_vertical_acceleration_rms": 2.7490131881798656,
+      "root_vertical_acceleration_peak": 10.38036629364746,
+      "joint_acceleration_rms": 41.477567557254,
+      "joint_jerk_rms": 6844.4582401263315,
+      "ankle_passed": false,
+      "root_vertical_passed": true,
+      "passed": false
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 7.0,
+      "end_time": 9.0,
+      "ankle_hf_position_rms_rad": [
+        0.003522246977236489,
+        0.0017505543560223215,
+        0.00620119081203162,
+        0.0023667682984404807
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.6223423519578204,
+        0.2653624408043983,
+        0.9294012725134088,
+        0.32122915978580835
+      ],
+      "ankle_hf_position_max_rad": 0.00620119081203162,
+      "ankle_hf_velocity_max_rad_s": 0.9294012725134088,
+      "root_vertical_hf_position_rms_m": 0.00011426759825853995,
+      "root_vertical_acceleration_rms": 2.578787716806568,
+      "root_vertical_acceleration_peak": 10.38036629364746,
+      "joint_acceleration_rms": 41.59353520939226,
+      "joint_jerk_rms": 6936.824832569248,
+      "ankle_passed": false,
+      "root_vertical_passed": true,
+      "passed": false
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 7.5,
+      "end_time": 9.5,
+      "ankle_hf_position_rms_rad": [
+        0.004377324043629704,
+        0.001493075243891123,
+        0.0037070347228016554,
+        0.0022533290189947724
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.4411426483364822,
+        0.16030866845464783,
+        0.8687039735749059,
+        0.2778904405842961
+      ],
+      "ankle_hf_position_max_rad": 0.004377324043629704,
+      "ankle_hf_velocity_max_rad_s": 0.8687039735749059,
+      "root_vertical_hf_position_rms_m": 0.00011850835105076568,
+      "root_vertical_acceleration_rms": 2.3148011875889054,
+      "root_vertical_acceleration_peak": 5.848910197300203,
+      "joint_acceleration_rms": 34.69952709846385,
+      "joint_jerk_rms": 5713.604751675305,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 8.0,
+      "end_time": 10.0,
+      "ankle_hf_position_rms_rad": [
+        0.005345533996022802,
+        0.002972397939666204,
+        0.003248685871878256,
+        0.0019634398197783225
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.6499039423585903,
+        0.32387908356835365,
+        0.5324562126387803,
+        0.21365377960601661
+      ],
+      "ankle_hf_position_max_rad": 0.005345533996022802,
+      "ankle_hf_velocity_max_rad_s": 0.6499039423585903,
+      "root_vertical_hf_position_rms_m": 0.00017132598281549964,
+      "root_vertical_acceleration_rms": 2.2146262917437958,
+      "root_vertical_acceleration_peak": 5.848910197300203,
+      "joint_acceleration_rms": 43.65119622187415,
+      "joint_jerk_rms": 7546.516546408026,
+      "ankle_passed": false,
+      "root_vertical_passed": true,
+      "passed": false
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 8.5,
+      "end_time": 10.5,
+      "ankle_hf_position_rms_rad": [
+        0.006865963333002571,
+        0.005265468375051217,
+        0.00423633567570312,
+        0.002200529705194759
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        1.3366590845475543,
+        0.619191143668233,
+        0.47746790003610856,
+        0.25287721688624815
+      ],
+      "ankle_hf_position_max_rad": 0.006865963333002571,
+      "ankle_hf_velocity_max_rad_s": 1.3366590845475543,
+      "root_vertical_hf_position_rms_m": 0.0002149591405453874,
+      "root_vertical_acceleration_rms": 1.9393156836464147,
+      "root_vertical_acceleration_peak": 5.848910197300203,
+      "joint_acceleration_rms": 40.495811022300664,
+      "joint_jerk_rms": 7010.516091398013,
+      "ankle_passed": false,
+      "root_vertical_passed": true,
+      "passed": false
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 9.0,
+      "end_time": 11.0,
+      "ankle_hf_position_rms_rad": [
+        0.00621338489467936,
+        0.003286524181963674,
+        0.0020578513251287996,
+        0.0016074440021477483
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        1.4326337963160984,
+        0.45575010010952477,
+        0.2968454043215922,
+        0.18658230140567364
+      ],
+      "ankle_hf_position_max_rad": 0.00621338489467936,
+      "ankle_hf_velocity_max_rad_s": 1.4326337963160984,
+      "root_vertical_hf_position_rms_m": 9.932129904325276e-05,
+      "root_vertical_acceleration_rms": 1.7521877414685327,
+      "root_vertical_acceleration_peak": 5.848910197300203,
+      "joint_acceleration_rms": 41.66046027728967,
+      "joint_jerk_rms": 7262.060549817007,
+      "ankle_passed": false,
+      "root_vertical_passed": true,
+      "passed": false
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 9.5,
+      "end_time": 11.5,
+      "ankle_hf_position_rms_rad": [
+        0.002879757600358495,
+        0.0008456417277876618,
+        0.002337663638300556,
+        0.0015280484060990365
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.6016422917755323,
+        0.15082498445962225,
+        0.5677420316713766,
+        0.26587769642047554
+      ],
+      "ankle_hf_position_max_rad": 0.002879757600358495,
+      "ankle_hf_velocity_max_rad_s": 0.6016422917755323,
+      "root_vertical_hf_position_rms_m": 4.55029246533913e-05,
+      "root_vertical_acceleration_rms": 1.455365826706257,
+      "root_vertical_acceleration_peak": 7.029769033628277,
+      "joint_acceleration_rms": 42.80358698033122,
+      "joint_jerk_rms": 7533.806712799581,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 10.0,
+      "end_time": 12.0,
+      "ankle_hf_position_rms_rad": [
+        0.00531075120633086,
+        0.002588930754976826,
+        0.002701891032932574,
+        0.0018829248400004078
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.6104397755221869,
+        0.2640139036232393,
+        0.6683823549698517,
+        0.31240226837818313
+      ],
+      "ankle_hf_position_max_rad": 0.00531075120633086,
+      "ankle_hf_velocity_max_rad_s": 0.6683823549698517,
+      "root_vertical_hf_position_rms_m": 0.00014967853432143553,
+      "root_vertical_acceleration_rms": 2.031950599904088,
+      "root_vertical_acceleration_peak": 7.029769033628277,
+      "joint_acceleration_rms": 33.82453099501271,
+      "joint_jerk_rms": 5760.279677028187,
+      "ankle_passed": false,
+      "root_vertical_passed": true,
+      "passed": false
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 10.5,
+      "end_time": 12.5,
+      "ankle_hf_position_rms_rad": [
+        0.006411939822480507,
+        0.004171600509256767,
+        0.002416103114920726,
+        0.0021798187856539595
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.8063163757457579,
+        0.4802063057190135,
+        0.41152634662837967,
+        0.19913519832228094
+      ],
+      "ankle_hf_position_max_rad": 0.006411939822480507,
+      "ankle_hf_velocity_max_rad_s": 0.8063163757457579,
+      "root_vertical_hf_position_rms_m": 0.0002311968793238484,
+      "root_vertical_acceleration_rms": 2.1224587147554326,
+      "root_vertical_acceleration_peak": 7.029769033628277,
+      "joint_acceleration_rms": 33.96159020285043,
+      "joint_jerk_rms": 5702.65977424959,
+      "ankle_passed": false,
+      "root_vertical_passed": true,
+      "passed": false
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 11.0,
+      "end_time": 13.0,
+      "ankle_hf_position_rms_rad": [
+        0.00395778307675265,
+        0.005796154658175107,
+        0.003669506225817463,
+        0.002465506322821878
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.5811641145065556,
+        0.6839789920664093,
+        0.40452293063773836,
+        0.20531171711450608
+      ],
+      "ankle_hf_position_max_rad": 0.005796154658175107,
+      "ankle_hf_velocity_max_rad_s": 0.6839789920664093,
+      "root_vertical_hf_position_rms_m": 0.00016899723703598768,
+      "root_vertical_acceleration_rms": 2.32456864621362,
+      "root_vertical_acceleration_peak": 7.029769033628277,
+      "joint_acceleration_rms": 32.05109513685338,
+      "joint_jerk_rms": 5207.432435829309,
+      "ankle_passed": false,
+      "root_vertical_passed": true,
+      "passed": false
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 11.5,
+      "end_time": 13.5,
+      "ankle_hf_position_rms_rad": [
+        0.0026488346002829727,
+        0.0034406328468848412,
+        0.0042051649062557865,
+        0.0017342039224231393
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.4306122593584461,
+        0.3716855099282009,
+        0.5085001173902168,
+        0.2349845637762697
+      ],
+      "ankle_hf_position_max_rad": 0.0042051649062557865,
+      "ankle_hf_velocity_max_rad_s": 0.5085001173902168,
+      "root_vertical_hf_position_rms_m": 0.00011609650699126107,
+      "root_vertical_acceleration_rms": 2.332056870239129,
+      "root_vertical_acceleration_peak": 6.7418657911577,
+      "joint_acceleration_rms": 28.957143535599624,
+      "joint_jerk_rms": 4673.675324323812,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 12.0,
+      "end_time": 14.0,
+      "ankle_hf_position_rms_rad": [
+        0.0023484299849150436,
+        0.0016050102607195538,
+        0.0033200718578614936,
+        0.0026297099656164735
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.3412646358597467,
+        0.17202224599306293,
+        0.6104219133675375,
+        0.3816962457986246
+      ],
+      "ankle_hf_position_max_rad": 0.0033200718578614936,
+      "ankle_hf_velocity_max_rad_s": 0.6104219133675375,
+      "root_vertical_hf_position_rms_m": 9.891364196477716e-05,
+      "root_vertical_acceleration_rms": 2.0485721414104097,
+      "root_vertical_acceleration_peak": 8.468416876700468,
+      "joint_acceleration_rms": 30.52936644732648,
+      "joint_jerk_rms": 4992.87534966728,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 12.5,
+      "end_time": 14.5,
+      "ankle_hf_position_rms_rad": [
+        0.00374953223069263,
+        0.00360639515621457,
+        0.003259055695987366,
+        0.0023692779906590183
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.6113912918426584,
+        0.30926045423173476,
+        0.6802290214735429,
+        0.31066004131679364
+      ],
+      "ankle_hf_position_max_rad": 0.00374953223069263,
+      "ankle_hf_velocity_max_rad_s": 0.6802290214735429,
+      "root_vertical_hf_position_rms_m": 0.00016876509016015495,
+      "root_vertical_acceleration_rms": 2.0298375455882036,
+      "root_vertical_acceleration_peak": 8.468416876700468,
+      "joint_acceleration_rms": 27.93309832513453,
+      "joint_jerk_rms": 4562.2317788029295,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 13.0,
+      "end_time": 15.0,
+      "ankle_hf_position_rms_rad": [
+        0.0025361868844080335,
+        0.0029657997741423157,
+        0.0033366091379134393,
+        0.0014881832573202594
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.4013373800477005,
+        0.254201113069584,
+        0.6683243736478365,
+        0.2479744975342007
+      ],
+      "ankle_hf_position_max_rad": 0.0033366091379134393,
+      "ankle_hf_velocity_max_rad_s": 0.6683243736478365,
+      "root_vertical_hf_position_rms_m": 0.00013611907004138028,
+      "root_vertical_acceleration_rms": 1.7506573623801562,
+      "root_vertical_acceleration_peak": 8.468416876700468,
+      "joint_acceleration_rms": 25.528967984133647,
+      "joint_jerk_rms": 4176.737257502494,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 13.5,
+      "end_time": 15.5,
+      "ankle_hf_position_rms_rad": [
+        0.0005535873381379771,
+        0.0007161165440235103,
+        0.00344377062504671,
+        0.0018857134411582178
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.0840387661728461,
+        0.06865208502777369,
+        0.3914656246186269,
+        0.2076907510800775
+      ],
+      "ankle_hf_position_max_rad": 0.00344377062504671,
+      "ankle_hf_velocity_max_rad_s": 0.3914656246186269,
+      "root_vertical_hf_position_rms_m": 0.00011036974374611019,
+      "root_vertical_acceleration_rms": 1.2969704620066207,
+      "root_vertical_acceleration_peak": 8.468416876700468,
+      "joint_acceleration_rms": 21.61910763580876,
+      "joint_jerk_rms": 3507.718030160707,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 14.0,
+      "end_time": 16.0,
+      "ankle_hf_position_rms_rad": [
+        0.00029802214255227733,
+        0.00039045074524450313,
+        0.0013663521693281612,
+        0.0007534260654231798
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.04651064731003918,
+        0.05220212418901617,
+        0.13479864195576702,
+        0.0745733541239301
+      ],
+      "ankle_hf_position_max_rad": 0.0013663521693281612,
+      "ankle_hf_velocity_max_rad_s": 0.13479864195576702,
+      "root_vertical_hf_position_rms_m": 4.88153594490233e-05,
+      "root_vertical_acceleration_rms": 0.7510489246045917,
+      "root_vertical_acceleration_peak": 7.1096001944549085,
+      "joint_acceleration_rms": 11.941356190767307,
+      "joint_jerk_rms": 1742.2223080017836,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 14.5,
+      "end_time": 16.5,
+      "ankle_hf_position_rms_rad": [
+        0.00048570951169345906,
+        0.001488204065708294,
+        0.0013140723607572172,
+        0.0010457513908771784
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.04981700862004156,
+        0.141992455656738,
+        0.19185642168130895,
+        0.10659566144479267
+      ],
+      "ankle_hf_position_max_rad": 0.001488204065708294,
+      "ankle_hf_velocity_max_rad_s": 0.19185642168130895,
+      "root_vertical_hf_position_rms_m": 4.007220107029004e-05,
+      "root_vertical_acceleration_rms": 0.7692159068297498,
+      "root_vertical_acceleration_peak": 5.213334448396653,
+      "joint_acceleration_rms": 11.743701474401883,
+      "joint_jerk_rms": 1663.5783565436868,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 15.0,
+      "end_time": 17.0,
+      "ankle_hf_position_rms_rad": [
+        0.0012791771907952984,
+        0.001911669420348378,
+        0.002894415538657244,
+        0.0028698943818082907
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.16764948229726392,
+        0.1953983560799713,
+        0.3764622089122073,
+        0.2607965007411025
+      ],
+      "ankle_hf_position_max_rad": 0.002894415538657244,
+      "ankle_hf_velocity_max_rad_s": 0.3764622089122073,
+      "root_vertical_hf_position_rms_m": 0.00011253300738848173,
+      "root_vertical_acceleration_rms": 1.0826182755341969,
+      "root_vertical_acceleration_peak": 5.213334448396653,
+      "joint_acceleration_rms": 22.71895983752296,
+      "joint_jerk_rms": 3735.4468874151844,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 15.5,
+      "end_time": 17.5,
+      "ankle_hf_position_rms_rad": [
+        0.0022483194056112012,
+        0.001626655475238594,
+        0.0022109537156179684,
+        0.0022786077389059466
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.35343698899143455,
+        0.27150349481074226,
+        0.31442475616823795,
+        0.21558186839996024
+      ],
+      "ankle_hf_position_max_rad": 0.0022786077389059466,
+      "ankle_hf_velocity_max_rad_s": 0.35343698899143455,
+      "root_vertical_hf_position_rms_m": 0.00011226810339439712,
+      "root_vertical_acceleration_rms": 1.2352853427110602,
+      "root_vertical_acceleration_peak": 5.213334448396653,
+      "joint_acceleration_rms": 32.02243950481093,
+      "joint_jerk_rms": 5349.641667635793,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 16.0,
+      "end_time": 18.0,
+      "ankle_hf_position_rms_rad": [
+        0.0019718138994872705,
+        0.002211722032288395,
+        0.002932362733445296,
+        0.00290219014699575
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.41480962818165107,
+        0.4558354121715943,
+        0.627044820588922,
+        0.4318687350103499
+      ],
+      "ankle_hf_position_max_rad": 0.002932362733445296,
+      "ankle_hf_velocity_max_rad_s": 0.627044820588922,
+      "root_vertical_hf_position_rms_m": 0.000119912751961421,
+      "root_vertical_acceleration_rms": 1.254022747493646,
+      "root_vertical_acceleration_peak": 5.213334448396653,
+      "joint_acceleration_rms": 32.74327204408347,
+      "joint_jerk_rms": 5503.403768792347,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 16.5,
+      "end_time": 18.5,
+      "ankle_hf_position_rms_rad": [
+        0.001864509253325917,
+        0.0018240156515707063,
+        0.002979114859711833,
+        0.003370020156310928
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.37268488280775425,
+        0.34771051332898767,
+        0.7135233206192352,
+        0.5336086375779485
+      ],
+      "ankle_hf_position_max_rad": 0.003370020156310928,
+      "ankle_hf_velocity_max_rad_s": 0.7135233206192352,
+      "root_vertical_hf_position_rms_m": 7.739800073522332e-05,
+      "root_vertical_acceleration_rms": 1.1068883471064674,
+      "root_vertical_acceleration_peak": 4.724241939476303,
+      "joint_acceleration_rms": 32.28857031268748,
+      "joint_jerk_rms": 5469.139796100669,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 17.0,
+      "end_time": 19.0,
+      "ankle_hf_position_rms_rad": [
+        0.0012249293352023889,
+        0.0007308824371566852,
+        0.0015572725924873866,
+        0.0013639025233363
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.19909255469658932,
+        0.11658904520571563,
+        0.34171231579907324,
+        0.2011729308846101
+      ],
+      "ankle_hf_position_max_rad": 0.0015572725924873866,
+      "ankle_hf_velocity_max_rad_s": 0.34171231579907324,
+      "root_vertical_hf_position_rms_m": 2.946537985526803e-05,
+      "root_vertical_acceleration_rms": 0.8415889353454357,
+      "root_vertical_acceleration_peak": 3.721495720914872,
+      "joint_acceleration_rms": 26.410110527098873,
+      "joint_jerk_rms": 4464.614007160163,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 17.5,
+      "end_time": 19.5,
+      "ankle_hf_position_rms_rad": [
+        0.0005164160415483429,
+        0.00029596077715197434,
+        0.0020862071418805907,
+        0.0005184638215944301
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.0698463772301435,
+        0.03250126309219634,
+        0.4209911724988637,
+        0.07246362386290096
+      ],
+      "ankle_hf_position_max_rad": 0.0020862071418805907,
+      "ankle_hf_velocity_max_rad_s": 0.4209911724988637,
+      "root_vertical_hf_position_rms_m": 3.892306875805859e-05,
+      "root_vertical_acceleration_rms": 0.6034963748102168,
+      "root_vertical_acceleration_peak": 2.7038699872597034,
+      "joint_acceleration_rms": 15.09777632689048,
+      "joint_jerk_rms": 2447.443527645757,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 18.0,
+      "end_time": 20.0,
+      "ankle_hf_position_rms_rad": [
+        0.0016705925659286167,
+        0.0006472494535395639,
+        0.0010805765476965658,
+        0.0003846843463667891
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.24569782821060043,
+        0.0687321810203744,
+        0.21823469097019407,
+        0.05123418222332008
+      ],
+      "ankle_hf_position_max_rad": 0.0016705925659286167,
+      "ankle_hf_velocity_max_rad_s": 0.24569782821060043,
+      "root_vertical_hf_position_rms_m": 3.201548298394046e-05,
+      "root_vertical_acceleration_rms": 0.8491582259698038,
+      "root_vertical_acceleration_peak": 6.439200948982349,
+      "joint_acceleration_rms": 21.547318525656863,
+      "joint_jerk_rms": 3704.8892885203595,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 18.5,
+      "end_time": 20.5,
+      "ankle_hf_position_rms_rad": [
+        0.003468416186678956,
+        0.0020153820124352672,
+        0.002979137619037416,
+        0.0016879462521019323
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.3645280665041692,
+        0.18019491856660885,
+        0.49232554507310494,
+        0.251781653145225
+      ],
+      "ankle_hf_position_max_rad": 0.003468416186678956,
+      "ankle_hf_velocity_max_rad_s": 0.49232554507310494,
+      "root_vertical_hf_position_rms_m": 0.00010872825226533768,
+      "root_vertical_acceleration_rms": 1.2927111552112538,
+      "root_vertical_acceleration_peak": 7.069685548068455,
+      "joint_acceleration_rms": 31.209290866762178,
+      "joint_jerk_rms": 5111.907096361639,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 19.0,
+      "end_time": 21.0,
+      "ankle_hf_position_rms_rad": [
+        0.003298743265456571,
+        0.0026846586098476705,
+        0.008271992346964912,
+        0.002886847275980634
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.36905163675122754,
+        0.3497910940235047,
+        1.0546007324672024,
+        0.39473982852713596
+      ],
+      "ankle_hf_position_max_rad": 0.008271992346964912,
+      "ankle_hf_velocity_max_rad_s": 1.0546007324672024,
+      "root_vertical_hf_position_rms_m": 0.0001753827272954777,
+      "root_vertical_acceleration_rms": 1.8838091961372474,
+      "root_vertical_acceleration_peak": 9.358393982539685,
+      "joint_acceleration_rms": 35.142517868819475,
+      "joint_jerk_rms": 5519.759631651105,
+      "ankle_passed": false,
+      "root_vertical_passed": true,
+      "passed": false
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 19.5,
+      "end_time": 21.5,
+      "ankle_hf_position_rms_rad": [
+        0.005795100973159735,
+        0.002467129518141907,
+        0.011500339016833186,
+        0.00489900038010783
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.5605607999503501,
+        0.500217608844383,
+        0.961836387021449,
+        0.46985585602312313
+      ],
+      "ankle_hf_position_max_rad": 0.011500339016833186,
+      "ankle_hf_velocity_max_rad_s": 0.961836387021449,
+      "root_vertical_hf_position_rms_m": 0.0002098296982111739,
+      "root_vertical_acceleration_rms": 1.9177716543930683,
+      "root_vertical_acceleration_peak": 9.358393982539685,
+      "joint_acceleration_rms": 34.625884575777164,
+      "joint_jerk_rms": 5448.311555526548,
+      "ankle_passed": false,
+      "root_vertical_passed": true,
+      "passed": false
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 20.0,
+      "end_time": 22.0,
+      "ankle_hf_position_rms_rad": [
+        0.005537659581498537,
+        0.0013857874297649425,
+        0.007948499826169504,
+        0.0040470000878279015
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.4367157586943713,
+        0.25358056564102066,
+        0.5679370723245013,
+        0.3764032131794402
+      ],
+      "ankle_hf_position_max_rad": 0.007948499826169504,
+      "ankle_hf_velocity_max_rad_s": 0.5679370723245013,
+      "root_vertical_hf_position_rms_m": 0.00017628415491273072,
+      "root_vertical_acceleration_rms": 1.830293987086674,
+      "root_vertical_acceleration_peak": 9.358393982539685,
+      "joint_acceleration_rms": 29.799250193932863,
+      "joint_jerk_rms": 4502.646857857872,
+      "ankle_passed": false,
+      "root_vertical_passed": true,
+      "passed": false
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 20.5,
+      "end_time": 22.5,
+      "ankle_hf_position_rms_rad": [
+        0.001217778455934524,
+        0.0004431430564892565,
+        0.0007463007011223461,
+        0.0006064013973771145
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.09249070161856075,
+        0.04515570733853386,
+        0.05872124702754249,
+        0.07283560584685547
+      ],
+      "ankle_hf_position_max_rad": 0.001217778455934524,
+      "ankle_hf_velocity_max_rad_s": 0.09249070161856075,
+      "root_vertical_hf_position_rms_m": 4.307013082899068e-05,
+      "root_vertical_acceleration_rms": 1.5559263529664358,
+      "root_vertical_acceleration_peak": 9.358393982539685,
+      "joint_acceleration_rms": 18.244229376087134,
+      "joint_jerk_rms": 2515.7406760124613,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 21.0,
+      "end_time": 23.0,
+      "ankle_hf_position_rms_rad": [
+        0.00027534044651360387,
+        0.0006588762123353282,
+        0.0010434588008362698,
+        0.0003551499916615105
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.02820667940667564,
+        0.05390224510646035,
+        0.2354192207379941,
+        0.055058282503272854
+      ],
+      "ankle_hf_position_max_rad": 0.0010434588008362698,
+      "ankle_hf_velocity_max_rad_s": 0.2354192207379941,
+      "root_vertical_hf_position_rms_m": 3.6026410857125486e-05,
+      "root_vertical_acceleration_rms": 1.9354878726947806,
+      "root_vertical_acceleration_peak": 7.560674653710864,
+      "joint_acceleration_rms": 32.67055218463632,
+      "joint_jerk_rms": 5812.267235953597,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 21.5,
+      "end_time": 23.5,
+      "ankle_hf_position_rms_rad": [
+        0.003593166124401363,
+        0.0021806137922729856,
+        0.005331848937338233,
+        0.002588393721793671
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.30234991141593215,
+        0.15421701227699502,
+        1.2507233921129273,
+        0.2398134852748105
+      ],
+      "ankle_hf_position_max_rad": 0.005331848937338233,
+      "ankle_hf_velocity_max_rad_s": 1.2507233921129273,
+      "root_vertical_hf_position_rms_m": 0.00012948242093507203,
+      "root_vertical_acceleration_rms": 2.223415131886902,
+      "root_vertical_acceleration_peak": 7.560674653710864,
+      "joint_acceleration_rms": 36.126706775220434,
+      "joint_jerk_rms": 6239.335912347852,
+      "ankle_passed": false,
+      "root_vertical_passed": true,
+      "passed": false
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 22.0,
+      "end_time": 24.0,
+      "ankle_hf_position_rms_rad": [
+        0.006922992321877917,
+        0.0033490793299521,
+        0.00526076299072795,
+        0.0033945308804411507
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.5872948205929083,
+        0.27315544969738537,
+        1.2404340605348843,
+        0.2943573567037644
+      ],
+      "ankle_hf_position_max_rad": 0.006922992321877917,
+      "ankle_hf_velocity_max_rad_s": 1.2404340605348843,
+      "root_vertical_hf_position_rms_m": 0.0001854067400481726,
+      "root_vertical_acceleration_rms": 2.202412659592074,
+      "root_vertical_acceleration_peak": 7.560674653710864,
+      "joint_acceleration_rms": 36.22988893910501,
+      "joint_jerk_rms": 6242.315187635599,
+      "ankle_passed": false,
+      "root_vertical_passed": true,
+      "passed": false
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 22.5,
+      "end_time": 24.5,
+      "ankle_hf_position_rms_rad": [
+        0.005329798205846726,
+        0.003236917300817147,
+        0.0027157632964346524,
+        0.0012943905147678417
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.46675104572202886,
+        0.26351580900852684,
+        0.29227586460452004,
+        0.1222006406401246
+      ],
+      "ankle_hf_position_max_rad": 0.005329798205846726,
+      "ankle_hf_velocity_max_rad_s": 0.46675104572202886,
+      "root_vertical_hf_position_rms_m": 0.00016816980048824204,
+      "root_vertical_acceleration_rms": 2.2532678613462056,
+      "root_vertical_acceleration_peak": 7.560674653710864,
+      "joint_acceleration_rms": 37.25988418531048,
+      "joint_jerk_rms": 6416.560866078019,
+      "ankle_passed": false,
+      "root_vertical_passed": true,
+      "passed": false
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 23.0,
+      "end_time": 25.0,
+      "ankle_hf_position_rms_rad": [
+        0.0017220365593746782,
+        0.0015471233469090465,
+        0.0033640156336490713,
+        0.0011447649172551505
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.31074068002434185,
+        0.1345274008966062,
+        0.24975769507432147,
+        0.13305590592885258
+      ],
+      "ankle_hf_position_max_rad": 0.0033640156336490713,
+      "ankle_hf_velocity_max_rad_s": 0.31074068002434185,
+      "root_vertical_hf_position_rms_m": 0.00010376132507923671,
+      "root_vertical_acceleration_rms": 1.3455731896665672,
+      "root_vertical_acceleration_peak": 5.994150891858078,
+      "joint_acceleration_rms": 18.56481581817086,
+      "joint_jerk_rms": 2813.845839061943,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 23.5,
+      "end_time": 25.5,
+      "ankle_hf_position_rms_rad": [
+        0.0011047555673573543,
+        0.0008912181402306113,
+        0.0014390626338734334,
+        0.0008708717743745172
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.23955050317563129,
+        0.08688422450793888,
+        0.13077425546179774,
+        0.11028733813974471
+      ],
+      "ankle_hf_position_max_rad": 0.0014390626338734334,
+      "ankle_hf_velocity_max_rad_s": 0.23955050317563129,
+      "root_vertical_hf_position_rms_m": 5.674245841185963e-05,
+      "root_vertical_acceleration_rms": 0.8288719469484507,
+      "root_vertical_acceleration_peak": 5.357978975550977,
+      "joint_acceleration_rms": 11.363802456867933,
+      "joint_jerk_rms": 1788.9340932766124,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 24.0,
+      "end_time": 26.0,
+      "ankle_hf_position_rms_rad": [
+        0.0011951146632176873,
+        0.0009948311964572908,
+        0.001282262633767522,
+        0.00041978366378221665
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.15388920272919193,
+        0.11863213348790018,
+        0.2603006817451253,
+        0.039746783547586796
+      ],
+      "ankle_hf_position_max_rad": 0.001282262633767522,
+      "ankle_hf_velocity_max_rad_s": 0.2603006817451253,
+      "root_vertical_hf_position_rms_m": 5.1925782209782123e-05,
+      "root_vertical_acceleration_rms": 4.764452374470216,
+      "root_vertical_acceleration_peak": 17.097982753293824,
+      "joint_acceleration_rms": 26.124911167028035,
+      "joint_jerk_rms": 3924.486914425891,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 24.5,
+      "end_time": 26.5,
+      "ankle_hf_position_rms_rad": [
+        0.007565805161016239,
+        0.002296969090971616,
+        0.0043630957247578015,
+        0.0011140978396135023
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.7413859073357814,
+        0.2557866812758711,
+        0.7508268017802774,
+        0.0888835426790999
+      ],
+      "ankle_hf_position_max_rad": 0.007565805161016239,
+      "ankle_hf_velocity_max_rad_s": 0.7508268017802774,
+      "root_vertical_hf_position_rms_m": 0.00016032610656901554,
+      "root_vertical_acceleration_rms": 5.666536071671711,
+      "root_vertical_acceleration_peak": 25.264101935946762,
+      "joint_acceleration_rms": 30.85639721304106,
+      "joint_jerk_rms": 4425.156658555753,
+      "ankle_passed": false,
+      "root_vertical_passed": true,
+      "passed": false
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 25.0,
+      "end_time": 27.0,
+      "ankle_hf_position_rms_rad": [
+        0.00887024935578149,
+        0.0016632656125087689,
+        0.012976236174009401,
+        0.0010609148944387688
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.8072273265662694,
+        0.22391485990881094,
+        1.0818790013177566,
+        0.08400355420168612
+      ],
+      "ankle_hf_position_max_rad": 0.012976236174009401,
+      "ankle_hf_velocity_max_rad_s": 1.0818790013177566,
+      "root_vertical_hf_position_rms_m": 0.0004063691475500645,
+      "root_vertical_acceleration_rms": 5.6771776347447425,
+      "root_vertical_acceleration_peak": 25.264101935946762,
+      "joint_acceleration_rms": 31.46636406486137,
+      "joint_jerk_rms": 4558.994670527395,
+      "ankle_passed": false,
+      "root_vertical_passed": true,
+      "passed": false
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 25.5,
+      "end_time": 27.5,
+      "ankle_hf_position_rms_rad": [
+        0.0044362884824575115,
+        0.0011952734135141606,
+        0.012541942272067067,
+        0.0006215130198927912
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.5433788311439401,
+        0.20557575397780584,
+        0.9619279469606343,
+        0.04948349069062953
+      ],
+      "ankle_hf_position_max_rad": 0.012541942272067067,
+      "ankle_hf_velocity_max_rad_s": 0.9619279469606343,
+      "root_vertical_hf_position_rms_m": 0.0004001132854127459,
+      "root_vertical_acceleration_rms": 5.654873033250784,
+      "root_vertical_acceleration_peak": 25.264101935946762,
+      "joint_acceleration_rms": 31.128583483597545,
+      "joint_jerk_rms": 4524.070660848481,
+      "ankle_passed": false,
+      "root_vertical_passed": true,
+      "passed": false
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 26.0,
+      "end_time": 28.0,
+      "ankle_hf_position_rms_rad": [
+        0.0016506586922721152,
+        0.0010339774872413594,
+        0.002275125551990737,
+        0.00018450356883394797
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.26590464168174943,
+        0.13287447399171642,
+        0.17717029144231886,
+        0.013933074552918914
+      ],
+      "ankle_hf_position_max_rad": 0.002275125551990737,
+      "ankle_hf_velocity_max_rad_s": 0.26590464168174943,
+      "root_vertical_hf_position_rms_m": 8.687461871357423e-05,
+      "root_vertical_acceleration_rms": 3.15377269359998,
+      "root_vertical_acceleration_peak": 25.264101935946762,
+      "joint_acceleration_rms": 20.022717414211368,
+      "joint_jerk_rms": 2821.6741768401585,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 26.5,
+      "end_time": 28.5,
+      "ankle_hf_position_rms_rad": [
+        0.0002650393014554378,
+        0.0003373351559658526,
+        2.7938945875637312e-05,
+        2.2674987973717356e-05
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.06108865839500849,
+        0.05783038215166754,
+        0.0024809634648020606,
+        0.0032624011616185595
+      ],
+      "ankle_hf_position_max_rad": 0.0003373351559658526,
+      "ankle_hf_velocity_max_rad_s": 0.06108865839500849,
+      "root_vertical_hf_position_rms_m": 5.835641759955939e-06,
+      "root_vertical_acceleration_rms": 0.37075297732620893,
+      "root_vertical_acceleration_peak": 1.7212164112603592,
+      "joint_acceleration_rms": 6.973167897410008,
+      "joint_jerk_rms": 1205.4369437048265,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 27.0,
+      "end_time": 29.0,
+      "ankle_hf_position_rms_rad": [
+        7.9231142882967e-05,
+        4.027016208548431e-05,
+        8.577046182716007e-06,
+        4.641970098068067e-06
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.009389876351316054,
+        0.007214785363758337,
+        0.0005666989506329764,
+        0.0010545917170212459
+      ],
+      "ankle_hf_position_max_rad": 7.9231142882967e-05,
+      "ankle_hf_velocity_max_rad_s": 0.009389876351316054,
+      "root_vertical_hf_position_rms_m": 2.005349279963422e-06,
+      "root_vertical_acceleration_rms": 0.12620285755745578,
+      "root_vertical_acceleration_peak": 0.5812346878853578,
+      "joint_acceleration_rms": 3.6232342869557237,
+      "joint_jerk_rms": 612.8773065579481,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 27.5,
+      "end_time": 29.5,
+      "ankle_hf_position_rms_rad": [
+        0.000319324096415245,
+        4.103921187753876e-05,
+        1.3536591009447164e-05,
+        1.0611508091715845e-05
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.04214672701196007,
+        0.005385282870053549,
+        0.0011552748107825548,
+        0.0010346075087088267
+      ],
+      "ankle_hf_position_max_rad": 0.000319324096415245,
+      "ankle_hf_velocity_max_rad_s": 0.04214672701196007,
+      "root_vertical_hf_position_rms_m": 6.209840377698026e-06,
+      "root_vertical_acceleration_rms": 0.13558651547511832,
+      "root_vertical_acceleration_peak": 0.41332452950824283,
+      "joint_acceleration_rms": 6.545496548100666,
+      "joint_jerk_rms": 1189.6332922205643,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 28.0,
+      "end_time": 30.0,
+      "ankle_hf_position_rms_rad": [
+        0.0005408108227531859,
+        0.00020978515383901576,
+        2.4532640339903557e-05,
+        4.9331428494199696e-05
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.12402729715628268,
+        0.028288501718539655,
+        0.0023829703584511016,
+        0.00393186929661501
+      ],
+      "ankle_hf_position_max_rad": 0.0005408108227531859,
+      "ankle_hf_velocity_max_rad_s": 0.12402729715628268,
+      "root_vertical_hf_position_rms_m": 8.441015800599321e-06,
+      "root_vertical_acceleration_rms": 0.5308540335627724,
+      "root_vertical_acceleration_peak": 4.638811393409576,
+      "joint_acceleration_rms": 12.31411527196856,
+      "joint_jerk_rms": 2157.750252946695,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 28.5,
+      "end_time": 30.5,
+      "ankle_hf_position_rms_rad": [
+        0.0013622969859246978,
+        0.0007827030735552905,
+        0.0008431477510037188,
+        0.0005115693453861307
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.35192054640082837,
+        0.0989602869528128,
+        0.202095830524839,
+        0.04674088558405383
+      ],
+      "ankle_hf_position_max_rad": 0.0013622969859246978,
+      "ankle_hf_velocity_max_rad_s": 0.35192054640082837,
+      "root_vertical_hf_position_rms_m": 6.495456421981265e-05,
+      "root_vertical_acceleration_rms": 0.549695097517955,
+      "root_vertical_acceleration_peak": 4.638811393409576,
+      "joint_acceleration_rms": 15.777729135782078,
+      "joint_jerk_rms": 2812.104359229143,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 29.0,
+      "end_time": 31.0,
+      "ankle_hf_position_rms_rad": [
+        0.0016459399533449276,
+        0.0009181512963535157,
+        0.0020572628600853413,
+        0.000908968701746734
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.36378879589877616,
+        0.11500499936934684,
+        0.5002045485193745,
+        0.09806485633580529
+      ],
+      "ankle_hf_position_max_rad": 0.0020572628600853413,
+      "ankle_hf_velocity_max_rad_s": 0.5002045485193745,
+      "root_vertical_hf_position_rms_m": 9.827847019164549e-05,
+      "root_vertical_acceleration_rms": 0.5453208882743014,
+      "root_vertical_acceleration_peak": 4.638811393409576,
+      "joint_acceleration_rms": 15.629318175831953,
+      "joint_jerk_rms": 2787.912238963126,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 29.5,
+      "end_time": 31.5,
+      "ankle_hf_position_rms_rad": [
+        0.0005466250590285369,
+        0.0003542790466482691,
+        0.001289578594816152,
+        0.0005243952820072141
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.09764880974316918,
+        0.03729435614721948,
+        0.31133520646630364,
+        0.06030079760537957
+      ],
+      "ankle_hf_position_max_rad": 0.001289578594816152,
+      "ankle_hf_velocity_max_rad_s": 0.31133520646630364,
+      "root_vertical_hf_position_rms_m": 3.71163381125304e-05,
+      "root_vertical_acceleration_rms": 0.5332669235217649,
+      "root_vertical_acceleration_peak": 4.638811393409576,
+      "joint_acceleration_rms": 14.400164951868096,
+      "joint_jerk_rms": 2550.122035502846,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 30.0,
+      "end_time": 32.0,
+      "ankle_hf_position_rms_rad": [
+        1.8316734033859475e-05,
+        0.00015229913635469481,
+        5.729638780792921e-05,
+        8.552399070343857e-05
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.0017158557924553271,
+        0.010727746301743675,
+        0.011385271686578418,
+        0.006800504836660551
+      ],
+      "ankle_hf_position_max_rad": 0.00015229913635469481,
+      "ankle_hf_velocity_max_rad_s": 0.011385271686578418,
+      "root_vertical_hf_position_rms_m": 1.880026234286437e-06,
+      "root_vertical_acceleration_rms": 0.14552151796201954,
+      "root_vertical_acceleration_peak": 0.8812735280391335,
+      "joint_acceleration_rms": 9.941296739409552,
+      "joint_jerk_rms": 1813.940714136401,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 30.5,
+      "end_time": 32.5,
+      "ankle_hf_position_rms_rad": [
+        1.530837680431977e-06,
+        9.677349433945203e-06,
+        7.192245767537302e-07,
+        3.7782119107461347e-06
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.0001756597220578186,
+        0.0007057644863878242,
+        4.23266159519334e-05,
+        0.0002960287685252537
+      ],
+      "ankle_hf_position_max_rad": 9.677349433945203e-06,
+      "ankle_hf_velocity_max_rad_s": 0.0007057644863878242,
+      "root_vertical_hf_position_rms_m": 1.6000852690564897e-07,
+      "root_vertical_acceleration_rms": 0.016930949739490976,
+      "root_vertical_acceleration_peak": 0.08208767073286005,
+      "joint_acceleration_rms": 0.32081239280485063,
+      "joint_jerk_rms": 31.7775580913491,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 31.0,
+      "end_time": 33.0,
+      "ankle_hf_position_rms_rad": [
+        2.0346239177276297e-07,
+        5.428537512065587e-07,
+        3.377130340272721e-07,
+        6.19217280952122e-07
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        2.8463198398126817e-05,
+        4.299288004803728e-05,
+        2.514445936324312e-05,
+        5.575957597404751e-05
+      ],
+      "ankle_hf_position_max_rad": 6.19217280952122e-07,
+      "ankle_hf_velocity_max_rad_s": 5.575957597404751e-05,
+      "root_vertical_hf_position_rms_m": 1.9301578038609238e-08,
+      "root_vertical_acceleration_rms": 0.0009186011514411119,
+      "root_vertical_acceleration_peak": 0.0046668824329916675,
+      "joint_acceleration_rms": 0.01594504565914354,
+      "joint_jerk_rms": 1.1820515655048718,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 31.5,
+      "end_time": 33.5,
+      "ankle_hf_position_rms_rad": [
+        3.103767132729137e-07,
+        7.260672431914529e-07,
+        4.394105037180813e-07,
+        9.482273036845509e-07
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        3.367009820294786e-05,
+        5.8391111674143596e-05,
+        3.499469523137904e-05,
+        7.118335767154016e-05
+      ],
+      "ankle_hf_position_max_rad": 9.482273036845509e-07,
+      "ankle_hf_velocity_max_rad_s": 7.118335767154016e-05,
+      "root_vertical_hf_position_rms_m": 3.052932620308771e-08,
+      "root_vertical_acceleration_rms": 0.00023533438163021465,
+      "root_vertical_acceleration_peak": 0.0016904059473323192,
+      "joint_acceleration_rms": 0.0050601452948693705,
+      "joint_jerk_rms": 0.37542761136622954,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 32.0,
+      "end_time": 34.0,
+      "ankle_hf_position_rms_rad": [
+        2.4111231770197173e-07,
+        4.28378845239709e-07,
+        2.037900407768032e-07,
+        4.3697504651150156e-07
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        3.268438457315629e-05,
+        5.2190811037925804e-05,
+        1.6475771476121743e-05,
+        3.20743349043657e-05
+      ],
+      "ankle_hf_position_max_rad": 4.3697504651150156e-07,
+      "ankle_hf_velocity_max_rad_s": 5.2190811037925804e-05,
+      "root_vertical_hf_position_rms_m": 1.4050537339841263e-08,
+      "root_vertical_acceleration_rms": 0.00021616574863099982,
+      "root_vertical_acceleration_peak": 0.0016904059473323192,
+      "joint_acceleration_rms": 0.0030552907456098356,
+      "joint_jerk_rms": 0.35118367762137837,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 32.5,
+      "end_time": 34.5,
+      "ankle_hf_position_rms_rad": [
+        1.8450280487699377e-07,
+        3.020963452010359e-07,
+        3.8088988197333915e-08,
+        4.640758680305314e-08
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        3.2607567215064856e-05,
+        5.205478446252643e-05,
+        4.591226533417643e-06,
+        8.028035426964132e-06
+      ],
+      "ankle_hf_position_max_rad": 3.020963452010359e-07,
+      "ankle_hf_velocity_max_rad_s": 5.205478446252643e-05,
+      "root_vertical_hf_position_rms_m": 5.259427996496256e-09,
+      "root_vertical_acceleration_rms": 0.00010536705288118134,
+      "root_vertical_acceleration_peak": 0.000690909960871058,
+      "joint_acceleration_rms": 0.001772791020884426,
+      "joint_jerk_rms": 0.260447479880719,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 33.0,
+      "end_time": 35.0,
+      "ankle_hf_position_rms_rad": [
+        7.783475327672355e-08,
+        1.291059775231251e-07,
+        1.2173534821737963e-08,
+        1.9405491143877938e-08
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        1.854843216988882e-05,
+        3.038939476899383e-05,
+        2.4534045386467023e-06,
+        3.03506926570963e-06
+      ],
+      "ankle_hf_position_max_rad": 1.291059775231251e-07,
+      "ankle_hf_velocity_max_rad_s": 3.038939476899383e-05,
+      "root_vertical_hf_position_rms_m": 2.063813998725011e-09,
+      "root_vertical_acceleration_rms": 9.291112773044377e-05,
+      "root_vertical_acceleration_peak": 0.000690909960871058,
+      "joint_acceleration_rms": 0.0015143715899985143,
+      "joint_jerk_rms": 0.24922263364360034,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 33.5,
+      "end_time": 35.5,
+      "ankle_hf_position_rms_rad": [
+        1.3272380045268647e-08,
+        2.1944202940724197e-08,
+        3.7026457043630478e-09,
+        3.6852792587423413e-09
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        3.1411081623498268e-06,
+        5.305393533031863e-06,
+        7.381022835209307e-07,
+        7.035660868857922e-07
+      ],
+      "ankle_hf_position_max_rad": 2.1944202940724197e-08,
+      "ankle_hf_velocity_max_rad_s": 5.305393533031863e-06,
+      "root_vertical_hf_position_rms_m": 5.034755326948526e-10,
+      "root_vertical_acceleration_rms": 5.408785260454113e-05,
+      "root_vertical_acceleration_peak": 0.0002946231614032839,
+      "joint_acceleration_rms": 0.0008888227553505042,
+      "joint_jerk_rms": 0.1433253542780949,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 401,
+      "start_time": 33.96,
+      "end_time": 35.96,
+      "ankle_hf_position_rms_rad": [
+        4.364272062895055e-09,
+        8.440963431040053e-09,
+        1.860513690658658e-09,
+        4.161082173665253e-09
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        1.2719087695949767e-06,
+        2.4615524803497804e-06,
+        4.83761086329706e-07,
+        6.99536822492731e-07
+      ],
+      "ankle_hf_position_max_rad": 8.440963431040053e-09,
+      "ankle_hf_velocity_max_rad_s": 2.4615524803497804e-06,
+      "root_vertical_hf_position_rms_m": 3.572676594416156e-10,
+      "root_vertical_acceleration_rms": 2.734122747130012e-05,
+      "root_vertical_acceleration_peak": 7.045792317290651e-05,
+      "joint_acceleration_rms": 0.0003013072357510628,
+      "joint_jerk_rms": 0.025837604877402588,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    {
+      "spectral_extension": "odd_reflection_end",
+      "completed": true,
+      "samples": 201,
+      "start_time": 34.96,
+      "end_time": 35.96,
+      "ankle_hf_position_rms_rad": [
+        2.3366507547940493e-09,
+        5.0114447731224085e-09,
+        1.1333391808705476e-09,
+        3.0073069393712216e-09
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        6.78849434726674e-07,
+        1.4451653155380434e-06,
+        3.153305355751952e-07,
+        8.681570629240985e-07
+      ],
+      "ankle_hf_position_max_rad": 5.0114447731224085e-09,
+      "ankle_hf_velocity_max_rad_s": 1.4451653155380434e-06,
+      "root_vertical_hf_position_rms_m": 4.112304372791995e-10,
+      "root_vertical_acceleration_rms": 1.8494755312893247e-05,
+      "root_vertical_acceleration_peak": 3.812341354238885e-05,
+      "joint_acceleration_rms": 0.0002080926601013343,
+      "joint_jerk_rms": 0.017796371289392595,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    }
+  ],
+  "worst_ankle_window": {
+    "spectral_extension": "none",
+    "completed": true,
+    "samples": 401,
+    "start_time": 25.0,
+    "end_time": 27.0,
+    "ankle_hf_position_rms_rad": [
+      0.00887024935578149,
+      0.0016632656125087689,
+      0.012976236174009401,
+      0.0010609148944387688
+    ],
+    "ankle_hf_velocity_rms_rad_s": [
+      0.8072273265662694,
+      0.22391485990881094,
+      1.0818790013177566,
+      0.08400355420168612
+    ],
+    "ankle_hf_position_max_rad": 0.012976236174009401,
+    "ankle_hf_velocity_max_rad_s": 1.0818790013177566,
+    "root_vertical_hf_position_rms_m": 0.0004063691475500645,
+    "root_vertical_acceleration_rms": 5.6771776347447425,
+    "root_vertical_acceleration_peak": 25.264101935946762,
+    "joint_acceleration_rms": 31.46636406486137,
+    "joint_jerk_rms": 4558.994670527395,
+    "ankle_passed": false,
+    "root_vertical_passed": true,
+    "passed": false
+  },
+  "worst_root_window": {
+    "spectral_extension": "none",
+    "completed": true,
+    "samples": 401,
+    "start_time": 25.0,
+    "end_time": 27.0,
+    "ankle_hf_position_rms_rad": [
+      0.00887024935578149,
+      0.0016632656125087689,
+      0.012976236174009401,
+      0.0010609148944387688
+    ],
+    "ankle_hf_velocity_rms_rad_s": [
+      0.8072273265662694,
+      0.22391485990881094,
+      1.0818790013177566,
+      0.08400355420168612
+    ],
+    "ankle_hf_position_max_rad": 0.012976236174009401,
+    "ankle_hf_velocity_max_rad_s": 1.0818790013177566,
+    "root_vertical_hf_position_rms_m": 0.0004063691475500645,
+    "root_vertical_acceleration_rms": 5.6771776347447425,
+    "root_vertical_acceleration_peak": 25.264101935946762,
+    "joint_acceleration_rms": 31.46636406486137,
+    "joint_jerk_rms": 4558.994670527395,
+    "ankle_passed": false,
+    "root_vertical_passed": true,
+    "passed": false
+  },
+  "passed": false
+}

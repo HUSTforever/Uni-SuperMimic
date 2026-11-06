@@ -1,0 +1,200 @@
+[
+  {
+    "repeat": 1,
+    "physical_complete": true,
+    "finish": {
+      "complete": true,
+      "passed": true,
+      "recovery_seconds": 1.134999999999998,
+      "max_recovery_seconds": 1.5,
+      "stable_detection_seconds": 0.5,
+      "required_hold_seconds": 10.0,
+      "final_hold_passed": true,
+      "dance_end_seconds": 27.96,
+      "final_joint_error_max": 0.08634222744431445,
+      "final_joint_speed_rms_max": 0.008947224781834847,
+      "final_root_speed_max": 0.008495704589295912,
+      "final_tilt_max": 0.014748198431517178,
+      "limits": {
+        "joint_rmse_rad": 0.1,
+        "joint_velocity_rms": 0.3,
+        "root_speed": 0.1,
+        "tilt_rad": 0.2
+      }
+    },
+    "exit_continuity": {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 161,
+      "start_time": 27.96,
+      "end_time": 28.76,
+      "ankle_hf_position_rms_rad": [
+        0.000990595216984936,
+        0.00040577492891303457,
+        4.271092791427981e-05,
+        0.00013758018092530075
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.3050084140483474,
+        0.108048935083513,
+        0.0064100406191455,
+        0.009475922727513752
+      ],
+      "ankle_hf_position_max_rad": 0.000990595216984936,
+      "ankle_hf_velocity_max_rad_s": 0.3050084140483474,
+      "root_vertical_hf_position_rms_m": 1.7936257723011154e-05,
+      "root_vertical_acceleration_rms": 0.5165973449641297,
+      "root_vertical_acceleration_peak": 1.2496977023660492,
+      "joint_acceleration_rms": 15.281658846448662,
+      "joint_jerk_rms": 2467.102951796617,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    "terminal_control": {
+      "mode": "standing_hold",
+      "standing_pose_check": true,
+      "joint_rmse_rad": 0.08629959132787467,
+      "joint_velocity_rms": 0.0005389435304510253,
+      "tilt_rad": 0.009537343444722277,
+      "gyro_norm": 0.00040086677224803765,
+      "scope": "last command before simulator shutdown; communication watchdog unchanged"
+    },
+    "watchdog_triggered": false,
+    "global_continuity_passed": false,
+    "hardware_ready": false,
+    "ending_passed": true
+  },
+  {
+    "repeat": 2,
+    "physical_complete": true,
+    "finish": {
+      "complete": true,
+      "passed": true,
+      "recovery_seconds": 1.125,
+      "max_recovery_seconds": 1.5,
+      "stable_detection_seconds": 0.5,
+      "required_hold_seconds": 10.0,
+      "final_hold_passed": true,
+      "dance_end_seconds": 27.96,
+      "final_joint_error_max": 0.08655197114891382,
+      "final_joint_speed_rms_max": 0.008581575591367503,
+      "final_root_speed_max": 0.007928019711484274,
+      "final_tilt_max": 0.014665519076214363,
+      "limits": {
+        "joint_rmse_rad": 0.1,
+        "joint_velocity_rms": 0.3,
+        "root_speed": 0.1,
+        "tilt_rad": 0.2
+      }
+    },
+    "exit_continuity": {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 161,
+      "start_time": 27.96,
+      "end_time": 28.76,
+      "ankle_hf_position_rms_rad": [
+        0.001000660742308058,
+        0.00040044096993700496,
+        6.650186308648671e-05,
+        0.00011200427955198323
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.2905258887200719,
+        0.11763663715376312,
+        0.007246143701050789,
+        0.008814125774591505
+      ],
+      "ankle_hf_position_max_rad": 0.001000660742308058,
+      "ankle_hf_velocity_max_rad_s": 0.2905258887200719,
+      "root_vertical_hf_position_rms_m": 2.0403392625324628e-05,
+      "root_vertical_acceleration_rms": 0.5238206222961875,
+      "root_vertical_acceleration_peak": 1.2838486850942825,
+      "joint_acceleration_rms": 14.774890179019879,
+      "joint_jerk_rms": 2399.8255053681996,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    "terminal_control": {
+      "mode": "standing_hold",
+      "standing_pose_check": true,
+      "joint_rmse_rad": 0.08649789748305019,
+      "joint_velocity_rms": 0.0005442271780896594,
+      "tilt_rad": 0.009555071078952966,
+      "gyro_norm": 0.0003979548456134641,
+      "scope": "last command before simulator shutdown; communication watchdog unchanged"
+    },
+    "watchdog_triggered": false,
+    "global_continuity_passed": false,
+    "hardware_ready": false,
+    "ending_passed": true
+  },
+  {
+    "repeat": 3,
+    "physical_complete": true,
+    "finish": {
+      "complete": true,
+      "passed": true,
+      "recovery_seconds": 1.125,
+      "max_recovery_seconds": 1.5,
+      "stable_detection_seconds": 0.5,
+      "required_hold_seconds": 10.0,
+      "final_hold_passed": true,
+      "dance_end_seconds": 27.96,
+      "final_joint_error_max": 0.08676354482189587,
+      "final_joint_speed_rms_max": 0.007790523291529793,
+      "final_root_speed_max": 0.006879377572518126,
+      "final_tilt_max": 0.013789903723302306,
+      "limits": {
+        "joint_rmse_rad": 0.1,
+        "joint_velocity_rms": 0.3,
+        "root_speed": 0.1,
+        "tilt_rad": 0.2
+      }
+    },
+    "exit_continuity": {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 161,
+      "start_time": 27.96,
+      "end_time": 28.76,
+      "ankle_hf_position_rms_rad": [
+        0.001051103669424344,
+        0.0004138309683077087,
+        5.1676499044194665e-05,
+        0.0001969624301389246
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.3185388267398966,
+        0.11872196336729574,
+        0.007212196487814553,
+        0.014188376630756653
+      ],
+      "ankle_hf_position_max_rad": 0.001051103669424344,
+      "ankle_hf_velocity_max_rad_s": 0.3185388267398966,
+      "root_vertical_hf_position_rms_m": 2.053046272121517e-05,
+      "root_vertical_acceleration_rms": 0.5350680583266012,
+      "root_vertical_acceleration_peak": 1.2896601904690854,
+      "joint_acceleration_rms": 15.260735841667449,
+      "joint_jerk_rms": 2543.502917847572,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    "terminal_control": {
+      "mode": "standing_hold",
+      "standing_pose_check": true,
+      "joint_rmse_rad": 0.08663958219650444,
+      "joint_velocity_rms": 0.0004957403744162359,
+      "tilt_rad": 0.009406441268146805,
+      "gyro_norm": 0.00036940072065311794,
+      "scope": "last command before simulator shutdown; communication watchdog unchanged"
+    },
+    "watchdog_triggered": false,
+    "global_continuity_passed": false,
+    "hardware_ready": false,
+    "ending_passed": true
+  }
+]

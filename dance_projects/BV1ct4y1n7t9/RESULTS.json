@@ -1,0 +1,325 @@
+{
+  "accepted_for_delivery": true,
+  "source": {
+    "bvid": "BV1ct4y1n7t9",
+    "url": "https://www.bilibili.com/video/BV1ct4y1n7t9/",
+    "goal": "Retarget and train this dance on G1 29DoF in its own folder; keep full usable dance performance; preserve old demo.",
+    "title": "【4K顶级画质60FPS】蔡徐坤《只因你太美》原版完整版现场！一晃眼6年过去了",
+    "actual_download": {
+      "width": 852,
+      "height": 480,
+      "variable_frame_rate": true
+    },
+    "normalized": {
+      "fps": 30,
+      "frames": 1782,
+      "path": "inputs/source_cfr30.mp4"
+    },
+    "selected": {
+      "start_seconds": 13.4,
+      "end_seconds": 30.2,
+      "duration_seconds": 16.8,
+      "frames": 504,
+      "fps": 30,
+      "path": "clips/ji_ni_tai_mei_fullbody.mp4",
+      "scope": "Complete usable full-body performance, including dribble gestures, turn and iconic dance. Original full source kept; speech and later leg-cropped closeups excluded."
+    },
+    "motion_only": true,
+    "basketball_physics": false,
+    "source_sha256": "22f834cc805ed13882dc46ad08da431fc0c213754559b79dfde014aa9c99f52f",
+    "normalized_sha256": "9e348fea6ca984c8fc37542af8dfc7222e58dab7cf1d01b89fbc1fdfe8070b24",
+    "clip_sha256": "9acc902de05afe79336b6044babb00873847d676d34f876b54eb40665124d25b",
+    "recovery": {
+      "camera": "static",
+      "flip_test": true,
+      "human_ground_axis": "y",
+      "contact_mode": "support",
+      "status": "accepted after static A/B; source/policy heading audit",
+      "camera_relative_rotation_max_degrees": 10.8687,
+      "camera_relative_rotation_median_degrees": 3.4164,
+      "rejected_simplevo_rotation_max_degrees": 177.31
+    },
+    "stabilization": {
+      "smooth_seconds": 0.08,
+      "slowdown": 1.25,
+      "face_yaw_deg": 315,
+      "airborne_approximation": "supported dance: small hops become grounded steps; preserve-flight mode is separately available and was not used in this run"
+    },
+    "active_motion": "motion_static/ji_ni_tai_mei_static.csv"
+  },
+  "selected_checkpoint": "/home/ytkj/cx/supermimic/dance_projects/BV1ct4y1n7t9/run_002/ckpt_001000.pt",
+  "selected_run": "run_002",
+  "selected_iteration": 1000,
+  "training_stages": [
+    {
+      "run": "run_001",
+      "iterations": 4000,
+      "camera": "simplevo",
+      "delivery_accepted": false,
+      "reason": "camera trajectory drift; learned useful local body poses"
+    },
+    {
+      "run": "run_002",
+      "iterations": 1000,
+      "camera": "static",
+      "delivery_accepted": true,
+      "initialization": "run_001/ckpt_004000.pt"
+    }
+  ],
+  "selection_reason": "Correct source/model heading verified in fixed-camera reconstruction; all four static checkpoints tested, iteration1000 has highest full-clip return and similar smoothness. Higher scores on rejected camera data are not comparable.",
+  "before_training": {
+    "norm_return": 0.223960742354393,
+    "norm_return_framew": 0.223960742354393,
+    "n_failed": 1,
+    "failed": [
+      "ji_ni_tai_mei_static"
+    ],
+    "per_clip": {
+      "ji_ni_tai_mei_static": {
+        "norm_return": 0.223960742354393,
+        "steps": 591,
+        "failed": true
+      }
+    },
+    "checkpoint": "/home/ytkj/cx/supermimic/runs/demo_kick_smooth_001/ckpt_001000.pt",
+    "checkpoint_iteration": 1000,
+    "checkpoint_sha256": "4d16b149b6b721c98ecd68e4f19ae3d93717ec4c29f5bbdbd74ab10c5c0eb1ee",
+    "backend": "mujoco",
+    "device": "cpu",
+    "clip": "ji_ni_tai_mei_static",
+    "control_fps": 50,
+    "completed": false,
+    "reference": {
+      "frames": 591,
+      "fps": 50.0,
+      "duration_seconds": 11.8,
+      "joint_velocity_rms": 1.0361012123053428,
+      "joint_velocity_peak": 5.749871954321861,
+      "joint_acceleration_rms": 7.995213549833112,
+      "joint_acceleration_peak": 68.59064102172852,
+      "joint_jerk_rms": 304.4495026091183,
+      "joint_jerk_peak": 2752.0842850208282,
+      "root_vertical_acceleration_peak": 8.713006973266602
+    },
+    "policy": {
+      "frames": 591,
+      "fps": 50.0,
+      "duration_seconds": 11.8,
+      "joint_velocity_rms": 1.1291523149964682,
+      "joint_velocity_peak": 23.865221440792084,
+      "joint_acceleration_rms": 31.59939099909207,
+      "joint_acceleration_peak": 678.0695542693138,
+      "joint_jerk_rms": 1786.3854290109991,
+      "joint_jerk_peak": 50124.56327676773,
+      "root_vertical_acceleration_peak": 23.43699336051941
+    },
+    "joint_tracking_rmse": 0.3528810441493988,
+    "motions": [
+      {
+        "path": "/home/ytkj/cx/supermimic/dance_projects/BV1ct4y1n7t9/motion_static/ji_ni_tai_mei_static.csv",
+        "sha256": "b412f31f3051e7a562f386f3e31df6ad579f8a8a9eb54a5b0ca27b4d43d4b2b7"
+      }
+    ]
+  },
+  "after_training": {
+    "norm_return": 0.8900006413459778,
+    "norm_return_framew": 0.8900006413459778,
+    "n_failed": 0,
+    "failed": [],
+    "per_clip": {
+      "ji_ni_tai_mei_static": {
+        "norm_return": 0.8900006413459778,
+        "steps": 1048,
+        "failed": false
+      }
+    },
+    "checkpoint": "/home/ytkj/cx/supermimic/dance_projects/BV1ct4y1n7t9/run_002/ckpt_001000.pt",
+    "checkpoint_iteration": 1000,
+    "checkpoint_sha256": "d050c7000afdbe76821c009245334d32811c1c01dd00962759fbdca5af2f3f6c",
+    "backend": "mujoco",
+    "device": "cpu",
+    "clip": "ji_ni_tai_mei_static",
+    "control_fps": 50,
+    "completed": true,
+    "reference": {
+      "frames": 1048,
+      "fps": 50.0,
+      "duration_seconds": 20.94,
+      "joint_velocity_rms": 1.050861680919275,
+      "joint_velocity_peak": 7.135868072509766,
+      "joint_acceleration_rms": 8.036080407938224,
+      "joint_acceleration_peak": 125.28747320175171,
+      "joint_jerk_rms": 308.11214383259556,
+      "joint_jerk_peak": 5412.012338638306,
+      "root_vertical_acceleration_peak": 29.82303500175476
+    },
+    "policy": {
+      "frames": 1048,
+      "fps": 50.0,
+      "duration_seconds": 20.94,
+      "joint_velocity_rms": 1.1773190913039984,
+      "joint_velocity_peak": 8.269071578979492,
+      "joint_acceleration_rms": 17.656558652726588,
+      "joint_acceleration_peak": 408.38681161403656,
+      "joint_jerk_rms": 960.0042194191358,
+      "joint_jerk_peak": 39580.48298954964,
+      "root_vertical_acceleration_peak": 21.21865749359131
+    },
+    "joint_tracking_rmse": 0.12503397464752197,
+    "motions": [
+      {
+        "path": "/home/ytkj/cx/supermimic/dance_projects/BV1ct4y1n7t9/artifacts/final_static/pipeline/ji_ni_tai_mei_static.csv",
+        "sha256": "b412f31f3051e7a562f386f3e31df6ad579f8a8a9eb54a5b0ca27b4d43d4b2b7"
+      }
+    ]
+  },
+  "cross_backend": {
+    "norm_return": 0.8717893958091736,
+    "norm_return_framew": 0.8717893958091736,
+    "n_failed": 0,
+    "failed": [],
+    "per_clip": {
+      "ji_ni_tai_mei_static": {
+        "norm_return": 0.8717893958091736,
+        "steps": 1048,
+        "failed": false
+      }
+    },
+    "checkpoint": "/home/ytkj/cx/supermimic/dance_projects/BV1ct4y1n7t9/run_002/ckpt_001000.pt",
+    "checkpoint_iteration": 1000,
+    "checkpoint_sha256": "d050c7000afdbe76821c009245334d32811c1c01dd00962759fbdca5af2f3f6c",
+    "backend": "mjwarp",
+    "device": "cuda:0",
+    "clip": "ji_ni_tai_mei_static",
+    "control_fps": 50,
+    "completed": true,
+    "reference": {
+      "frames": 1048,
+      "fps": 50.0,
+      "duration_seconds": 20.94,
+      "joint_velocity_rms": 1.050861680919275,
+      "joint_velocity_peak": 7.135868072509766,
+      "joint_acceleration_rms": 8.036080407938224,
+      "joint_acceleration_peak": 125.28747320175171,
+      "joint_jerk_rms": 308.11214383259556,
+      "joint_jerk_peak": 5412.012338638306,
+      "root_vertical_acceleration_peak": 29.82303500175476
+    },
+    "policy": {
+      "frames": 1048,
+      "fps": 50.0,
+      "duration_seconds": 20.94,
+      "joint_velocity_rms": 1.1766192671536475,
+      "joint_velocity_peak": 8.980345726013184,
+      "joint_acceleration_rms": 17.72906681632316,
+      "joint_acceleration_peak": 426.64242908358574,
+      "joint_jerk_rms": 980.8053605080523,
+      "joint_jerk_peak": 42156.13380074501,
+      "root_vertical_acceleration_peak": 21.55482769012451
+    },
+    "joint_tracking_rmse": 0.1255815476179123,
+    "motions": [
+      {
+        "path": "/home/ytkj/cx/supermimic/dance_projects/BV1ct4y1n7t9/motion_static/ji_ni_tai_mei_static.csv",
+        "sha256": "b412f31f3051e7a562f386f3e31df6ad579f8a8a9eb54a5b0ca27b4d43d4b2b7"
+      }
+    ]
+  },
+  "matched_prefix": {
+    "frames": 591,
+    "seconds": 11.82,
+    "before": {
+      "frames": 591,
+      "fps": 50.0,
+      "duration_seconds": 11.8,
+      "joint_velocity_rms": 1.1291523149964682,
+      "joint_velocity_peak": 23.865221440792084,
+      "joint_acceleration_rms": 31.59939099909207,
+      "joint_acceleration_peak": 678.0695542693138,
+      "joint_jerk_rms": 1786.3854290109991,
+      "joint_jerk_peak": 50124.56327676773,
+      "root_vertical_acceleration_peak": 23.43699336051941
+    },
+    "after": {
+      "frames": 591,
+      "fps": 50.0,
+      "duration_seconds": 11.8,
+      "joint_velocity_rms": 1.188169967321833,
+      "joint_velocity_peak": 7.503719627857208,
+      "joint_acceleration_rms": 19.722108738755004,
+      "joint_acceleration_peak": 407.78815746307373,
+      "joint_jerk_rms": 1083.6004377535864,
+      "joint_jerk_peak": 39580.48298954964,
+      "root_vertical_acceleration_peak": 21.21865749359131
+    },
+    "before_tracking_rmse": 0.3528810441493988,
+    "after_tracking_rmse": 0.11472782492637634
+  },
+  "camera_diagnostics": {
+    "prediction": "dance_projects/BV1ct4y1n7t9/upstream_static/ji_ni_tai_mei_fullbody/hmr4d_results.pt",
+    "sha256": "900ebbe6d0283a981738b3cd42916432c7217676e66698087491b4ee85b8e0f9",
+    "frames": 504,
+    "relative_rotation_max_degrees": 10.868701934814453,
+    "relative_rotation_median_degrees": 3.416384220123291,
+    "interpretation": "Diagnostic only. Compare estimated camera motion against the actual background and source/model heading; a stable policy score does not verify correct motion recovery."
+  },
+  "candidates": [
+    {
+      "iteration": 250,
+      "completed": true,
+      "norm_return": 0.8075931668281555,
+      "tracking_rmse": 0.13908350467681885,
+      "acceleration_rms": 18.50979478835453,
+      "jerk_rms": 975.9233575615951
+    },
+    {
+      "iteration": 500,
+      "completed": true,
+      "norm_return": 0.8390898108482361,
+      "tracking_rmse": 0.13047556579113007,
+      "acceleration_rms": 17.554618999807758,
+      "jerk_rms": 945.5714373787442
+    },
+    {
+      "iteration": 750,
+      "completed": true,
+      "norm_return": 0.8520835041999817,
+      "tracking_rmse": 0.12294212728738785,
+      "acceleration_rms": 17.470623255534296,
+      "jerk_rms": 961.785217076516
+    },
+    {
+      "iteration": 1000,
+      "completed": true,
+      "norm_return": 0.8900006413459778,
+      "tracking_rmse": 0.12503397464752197,
+      "acceleration_rms": 17.656558652726588,
+      "jerk_rms": 960.0042194191358
+    }
+  ],
+  "delivery_root": "artifacts/final_static",
+  "learned_weight_change_rms": 0.006028573494404554,
+  "input_motion_sha256": "b412f31f3051e7a562f386f3e31df6ad579f8a8a9eb54a5b0ca27b4d43d4b2b7",
+  "heading_quality": {
+    "root_orientation_error_rms_degrees": 14.943495750427246,
+    "root_orientation_error_p90_degrees": 5.042552471160889,
+    "root_yaw_error_rms_degrees": 14.722904205322266,
+    "root_position_rmse_m": 0.112090103328228,
+    "heading_check_at_15s_degrees": {
+      "reference": 148.91836547851562,
+      "policy": 148.77931213378906
+    }
+  },
+  "verification": {
+    "tests_passed": 192,
+    "tests_skipped": 2,
+    "slow_tests_deselected": 6,
+    "full_clip_torchscript_frames": 1048,
+    "full_clip_torchscript_max_qpos_diff": 0,
+    "source_pipeline_manifest": "reproduction_static/manifest.json",
+    "final_pipeline_manifest": "artifacts/final_static/pipeline/manifest.json",
+    "video_frames": 1048,
+    "video_fps": 50,
+    "video_duration_seconds": 20.96
+  }
+}

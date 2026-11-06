@@ -1,0 +1,406 @@
+{
+  "selected": {
+    "run": "run_003",
+    "iteration": 2000,
+    "bundle": "finetune_projects/g1_continuous_20261029/candidates/balance_002000",
+    "complete": true,
+    "dance_joint_rmse": 0.11820456215339332,
+    "metrics": {
+      "dance": {
+        "samples": 1148,
+        "window_seconds": [
+          5.019999999999915,
+          27.959999999998722
+        ],
+        "gravity_error_rms_deg": 1.3906229498250866,
+        "gravity_error_p95_deg": 2.4981710741801186,
+        "body_angular_velocity_error_rms_rad_s": 0.12433950313977299,
+        "body_angular_acceleration_rms_rad_s2": 3.984596871201419,
+        "near_ground_point_speed_rms_m_s": 0.4457071810578669,
+        "reference_stance_point_speed_rms_m_s": 0.03773715205194245,
+        "no_near_ground_point_fraction": 0.0,
+        "geometry_only": true
+      },
+      "hard_20_24": {
+        "samples": 201,
+        "window_seconds": [
+          20.000000000000306,
+          23.99999999999951
+        ],
+        "gravity_error_rms_deg": 1.7074334330277183,
+        "gravity_error_p95_deg": 2.6627666785488606,
+        "body_angular_velocity_error_rms_rad_s": 0.1597039237857945,
+        "body_angular_acceleration_rms_rad_s2": 4.792897126665646,
+        "near_ground_point_speed_rms_m_s": 0.2803501687822579,
+        "reference_stance_point_speed_rms_m_s": 0.045304631135464776,
+        "no_near_ground_point_fraction": 0.0,
+        "geometry_only": true
+      },
+      "hard_26_30": {
+        "samples": 200,
+        "window_seconds": [
+          26.019999999999108,
+          29.999999999998316
+        ],
+        "gravity_error_rms_deg": 1.3547546435486477,
+        "gravity_error_p95_deg": 2.8110918334832737,
+        "body_angular_velocity_error_rms_rad_s": 0.08650401846314332,
+        "body_angular_acceleration_rms_rad_s2": 2.21341298595564,
+        "near_ground_point_speed_rms_m_s": 0.14399471421445037,
+        "reference_stance_point_speed_rms_m_s": 0.09281002697763026,
+        "no_near_ground_point_fraction": 0.0,
+        "geometry_only": true
+      }
+    },
+    "normalized_dynamic_score": 0.5844314324877549,
+    "near_ground_ratio": 1.0532411479189283,
+    "eligible": true
+  },
+  "candidates": [
+    {
+      "run": "run_003",
+      "iteration": 500,
+      "bundle": "finetune_projects/g1_continuous_20261029/candidates/balance_000500",
+      "complete": true,
+      "dance_joint_rmse": 0.11817104495074177,
+      "metrics": {
+        "dance": {
+          "samples": 1148,
+          "window_seconds": [
+            5.019999999999915,
+            27.959999999998722
+          ],
+          "gravity_error_rms_deg": 1.8385257198198406,
+          "gravity_error_p95_deg": 3.582685906741022,
+          "body_angular_velocity_error_rms_rad_s": 0.15527609281844124,
+          "body_angular_acceleration_rms_rad_s2": 4.373370332115922,
+          "near_ground_point_speed_rms_m_s": 0.4291870259432606,
+          "reference_stance_point_speed_rms_m_s": 0.06782116762950963,
+          "no_near_ground_point_fraction": 0.0,
+          "geometry_only": true
+        },
+        "hard_20_24": {
+          "samples": 201,
+          "window_seconds": [
+            20.000000000000306,
+            23.99999999999951
+          ],
+          "gravity_error_rms_deg": 2.7902746511463636,
+          "gravity_error_p95_deg": 5.380384881359903,
+          "body_angular_velocity_error_rms_rad_s": 0.20384859362998398,
+          "body_angular_acceleration_rms_rad_s2": 5.166626935694863,
+          "near_ground_point_speed_rms_m_s": 0.24074021842635904,
+          "reference_stance_point_speed_rms_m_s": 0.12030889631023055,
+          "no_near_ground_point_fraction": 0.0,
+          "geometry_only": true
+        },
+        "hard_26_30": {
+          "samples": 200,
+          "window_seconds": [
+            26.019999999999108,
+            29.999999999998316
+          ],
+          "gravity_error_rms_deg": 3.733720085534935,
+          "gravity_error_p95_deg": 7.594062707046119,
+          "body_angular_velocity_error_rms_rad_s": 0.31551909051260096,
+          "body_angular_acceleration_rms_rad_s2": 9.420235671076746,
+          "near_ground_point_speed_rms_m_s": 0.22130036894201874,
+          "reference_stance_point_speed_rms_m_s": 0.32172444745939816,
+          "no_near_ground_point_fraction": 0.01,
+          "geometry_only": true
+        }
+      },
+      "normalized_dynamic_score": 0.7804283404402366,
+      "near_ground_ratio": 1.0142027211755915,
+      "eligible": true
+    },
+    {
+      "run": "run_003",
+      "iteration": 1000,
+      "bundle": "finetune_projects/g1_continuous_20261029/candidates/balance_001000",
+      "complete": true,
+      "dance_joint_rmse": 0.11994880244314644,
+      "metrics": {
+        "dance": {
+          "samples": 1148,
+          "window_seconds": [
+            5.019999999999915,
+            27.959999999998722
+          ],
+          "gravity_error_rms_deg": 1.4614643100232985,
+          "gravity_error_p95_deg": 2.70676874713496,
+          "body_angular_velocity_error_rms_rad_s": 0.13072069952326848,
+          "body_angular_acceleration_rms_rad_s2": 4.133081254873572,
+          "near_ground_point_speed_rms_m_s": 0.43601425684462913,
+          "reference_stance_point_speed_rms_m_s": 0.04890628983146131,
+          "no_near_ground_point_fraction": 0.0,
+          "geometry_only": true
+        },
+        "hard_20_24": {
+          "samples": 201,
+          "window_seconds": [
+            20.000000000000306,
+            23.99999999999951
+          ],
+          "gravity_error_rms_deg": 1.8927526397592285,
+          "gravity_error_p95_deg": 2.8391365931354797,
+          "body_angular_velocity_error_rms_rad_s": 0.16968849881180462,
+          "body_angular_acceleration_rms_rad_s2": 4.8683726491464245,
+          "near_ground_point_speed_rms_m_s": 0.27820686768475156,
+          "reference_stance_point_speed_rms_m_s": 0.05921270276587266,
+          "no_near_ground_point_fraction": 0.0,
+          "geometry_only": true
+        },
+        "hard_26_30": {
+          "samples": 200,
+          "window_seconds": [
+            26.019999999999108,
+            29.999999999998316
+          ],
+          "gravity_error_rms_deg": 1.8537748642224727,
+          "gravity_error_p95_deg": 3.1011967819202075,
+          "body_angular_velocity_error_rms_rad_s": 0.09224765815624818,
+          "body_angular_acceleration_rms_rad_s2": 2.712635009876034,
+          "near_ground_point_speed_rms_m_s": 0.15855790449542514,
+          "reference_stance_point_speed_rms_m_s": 0.16816600085710168,
+          "no_near_ground_point_fraction": 0.0,
+          "geometry_only": true
+        }
+      },
+      "normalized_dynamic_score": 0.6425861363010644,
+      "near_ground_ratio": 1.0303360051280692,
+      "eligible": true
+    },
+    {
+      "run": "run_003",
+      "iteration": 1500,
+      "bundle": "finetune_projects/g1_continuous_20261029/candidates/balance_001500",
+      "complete": true,
+      "dance_joint_rmse": 0.11954784041937659,
+      "metrics": {
+        "dance": {
+          "samples": 1148,
+          "window_seconds": [
+            5.019999999999915,
+            27.959999999998722
+          ],
+          "gravity_error_rms_deg": 1.3402780972476593,
+          "gravity_error_p95_deg": 2.525950170082761,
+          "body_angular_velocity_error_rms_rad_s": 0.1214800684543658,
+          "body_angular_acceleration_rms_rad_s2": 4.060950555888652,
+          "near_ground_point_speed_rms_m_s": 0.4484717407706051,
+          "reference_stance_point_speed_rms_m_s": 0.04271293905411839,
+          "no_near_ground_point_fraction": 0.0,
+          "geometry_only": true
+        },
+        "hard_20_24": {
+          "samples": 201,
+          "window_seconds": [
+            20.000000000000306,
+            23.99999999999951
+          ],
+          "gravity_error_rms_deg": 1.5586830191671144,
+          "gravity_error_p95_deg": 2.8667552044549485,
+          "body_angular_velocity_error_rms_rad_s": 0.1534171671391067,
+          "body_angular_acceleration_rms_rad_s2": 4.751135883353419,
+          "near_ground_point_speed_rms_m_s": 0.2863190862761902,
+          "reference_stance_point_speed_rms_m_s": 0.0520174854918499,
+          "no_near_ground_point_fraction": 0.0,
+          "geometry_only": true
+        },
+        "hard_26_30": {
+          "samples": 200,
+          "window_seconds": [
+            26.019999999999108,
+            29.999999999998316
+          ],
+          "gravity_error_rms_deg": 1.4095132954126792,
+          "gravity_error_p95_deg": 2.528278046244067,
+          "body_angular_velocity_error_rms_rad_s": 0.06092124967367092,
+          "body_angular_acceleration_rms_rad_s2": 1.8448537621161722,
+          "near_ground_point_speed_rms_m_s": 0.14685586107087578,
+          "reference_stance_point_speed_rms_m_s": 0.07922615650917442,
+          "no_near_ground_point_fraction": 0.0,
+          "geometry_only": true
+        }
+      },
+      "normalized_dynamic_score": 0.5965949280977162,
+      "near_ground_ratio": 1.0597740201029122,
+      "eligible": true
+    },
+    {
+      "run": "run_003",
+      "iteration": 2000,
+      "bundle": "finetune_projects/g1_continuous_20261029/candidates/balance_002000",
+      "complete": true,
+      "dance_joint_rmse": 0.11820456215339332,
+      "metrics": {
+        "dance": {
+          "samples": 1148,
+          "window_seconds": [
+            5.019999999999915,
+            27.959999999998722
+          ],
+          "gravity_error_rms_deg": 1.3906229498250866,
+          "gravity_error_p95_deg": 2.4981710741801186,
+          "body_angular_velocity_error_rms_rad_s": 0.12433950313977299,
+          "body_angular_acceleration_rms_rad_s2": 3.984596871201419,
+          "near_ground_point_speed_rms_m_s": 0.4457071810578669,
+          "reference_stance_point_speed_rms_m_s": 0.03773715205194245,
+          "no_near_ground_point_fraction": 0.0,
+          "geometry_only": true
+        },
+        "hard_20_24": {
+          "samples": 201,
+          "window_seconds": [
+            20.000000000000306,
+            23.99999999999951
+          ],
+          "gravity_error_rms_deg": 1.7074334330277183,
+          "gravity_error_p95_deg": 2.6627666785488606,
+          "body_angular_velocity_error_rms_rad_s": 0.1597039237857945,
+          "body_angular_acceleration_rms_rad_s2": 4.792897126665646,
+          "near_ground_point_speed_rms_m_s": 0.2803501687822579,
+          "reference_stance_point_speed_rms_m_s": 0.045304631135464776,
+          "no_near_ground_point_fraction": 0.0,
+          "geometry_only": true
+        },
+        "hard_26_30": {
+          "samples": 200,
+          "window_seconds": [
+            26.019999999999108,
+            29.999999999998316
+          ],
+          "gravity_error_rms_deg": 1.3547546435486477,
+          "gravity_error_p95_deg": 2.8110918334832737,
+          "body_angular_velocity_error_rms_rad_s": 0.08650401846314332,
+          "body_angular_acceleration_rms_rad_s2": 2.21341298595564,
+          "near_ground_point_speed_rms_m_s": 0.14399471421445037,
+          "reference_stance_point_speed_rms_m_s": 0.09281002697763026,
+          "no_near_ground_point_fraction": 0.0,
+          "geometry_only": true
+        }
+      },
+      "normalized_dynamic_score": 0.5844314324877549,
+      "near_ground_ratio": 1.0532411479189283,
+      "eligible": true
+    },
+    {
+      "run": "run_004",
+      "iteration": 500,
+      "bundle": "finetune_projects/g1_continuous_20261029/candidates/balance_v2_000500",
+      "complete": true,
+      "dance_joint_rmse": 0.12275463675909878,
+      "metrics": {
+        "dance": {
+          "samples": 1148,
+          "window_seconds": [
+            5.019999999999915,
+            27.959999999998722
+          ],
+          "gravity_error_rms_deg": 1.5516273655463895,
+          "gravity_error_p95_deg": 3.106692833302907,
+          "body_angular_velocity_error_rms_rad_s": 0.1251432074567923,
+          "body_angular_acceleration_rms_rad_s2": 4.046663296047536,
+          "near_ground_point_speed_rms_m_s": 0.46490396327748407,
+          "reference_stance_point_speed_rms_m_s": 0.05958348675664986,
+          "no_near_ground_point_fraction": 0.0,
+          "geometry_only": true
+        },
+        "hard_20_24": {
+          "samples": 201,
+          "window_seconds": [
+            20.000000000000306,
+            23.99999999999951
+          ],
+          "gravity_error_rms_deg": 1.931571216869828,
+          "gravity_error_p95_deg": 3.9341353383789555,
+          "body_angular_velocity_error_rms_rad_s": 0.16586104607364685,
+          "body_angular_acceleration_rms_rad_s2": 4.866831833876625,
+          "near_ground_point_speed_rms_m_s": 0.25896322454724185,
+          "reference_stance_point_speed_rms_m_s": 0.10665259028552558,
+          "no_near_ground_point_fraction": 0.0,
+          "geometry_only": true
+        },
+        "hard_26_30": {
+          "samples": 200,
+          "window_seconds": [
+            26.019999999999108,
+            29.999999999998316
+          ],
+          "gravity_error_rms_deg": 1.2543791213156188,
+          "gravity_error_p95_deg": 2.272924350096119,
+          "body_angular_velocity_error_rms_rad_s": 0.06771610998528887,
+          "body_angular_acceleration_rms_rad_s2": 2.0399339497574505,
+          "near_ground_point_speed_rms_m_s": 0.15253024167507315,
+          "reference_stance_point_speed_rms_m_s": 0.10537283359332625,
+          "no_near_ground_point_fraction": 0.0,
+          "geometry_only": true
+        }
+      },
+      "normalized_dynamic_score": 0.6762721920434129,
+      "near_ground_ratio": 1.0986046551735136,
+      "eligible": true
+    },
+    {
+      "run": "run_004",
+      "iteration": 1000,
+      "bundle": "finetune_projects/g1_continuous_20261029/candidates/balance_v2_001000",
+      "complete": true,
+      "dance_joint_rmse": 0.11749292694070516,
+      "metrics": {
+        "dance": {
+          "samples": 1148,
+          "window_seconds": [
+            5.019999999999915,
+            27.959999999998722
+          ],
+          "gravity_error_rms_deg": 1.4662679438849007,
+          "gravity_error_p95_deg": 2.6341277956620046,
+          "body_angular_velocity_error_rms_rad_s": 0.11472056333484597,
+          "body_angular_acceleration_rms_rad_s2": 3.7486200319961696,
+          "near_ground_point_speed_rms_m_s": 0.4745696044769644,
+          "reference_stance_point_speed_rms_m_s": 0.04296725542343997,
+          "no_near_ground_point_fraction": 0.0,
+          "geometry_only": true
+        },
+        "hard_20_24": {
+          "samples": 201,
+          "window_seconds": [
+            20.000000000000306,
+            23.99999999999951
+          ],
+          "gravity_error_rms_deg": 1.9451501970092586,
+          "gravity_error_p95_deg": 3.8948313196332642,
+          "body_angular_velocity_error_rms_rad_s": 0.15438885412227393,
+          "body_angular_acceleration_rms_rad_s2": 4.399826608114361,
+          "near_ground_point_speed_rms_m_s": 0.2895302858469883,
+          "reference_stance_point_speed_rms_m_s": 0.05775803715021294,
+          "no_near_ground_point_fraction": 0.0,
+          "geometry_only": true
+        },
+        "hard_26_30": {
+          "samples": 200,
+          "window_seconds": [
+            26.019999999999108,
+            29.999999999998316
+          ],
+          "gravity_error_rms_deg": 1.491519537572206,
+          "gravity_error_p95_deg": 2.787144595929204,
+          "body_angular_velocity_error_rms_rad_s": 0.0667269671446031,
+          "body_angular_acceleration_rms_rad_s2": 1.6621368331731492,
+          "near_ground_point_speed_rms_m_s": 0.16539945405928086,
+          "reference_stance_point_speed_rms_m_s": 0.13344312432369612,
+          "no_near_ground_point_fraction": 0.0,
+          "geometry_only": true
+        }
+      },
+      "normalized_dynamic_score": 0.5869789301098008,
+      "near_ground_ratio": 1.1214453260555728,
+      "eligible": false
+    }
+  ],
+  "rule": "BALANCE_SELECTION_RULE.md",
+  "status": "selected_and_DDS_3_of_3_verified",
+  "hardware_ready": false
+}

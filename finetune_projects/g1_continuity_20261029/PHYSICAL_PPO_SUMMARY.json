@@ -1,0 +1,97 @@
+{
+  "method": "two controlled physical PPO warm-start trials",
+  "iterations_per_arm": 200,
+  "physical_control_steps_per_arm": 204800,
+  "physics_substeps_per_arm": 819200,
+  "all_16_candidates_physically_completed": true,
+  "any_full_native_pass": false,
+  "baseline_worst_hf": 0.008969712506762484,
+  "best_research_candidate": {
+    "arm": "measured20",
+    "iteration": 175,
+    "bundle": "finetune_projects/g1_continuity_20261029/candidates/physical009_000175",
+    "physical_complete": true,
+    "original_style": {
+      "complete": true,
+      "anchor_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa",
+      "dance_joint_rmse_rad": 0.12645950908142747,
+      "main_joint_indices": [
+        0,
+        3,
+        6,
+        9,
+        15,
+        16,
+        17,
+        18,
+        22,
+        23,
+        24,
+        25
+      ],
+      "amplitude_ratios": {
+        "0": 0.8560076807839684,
+        "3": 0.9149862231060358,
+        "6": 0.9471106137435946,
+        "9": 0.8300161351893417,
+        "15": 0.9501461580403623,
+        "16": 0.9143749250039375,
+        "17": 1.0447107634605712,
+        "18": 0.9734270499934952,
+        "22": 1.072110011650235,
+        "23": 0.9184352040098847,
+        "24": 1.0236493997356721,
+        "25": 1.0671336567564842
+      },
+      "correlations": {
+        "0": 0.9357874161381965,
+        "3": 0.9366267711117705,
+        "6": 0.9201062196201195,
+        "9": 0.924394044350961,
+        "15": 0.9635770773348714,
+        "16": 0.9802950315099278,
+        "17": 0.9574652154340297,
+        "18": 0.9399821281100039,
+        "22": 0.9894173727469422,
+        "23": 0.9893806487392185,
+        "24": 0.993176592416585,
+        "25": 0.9871162737544689
+      },
+      "limits": {
+        "dance_joint_rmse_rad": 0.13,
+        "amplitude_ratio_min": 0.8,
+        "correlation_min": 0.9
+      },
+      "passed": true
+    },
+    "worst_hf": 0.008126190170383418,
+    "phase_hf": {
+      "dance": 0.003079499731440965,
+      "entry": 0.003585032976434754,
+      "exit": 0.0014519819071636408,
+      "settle": 8.460733062295305e-06,
+      "standing": 4.145845137837036e-06
+    },
+    "worst_root_hf": 0.00026739001204427595,
+    "full_pass": false
+  },
+  "best_worst_hf_reduction_fraction": 0.09404117866019834,
+  "selected": null,
+  "default_policy_promoted": false,
+  "goal_complete_claimed": false,
+  "hardware_ready": false,
+  "measured_arm_weight_checks": {
+    "world_model_bit_identical": true,
+    "policy_normalizers_bit_identical": true,
+    "source_checkpoint_unchanged": true
+  },
+  "measured_final_checkpoint_sha256": "925c91ac30797d9571ab29b50e1b56a57047abee5e5c768a7fe9f3e48f57237e",
+  "ending_preview_selection": "FAST_FINISH_SELECTION.json",
+  "regular_tests": {
+    "passed": 346,
+    "skipped": 2,
+    "slow_deselected": 9,
+    "log": "physical_ppo_measured_tests.log"
+  },
+  "next_investigation": "phase-local peaks and frequency-matched actual200Hz cost; keep all original fidelity/continuity gates"
+}

@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-02",
+  "source_checkpoint_sha256": "260e5e9559455096bc700711a0ec5e1daf9354fc4724a27a5d9597438a39736b",
+  "configuration_differences": {
+    "critic_clock": [
+      false,
+      true
+    ]
+  },
+  "first50_reward_and_hf_cost_summaries_identical": true,
+  "rows": [
+    {
+      "run": "run_016_clock_control",
+      "training_result": {
+        "status": "completed",
+        "iterations": 500,
+        "physical_sim_steps": 512000,
+        "total_wall_seconds": 469.08203891899984,
+        "source_checkpoint_unchanged": true,
+        "hardware_ready": false,
+        "world_model_updated": false
+      },
+      "critic_clock": false,
+      "source_initial_pi_identical": true,
+      "world_model_unchanged": true,
+      "policy_normalizers_unchanged": true,
+      "actor_changed": true,
+      "inference_args_unchanged": true,
+      "final_checkpoint_sha256": "d0e061cae9aa521ca366d6fb35090f67f99da874fa8d896377da3dad49b35e0d",
+      "warmup_value_loss_mean": 0.10057081588587607,
+      "post_warmup_value_loss_median": 0.010652070508513134
+    },
+    {
+      "run": "run_017_clock",
+      "training_result": {
+        "status": "completed",
+        "iterations": 500,
+        "physical_sim_steps": 512000,
+        "total_wall_seconds": 474.09116919400003,
+        "source_checkpoint_unchanged": true,
+        "hardware_ready": false,
+        "world_model_updated": false
+      },
+      "critic_clock": true,
+      "source_initial_pi_identical": true,
+      "world_model_unchanged": true,
+      "policy_normalizers_unchanged": true,
+      "actor_changed": true,
+      "inference_args_unchanged": true,
+      "final_checkpoint_sha256": "fee505a8014e6b409735009be428769b94bc4643c0acd9de6cc4053b3c5aa218",
+      "warmup_value_loss_mean": 0.017982130270538618,
+      "post_warmup_value_loss_median": 0.005789011138404021
+    }
+  ],
+  "total_control_transitions": 1024000,
+  "total_physics_substeps": 4096000,
+  "goal_complete_claimed": false,
+  "hardware_ready": false
+}

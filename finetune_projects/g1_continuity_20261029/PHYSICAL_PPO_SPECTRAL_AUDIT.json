@@ -1,0 +1,218 @@
+{
+  "method": "offline actual200Hz velocity error vs reference and existing unmodified Hann window HF metrics; no causal filter or training reward change",
+  "diagnostic_only": true,
+  "rows": [
+    {
+      "arm": 8,
+      "iteration": 25,
+      "mean_measured_velocity_error_cost": 0.17085161011078415,
+      "hf_velocity_error_cost": 0.05196539663827996,
+      "mean_window_ankle_hf_cost": 0.3334249340761397,
+      "worst_window_hf": 0.008456014762335278,
+      "worst_window_seconds": [
+        24.99999999999931,
+        26.999999999998913
+      ],
+      "style_passed": true
+    },
+    {
+      "arm": 8,
+      "iteration": 50,
+      "mean_measured_velocity_error_cost": 0.1791099469795511,
+      "hf_velocity_error_cost": 0.05303439057995308,
+      "mean_window_ankle_hf_cost": 0.334258416464866,
+      "worst_window_hf": 0.008961279668801678,
+      "worst_window_seconds": [
+        24.99999999999931,
+        26.999999999998913
+      ],
+      "style_passed": true
+    },
+    {
+      "arm": 8,
+      "iteration": 75,
+      "mean_measured_velocity_error_cost": 0.1653470912566002,
+      "hf_velocity_error_cost": 0.04830445742484899,
+      "mean_window_ankle_hf_cost": 0.3427321121011815,
+      "worst_window_hf": 0.008524676918004084,
+      "worst_window_seconds": [
+        24.99999999999931,
+        26.999999999998913
+      ],
+      "style_passed": true
+    },
+    {
+      "arm": 8,
+      "iteration": 100,
+      "mean_measured_velocity_error_cost": 0.1805613699828832,
+      "hf_velocity_error_cost": 0.053985114571109806,
+      "mean_window_ankle_hf_cost": 0.339604614274159,
+      "worst_window_hf": 0.008731160204745623,
+      "worst_window_seconds": [
+        24.99999999999931,
+        26.999999999998913
+      ],
+      "style_passed": true
+    },
+    {
+      "arm": 8,
+      "iteration": 125,
+      "mean_measured_velocity_error_cost": 0.17835194162865867,
+      "hf_velocity_error_cost": 0.054786433422615265,
+      "mean_window_ankle_hf_cost": 0.36161116133850285,
+      "worst_window_hf": 0.00962505173663105,
+      "worst_window_seconds": [
+        19.500000000000405,
+        21.500000000000007
+      ],
+      "style_passed": true
+    },
+    {
+      "arm": 8,
+      "iteration": 150,
+      "mean_measured_velocity_error_cost": 0.184782479326926,
+      "hf_velocity_error_cost": 0.05963441178789383,
+      "mean_window_ankle_hf_cost": 0.33616254035215676,
+      "worst_window_hf": 0.009684769601966,
+      "worst_window_seconds": [
+        21.999999999999908,
+        23.99999999999951
+      ],
+      "style_passed": true
+    },
+    {
+      "arm": 8,
+      "iteration": 175,
+      "mean_measured_velocity_error_cost": 0.19399129261982784,
+      "hf_velocity_error_cost": 0.06511389231661527,
+      "mean_window_ankle_hf_cost": 0.4952162977950564,
+      "worst_window_hf": 0.020860815638430476,
+      "worst_window_seconds": [
+        19.500000000000405,
+        21.500000000000007
+      ],
+      "style_passed": true
+    },
+    {
+      "arm": 8,
+      "iteration": 200,
+      "mean_measured_velocity_error_cost": 0.19905973344406225,
+      "hf_velocity_error_cost": 0.060275124710066845,
+      "mean_window_ankle_hf_cost": 0.43490225296610047,
+      "worst_window_hf": 0.010941515814495779,
+      "worst_window_seconds": [
+        19.500000000000405,
+        21.500000000000007
+      ],
+      "style_passed": false
+    },
+    {
+      "arm": 9,
+      "iteration": 25,
+      "mean_measured_velocity_error_cost": 0.16645058308107075,
+      "hf_velocity_error_cost": 0.04842585759931142,
+      "mean_window_ankle_hf_cost": 0.3191886977971069,
+      "worst_window_hf": 0.008155793096207243,
+      "worst_window_seconds": [
+        24.99999999999931,
+        26.999999999998913
+      ],
+      "style_passed": true
+    },
+    {
+      "arm": 9,
+      "iteration": 50,
+      "mean_measured_velocity_error_cost": 0.17290536247558383,
+      "hf_velocity_error_cost": 0.05247150118600873,
+      "mean_window_ankle_hf_cost": 0.32457963127676026,
+      "worst_window_hf": 0.008556517993609175,
+      "worst_window_seconds": [
+        24.99999999999931,
+        26.999999999998913
+      ],
+      "style_passed": true
+    },
+    {
+      "arm": 9,
+      "iteration": 75,
+      "mean_measured_velocity_error_cost": 0.1758513136448468,
+      "hf_velocity_error_cost": 0.047162426062326936,
+      "mean_window_ankle_hf_cost": 0.30164607125159365,
+      "worst_window_hf": 0.009013433589715313,
+      "worst_window_seconds": [
+        21.999999999999908,
+        23.99999999999951
+      ],
+      "style_passed": true
+    },
+    {
+      "arm": 9,
+      "iteration": 100,
+      "mean_measured_velocity_error_cost": 0.17466850100946257,
+      "hf_velocity_error_cost": 0.04868608509071889,
+      "mean_window_ankle_hf_cost": 0.3164807985773716,
+      "worst_window_hf": 0.00919992730664342,
+      "worst_window_seconds": [
+        21.999999999999908,
+        23.99999999999951
+      ],
+      "style_passed": false
+    },
+    {
+      "arm": 9,
+      "iteration": 125,
+      "mean_measured_velocity_error_cost": 0.17566087775121172,
+      "hf_velocity_error_cost": 0.05496829407466348,
+      "mean_window_ankle_hf_cost": 0.34375391902731856,
+      "worst_window_hf": 0.008663886407210514,
+      "worst_window_seconds": [
+        21.999999999999908,
+        23.99999999999951
+      ],
+      "style_passed": true
+    },
+    {
+      "arm": 9,
+      "iteration": 150,
+      "mean_measured_velocity_error_cost": 0.1795229003024124,
+      "hf_velocity_error_cost": 0.058505423408938745,
+      "mean_window_ankle_hf_cost": 0.34668248090683534,
+      "worst_window_hf": 0.008712674330220879,
+      "worst_window_seconds": [
+        24.99999999999931,
+        26.999999999998913
+      ],
+      "style_passed": true
+    },
+    {
+      "arm": 9,
+      "iteration": 175,
+      "mean_measured_velocity_error_cost": 0.17749164379651602,
+      "hf_velocity_error_cost": 0.05887674795217346,
+      "mean_window_ankle_hf_cost": 0.32375663593083825,
+      "worst_window_hf": 0.008126190170383418,
+      "worst_window_seconds": [
+        24.99999999999931,
+        26.999999999998913
+      ],
+      "style_passed": true
+    },
+    {
+      "arm": 9,
+      "iteration": 200,
+      "mean_measured_velocity_error_cost": 0.1700976585279449,
+      "hf_velocity_error_cost": 0.04897376901728555,
+      "mean_window_ankle_hf_cost": 0.36371214964289605,
+      "worst_window_hf": 0.008550077628790308,
+      "worst_window_seconds": [
+        24.99999999999931,
+        26.999999999998913
+      ],
+      "style_passed": true
+    }
+  ],
+  "velocity_error_vs_worst_hf_correlation": 0.6361667946738355,
+  "mean_hf_cost_vs_worst_hf_correlation": 0.8700598582388095,
+  "hardware_ready": false,
+  "goal_complete_claimed": false
+}

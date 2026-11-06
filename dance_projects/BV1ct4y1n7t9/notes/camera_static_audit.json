@@ -1,0 +1,8 @@
+{
+  "prediction": "dance_projects/BV1ct4y1n7t9/upstream_static/ji_ni_tai_mei_fullbody/hmr4d_results.pt",
+  "sha256": "900ebbe6d0283a981738b3cd42916432c7217676e66698087491b4ee85b8e0f9",
+  "frames": 504,
+  "relative_rotation_max_degrees": 10.868701934814453,
+  "relative_rotation_median_degrees": 3.416384220123291,
+  "interpretation": "Diagnostic only. Compare estimated camera motion against the actual background and source/model heading; a stable policy score does not verify correct motion recovery."
+}

@@ -1,0 +1,9 @@
+{
+  "run": "run_003",
+  "iteration": 2000,
+  "bundle": "finetune_projects/g1_continuous_20261029/candidates/balance_002000",
+  "fallback": "finetune_projects/g1_continuous_20261029/candidates/smooth_000600",
+  "reason": "best normalized dynamic native score; 3/3 complete DDS; lower gravity/gyro/stance-proxy motion, original reference preserved",
+  "results": "BALANCE_RESULTS.json",
+  "hardware_ready": false
+}

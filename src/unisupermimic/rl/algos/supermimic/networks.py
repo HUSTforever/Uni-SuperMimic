@@ -201,8 +201,16 @@ class Policy(nn.Module):
         z_dim: int = 32,
         num_joints: int = 29,
         hidden: Sequence[int] = (2048, 1024, 512, 256),
+        action_smoothing: float = 1.0,
     ):
         super().__init__()
+        if not 0 < action_smoothing <= 1:
+            raise ValueError("action_smoothing must be in (0, 1]")
+        if action_smoothing < 1 and obs_dim < 3 * num_joints + 6:
+            raise ValueError("smoothed action requires proprioceptive previous-action features")
+        self.action_smoothing = action_smoothing
+        self.previous_action_start = 2 * num_joints + 6
+        self.num_joints = num_joints
         self.hist = hist
         self.enc = mlp(goal_dim, hidden, z_dim)
         self.dec = mlp(z_dim + obs_dim * hist, hidden, num_joints)
@@ -218,7 +226,13 @@ class Policy(nn.Module):
         """Consume ``(batch, hist, obs_dim)`` observations, newest last."""
         latent = torch.tanh(run_mlp(self.enc, self.goal_norm(goal)))
         obs = self.obs_norm(obs_hist).flatten(-2)
-        return run_mlp(self.dec, torch.cat((latent, obs), -1))
+        proposed = run_mlp(self.dec, torch.cat((latent, obs), -1))
+        if self.action_smoothing < 1:
+            previous = obs_hist[
+                :, -1, self.previous_action_start : self.previous_action_start + self.num_joints
+            ]
+            return previous + self.action_smoothing * (proposed - previous)
+        return proposed
 
 
 class Critic(nn.Module):

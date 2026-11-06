@@ -1,0 +1,11 @@
+# 有限片段的价值网络时钟
+
+目标/原始质量门槛不变。两组快速回站整合训练各1000轮已完成，尚无全项合格候选。修复质量缩放缓存后会重跑扰动证据。新审计CRITIC_CLOCK_AUDIT.json证明：静止尾段f1450/f2037的价值网络输入完全相同，但剩余588/1步的理想折扣回报约9.973/.1，现有有限片段terminal语义下无法同时拟合。
+
+Codex选择仅增强训练critic，不改策略/部署接口。配置critic_clock默认False兼容旧路径；显式启用时要求0<gamma<1。critic输入末尾追加remaining_steps/100（50Hz时相当于剩余秒数/2），提供完整剩余时长。ClockCritic保留原MLP/RunningNorm，并将输出乘h=1-gamma^remaining_steps（使用expm1），确保片段末端价值为0，静止恒定奖励的旧continuing-value可直接正确映射。额外clock输入使非静止状态也能表示一般有限时域价值，并非只假设全程奖励恒定。现有GAE的真实失败/片段结束terminal与时间上限bootstrap规则保持不变。
+
+旧914维critic迁移到915维：原第一层所有列、bias、其余网络、归一化旧维与count完全保留；新增输入列全0、norm.mean追加0、var追加1。带clock的新checkpoint在同配置下直接加载；禁止无声明地移除已有clock。pi/WM与policy归一化逐张量不变，网络导出仍原99x10+730→29。保存的ppo_config记录critic_clock；新critic仅用于该PPO路径，不能作为旧SuperMimic critic的无变换恢复文件。
+
+训练采样分别使用每个learner独立的rollout和minibatch随机数生成器，种子为seed和seed+1。新增critic输入会改变网络初始化消耗的随机数，若继续共用全局生成器，即使同seed也会改变动作噪声；独立生成器已通过初始动作逐值相同的回归验证。采样分布、策略推理和部署接口不变，但新旧训练版本不能仅凭同seed声称同一噪声序列；当前保存接口是warm start，不提供随机数状态精确续训。
+
+验证：恒定奖励解析有限回报、理想静止GAE优势≈0、gamma1显式拒绝、新列迁移/源不变/actor不变/导出契约、真实短训练与full常规suite，一次fresh review。后续受控500轮实验须新建control/clock两组，使用同源fast_integrated_base_v1、相同LR3e-6/HF1/focus/measured20和本版独立随机数生成器；不能把旧run015直接作为配对噪声对照。按完整原生+原始风格+回站10s选型，任何合格候选仍须原引擎/多次DDS/正确质量扰动/真实视频验证。500轮对照尚未执行；旧产物保留，不连接真机。

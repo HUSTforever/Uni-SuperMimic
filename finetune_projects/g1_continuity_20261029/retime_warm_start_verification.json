@@ -1,0 +1,23 @@
+{
+  "selected": "run_002/ckpt_000250.pt",
+  "reproduced": "run_003_reproduce/last.pt",
+  "bit_identical": {
+    "pi": true,
+    "wm": true
+  },
+  "checkpoint_keys": [
+    "args",
+    "critic",
+    "iteration",
+    "opt_pi",
+    "opt_v",
+    "opt_wm",
+    "pi",
+    "saved_at",
+    "sim_steps",
+    "wall_time",
+    "wm"
+  ],
+  "complete_checkpoint": true,
+  "hardware_ready": false
+}

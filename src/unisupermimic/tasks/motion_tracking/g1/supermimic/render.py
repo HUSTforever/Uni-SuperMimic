@@ -50,6 +50,7 @@ def rollout_qpos(
     clip_name: str,
     seconds: float,
     start: float = 0.0,
+    diagnostics: dict | None = None,
 ) -> tuple[np.ndarray, np.ndarray]:
     if seconds <= 0:
         raise ValueError("seconds must be positive")
@@ -71,6 +72,8 @@ def rollout_qpos(
     history = None
     states = [current["s"][clip_index].cpu()]
     frames = [int(current["f"][clip_index].item())]
+    terminated = False
+    reached_clip_end = False
     while len(states) < max_frames:
         obs = mdp.obs(
             unflatten_state(current["s"]),
@@ -86,6 +89,8 @@ def rollout_qpos(
         state = env.step(action)
         transition = state.info[SUPERMIMIC_TRANSITION_KEY]
         if bool(transition["done"][clip_index].item()):
+            terminated = bool(transition["term"][clip_index].item())
+            reached_clip_end = not terminated
             break
         current = state.info[SUPERMIMIC_STATE_KEY]
         states.append(current["s"][clip_index].cpu())
@@ -97,6 +102,9 @@ def rollout_qpos(
     policy_qpos = flattened_qpos(torch.stack(states)).numpy()
     frame_ids = torch.tensor(frames, dtype=torch.long, device=motion.root_p.device)
     reference = reference_qpos(motion, frame_ids).cpu().numpy()
+    if diagnostics is not None:
+        diagnostics.update(terminated=terminated, reached_clip_end=reached_clip_end,
+                           frames=len(states), requested_frames=max_frames)
     return reference[start_frame:], policy_qpos[start_frame:]
 
 
@@ -143,7 +151,9 @@ def label_font() -> Any:
         return ImageFont.load_default()
 
 
-def make_comparison_frame(image: np.ndarray, label: str) -> np.ndarray:
+def make_comparison_frame(
+    image: np.ndarray, label: str, *, show_reference: bool = True
+) -> np.ndarray:
     from PIL import Image, ImageDraw
 
     if image.ndim != 3 or image.shape[2] != 3:
@@ -152,7 +162,12 @@ def make_comparison_frame(image: np.ndarray, label: str) -> np.ndarray:
     draw = ImageDraw.Draw(frame)
     labels = (
         ((16, 12), label),
-        ((16, image.shape[0] - 38), "solid: SuperMimic   blue ghost: Reference"),
+        (
+            (16, image.shape[0] - 38),
+            "solid: SuperMimic   blue ghost: Reference"
+            if show_reference
+            else "SuperMimic physical rollout | 50 Hz control",
+        ),
     )
     for xy, text in labels:
         bounds = draw.textbbox(xy, text, font=label_font())
@@ -175,6 +190,7 @@ def render_comparison(
     height: int = 540,
     fps: int = 25,
     global_ghost: bool = False,
+    show_reference: bool = True,
 ) -> int:
     import imageio.v2 as imageio
     import mujoco
@@ -187,6 +203,10 @@ def render_comparison(
     if fps <= 0 or CONTROL_FPS % fps != 0:
         raise ValueError(f"fps must be a positive divisor of {CONTROL_FPS}")
     model = load_comparison_model(scene)
+    if not show_reference:
+        for geom_id in range(model.ngeom):
+            if model.body(model.geom_bodyid[geom_id]).name.startswith("ref_"):
+                model.geom_rgba[geom_id, 3] = 0
     if reference.shape[1] * 2 != model.nq:
         raise ValueError(f"comparison model expects {model.nq // 2} qpos columns")
     model.vis.headlight.ambient[:] = 0.45
@@ -195,7 +215,7 @@ def render_comparison(
     model.vis.global_.offheight = max(height, model.vis.global_.offheight)
     data = mujoco.MjData(model)
     camera = mujoco.MjvCamera()
-    camera.distance = 3.6
+    camera.distance = 3.0
     camera.azimuth = 135
     camera.elevation = -12
     renderer = mujoco.Renderer(model, height=height, width=width)
@@ -221,7 +241,9 @@ def render_comparison(
                 camera.lookat[:] = [policy[index, 0], policy[index, 1], 0.75]
                 renderer.update_scene(data, camera=camera)
                 label = f"{clip_name}  t={index / CONTROL_FPS:4.1f}s"
-                writer.append_data(make_comparison_frame(renderer.render(), label))
+                writer.append_data(
+                    make_comparison_frame(renderer.render(), label, show_reference=show_reference)
+                )
                 written += 1
     finally:
         renderer.close()

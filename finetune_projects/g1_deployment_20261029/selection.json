@@ -1,0 +1,34 @@
+{
+  "selected_iteration": 1000,
+  "native_rank": [
+    3,
+    1.0,
+    -0.11482948716952603
+  ],
+  "ranking_rule": "completed_count,worst_step_fraction,negative_mean_rmse",
+  "source": "deploy/artifacts/ji_ni_tai_mei/bundle_v3",
+  "candidate": "finetune_projects/g1_deployment_20261029/candidates/ckpt_001000",
+  "all_candidates": {
+    "250": [
+      3,
+      1.0,
+      -0.1371612485986827
+    ],
+    "500": [
+      3,
+      1.0,
+      -0.11595740251809901
+    ],
+    "750": [
+      3,
+      1.0,
+      -0.12203899856509902
+    ],
+    "1000": [
+      3,
+      1.0,
+      -0.11482948716952603
+    ]
+  },
+  "hardware_ready": false
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-02",
+  "source_sha256": "260e5e9559455096bc700711a0ec5e1daf9354fc4724a27a5d9597438a39736b",
+  "actual_cuda_iterations": 2,
+  "actual_control_transitions": 32,
+  "source_and_all_checkpoints_base_wm_normalizers_identical": true,
+  "critic_warmup_whole_actor_unchanged": true,
+  "only_residual_state_changed": [
+    "residual.2.weight",
+    "residual.2.bias"
+  ],
+  "cuda_fixed_probe_actual_targets_max_abs_difference": 0.0,
+  "cuda_fixed_probe_batch": 4,
+  "full_cuda_trajectory_parity_claimed": false,
+  "full_cpu_native_initial_parity_report": "PROJECTED_RESIDUAL_INITIAL_PARITY.json",
+  "hardware_ready": false,
+  "goal_complete_claimed": false
+}

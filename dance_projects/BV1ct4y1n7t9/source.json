@@ -1,0 +1,47 @@
+{
+  "bvid": "BV1ct4y1n7t9",
+  "url": "https://www.bilibili.com/video/BV1ct4y1n7t9/",
+  "goal": "Retarget and train this dance on G1 29DoF in its own folder; keep full usable dance performance; preserve old demo.",
+  "title": "【4K顶级画质60FPS】蔡徐坤《只因你太美》原版完整版现场！一晃眼6年过去了",
+  "actual_download": {
+    "width": 852,
+    "height": 480,
+    "variable_frame_rate": true
+  },
+  "normalized": {
+    "fps": 30,
+    "frames": 1782,
+    "path": "inputs/source_cfr30.mp4"
+  },
+  "selected": {
+    "start_seconds": 13.4,
+    "end_seconds": 30.2,
+    "duration_seconds": 16.8,
+    "frames": 504,
+    "fps": 30,
+    "path": "clips/ji_ni_tai_mei_fullbody.mp4",
+    "scope": "Complete usable full-body performance, including dribble gestures, turn and iconic dance. Original full source kept; speech and later leg-cropped closeups excluded."
+  },
+  "motion_only": true,
+  "basketball_physics": false,
+  "source_sha256": "22f834cc805ed13882dc46ad08da431fc0c213754559b79dfde014aa9c99f52f",
+  "normalized_sha256": "9e348fea6ca984c8fc37542af8dfc7222e58dab7cf1d01b89fbc1fdfe8070b24",
+  "clip_sha256": "9acc902de05afe79336b6044babb00873847d676d34f876b54eb40665124d25b",
+  "recovery": {
+    "camera": "static",
+    "flip_test": true,
+    "human_ground_axis": "y",
+    "contact_mode": "support",
+    "status": "accepted after static A/B; source/policy heading audit",
+    "camera_relative_rotation_max_degrees": 10.8687,
+    "camera_relative_rotation_median_degrees": 3.4164,
+    "rejected_simplevo_rotation_max_degrees": 177.31
+  },
+  "stabilization": {
+    "smooth_seconds": 0.08,
+    "slowdown": 1.25,
+    "face_yaw_deg": 315,
+    "airborne_approximation": "supported dance: small hops become grounded steps; preserve-flight mode is separately available and was not used in this run"
+  },
+  "active_motion": "motion_static/ji_ni_tai_mei_static.csv"
+}

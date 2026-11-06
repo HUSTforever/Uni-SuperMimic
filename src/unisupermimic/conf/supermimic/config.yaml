@@ -15,6 +15,7 @@ algo:
   utd: 0.4
   horizon: 32
   goal_frames: 10
+  action_smoothing: 1.0
   hist: 10
   z_dim: 32
   wm_hidden: [2048, 2048, 2048]
@@ -42,6 +43,7 @@ algo:
   test_hidden_dims: null
 
 training:
+  init_checkpoint: null
   task_name: G1SuperMimic
   sim_backend: mjwarp
   collector_tensor_device: auto

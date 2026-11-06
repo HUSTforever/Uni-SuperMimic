@@ -1,0 +1,120 @@
+{
+  "method": "fixed_policy_world_model_recalibration",
+  "source_checkpoint": "finetune_projects/g1_continuity_20261029/run_003_reproduce/last.pt",
+  "source_checkpoint_sha256": "06fee315aa2b029238110882b91c2c2eeb2c3a3f65933a38f7905830f42d31b0",
+  "fit_seed": 20261030,
+  "collection_seed": 0,
+  "wm_updates_per_arm": 600,
+  "iteration_semantics": "checkpoint iteration counts WM updates; no policy updates",
+  "branches": {
+    "control": {
+      "ankle_velocity_weight": 1.0,
+      "root_velocity_weight": 1.0,
+      "complete_checkpoint": "finetune_projects/g1_continuity_20261029/run_005_wm_control/wm_000600.pt",
+      "unchanged": {
+        "pi": true,
+        "critic": true,
+        "wm_in_norm": true,
+        "wm_out_norm": true
+      },
+      "trace": [
+        {
+          "arm": "control",
+          "wm_updates": 100,
+          "loss": 0.009979881346225739,
+          "wm_err8": 0.013304825872182846
+        },
+        {
+          "arm": "control",
+          "wm_updates": 200,
+          "loss": 0.010555567219853401,
+          "wm_err8": 0.013586216606199741
+        },
+        {
+          "arm": "control",
+          "wm_updates": 300,
+          "loss": 0.010126717388629913,
+          "wm_err8": 0.012931776233017445
+        },
+        {
+          "arm": "control",
+          "wm_updates": 400,
+          "loss": 0.01013178564608097,
+          "wm_err8": 0.01233625691384077
+        },
+        {
+          "arm": "control",
+          "wm_updates": 500,
+          "loss": 0.00846891850233078,
+          "wm_err8": 0.01038538757711649
+        },
+        {
+          "arm": "control",
+          "wm_updates": 600,
+          "loss": 0.009563611820340157,
+          "wm_err8": 0.01221438031643629
+        }
+      ]
+    },
+    "weighted": {
+      "ankle_velocity_weight": 4.0,
+      "root_velocity_weight": 2.0,
+      "complete_checkpoint": "finetune_projects/g1_continuity_20261029/run_005_wm_weighted/wm_000600.pt",
+      "unchanged": {
+        "pi": true,
+        "critic": true,
+        "wm_in_norm": true,
+        "wm_out_norm": true
+      },
+      "trace": [
+        {
+          "arm": "weighted",
+          "wm_updates": 100,
+          "loss": 0.022221336141228676,
+          "wm_err8": 0.013397127389907837
+        },
+        {
+          "arm": "weighted",
+          "wm_updates": 200,
+          "loss": 0.0227055624127388,
+          "wm_err8": 0.01376868411898613
+        },
+        {
+          "arm": "weighted",
+          "wm_updates": 300,
+          "loss": 0.023798443377017975,
+          "wm_err8": 0.013089587911963463
+        },
+        {
+          "arm": "weighted",
+          "wm_updates": 400,
+          "loss": 0.023564551025629044,
+          "wm_err8": 0.01272608619183302
+        },
+        {
+          "arm": "weighted",
+          "wm_updates": 500,
+          "loss": 0.019106432795524597,
+          "wm_err8": 0.01049783919006586
+        },
+        {
+          "arm": "weighted",
+          "wm_updates": 600,
+          "loss": 0.022055545821785927,
+          "wm_err8": 0.012349043972790241
+        }
+      ]
+    }
+  },
+  "hardware_ready": false,
+  "goal_complete_claimed": false,
+  "dataset_sha256": "e8816d7b7015823f068bce42ba76e95f33785c0a3c4a621be1e4be8f375697de",
+  "dataset": "finetune_projects/g1_continuity_20261029/run_005_wm_data/replay_dataset.pt",
+  "phase_transition_counts": {
+    "dance": 22602,
+    "entry": 4660,
+    "exit": 3209,
+    "settle": 4687,
+    "standing": 3242
+  }
+}

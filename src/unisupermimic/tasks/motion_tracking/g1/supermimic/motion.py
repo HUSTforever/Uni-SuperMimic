@@ -4,9 +4,12 @@ from __future__ import annotations
 
 import copy
 import csv
+import hashlib
+import json
 import math
 import os
 from collections.abc import Sequence
+from pathlib import Path
 
 import torch
 
@@ -43,12 +46,39 @@ class MotionLib:
             raw = _load_csv(file)
             if raw.shape[0] < 2 or raw.shape[1] != 36:
                 raise ValueError(f"{file} must have at least two rows and 36 columns")
+            if not bool(torch.isfinite(raw).all()):
+                raise ValueError(f"{file} contains non-finite values")
+            file_fps = src_fps
+            metadata_path = Path(file).with_suffix(".json")
+            if metadata_path.is_file():
+                metadata = json.loads(metadata_path.read_text())
+                file_fps = float(metadata.get("fps", src_fps))
+                if (
+                    metadata.get("frames", len(raw)) != len(raw)
+                    or metadata.get("quaternion_order", "xyzw") != "xyzw"
+                ):
+                    raise ValueError(f"{file} metadata does not match the CSV layout")
+                fingerprint = metadata.get("csv_sha256")
+                if (
+                    fingerprint
+                    and fingerprint != hashlib.sha256(Path(file).read_bytes()).hexdigest()
+                ):
+                    raise ValueError(f"{file} content changed since its metadata was written")
+            if not math.isfinite(file_fps) or file_fps <= 0:
+                raise ValueError(f"{file} fps must be finite and positive")
             position, quat_xyzw, joints = raw[:, :3], raw[:, 3:7], raw[:, 7:36]
             quaternion = torch.cat((quat_xyzw[:, 3:4], quat_xyzw[:, :3]), -1)
             source_frames = raw.shape[0]
-            duration = (source_frames - 1) / src_fps
-            num_frames = math.floor(duration / CONTROL_DT) + 1
-            sample = torch.arange(num_frames, dtype=torch.float32) * CONTROL_DT * src_fps
+            duration = (source_frames - 1) / file_fps
+            control_steps = duration / CONTROL_DT
+            rounded_steps = round(control_steps)
+            if abs(control_steps - rounded_steps) < 1e-8:
+                control_steps = rounded_steps
+            num_frames = math.floor(control_steps) + 1
+            if file_fps == 1.0 / CONTROL_DT:
+                sample = torch.arange(num_frames, dtype=torch.float32)
+            else:
+                sample = torch.arange(num_frames, dtype=torch.float32) * CONTROL_DT * file_fps
             lower = torch.clamp(sample.floor().long(), max=source_frames - 2)
             alpha = (sample - lower.float()).clamp(0, 1)
             position = position[lower] * (1 - alpha[:, None]) + position[lower + 1] * alpha[:, None]

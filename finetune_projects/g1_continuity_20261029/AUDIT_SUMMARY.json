@@ -1,0 +1,144 @@
+{
+  "source_policy_sha256": "69afd3cadd13abf18e24908b54fc63834eafaa36c56b535b720ab8676cf75c86",
+  "controlled_variants": 12,
+  "baseline_max_abs_state_difference": 0.0,
+  "variants": [
+    {
+      "name": "baseline",
+      "completed": true,
+      "steps": 1798,
+      "failure": null,
+      "dance_joint_rmse": 0.12145702909625745,
+      "ankle_hf_position_max_rad": 0.004515270657107892,
+      "ankle_hf_velocity_max_rad_s": 0.599329935344584,
+      "root_vertical_acceleration_peak": 25.80216890299674
+    },
+    {
+      "name": "ankle_kd_125",
+      "completed": true,
+      "steps": 1798,
+      "failure": null,
+      "dance_joint_rmse": 0.12138491293261931,
+      "ankle_hf_position_max_rad": 0.003932434509556713,
+      "ankle_hf_velocity_max_rad_s": 0.5668317765376831,
+      "root_vertical_acceleration_peak": 23.03044722809999
+    },
+    {
+      "name": "ankle_kd_150",
+      "completed": true,
+      "steps": 1798,
+      "failure": null,
+      "dance_joint_rmse": 0.12212543488692695,
+      "ankle_hf_position_max_rad": 0.004004165981179596,
+      "ankle_hf_velocity_max_rad_s": 0.6175936700834368,
+      "root_vertical_acceleration_peak": 20.14821981624817
+    },
+    {
+      "name": "ankle_kd_075",
+      "completed": true,
+      "steps": 1798,
+      "failure": null,
+      "dance_joint_rmse": 0.12067858676472036,
+      "ankle_hf_position_max_rad": 0.004583500276627472,
+      "ankle_hf_velocity_max_rad_s": 0.5698721011789069,
+      "root_vertical_acceleration_peak": 25.871729131998645
+    },
+    {
+      "name": "ankle_kp_075",
+      "completed": false,
+      "steps": 1728,
+      "failure": "pelvis tilt exceeds 1.2rad",
+      "dance_joint_rmse": 0.15267767020645323,
+      "ankle_hf_position_max_rad": 0.009106362205433127,
+      "ankle_hf_velocity_max_rad_s": 0.9243115294347434,
+      "root_vertical_acceleration_peak": 31.96327554408216
+    },
+    {
+      "name": "ankle_kp_050",
+      "completed": false,
+      "steps": 209,
+      "failure": "reference height deviation exceeds 0.25m",
+      "dance_joint_rmse": null,
+      "ankle_hf_position_max_rad": null,
+      "ankle_hf_velocity_max_rad_s": null,
+      "root_vertical_acceleration_peak": null
+    },
+    {
+      "name": "ramp",
+      "completed": true,
+      "steps": 1798,
+      "failure": null,
+      "dance_joint_rmse": 0.1216592117369117,
+      "ankle_hf_position_max_rad": 0.004235538352337411,
+      "ankle_hf_velocity_max_rad_s": 0.557461606503098,
+      "root_vertical_acceleration_peak": 21.73111574921105
+    },
+    {
+      "name": "ramp_kd_125",
+      "completed": true,
+      "steps": 1798,
+      "failure": null,
+      "dance_joint_rmse": 0.12746209152775498,
+      "ankle_hf_position_max_rad": 0.006285140654845559,
+      "ankle_hf_velocity_max_rad_s": 0.6859556581990816,
+      "root_vertical_acceleration_peak": 22.216283524093488
+    },
+    {
+      "name": "ankle_command_alpha_0_8",
+      "completed": true,
+      "steps": 1798,
+      "failure": null,
+      "dance_joint_rmse": 0.12162971825242382,
+      "ankle_hf_position_max_rad": 0.004009336670159285,
+      "ankle_hf_velocity_max_rad_s": 0.5623083354009976,
+      "root_vertical_acceleration_peak": 25.572030159300514
+    },
+    {
+      "name": "ankle_command_alpha_0_6",
+      "completed": true,
+      "steps": 1798,
+      "failure": null,
+      "dance_joint_rmse": 0.12900295843204698,
+      "ankle_hf_position_max_rad": 0.0056606350848355915,
+      "ankle_hf_velocity_max_rad_s": 0.7107027157232836,
+      "root_vertical_acceleration_peak": 25.830290521191255
+    },
+    {
+      "name": "ankle_command_alpha_0_4",
+      "completed": false,
+      "steps": 1149,
+      "failure": "reference height deviation exceeds 0.25m",
+      "dance_joint_rmse": 0.16092780391615696,
+      "ankle_hf_position_max_rad": 0.00788464945994986,
+      "ankle_hf_velocity_max_rad_s": 0.8132596132552179,
+      "root_vertical_acceleration_peak": 26.981802341761295
+    },
+    {
+      "name": "ankle_command_alpha_0_2",
+      "completed": false,
+      "steps": 290,
+      "failure": "reference height deviation exceeds 0.25m",
+      "dance_joint_rmse": 0.512114437963657,
+      "ankle_hf_position_max_rad": 0.03322765044822091,
+      "ankle_hf_velocity_max_rad_s": 2.3324607405223623,
+      "root_vertical_acceleration_peak": 45.82756558323229
+    }
+  ],
+  "goal_status": "active",
+  "goal_complete": false,
+  "hardware_ready": false,
+  "spectral_estimator_check": {
+    "high10Hz_rms": 0.0070710674222883236,
+    "low2Hz_leakage": 4.5673463574010496e-06,
+    "expected_high_rms": 0.0070710678118654745,
+    "passed": true
+  },
+  "production_observer_verification": {
+    "physics_states": 7193,
+    "policy_states": 1799,
+    "all_qpos_and_velocities_bit_identical": true,
+    "tests_regular_passed": 263,
+    "tests_skipped": 2,
+    "slow_deselected": 9
+  }
+}

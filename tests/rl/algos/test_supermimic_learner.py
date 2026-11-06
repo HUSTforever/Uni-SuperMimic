@@ -208,6 +208,23 @@ def _config() -> SuperMimicConfig:
     )
 
 
+def test_initialize_weights_keeps_new_run_counters_and_optimizers(tmp_path):
+    source = SuperMimicLearner(FakeEnv(), _config(), tmp_path / "source")
+    source.iteration = 100
+    source.sim_steps = 12345
+    with torch.no_grad():
+        next(source.pi.parameters()).fill_(0.125)
+    checkpoint = source.save()
+    target = SuperMimicLearner(FakeEnv(), _config(), tmp_path / "target")
+    target.initialize_weights(checkpoint)
+    assert target.iteration == 0
+    assert target.sim_steps == 0
+    assert target.wall_time == 0
+    assert not target.opt_pi.state
+    assert torch.all(next(target.pi.parameters()) == 0.125)
+    assert source.log_dir != target.log_dir
+
+
 def test_tf32_only_enabled_for_fp32_training(tmp_path) -> None:
     previous = torch.backends.cuda.matmul.allow_tf32
     try:

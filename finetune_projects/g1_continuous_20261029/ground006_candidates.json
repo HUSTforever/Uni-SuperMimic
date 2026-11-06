@@ -1,0 +1,458 @@
+[
+  {
+    "run": "run_006",
+    "iteration": 500,
+    "bundle": "finetune_projects/g1_continuous_20261029/candidates/ground006_000500",
+    "complete": true,
+    "dance_joint_rmse": 0.12628552966758974,
+    "metrics": {
+      "dance": {
+        "samples": 1148,
+        "window_seconds": [
+          5.019999999999915,
+          27.959999999998722
+        ],
+        "gravity_error_rms_deg": 1.6718376985700516,
+        "gravity_error_p95_deg": 2.97739424230033,
+        "body_angular_velocity_error_rms_rad_s": 0.1323389305147164,
+        "body_angular_acceleration_rms_rad_s2": 3.9416950996387476,
+        "near_ground_point_speed_rms_m_s": 0.3650219384954834,
+        "reference_stance_point_speed_rms_m_s": 0.04513143342651817,
+        "no_near_ground_point_fraction": 0.0,
+        "geometry_only": true
+      },
+      "hard_20_24": {
+        "samples": 201,
+        "window_seconds": [
+          20.000000000000306,
+          23.99999999999951
+        ],
+        "gravity_error_rms_deg": 1.9908109131935257,
+        "gravity_error_p95_deg": 3.7644644415645074,
+        "body_angular_velocity_error_rms_rad_s": 0.18398482921587195,
+        "body_angular_acceleration_rms_rad_s2": 5.037430459254211,
+        "near_ground_point_speed_rms_m_s": 0.17902932454206774,
+        "reference_stance_point_speed_rms_m_s": 0.05966111727709145,
+        "no_near_ground_point_fraction": 0.0,
+        "geometry_only": true
+      },
+      "hard_26_30": {
+        "samples": 200,
+        "window_seconds": [
+          26.019999999999108,
+          29.999999999998316
+        ],
+        "gravity_error_rms_deg": 1.449599994240978,
+        "gravity_error_p95_deg": 2.6723498232157628,
+        "body_angular_velocity_error_rms_rad_s": 0.07009812878612572,
+        "body_angular_acceleration_rms_rad_s2": 1.9301926589150942,
+        "near_ground_point_speed_rms_m_s": 0.12519221230754682,
+        "reference_stance_point_speed_rms_m_s": 0.10511582396299299,
+        "no_near_ground_point_fraction": 0.0,
+        "geometry_only": true
+      }
+    },
+    "contact": {
+      "bundle": "finetune_projects/g1_continuous_20261029/candidates/ground006_000500",
+      "physics_hz": 200,
+      "sample_hz": 50,
+      "criterion": "floor/sole contact normal force >1N at completed policy boundaries; solver diagnostics only",
+      "completed": true,
+      "failure": null,
+      "force_weighted_contact_speed_rms_m_s": 0.1826514158436798,
+      "no_loaded_sole_contact_fraction": 0.0,
+      "mean_normal_force_N": 343.1138541138966
+    },
+    "score": 1.112933073042691,
+    "eligible": false,
+    "report": {
+      "transport": "native_sequence",
+      "initialization": "stationary_sequence_zero_velocity",
+      "initial_velocity_norm": 0.0,
+      "standing_entry_verified": true,
+      "entry": {
+        "attempted": true,
+        "completed": true
+      },
+      "exit": {
+        "attempted": true,
+        "completed": true
+      },
+      "tracking": {
+        "expected_steps": 1798,
+        "steps": 1798,
+        "completed": true,
+        "failure": null
+      },
+      "delay_ms": 0,
+      "perturbation": {
+        "friction": 1.0,
+        "mass_scale": 1.0,
+        "noise": 0.0,
+        "seed": 0
+      },
+      "terminal_sample_recorded": true,
+      "sequence": {
+        "phases": {
+          "dance": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 250,
+            "end_frame": 1398,
+            "joint_rmse_rad": 0.12628552966758974
+          },
+          "entry": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 100,
+            "end_frame": 250,
+            "joint_rmse_rad": 0.06543850054628149
+          },
+          "exit": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 1398,
+            "end_frame": 1548,
+            "joint_rmse_rad": 0.08070711178918742
+          },
+          "settle": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 1548,
+            "end_frame": 1798,
+            "joint_rmse_rad": 0.06074529198832676
+          },
+          "standing": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 0,
+            "end_frame": 100,
+            "joint_rmse_rad": 0.021653328698376315
+          }
+        },
+        "final_hold": {
+          "passed": true,
+          "joint_velocity_rms": 0.001694641565587165,
+          "root_speed_max": 0.0007615764630188437,
+          "tilt_max_rad": 0.012110173074883811,
+          "standing_joint_rmse": 0.060283370023790625
+        },
+        "complete": true
+      },
+      "clipped_target_values": 944,
+      "joint_tracking_rmse_rad": 0.10779127875909507,
+      "joint_velocity_peak_rad_s": 10.308262399666312,
+      "joint_acceleration_rms_rad_s2": 10.450870922178266,
+      "policy_sha256": "737e1ef546f94719d1a86e18a9a483839fca8d3195ecabfc565025438acc718b",
+      "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+      "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+      "hardware_ready": false,
+      "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+      "all_attempted_phases_passed": true
+    }
+  },
+  {
+    "run": "run_006",
+    "iteration": 1000,
+    "bundle": "finetune_projects/g1_continuous_20261029/candidates/ground006_001000",
+    "complete": true,
+    "dance_joint_rmse": 0.1303777168886116,
+    "metrics": {
+      "dance": {
+        "samples": 1148,
+        "window_seconds": [
+          5.019999999999915,
+          27.959999999998722
+        ],
+        "gravity_error_rms_deg": 1.5439464408523094,
+        "gravity_error_p95_deg": 2.699846999986678,
+        "body_angular_velocity_error_rms_rad_s": 0.1335120861418306,
+        "body_angular_acceleration_rms_rad_s2": 3.957657544748077,
+        "near_ground_point_speed_rms_m_s": 0.35866910992394757,
+        "reference_stance_point_speed_rms_m_s": 0.04346723531881997,
+        "no_near_ground_point_fraction": 0.0,
+        "geometry_only": true
+      },
+      "hard_20_24": {
+        "samples": 201,
+        "window_seconds": [
+          20.000000000000306,
+          23.99999999999951
+        ],
+        "gravity_error_rms_deg": 1.890057833986201,
+        "gravity_error_p95_deg": 3.79789683536508,
+        "body_angular_velocity_error_rms_rad_s": 0.1673557996431871,
+        "body_angular_acceleration_rms_rad_s2": 4.66448628978814,
+        "near_ground_point_speed_rms_m_s": 0.17468099229760242,
+        "reference_stance_point_speed_rms_m_s": 0.0403538451493266,
+        "no_near_ground_point_fraction": 0.0,
+        "geometry_only": true
+      },
+      "hard_26_30": {
+        "samples": 200,
+        "window_seconds": [
+          26.019999999999108,
+          29.999999999998316
+        ],
+        "gravity_error_rms_deg": 1.6866690663674893,
+        "gravity_error_p95_deg": 3.1280402658882664,
+        "body_angular_velocity_error_rms_rad_s": 0.07995638208662682,
+        "body_angular_acceleration_rms_rad_s2": 2.174432838090947,
+        "near_ground_point_speed_rms_m_s": 0.13561424177503661,
+        "reference_stance_point_speed_rms_m_s": 0.09333575364958245,
+        "no_near_ground_point_fraction": 0.0,
+        "geometry_only": true
+      }
+    },
+    "contact": {
+      "bundle": "finetune_projects/g1_continuous_20261029/candidates/ground006_001000",
+      "physics_hz": 200,
+      "sample_hz": 50,
+      "criterion": "floor/sole contact normal force >1N at completed policy boundaries; solver diagnostics only",
+      "completed": true,
+      "failure": null,
+      "force_weighted_contact_speed_rms_m_s": 0.17580147545151387,
+      "no_loaded_sole_contact_fraction": 0.0,
+      "mean_normal_force_N": 343.2266584179509
+    },
+    "score": 1.0822767049620237,
+    "eligible": false,
+    "report": {
+      "transport": "native_sequence",
+      "initialization": "stationary_sequence_zero_velocity",
+      "initial_velocity_norm": 0.0,
+      "standing_entry_verified": true,
+      "entry": {
+        "attempted": true,
+        "completed": true
+      },
+      "exit": {
+        "attempted": true,
+        "completed": true
+      },
+      "tracking": {
+        "expected_steps": 1798,
+        "steps": 1798,
+        "completed": true,
+        "failure": null
+      },
+      "delay_ms": 0,
+      "perturbation": {
+        "friction": 1.0,
+        "mass_scale": 1.0,
+        "noise": 0.0,
+        "seed": 0
+      },
+      "terminal_sample_recorded": true,
+      "sequence": {
+        "phases": {
+          "dance": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 250,
+            "end_frame": 1398,
+            "joint_rmse_rad": 0.1303777168886116
+          },
+          "entry": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 100,
+            "end_frame": 250,
+            "joint_rmse_rad": 0.07147173589117145
+          },
+          "exit": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 1398,
+            "end_frame": 1548,
+            "joint_rmse_rad": 0.0927873909850399
+          },
+          "settle": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 1548,
+            "end_frame": 1798,
+            "joint_rmse_rad": 0.0716061823643866
+          },
+          "standing": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 0,
+            "end_frame": 100,
+            "joint_rmse_rad": 0.023712470652398947
+          }
+        },
+        "final_hold": {
+          "passed": true,
+          "joint_velocity_rms": 0.002059109515867507,
+          "root_speed_max": 0.0022871170599075264,
+          "tilt_max_rad": 0.0051598066887136584,
+          "standing_joint_rmse": 0.07239708039126043
+        },
+        "complete": true
+      },
+      "clipped_target_values": 919,
+      "joint_tracking_rmse_rad": 0.11286330763607658,
+      "joint_velocity_peak_rad_s": 10.145784371934358,
+      "joint_acceleration_rms_rad_s2": 10.174692263116526,
+      "policy_sha256": "444aefcf3568f0d7507ae30d3edb2a18ee7e841c5548c802cd65030ba2c30d25",
+      "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+      "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+      "hardware_ready": false,
+      "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+      "all_attempted_phases_passed": true
+    }
+  },
+  {
+    "run": "run_006",
+    "iteration": 1500,
+    "bundle": "finetune_projects/g1_continuous_20261029/candidates/ground006_001500",
+    "complete": true,
+    "dance_joint_rmse": 0.13665401665366378,
+    "metrics": {
+      "dance": {
+        "samples": 1148,
+        "window_seconds": [
+          5.019999999999915,
+          27.959999999998722
+        ],
+        "gravity_error_rms_deg": 1.4919950824108463,
+        "gravity_error_p95_deg": 2.978248336916424,
+        "body_angular_velocity_error_rms_rad_s": 0.1189134798177841,
+        "body_angular_acceleration_rms_rad_s2": 3.6537832523323086,
+        "near_ground_point_speed_rms_m_s": 0.3712905561806808,
+        "reference_stance_point_speed_rms_m_s": 0.0430584353476536,
+        "no_near_ground_point_fraction": 0.0,
+        "geometry_only": true
+      },
+      "hard_20_24": {
+        "samples": 201,
+        "window_seconds": [
+          20.000000000000306,
+          23.99999999999951
+        ],
+        "gravity_error_rms_deg": 2.112121686994018,
+        "gravity_error_p95_deg": 4.176092147914484,
+        "body_angular_velocity_error_rms_rad_s": 0.14992348369975297,
+        "body_angular_acceleration_rms_rad_s2": 4.110764892976842,
+        "near_ground_point_speed_rms_m_s": 0.18107232046616292,
+        "reference_stance_point_speed_rms_m_s": 0.050710696568644936,
+        "no_near_ground_point_fraction": 0.0,
+        "geometry_only": true
+      },
+      "hard_26_30": {
+        "samples": 200,
+        "window_seconds": [
+          26.019999999999108,
+          29.999999999998316
+        ],
+        "gravity_error_rms_deg": 1.312727012334594,
+        "gravity_error_p95_deg": 2.267055636284052,
+        "body_angular_velocity_error_rms_rad_s": 0.06869230731129879,
+        "body_angular_acceleration_rms_rad_s2": 1.8139579036825442,
+        "near_ground_point_speed_rms_m_s": 0.11110339904228897,
+        "reference_stance_point_speed_rms_m_s": 0.07219099528611281,
+        "no_near_ground_point_fraction": 0.0,
+        "geometry_only": true
+      }
+    },
+    "contact": {
+      "bundle": "finetune_projects/g1_continuous_20261029/candidates/ground006_001500",
+      "physics_hz": 200,
+      "sample_hz": 50,
+      "criterion": "floor/sole contact normal force >1N at completed policy boundaries; solver diagnostics only",
+      "completed": true,
+      "failure": null,
+      "force_weighted_contact_speed_rms_m_s": 0.19122169039632916,
+      "no_loaded_sole_contact_fraction": 0.0,
+      "mean_normal_force_N": 344.24159313764585
+    },
+    "score": 1.0218110447279887,
+    "eligible": false,
+    "report": {
+      "transport": "native_sequence",
+      "initialization": "stationary_sequence_zero_velocity",
+      "initial_velocity_norm": 0.0,
+      "standing_entry_verified": true,
+      "entry": {
+        "attempted": true,
+        "completed": true
+      },
+      "exit": {
+        "attempted": true,
+        "completed": true
+      },
+      "tracking": {
+        "expected_steps": 1798,
+        "steps": 1798,
+        "completed": true,
+        "failure": null
+      },
+      "delay_ms": 0,
+      "perturbation": {
+        "friction": 1.0,
+        "mass_scale": 1.0,
+        "noise": 0.0,
+        "seed": 0
+      },
+      "terminal_sample_recorded": true,
+      "sequence": {
+        "phases": {
+          "dance": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 250,
+            "end_frame": 1398,
+            "joint_rmse_rad": 0.13665401665366378
+          },
+          "entry": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 100,
+            "end_frame": 250,
+            "joint_rmse_rad": 0.07204019560926495
+          },
+          "exit": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 1398,
+            "end_frame": 1548,
+            "joint_rmse_rad": 0.09060589503462593
+          },
+          "settle": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 1548,
+            "end_frame": 1798,
+            "joint_rmse_rad": 0.06932757707192726
+          },
+          "standing": {
+            "completed": true,
+            "passed": true,
+            "start_frame": 0,
+            "end_frame": 100,
+            "joint_rmse_rad": 0.02186777736370876
+          }
+        },
+        "final_hold": {
+          "passed": true,
+          "joint_velocity_rms": 0.0009727789575419599,
+          "root_speed_max": 0.0007680246932360201,
+          "tilt_max_rad": 0.004540860153258118,
+          "standing_joint_rmse": 0.06899399688688299
+        },
+        "complete": true
+      },
+      "clipped_target_values": 986,
+      "joint_tracking_rmse_rad": 0.11718054376431686,
+      "joint_velocity_peak_rad_s": 9.344831902988288,
+      "joint_acceleration_rms_rad_s2": 9.940181525160895,
+      "policy_sha256": "4636c6e6d3e276ea079e1f34951c5f5464159bdf52cb789fe200f2030e94852b",
+      "scene": "/home/ytkj/cx/supermimic/deploy/deps/unitree_mujoco/unitree_robots/g1/scene_29dof.xml",
+      "scene_sha256": "e254f11acce2ec6f6efa5bf9b15e288bbd0ca29aeeabb1e1d0fea92f65436bbf",
+      "hardware_ready": false,
+      "runtime": "standalone NumPy/TorchScript; no training environment/MDP",
+      "all_attempted_phases_passed": true
+    }
+  }
+]

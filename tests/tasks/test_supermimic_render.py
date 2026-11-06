@@ -1,5 +1,7 @@
 """Tests for SuperMimic reference-ghost video rendering."""
 
+import tempfile
+import uuid
 from pathlib import Path
 
 import numpy as np
@@ -31,13 +33,32 @@ def test_comparison_xml_adds_noncolliding_reference_ghost() -> None:
     assert "<keyframe>" not in xml
 
 
-def test_comparison_model_loads_and_removes_temporary_xml() -> None:
-    temporary_files = set(SCENE.parent.glob(".render_*.xml"))
+def test_comparison_model_loads_and_removes_temporary_xml(monkeypatch) -> None:
+    scene_dir = SCENE.parent
+    foreign = scene_dir / f".render_{uuid.uuid4().hex}_concurrent.xml"
+    own_files: list[Path] = []
+    real_named_temporary_file = tempfile.NamedTemporaryFile
 
-    model = render.load_comparison_model(SCENE)
+    def tracking_named_temporary_file(*args, **kwargs):
+        stream = real_named_temporary_file(*args, **kwargs)
+        own_files.append(Path(stream.name))
+        foreign.write_text(
+            '<mujoco><worldbody><body name="foreign"><geom size="0.01"/></body></worldbody></mujoco>',
+            encoding="utf-8",
+        )
+        return stream
 
-    assert model.nq == 72
-    assert set(SCENE.parent.glob(".render_*.xml")) == temporary_files
+    monkeypatch.setattr(tempfile, "NamedTemporaryFile", tracking_named_temporary_file)
+
+    try:
+        model = render.load_comparison_model(SCENE)
+
+        assert model.nq == 72
+        assert len(own_files) == 1
+        assert all(not path.exists() for path in own_files)
+        assert foreign.exists()
+    finally:
+        foreign.unlink(missing_ok=True)
 
 
 def test_comparison_frame_preserves_shape_and_adds_labels() -> None:
@@ -131,3 +152,46 @@ def test_video_parser_accepts_backend(backend: str) -> None:
     args = render._argument_parser().parse_args(["--ckpt", "run/ckpt.pt", "--backend", backend])
 
     assert args.backend == backend
+
+
+def test_rollout_reports_physical_termination(monkeypatch):
+    from types import SimpleNamespace
+
+    state = torch.zeros(1, 71)
+    state[:, 3] = 1
+    current = {
+        "s": state,
+        "f": torch.tensor([0]),
+        "a_prev": torch.zeros(1, 29),
+        "xi": torch.zeros(1, 1),
+    }
+    motion = SimpleNamespace(
+        names=["clip"],
+        clip_start=torch.tensor([0]),
+        root_p=torch.zeros(10, 3),
+        root_R=torch.eye(3).repeat(10, 1, 1),
+        q=torch.zeros(10, 29),
+    )
+    mdp = SimpleNamespace(
+        motion=motion, obs=lambda *args: torch.zeros(1, 99), goal=lambda *args: torch.zeros(1, 73)
+    )
+    env = SimpleNamespace(
+        supermimic_mdp=mdp,
+        reset_to_frames=lambda *_: ({}, {render.SUPERMIMIC_STATE_KEY: current}),
+        step=lambda *_: SimpleNamespace(
+            info={
+                render.SUPERMIMIC_STATE_KEY: current,
+                render.SUPERMIMIC_TRANSITION_KEY: {
+                    "done": torch.tensor([True]),
+                    "term": torch.tensor([True]),
+                },
+            }
+        ),
+    )
+    monkeypatch.setattr(render, "load_policy", lambda *_: lambda *args: torch.zeros(1, 29))
+    diagnostics = {}
+    render.rollout_qpos(
+        env, {"args": {"hist": 1, "goal_frames": 1}}, "clip", 1, diagnostics=diagnostics
+    )
+    assert diagnostics["terminated"] is True
+    assert diagnostics["reached_clip_end"] is False

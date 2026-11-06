@@ -1,0 +1,166 @@
+{
+  "rows": [
+    {
+      "seed": 21,
+      "physical_complete": false,
+      "finish": {
+        "complete": true,
+        "passed": false,
+        "recovery_seconds": null,
+        "max_recovery_seconds": 1.5,
+        "stable_detection_seconds": 0.5,
+        "required_hold_seconds": 10.0,
+        "final_hold_passed": false,
+        "dance_end_seconds": 27.96,
+        "final_joint_error_max": 0.13630388964820758,
+        "final_joint_speed_rms_max": 1.8169960441200004,
+        "final_root_speed_max": 1.0199283869730766,
+        "final_tilt_max": 0.12170536207626413,
+        "limits": {
+          "joint_rmse_rad": 0.1,
+          "joint_velocity_rms": 0.3,
+          "root_speed": 0.1,
+          "tilt_rad": 0.2
+        }
+      },
+      "original_style": {
+        "complete": true,
+        "anchor_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa",
+        "dance_joint_rmse_rad": 0.13080775538227643,
+        "main_joint_indices": [
+          0,
+          3,
+          6,
+          9,
+          15,
+          16,
+          17,
+          18,
+          22,
+          23,
+          24,
+          25
+        ],
+        "amplitude_ratios": {
+          "0": 0.8632244737541028,
+          "3": 0.8679180484593888,
+          "6": 1.0148541801268678,
+          "9": 0.8196542450787747,
+          "15": 0.9358412439859425,
+          "16": 0.8864278234506848,
+          "17": 1.0161444395671544,
+          "18": 0.949156640952697,
+          "22": 1.0467735516810401,
+          "23": 0.909117450281108,
+          "24": 1.0161653550380139,
+          "25": 1.0060439233334402
+        },
+        "correlations": {
+          "0": 0.9319089615324357,
+          "3": 0.9363340598147518,
+          "6": 0.929325003750413,
+          "9": 0.9194250383455387,
+          "15": 0.9696189612838091,
+          "16": 0.9794522174659235,
+          "17": 0.9625389022074746,
+          "18": 0.942267078080183,
+          "22": 0.9883750877608716,
+          "23": 0.9911338423443683,
+          "24": 0.9912865844057464,
+          "25": 0.9871071653597028
+        },
+        "limits": {
+          "dance_joint_rmse_rad": 0.13,
+          "amplitude_ratio_min": 0.8,
+          "correlation_min": 0.9
+        },
+        "passed": false
+      },
+      "worst_hf": 0.01680093979075603,
+      "full_pass": false,
+      "hardware_ready": false
+    },
+    {
+      "seed": 22,
+      "physical_complete": false,
+      "finish": {
+        "complete": true,
+        "passed": false,
+        "recovery_seconds": 2.2599999999982714,
+        "max_recovery_seconds": 1.5,
+        "stable_detection_seconds": 0.5,
+        "required_hold_seconds": 10.0,
+        "final_hold_passed": true,
+        "dance_end_seconds": 27.96,
+        "final_joint_error_max": 0.0647334239785169,
+        "final_joint_speed_rms_max": 0.03168251625981881,
+        "final_root_speed_max": 0.01822318284541467,
+        "final_tilt_max": 0.016518333260105933,
+        "limits": {
+          "joint_rmse_rad": 0.1,
+          "joint_velocity_rms": 0.3,
+          "root_speed": 0.1,
+          "tilt_rad": 0.2
+        }
+      },
+      "original_style": {
+        "complete": true,
+        "anchor_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa",
+        "dance_joint_rmse_rad": 0.12942654987331786,
+        "main_joint_indices": [
+          0,
+          3,
+          6,
+          9,
+          15,
+          16,
+          17,
+          18,
+          22,
+          23,
+          24,
+          25
+        ],
+        "amplitude_ratios": {
+          "0": 0.8264730190525194,
+          "3": 0.9007716427918785,
+          "6": 1.030373845660754,
+          "9": 0.8311641575860507,
+          "15": 0.9427000877629146,
+          "16": 0.8859083093305494,
+          "17": 1.050904932241695,
+          "18": 0.98672491543797,
+          "22": 1.0348342758979756,
+          "23": 0.9247198678997429,
+          "24": 1.0121326121028915,
+          "25": 1.0248084655339291
+        },
+        "correlations": {
+          "0": 0.935824317741981,
+          "3": 0.9474552438864685,
+          "6": 0.9163237128591085,
+          "9": 0.9295143531156864,
+          "15": 0.9714951990313657,
+          "16": 0.9742860191094542,
+          "17": 0.9596643837203502,
+          "18": 0.9423084340312021,
+          "22": 0.990561395504614,
+          "23": 0.989182313458772,
+          "24": 0.9916006465367322,
+          "25": 0.9864699972775718
+        },
+        "limits": {
+          "dance_joint_rmse_rad": 0.13,
+          "amplitude_ratio_min": 0.8,
+          "correlation_min": 0.9
+        },
+        "passed": true
+      },
+      "worst_hf": 0.02171823541747146,
+      "full_pass": false,
+      "hardware_ready": false
+    }
+  ],
+  "goal_complete_claimed": false,
+  "hardware_ready": false
+}

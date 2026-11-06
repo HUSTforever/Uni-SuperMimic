@@ -1,0 +1,132 @@
+{
+  "source": "evaluation/dds_smooth_0/simulator_trajectory.npz",
+  "contact_definition": "sphere bottom <8mm from floor, kinematic only; no contact forces inferred",
+  "windows": [
+    {
+      "start": 0,
+      "gravity_error_rms_deg": 0.6516387224267691,
+      "stance_point_speed_rms": 0.003772565411004426,
+      "no_near_ground_fraction": 0.0,
+      "body_angular_acceleration_rms": 0.8302723491334205
+    },
+    {
+      "start": 2,
+      "gravity_error_rms_deg": 0.8163168441617765,
+      "stance_point_speed_rms": 0.14293298477584623,
+      "no_near_ground_fraction": 0.0,
+      "body_angular_acceleration_rms": 3.3355259576612886
+    },
+    {
+      "start": 4,
+      "gravity_error_rms_deg": 1.7987929609515607,
+      "stance_point_speed_rms": 0.18398204505544544,
+      "no_near_ground_fraction": 0.0,
+      "body_angular_acceleration_rms": 4.28914357993436
+    },
+    {
+      "start": 6,
+      "gravity_error_rms_deg": 2.2324167481802295,
+      "stance_point_speed_rms": 0.6892754472025632,
+      "no_near_ground_fraction": 0.0,
+      "body_angular_acceleration_rms": 16.594482244557398
+    },
+    {
+      "start": 8,
+      "gravity_error_rms_deg": 1.6579255802116122,
+      "stance_point_speed_rms": 0.6857836038156155,
+      "no_near_ground_fraction": 0.0,
+      "body_angular_acceleration_rms": 13.23871254875476
+    },
+    {
+      "start": 10,
+      "gravity_error_rms_deg": 1.2958092744297163,
+      "stance_point_speed_rms": 0.6188427154465233,
+      "no_near_ground_fraction": 0.0,
+      "body_angular_acceleration_rms": 12.729501340075508
+    },
+    {
+      "start": 12,
+      "gravity_error_rms_deg": 1.9534810816857842,
+      "stance_point_speed_rms": 0.5868595528021552,
+      "no_near_ground_fraction": 0.0,
+      "body_angular_acceleration_rms": 14.819454418001516
+    },
+    {
+      "start": 14,
+      "gravity_error_rms_deg": 2.262426076061135,
+      "stance_point_speed_rms": 0.33059788500052834,
+      "no_near_ground_fraction": 0.0,
+      "body_angular_acceleration_rms": 4.346517567952938
+    },
+    {
+      "start": 16,
+      "gravity_error_rms_deg": 2.0914625347846005,
+      "stance_point_speed_rms": 0.5153300697333466,
+      "no_near_ground_fraction": 0.0,
+      "body_angular_acceleration_rms": 13.246553292601856
+    },
+    {
+      "start": 18,
+      "gravity_error_rms_deg": 1.9895171065033825,
+      "stance_point_speed_rms": 0.18986530521498662,
+      "no_near_ground_fraction": 0.0,
+      "body_angular_acceleration_rms": 7.36437527505025
+    },
+    {
+      "start": 20,
+      "gravity_error_rms_deg": 4.642898683421956,
+      "stance_point_speed_rms": 0.17950808325387188,
+      "no_near_ground_fraction": 0.0,
+      "body_angular_acceleration_rms": 15.431500959765625
+    },
+    {
+      "start": 22,
+      "gravity_error_rms_deg": 3.6350057034096572,
+      "stance_point_speed_rms": 0.28398268018249523,
+      "no_near_ground_fraction": 0.0,
+      "body_angular_acceleration_rms": 13.100422098547813
+    },
+    {
+      "start": 24,
+      "gravity_error_rms_deg": 2.1930596608510395,
+      "stance_point_speed_rms": 0.37501578724855644,
+      "no_near_ground_fraction": 0.0,
+      "body_angular_acceleration_rms": 9.58209639726109
+    },
+    {
+      "start": 26,
+      "gravity_error_rms_deg": 3.386240203072462,
+      "stance_point_speed_rms": 0.1990731147113275,
+      "no_near_ground_fraction": 0.0,
+      "body_angular_acceleration_rms": 12.735873169981812
+    },
+    {
+      "start": 28,
+      "gravity_error_rms_deg": 3.812317867088867,
+      "stance_point_speed_rms": 0.3170149972203424,
+      "no_near_ground_fraction": 0.0,
+      "body_angular_acceleration_rms": 24.744034645116944
+    },
+    {
+      "start": 30,
+      "gravity_error_rms_deg": 0.7671884899042318,
+      "stance_point_speed_rms": 0.09631864301138361,
+      "no_near_ground_fraction": 0.0,
+      "body_angular_acceleration_rms": 3.7697010637416937
+    },
+    {
+      "start": 32,
+      "gravity_error_rms_deg": 0.6475141840817452,
+      "stance_point_speed_rms": 0.0036620676251327565,
+      "no_near_ground_fraction": 0.0,
+      "body_angular_acceleration_rms": 0.004507161320860384
+    },
+    {
+      "start": 34,
+      "gravity_error_rms_deg": 0.6944113685252351,
+      "stance_point_speed_rms": 0.003219809194885032,
+      "no_near_ground_fraction": 0.0,
+      "body_angular_acceleration_rms": 0.0006924326692508068
+    }
+  ]
+}

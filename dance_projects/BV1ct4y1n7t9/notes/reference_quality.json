@@ -1,0 +1,24 @@
+{
+  "accepted": true,
+  "camera": "static",
+  "motion": "motion_static/ji_ni_tai_mei_static.csv",
+  "csv_sha256": "b412f31f3051e7a562f386f3e31df6ad579f8a8a9eb54a5b0ca27b4d43d4b2b7",
+  "metrics30": {
+    "frames": 630,
+    "fps": 30,
+    "duration_seconds": 20.966666666666665,
+    "joint_velocity_rms": 1.0529898498796648,
+    "joint_velocity_peak": 7.135433099999997,
+    "joint_acceleration_rms": 7.438836786484196,
+    "joint_acceleration_peak": 75.16082700000007,
+    "joint_jerk_rms": 84.43907989711484,
+    "joint_jerk_peak": 1333.0091700000007,
+    "root_vertical_acceleration_peak": 17.89070399999989
+  },
+  "minimum_foot_height": -9.258527717929954e-09,
+  "maximum_minimum_foot_height": 0.01663954619320238,
+  "root_z_range": [
+    0.63480853,
+    0.83933302
+  ]
+}

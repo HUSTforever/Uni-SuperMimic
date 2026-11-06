@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-02",
+  "source_checkpoint_sha256": "260e5e9559455096bc700711a0ec5e1daf9354fc4724a27a5d9597438a39736b",
+  "cuda_smoke_iterations": 2,
+  "source_initial_and_warmup_pi_unchanged": true,
+  "world_model_and_policy_normalizers_unchanged": true,
+  "actor_changed_after_warmup": true,
+  "actual_actor_boundary_loss": 2.3455095291137695,
+  "initial_cuda_paired_rollout": "ACTION_BOUNDARY_PAIRED_ROLLOUT.json",
+  "regular_tests_passed": 386,
+  "skipped": 2,
+  "slow_deselected": 9,
+  "fresh_review": "no Critical/Important; nonblocking KL-early-stop coverage minor deferred",
+  "adopted_for_deployment": false,
+  "hardware_ready": false
+}

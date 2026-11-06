@@ -1,0 +1,32 @@
+[
+  {
+    "name": "s090",
+    "physical_complete": true,
+    "dance_rmse": 0.1314453487825084,
+    "worst_hf": 0.01066860619406022,
+    "phase_hf": {
+      "dance": 0.0028009636206166076,
+      "entry": 0.002933374325390375,
+      "exit": 0.0019185651862673716,
+      "settle": 1.310496786617476e-07,
+      "standing": 6.050477900609426e-06
+    },
+    "continuity_passed": false,
+    "full_pass": false
+  },
+  {
+    "name": "s080",
+    "physical_complete": true,
+    "dance_rmse": 0.14097660041591958,
+    "worst_hf": 0.016362648962078282,
+    "phase_hf": {
+      "dance": 0.004107913775965567,
+      "entry": 0.0026481255839094194,
+      "exit": 0.002493605612855904,
+      "settle": 3.307653303781396e-07,
+      "standing": 6.050417016739778e-06
+    },
+    "continuity_passed": false,
+    "full_pass": false
+  }
+]

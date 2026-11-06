@@ -1,0 +1,352 @@
+{
+  "selected": null,
+  "rows": [
+    {
+      "iteration": 100,
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/project006_v3_000100",
+      "physical_complete": true,
+      "new_reference_rmse": 0.11078584675017862,
+      "original_style": {
+        "complete": true,
+        "anchor_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa",
+        "dance_joint_rmse_rad": 0.13920276101723136,
+        "main_joint_indices": [
+          0,
+          3,
+          6,
+          9,
+          15,
+          16,
+          17,
+          18,
+          22,
+          23,
+          24,
+          25
+        ],
+        "amplitude_ratios": {
+          "0": 0.782180151297593,
+          "3": 0.9133623075136932,
+          "6": 0.929124885603915,
+          "9": 0.8175289422015389,
+          "15": 0.911871576663759,
+          "16": 0.8744930544019284,
+          "17": 1.05506457938516,
+          "18": 0.9938770199078281,
+          "22": 1.0968251421074073,
+          "23": 0.9250246428217324,
+          "24": 1.0333690469079373,
+          "25": 1.0499451624686542
+        },
+        "correlations": {
+          "0": 0.8999609454845222,
+          "3": 0.9215331565779653,
+          "6": 0.8935147271450077,
+          "9": 0.9241789607638411,
+          "15": 0.9591591790321219,
+          "16": 0.9765872804968013,
+          "17": 0.9381082870718213,
+          "18": 0.9515785479057,
+          "22": 0.9865836361386449,
+          "23": 0.9934283456442764,
+          "24": 0.9926250680866024,
+          "25": 0.9844470767706707
+        },
+        "limits": {
+          "dance_joint_rmse_rad": 0.13,
+          "amplitude_ratio_min": 0.8,
+          "correlation_min": 0.9
+        },
+        "passed": false
+      },
+      "worst_hf": 0.008785626771309363,
+      "phase_hf": {
+        "dance": 0.003062361407444774,
+        "entry": 0.002114277362518717,
+        "exit": 0.0025848192323327784,
+        "settle": 4.65460131032332e-06,
+        "standing": 4.746410349927164e-06
+      },
+      "full_pass": false,
+      "training_reference_note": "Earlier trial used a reference with .0075rad waist overshoot; candidate is newly packaged and evaluated only against corrected valid v3 reference"
+    },
+    {
+      "iteration": 200,
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/project006_v3_000200",
+      "physical_complete": true,
+      "new_reference_rmse": 0.1143169314268001,
+      "original_style": {
+        "complete": true,
+        "anchor_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa",
+        "dance_joint_rmse_rad": 0.14395688666471076,
+        "main_joint_indices": [
+          0,
+          3,
+          6,
+          9,
+          15,
+          16,
+          17,
+          18,
+          22,
+          23,
+          24,
+          25
+        ],
+        "amplitude_ratios": {
+          "0": 0.7963375740311616,
+          "3": 0.934822579091564,
+          "6": 0.9258116495364442,
+          "9": 0.8171361619060028,
+          "15": 1.0279431763064877,
+          "16": 0.9146395645577606,
+          "17": 1.0598037287657387,
+          "18": 1.0283640505356875,
+          "22": 1.1164450256891647,
+          "23": 0.9670318789191841,
+          "24": 1.0065909204694121,
+          "25": 1.0569475849947436
+        },
+        "correlations": {
+          "0": 0.9104107799517771,
+          "3": 0.9195771122167165,
+          "6": 0.8925108687511799,
+          "9": 0.9223738542075495,
+          "15": 0.9720058144167288,
+          "16": 0.9760949795227917,
+          "17": 0.9403253207790544,
+          "18": 0.9346057304230335,
+          "22": 0.9899099964119359,
+          "23": 0.9941454010070698,
+          "24": 0.9923627818435662,
+          "25": 0.9841207743174568
+        },
+        "limits": {
+          "dance_joint_rmse_rad": 0.13,
+          "amplitude_ratio_min": 0.8,
+          "correlation_min": 0.9
+        },
+        "passed": false
+      },
+      "worst_hf": 0.007463312687442523,
+      "phase_hf": {
+        "dance": 0.0027709686520020326,
+        "entry": 0.002975635146148337,
+        "exit": 0.0015990538341620652,
+        "settle": 5.98562399609187e-08,
+        "standing": 5.158256726458002e-06
+      },
+      "full_pass": false,
+      "training_reference_note": "Earlier trial used a reference with .0075rad waist overshoot; candidate is newly packaged and evaluated only against corrected valid v3 reference"
+    },
+    {
+      "iteration": 300,
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/project006_v3_000300",
+      "physical_complete": true,
+      "new_reference_rmse": 0.11469462136765551,
+      "original_style": {
+        "complete": true,
+        "anchor_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa",
+        "dance_joint_rmse_rad": 0.1443307501279074,
+        "main_joint_indices": [
+          0,
+          3,
+          6,
+          9,
+          15,
+          16,
+          17,
+          18,
+          22,
+          23,
+          24,
+          25
+        ],
+        "amplitude_ratios": {
+          "0": 0.7868914999309634,
+          "3": 0.9758596593280003,
+          "6": 0.9123055196048245,
+          "9": 0.8371756260173933,
+          "15": 0.9436845424234999,
+          "16": 0.8834840249709506,
+          "17": 1.0998679823212483,
+          "18": 1.0398086530161892,
+          "22": 1.099621392271965,
+          "23": 0.9801385729242459,
+          "24": 1.0150145683040397,
+          "25": 1.0484991389655538
+        },
+        "correlations": {
+          "0": 0.9037573228656745,
+          "3": 0.9198766218342896,
+          "6": 0.9048322477777158,
+          "9": 0.9087767977736764,
+          "15": 0.9664305153528071,
+          "16": 0.9818329043591116,
+          "17": 0.9478365846703347,
+          "18": 0.932114028034263,
+          "22": 0.9921205314843029,
+          "23": 0.9922373633157786,
+          "24": 0.9940538103343545,
+          "25": 0.9858173767352318
+        },
+        "limits": {
+          "dance_joint_rmse_rad": 0.13,
+          "amplitude_ratio_min": 0.8,
+          "correlation_min": 0.9
+        },
+        "passed": false
+      },
+      "worst_hf": 0.008643759362712744,
+      "phase_hf": {
+        "dance": 0.002927251800569294,
+        "entry": 0.0031188829862250265,
+        "exit": 0.0020148063361774965,
+        "settle": 1.1373576459933828e-06,
+        "standing": 3.559961164641026e-06
+      },
+      "full_pass": false,
+      "training_reference_note": "Earlier trial used a reference with .0075rad waist overshoot; candidate is newly packaged and evaluated only against corrected valid v3 reference"
+    },
+    {
+      "iteration": 400,
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/project006_v3_000400",
+      "physical_complete": true,
+      "new_reference_rmse": 0.11817013165703787,
+      "original_style": {
+        "complete": true,
+        "anchor_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa",
+        "dance_joint_rmse_rad": 0.14655595193605933,
+        "main_joint_indices": [
+          0,
+          3,
+          6,
+          9,
+          15,
+          16,
+          17,
+          18,
+          22,
+          23,
+          24,
+          25
+        ],
+        "amplitude_ratios": {
+          "0": 0.7525549859699486,
+          "3": 0.9590785556834185,
+          "6": 0.9587559144474914,
+          "9": 0.8222249230749737,
+          "15": 0.967570442844529,
+          "16": 0.9078254973685694,
+          "17": 1.116945442179449,
+          "18": 1.056874790594306,
+          "22": 1.0887364390743752,
+          "23": 0.9663251562238321,
+          "24": 1.0073760752160394,
+          "25": 1.0842458032288633
+        },
+        "correlations": {
+          "0": 0.9109722525393613,
+          "3": 0.9263539935423076,
+          "6": 0.9060046348689923,
+          "9": 0.8973191725759991,
+          "15": 0.9696217722915538,
+          "16": 0.9809710182955509,
+          "17": 0.9234013028101481,
+          "18": 0.9466394743989955,
+          "22": 0.9916203592129681,
+          "23": 0.9933033456891514,
+          "24": 0.9922797657790638,
+          "25": 0.9852914613142871
+        },
+        "limits": {
+          "dance_joint_rmse_rad": 0.13,
+          "amplitude_ratio_min": 0.8,
+          "correlation_min": 0.9
+        },
+        "passed": false
+      },
+      "worst_hf": 0.007948027560979794,
+      "phase_hf": {
+        "dance": 0.003092194036381488,
+        "entry": 0.0027110018175282016,
+        "exit": 0.002288679392923396,
+        "settle": 9.048563047156718e-07,
+        "standing": 3.995165213530624e-06
+      },
+      "full_pass": false,
+      "training_reference_note": "Earlier trial used a reference with .0075rad waist overshoot; candidate is newly packaged and evaluated only against corrected valid v3 reference"
+    },
+    {
+      "iteration": 500,
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/project006_v3_000500",
+      "physical_complete": true,
+      "new_reference_rmse": 0.11679209890399425,
+      "original_style": {
+        "complete": true,
+        "anchor_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa",
+        "dance_joint_rmse_rad": 0.1465311005527009,
+        "main_joint_indices": [
+          0,
+          3,
+          6,
+          9,
+          15,
+          16,
+          17,
+          18,
+          22,
+          23,
+          24,
+          25
+        ],
+        "amplitude_ratios": {
+          "0": 0.7903658397440001,
+          "3": 0.9441880685697834,
+          "6": 1.0035522773268624,
+          "9": 0.8187564400972023,
+          "15": 0.9812692654638886,
+          "16": 0.8890059727880085,
+          "17": 1.1172221158296594,
+          "18": 1.0488164719849729,
+          "22": 1.093001551318097,
+          "23": 0.9632246193159666,
+          "24": 0.9600102650977345,
+          "25": 1.0723439636938592
+        },
+        "correlations": {
+          "0": 0.9187925031120113,
+          "3": 0.9378215501095377,
+          "6": 0.8947798141907942,
+          "9": 0.9017224992113505,
+          "15": 0.9793005857295276,
+          "16": 0.9806357973837247,
+          "17": 0.9193871154728752,
+          "18": 0.9565643316476975,
+          "22": 0.9905939196139619,
+          "23": 0.9925404440927729,
+          "24": 0.9930810611412725,
+          "25": 0.9838935108132919
+        },
+        "limits": {
+          "dance_joint_rmse_rad": 0.13,
+          "amplitude_ratio_min": 0.8,
+          "correlation_min": 0.9
+        },
+        "passed": false
+      },
+      "worst_hf": 0.0075847635175731775,
+      "phase_hf": {
+        "dance": 0.0028701131691136385,
+        "entry": 0.002115528937730143,
+        "exit": 0.002544332222574392,
+        "settle": 1.860551002560965e-07,
+        "standing": 5.381863300479593e-06
+      },
+      "full_pass": false,
+      "training_reference_note": "Earlier trial used a reference with .0075rad waist overshoot; candidate is newly packaged and evaluated only against corrected valid v3 reference"
+    }
+  ],
+  "hardware_ready": false,
+  "goal_complete_claimed": false
+}

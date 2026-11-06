@@ -16,6 +16,7 @@ from unilab.utils.sim2sim import (
 
 SUPERMIMIC_DENYLIST = [
     "algo.goal_frames",
+    "algo.action_smoothing",
     "algo.hist",
     "algo.z_dim",
     "algo.wm_hidden",

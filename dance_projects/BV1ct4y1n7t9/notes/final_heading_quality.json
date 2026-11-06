@@ -1,0 +1,10 @@
+{
+  "root_orientation_error_rms_degrees": 14.943495750427246,
+  "root_orientation_error_p90_degrees": 5.042552471160889,
+  "root_yaw_error_rms_degrees": 14.722904205322266,
+  "root_position_rmse_m": 0.112090103328228,
+  "heading_check_at_15s_degrees": {
+    "reference": 148.91836547851562,
+    "policy": 148.77931213378906
+  }
+}

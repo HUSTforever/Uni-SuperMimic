@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-30",
+  "scope": "current demonstration ending only",
+  "bundle": "finetune_projects/g1_continuity_20261029/data/fast_finish_experimental_0800_v2",
+  "bundle_manifest_sha256": "bde93fd8fa708785decfd23f3da4eed4939930e8fdd42749d8078abde580f0ed",
+  "reference_sha256": "90055946a80c70659108f3cb0799d2047a37fe53208d099e8e764daa7635b8a6",
+  "policy_sha256": "d17d3605c3ea62ae4f5468c0de3c5c52882cd851ad54f1f4cb5f83b19d4ff05e",
+  "source_bundle": "finetune_projects/g1_continuity_20261029/candidates/project006_v3_000200",
+  "command_exit_seconds": 0.8,
+  "active_standing_reference_seconds": 12.0,
+  "verified_final_stable_seconds": 10.0,
+  "recovery_definition": "start of final continuous stable suffix through the end; at least 0.5 seconds confirmation",
+  "prefix_pose_max_error": {
+    "q": 0.0,
+    "root_p": 0.0,
+    "root_R": 4.76837158203125e-07
+  },
+  "native_results": "FAST_FINISH_CORRECTED_NATIVE_RESULTS.json",
+  "dds_results": "FAST_FINISH_V2_DDS_RESULTS.json",
+  "dds_recovery_seconds": [
+    1.125,
+    1.1400000000000006,
+    1.120000000000001
+  ],
+  "native_recovery_seconds": [
+    1.1199999999984982,
+    1.1799999999984863,
+    1.1999999999984823
+  ],
+  "ending_acceptance_passed": true,
+  "selected_for_ending_preview": true,
+  "global_default_policy_promoted": false,
+  "global_continuity_passed": false,
+  "goal_complete_claimed": false,
+  "hardware_ready": false,
+  "video": {
+    "path": "finetune_projects/g1_continuity_20261029/artifacts/fast_finish_user_recheck_121_tail.mp4",
+    "sha256": "1b24cd05ccc4dfe10fe1aa8096425abcdd929197b91aa73ce971d9b27d2f5ad9",
+    "source_trajectory": "finetune_projects/g1_continuity_20261029/evaluation/fast_finish_user_recheck_121/trajectory.npz",
+    "source_trajectory_sha256": "155af99dfebe9a357bf68d9f19b4dc6a8e9b0761d6a2430fe4f06543b4c660f1",
+    "source_first_frame": 1348,
+    "frames": 691,
+    "fps": 50,
+    "duration_seconds": 13.82,
+    "filtered": false
+  },
+  "watchdog": {
+    "report": "finetune_projects/g1_continuity_20261029/evaluation/fast_finish_v2_dds_watchdog/report.json",
+    "domain": 118,
+    "interface": "lo",
+    "watchdog_triggered": true,
+    "damping_latched": true,
+    "fault_injection": "abrupt publisher process exit via os._exit(0)"
+  },
+  "verification": {
+    "regular_tests_passed": 373,
+    "skipped": 2,
+    "slow_deselected": 9,
+    "log": "finetune_projects/g1_continuity_20261029/critic_clock_tests_final.log",
+    "independent_review": "two Important findings fixed with reproduced RED-to-GREEN regressions; no Critical findings",
+    "ruff_passed": true,
+    "video_full_decode_passed": true,
+    "video_verified_frames": 691
+  },
+  "limitations": [
+    "batch simulator closes after its finite run; no infinite standing after communication shutdown claim",
+    "global dance chatter and style gates remain unmet; this selection does not promote an overall deployment policy"
+  ],
+  "mass_constants_consistent": true,
+  "legacy_mass_stress_superseded_by": "CORRECTED_MASS_STRESS_RESULTS.json",
+  "latest_dds_recheck": "FAST_FINISH_USER_RECHECK.json",
+  "latest_dds_recovery_seconds": 1.134999999999998
+}

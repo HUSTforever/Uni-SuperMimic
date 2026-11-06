@@ -1,0 +1,13 @@
+{
+  "initial_pi_bit_identical": true,
+  "world_model_bit_identical": true,
+  "policy_normalizers_bit_identical": true,
+  "actor_changed": true,
+  "iterations": 200,
+  "physical_control_steps": 204800,
+  "physics_substeps": 819200,
+  "source_checkpoint_sha256": "06fee315aa2b029238110882b91c2c2eeb2c3a3f65933a38f7905830f42d31b0",
+  "final_checkpoint_sha256": "ed2c4597f87a7f3716e39e63bf62909714aa247473ff55e7c8c5a3464b7d4ddb",
+  "hardware_ready": false,
+  "goal_complete_claimed": false
+}

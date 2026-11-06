@@ -124,6 +124,9 @@ def main(cfg: DictConfig) -> None:
     if bound_device is not None:
         device = bound_device
     play_only = bool(cfg.training.play_only)
+    initialize_from = OmegaConf.select(cfg, "training.init_checkpoint")
+    if initialize_from and (play_only or cfg.algo.resume):
+        raise ValueError("init_checkpoint is only valid for a fresh training run")
     checkpoint = resolve_supermimic_checkpoint(cfg) if play_only or cfg.algo.resume else None
     env_override = build_env_override(cfg, eval_mode=play_only, learner_device=str(device))
     if play_only:
@@ -187,6 +190,8 @@ def main(cfg: DictConfig) -> None:
             device=str(device),
             backend=str(cfg.training.sim_backend),
         )
+        if initialize_from:
+            learner.initialize_weights(initialize_from)
         summary = learner.train(resume=checkpoint)
         print(json.dumps(summary, indent=2))
     finally:

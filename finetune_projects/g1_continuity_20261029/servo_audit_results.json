@@ -1,0 +1,944 @@
+[
+  {
+    "name": "baseline",
+    "kp_ankle_factor": 1.0,
+    "kd_ankle_factor": 1.0,
+    "ramp": false,
+    "steps": 1798,
+    "expected_steps": 1798,
+    "completed": true,
+    "failure": null,
+    "wall_seconds": 2.848131184000067,
+    "metrics": {
+      "dance": {
+        "samples": 4593,
+        "ankle_hf_position_rms_rad": [
+          0.0030843510230512696,
+          0.0020864826862875196,
+          0.004515270657107892,
+          0.0027647061385997983
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.4184501127194439,
+          0.2593574451505024,
+          0.599329935344584,
+          0.32067736634187827
+        ],
+        "ankle_hf_position_max_rad": 0.004515270657107892,
+        "ankle_hf_velocity_max_rad_s": 0.599329935344584,
+        "root_vertical_hf_position_rms_m": 0.00012178477992777087,
+        "root_vertical_acceleration_rms": 2.361953410782099,
+        "root_vertical_acceleration_peak": 25.80216890299674,
+        "joint_acceleration_rms": 30.591304462179544,
+        "joint_jerk_rms": 5022.903482973844
+      },
+      "entry": {
+        "samples": 601,
+        "ankle_hf_position_rms_rad": [
+          0.003754474708294719,
+          0.0007981104627771845,
+          9.198389347646298e-05,
+          0.0001630553651626531
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.7211073449329094,
+          0.13604151306794823,
+          0.0075139034578907,
+          0.019699042111917087
+        ],
+        "ankle_hf_position_max_rad": 0.003754474708294719,
+        "ankle_hf_velocity_max_rad_s": 0.7211073449329094,
+        "root_vertical_hf_position_rms_m": 1.6833878551450048e-05,
+        "root_vertical_acceleration_rms": 0.2430602247141346,
+        "root_vertical_acceleration_peak": 1.4630320753703243,
+        "joint_acceleration_rms": 17.741991076237834,
+        "joint_jerk_rms": 3120.748403624353
+      },
+      "exit": {
+        "samples": 601,
+        "ankle_hf_position_rms_rad": [
+          0.002252015818704331,
+          0.0005568141020472174,
+          0.0012504106641189434,
+          0.0005123101142982686
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.3420867555899018,
+          0.0737278199587084,
+          0.2778244408678084,
+          0.06638263815257811
+        ],
+        "ankle_hf_position_max_rad": 0.002252015818704331,
+        "ankle_hf_velocity_max_rad_s": 0.3420867555899018,
+        "root_vertical_hf_position_rms_m": 6.64414436592775e-05,
+        "root_vertical_acceleration_rms": 0.43014769350282933,
+        "root_vertical_acceleration_peak": 4.41218728957617,
+        "joint_acceleration_rms": 12.780006940378387,
+        "joint_jerk_rms": 2233.8480149169613
+      },
+      "settle": {
+        "samples": 1001,
+        "ankle_hf_position_rms_rad": [
+          2.0377116613068033e-08,
+          3.9174114148359396e-08,
+          2.981620265622142e-08,
+          3.407681594771777e-08
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          4.1755955663910765e-06,
+          5.935466757027357e-06,
+          2.073294096006283e-06,
+          4.386308792807685e-06
+        ],
+        "ankle_hf_position_max_rad": 3.9174114148359396e-08,
+        "ankle_hf_velocity_max_rad_s": 5.935466757027357e-06,
+        "root_vertical_hf_position_rms_m": 8.384185019609614e-10,
+        "root_vertical_acceleration_rms": 0.0013508234899776508,
+        "root_vertical_acceleration_peak": 0.01432524032600161,
+        "joint_acceleration_rms": 0.014738055214779156,
+        "joint_jerk_rms": 1.1869740325924971
+      },
+      "standing": {
+        "samples": 401,
+        "ankle_hf_position_rms_rad": [
+          5.163189841145116e-06,
+          1.252895378283358e-06,
+          4.8293117036384454e-06,
+          4.5445836375494875e-06
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.00016192437585718048,
+          0.0001142130694010053,
+          0.00031776128969442644,
+          0.0011499345482577123
+        ],
+        "ankle_hf_position_max_rad": 5.163189841145116e-06,
+        "ankle_hf_velocity_max_rad_s": 0.0011499345482577123,
+        "root_vertical_hf_position_rms_m": 8.738962807600465e-07,
+        "root_vertical_acceleration_rms": 0.6388047995918296,
+        "root_vertical_acceleration_peak": 7.534680386290636,
+        "joint_acceleration_rms": 4.385863591941098,
+        "joint_jerk_rms": 801.0485770840443
+      },
+      "joint_rmse": 0.104133019261529,
+      "dance_joint_rmse": 0.12145702909625745
+    },
+    "hardware_ready": false,
+    "baseline_max_abs_state_difference": 0.0
+  },
+  {
+    "name": "ankle_kd_125",
+    "kp_ankle_factor": 1.0,
+    "kd_ankle_factor": 1.25,
+    "ramp": false,
+    "steps": 1798,
+    "expected_steps": 1798,
+    "completed": true,
+    "failure": null,
+    "wall_seconds": 2.7922577909998836,
+    "metrics": {
+      "dance": {
+        "samples": 4593,
+        "ankle_hf_position_rms_rad": [
+          0.002905821195100361,
+          0.00202370846242061,
+          0.003932434509556713,
+          0.0021211476066991548
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.4495334069746554,
+          0.27181482442464133,
+          0.5668317765376831,
+          0.2937221137891661
+        ],
+        "ankle_hf_position_max_rad": 0.003932434509556713,
+        "ankle_hf_velocity_max_rad_s": 0.5668317765376831,
+        "root_vertical_hf_position_rms_m": 0.000128769341731259,
+        "root_vertical_acceleration_rms": 2.331286134862571,
+        "root_vertical_acceleration_peak": 23.03044722809999,
+        "joint_acceleration_rms": 30.87514612198686,
+        "joint_jerk_rms": 5066.708893781447
+      },
+      "entry": {
+        "samples": 601,
+        "ankle_hf_position_rms_rad": [
+          0.0036323811548553604,
+          0.0007793179330848917,
+          8.513618913798647e-05,
+          0.00016107380603125907
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.7063850557721895,
+          0.14235443630314332,
+          0.007486266172874044,
+          0.020139197308424117
+        ],
+        "ankle_hf_position_max_rad": 0.0036323811548553604,
+        "ankle_hf_velocity_max_rad_s": 0.7063850557721895,
+        "root_vertical_hf_position_rms_m": 2.1146428516922457e-05,
+        "root_vertical_acceleration_rms": 0.2515644053148421,
+        "root_vertical_acceleration_peak": 1.3989648682833233,
+        "joint_acceleration_rms": 17.708357665763682,
+        "joint_jerk_rms": 3098.220715233764
+      },
+      "exit": {
+        "samples": 601,
+        "ankle_hf_position_rms_rad": [
+          0.0016487440027962079,
+          0.0005397914420701407,
+          0.00135003185615461,
+          0.00044033775254162245
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.31118396022851774,
+          0.07700532888783124,
+          0.3073366467938022,
+          0.049361947683413225
+        ],
+        "ankle_hf_position_max_rad": 0.0016487440027962079,
+        "ankle_hf_velocity_max_rad_s": 0.31118396022851774,
+        "root_vertical_hf_position_rms_m": 5.402900257869259e-05,
+        "root_vertical_acceleration_rms": 0.3956059530471682,
+        "root_vertical_acceleration_peak": 4.029286628408935,
+        "joint_acceleration_rms": 13.494683104150823,
+        "joint_jerk_rms": 2441.1248791844337
+      },
+      "settle": {
+        "samples": 1001,
+        "ankle_hf_position_rms_rad": [
+          1.86822819604303e-08,
+          3.555523870628508e-08,
+          2.5277699739831613e-08,
+          2.8244788766392705e-08
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          4.072804303662757e-06,
+          5.486721458335957e-06,
+          2.140200095931394e-06,
+          4.268731820997392e-06
+        ],
+        "ankle_hf_position_max_rad": 3.555523870628508e-08,
+        "ankle_hf_velocity_max_rad_s": 5.486721458335957e-06,
+        "root_vertical_hf_position_rms_m": 1.0547015647683126e-09,
+        "root_vertical_acceleration_rms": 0.0014753397112395364,
+        "root_vertical_acceleration_peak": 0.020046822637251632,
+        "joint_acceleration_rms": 0.014322576475652556,
+        "joint_jerk_rms": 1.1036314811559174
+      },
+      "standing": {
+        "samples": 401,
+        "ankle_hf_position_rms_rad": [
+          5.073271250672563e-06,
+          1.1844328198167206e-06,
+          4.840696110664614e-06,
+          5.6820883520264896e-06
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.00016259281589219325,
+          0.00011544240557821543,
+          0.00035062400630634884,
+          0.001368267719746506
+        ],
+        "ankle_hf_position_max_rad": 5.6820883520264896e-06,
+        "ankle_hf_velocity_max_rad_s": 0.001368267719746506,
+        "root_vertical_hf_position_rms_m": 8.70073945495897e-07,
+        "root_vertical_acceleration_rms": 0.6408876343131003,
+        "root_vertical_acceleration_peak": 7.534680386290636,
+        "joint_acceleration_rms": 4.364481941043843,
+        "joint_jerk_rms": 802.6866509956761
+      },
+      "joint_rmse": 0.10399371558112354,
+      "dance_joint_rmse": 0.12138491293261931
+    },
+    "hardware_ready": false
+  },
+  {
+    "name": "ankle_kd_150",
+    "kp_ankle_factor": 1.0,
+    "kd_ankle_factor": 1.5,
+    "ramp": false,
+    "steps": 1798,
+    "expected_steps": 1798,
+    "completed": true,
+    "failure": null,
+    "wall_seconds": 2.826467588000014,
+    "metrics": {
+      "dance": {
+        "samples": 4593,
+        "ankle_hf_position_rms_rad": [
+          0.002735437950444713,
+          0.0018317280321960758,
+          0.004004165981179596,
+          0.0018780275701722336
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.46493373908620167,
+          0.28066863636802375,
+          0.6175936700834368,
+          0.3137096601947271
+        ],
+        "ankle_hf_position_max_rad": 0.004004165981179596,
+        "ankle_hf_velocity_max_rad_s": 0.6175936700834368,
+        "root_vertical_hf_position_rms_m": 0.00013852715149111023,
+        "root_vertical_acceleration_rms": 2.3452016299415743,
+        "root_vertical_acceleration_peak": 20.14821981624817,
+        "joint_acceleration_rms": 31.933380626225382,
+        "joint_jerk_rms": 5303.8906608686375
+      },
+      "entry": {
+        "samples": 601,
+        "ankle_hf_position_rms_rad": [
+          0.0037586541833724775,
+          0.0008434747903701367,
+          9.064159018045953e-05,
+          0.00012726712503140605
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.7296043662248847,
+          0.16001571544955323,
+          0.00878585226169934,
+          0.019679876850387676
+        ],
+        "ankle_hf_position_max_rad": 0.0037586541833724775,
+        "ankle_hf_velocity_max_rad_s": 0.7296043662248847,
+        "root_vertical_hf_position_rms_m": 2.0114474333291728e-05,
+        "root_vertical_acceleration_rms": 0.28624868058452596,
+        "root_vertical_acceleration_peak": 1.6400309525301946,
+        "joint_acceleration_rms": 17.86830773987384,
+        "joint_jerk_rms": 3105.2733375978028
+      },
+      "exit": {
+        "samples": 601,
+        "ankle_hf_position_rms_rad": [
+          0.0017391701066159873,
+          0.0005551910468129331,
+          0.0014908263813509326,
+          0.00040525606151567347
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.31013137349253767,
+          0.08913447649355952,
+          0.36003367188114893,
+          0.047073049384100875
+        ],
+        "ankle_hf_position_max_rad": 0.0017391701066159873,
+        "ankle_hf_velocity_max_rad_s": 0.36003367188114893,
+        "root_vertical_hf_position_rms_m": 5.3143701469429285e-05,
+        "root_vertical_acceleration_rms": 0.4030773443090897,
+        "root_vertical_acceleration_peak": 3.9371337642713717,
+        "joint_acceleration_rms": 14.641465522345232,
+        "joint_jerk_rms": 2659.684101055545
+      },
+      "settle": {
+        "samples": 1001,
+        "ankle_hf_position_rms_rad": [
+          8.973429927492117e-08,
+          1.2318122106095435e-07,
+          4.950760722893303e-08,
+          4.154049380810532e-08
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          1.0925163260596773e-05,
+          1.1576926402855374e-05,
+          4.183847684542878e-06,
+          9.664569564674076e-06
+        ],
+        "ankle_hf_position_max_rad": 1.2318122106095435e-07,
+        "ankle_hf_velocity_max_rad_s": 1.1576926402855374e-05,
+        "root_vertical_hf_position_rms_m": 4.69170862145849e-09,
+        "root_vertical_acceleration_rms": 0.0012576895928557354,
+        "root_vertical_acceleration_peak": 0.007883305824822967,
+        "joint_acceleration_rms": 0.02551930957561167,
+        "joint_jerk_rms": 1.5144317089658499
+      },
+      "standing": {
+        "samples": 401,
+        "ankle_hf_position_rms_rad": [
+          4.947467167184053e-06,
+          1.1372953896723345e-06,
+          4.7355136649106056e-06,
+          5.911130728450736e-06
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.00015856777971990827,
+          0.00011713604122162724,
+          0.0003495704170437204,
+          0.001389449314979574
+        ],
+        "ankle_hf_position_max_rad": 5.911130728450736e-06,
+        "ankle_hf_velocity_max_rad_s": 0.001389449314979574,
+        "root_vertical_hf_position_rms_m": 8.527259259552578e-07,
+        "root_vertical_acceleration_rms": 0.6428527769395698,
+        "root_vertical_acceleration_peak": 7.534680386290636,
+        "joint_acceleration_rms": 4.344518158450979,
+        "joint_jerk_rms": 804.5928592567013
+      },
+      "joint_rmse": 0.10464589482805105,
+      "dance_joint_rmse": 0.12212543488692695
+    },
+    "hardware_ready": false
+  },
+  {
+    "name": "ankle_kd_075",
+    "kp_ankle_factor": 1.0,
+    "kd_ankle_factor": 0.75,
+    "ramp": false,
+    "steps": 1798,
+    "expected_steps": 1798,
+    "completed": true,
+    "failure": null,
+    "wall_seconds": 2.656950162999692,
+    "metrics": {
+      "dance": {
+        "samples": 4593,
+        "ankle_hf_position_rms_rad": [
+          0.003312710548741423,
+          0.002304202882054023,
+          0.004583500276627472,
+          0.0030268189416215894
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.4346395211004083,
+          0.27584358524306873,
+          0.5698721011789069,
+          0.2914220738317304
+        ],
+        "ankle_hf_position_max_rad": 0.004583500276627472,
+        "ankle_hf_velocity_max_rad_s": 0.5698721011789069,
+        "root_vertical_hf_position_rms_m": 0.00011953374496058181,
+        "root_vertical_acceleration_rms": 2.3704040918116687,
+        "root_vertical_acceleration_peak": 25.871729131998645,
+        "joint_acceleration_rms": 30.523342310905363,
+        "joint_jerk_rms": 5003.168711873203
+      },
+      "entry": {
+        "samples": 601,
+        "ankle_hf_position_rms_rad": [
+          0.0039421409610862716,
+          0.0011227303061039488,
+          8.839919461851181e-05,
+          0.00014986951485183346
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.688686854157256,
+          0.1763508033042406,
+          0.00855713095764697,
+          0.021416142976054445
+        ],
+        "ankle_hf_position_max_rad": 0.0039421409610862716,
+        "ankle_hf_velocity_max_rad_s": 0.688686854157256,
+        "root_vertical_hf_position_rms_m": 2.3793519099026497e-05,
+        "root_vertical_acceleration_rms": 0.2717113318772383,
+        "root_vertical_acceleration_peak": 1.736939418601012,
+        "joint_acceleration_rms": 16.966159576693446,
+        "joint_jerk_rms": 2987.4500625490305
+      },
+      "exit": {
+        "samples": 601,
+        "ankle_hf_position_rms_rad": [
+          0.001619345934757306,
+          0.0006818310656695266,
+          0.0014484500761248393,
+          0.0006874255093119816
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.30705176680475577,
+          0.0859701255079819,
+          0.28186416713171636,
+          0.06443451668791354
+        ],
+        "ankle_hf_position_max_rad": 0.001619345934757306,
+        "ankle_hf_velocity_max_rad_s": 0.30705176680475577,
+        "root_vertical_hf_position_rms_m": 6.427705453363548e-05,
+        "root_vertical_acceleration_rms": 0.4229418187462526,
+        "root_vertical_acceleration_peak": 4.2172758236685794,
+        "joint_acceleration_rms": 12.532154863638805,
+        "joint_jerk_rms": 2220.9039391137767
+      },
+      "settle": {
+        "samples": 1001,
+        "ankle_hf_position_rms_rad": [
+          1.9661272411167756e-08,
+          4.6399567707375706e-08,
+          2.1461721538243835e-08,
+          4.910366291848197e-08
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          4.220974470468482e-06,
+          5.979666561901872e-06,
+          1.964358162728581e-06,
+          5.758798745423293e-06
+        ],
+        "ankle_hf_position_max_rad": 4.910366291848197e-08,
+        "ankle_hf_velocity_max_rad_s": 5.979666561901872e-06,
+        "root_vertical_hf_position_rms_m": 8.539818306458638e-10,
+        "root_vertical_acceleration_rms": 0.0008522193930280768,
+        "root_vertical_acceleration_peak": 0.008250609847885532,
+        "joint_acceleration_rms": 0.012417422134225555,
+        "joint_jerk_rms": 0.9678984315728174
+      },
+      "standing": {
+        "samples": 401,
+        "ankle_hf_position_rms_rad": [
+          5.289881055426852e-06,
+          1.3479175907162726e-06,
+          4.995588426315033e-06,
+          5.369201179852723e-06
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.00016398254449529406,
+          0.00011879360515331559,
+          0.00034732588679628473,
+          0.001271477101486323
+        ],
+        "ankle_hf_position_max_rad": 5.369201179852723e-06,
+        "ankle_hf_velocity_max_rad_s": 0.001271477101486323,
+        "root_vertical_hf_position_rms_m": 8.85283937646364e-07,
+        "root_vertical_acceleration_rms": 0.6361810440328748,
+        "root_vertical_acceleration_peak": 7.534680386290636,
+        "joint_acceleration_rms": 4.409448647073436,
+        "joint_jerk_rms": 799.6098487341949
+      },
+      "joint_rmse": 0.10336401303042449,
+      "dance_joint_rmse": 0.12067858676472036
+    },
+    "hardware_ready": false
+  },
+  {
+    "name": "ankle_kp_075",
+    "kp_ankle_factor": 0.75,
+    "kd_ankle_factor": 1.0,
+    "ramp": false,
+    "steps": 1728,
+    "expected_steps": 1798,
+    "completed": false,
+    "failure": "pelvis tilt exceeds 1.2rad",
+    "wall_seconds": 2.6182115889996567,
+    "metrics": {
+      "dance": {
+        "samples": 4593,
+        "ankle_hf_position_rms_rad": [
+          0.005722843769094858,
+          0.0023242780717006974,
+          0.009106362205433127,
+          0.0038045373855177256
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.5655291910205344,
+          0.3018022033375351,
+          0.9243115294347434,
+          0.38344220493360154
+        ],
+        "ankle_hf_position_max_rad": 0.009106362205433127,
+        "ankle_hf_velocity_max_rad_s": 0.9243115294347434,
+        "root_vertical_hf_position_rms_m": 0.00031345534841467816,
+        "root_vertical_acceleration_rms": 4.064300093488711,
+        "root_vertical_acceleration_peak": 31.96327554408216,
+        "joint_acceleration_rms": 42.94554919964951,
+        "joint_jerk_rms": 6524.960028017235
+      },
+      "entry": {
+        "samples": 601,
+        "ankle_hf_position_rms_rad": [
+          0.0026742152247298937,
+          0.002354160332722005,
+          0.009436317026763277,
+          0.001500733202050749
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.22648830276585202,
+          0.18369483970188227,
+          0.8358676013524649,
+          0.20416946512187922
+        ],
+        "ankle_hf_position_max_rad": 0.009436317026763277,
+        "ankle_hf_velocity_max_rad_s": 0.8358676013524649,
+        "root_vertical_hf_position_rms_m": 0.0001413384124082351,
+        "root_vertical_acceleration_rms": 3.0723693738274376,
+        "root_vertical_acceleration_peak": 12.957331477741086,
+        "joint_acceleration_rms": 46.228593695725934,
+        "joint_jerk_rms": 6389.1955854862
+      },
+      "exit": {
+        "samples": 601,
+        "ankle_hf_position_rms_rad": [
+          0.006268912960419172,
+          0.00458119301976004,
+          0.018627214362157845,
+          0.010095121736548005
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.6013803521362877,
+          0.3988082725156817,
+          1.9618864232256532,
+          0.7638621060816816
+        ],
+        "ankle_hf_position_max_rad": 0.018627214362157845,
+        "ankle_hf_velocity_max_rad_s": 1.9618864232256532,
+        "root_vertical_hf_position_rms_m": 0.0008250498956647843,
+        "root_vertical_acceleration_rms": 10.427872115075916,
+        "root_vertical_acceleration_peak": 34.865214793385604,
+        "joint_acceleration_rms": 75.94176895114282,
+        "joint_jerk_rms": 10479.981382048643
+      },
+      "settle": {
+        "samples": 725,
+        "ankle_hf_position_rms_rad": [
+          0.013181820953191743,
+          0.008715451623560166,
+          0.03095902818364479,
+          0.013585403985924963
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          1.355456553659958,
+          0.8177726666729231,
+          2.4732802303019596,
+          1.295304034321678
+        ],
+        "ankle_hf_position_max_rad": 0.03095902818364479,
+        "ankle_hf_velocity_max_rad_s": 2.4732802303019596,
+        "root_vertical_hf_position_rms_m": 0.0009238443686432026,
+        "root_vertical_acceleration_rms": 7.767798396252308,
+        "root_vertical_acceleration_peak": 24.781244023308233,
+        "joint_acceleration_rms": 123.06557943978031,
+        "joint_jerk_rms": 16691.856423115085
+      },
+      "standing": {
+        "samples": 401,
+        "ankle_hf_position_rms_rad": [
+          4.876564109851795e-06,
+          1.0742997146120737e-06,
+          3.9838366696019726e-06,
+          7.680229396875228e-07
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.00022768235024628046,
+          0.00013846556704136088,
+          0.00015962415887842,
+          0.00014899271498175026
+        ],
+        "ankle_hf_position_max_rad": 4.876564109851795e-06,
+        "ankle_hf_velocity_max_rad_s": 0.00022768235024628046,
+        "root_vertical_hf_position_rms_m": 9.088913739442746e-07,
+        "root_vertical_acceleration_rms": 0.6353755469000957,
+        "root_vertical_acceleration_peak": 7.494481042037668,
+        "joint_acceleration_rms": 3.891365333800629,
+        "joint_jerk_rms": 675.9573607509773
+      },
+      "joint_rmse": 0.2088327580080147,
+      "dance_joint_rmse": 0.15267767020645323
+    },
+    "hardware_ready": false
+  },
+  {
+    "name": "ankle_kp_050",
+    "kp_ankle_factor": 0.5,
+    "kd_ankle_factor": 1.0,
+    "ramp": false,
+    "steps": 209,
+    "expected_steps": 1798,
+    "completed": false,
+    "failure": "reference height deviation exceeds 0.25m",
+    "wall_seconds": 0.3351774530001421,
+    "metrics": {
+      "entry": {
+        "samples": 441,
+        "ankle_hf_position_rms_rad": [
+          0.011924975131787079,
+          0.009762333088598986,
+          0.027420463744866695,
+          0.010390927169853825
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          1.1357933540784844,
+          0.9196642876828685,
+          2.505621440549832,
+          1.2058808719764975
+        ],
+        "ankle_hf_position_max_rad": 0.027420463744866695,
+        "ankle_hf_velocity_max_rad_s": 2.505621440549832,
+        "root_vertical_hf_position_rms_m": 0.0006533298611924819,
+        "root_vertical_acceleration_rms": 8.4003942636746,
+        "root_vertical_acceleration_peak": 40.6521360354256,
+        "joint_acceleration_rms": 118.8394241646154,
+        "joint_jerk_rms": 16777.295639087075
+      },
+      "standing": {
+        "samples": 401,
+        "ankle_hf_position_rms_rad": [
+          0.0032806142378828903,
+          0.0009961460948674154,
+          0.004844765336277845,
+          0.0023708185303481437
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.4710780416503206,
+          0.1912557185361109,
+          0.786175850329566,
+          0.3186433765378517
+        ],
+        "ankle_hf_position_max_rad": 0.004844765336277845,
+        "ankle_hf_velocity_max_rad_s": 0.786175850329566,
+        "root_vertical_hf_position_rms_m": 0.00010350176194151475,
+        "root_vertical_acceleration_rms": 2.2567109507760343,
+        "root_vertical_acceleration_peak": 8.06710055477049,
+        "joint_acceleration_rms": 42.62310587711066,
+        "joint_jerk_rms": 7405.184911734978
+      },
+      "joint_rmse": 0.30924592224171915
+    },
+    "hardware_ready": false
+  },
+  {
+    "name": "ramp",
+    "kp_ankle_factor": 1.0,
+    "kd_ankle_factor": 1.0,
+    "ramp": true,
+    "steps": 1798,
+    "expected_steps": 1798,
+    "completed": true,
+    "failure": null,
+    "wall_seconds": 2.8157508029999008,
+    "metrics": {
+      "dance": {
+        "samples": 4593,
+        "ankle_hf_position_rms_rad": [
+          0.0030646509190471066,
+          0.002277873714249138,
+          0.004235538352337411,
+          0.0027127429716645186
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.41467405296231413,
+          0.2745973584039338,
+          0.557461606503098,
+          0.30086243440476645
+        ],
+        "ankle_hf_position_max_rad": 0.004235538352337411,
+        "ankle_hf_velocity_max_rad_s": 0.557461606503098,
+        "root_vertical_hf_position_rms_m": 0.0001297880379713181,
+        "root_vertical_acceleration_rms": 2.3575146536409615,
+        "root_vertical_acceleration_peak": 21.73111574921105,
+        "joint_acceleration_rms": 30.716222679071,
+        "joint_jerk_rms": 5012.226470121996
+      },
+      "entry": {
+        "samples": 601,
+        "ankle_hf_position_rms_rad": [
+          0.004218734997489374,
+          0.0008244117316686927,
+          7.859720875843464e-05,
+          0.00011527223095682985
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.758810221621201,
+          0.1395357338374742,
+          0.006972602703059085,
+          0.019318075979900047
+        ],
+        "ankle_hf_position_max_rad": 0.004218734997489374,
+        "ankle_hf_velocity_max_rad_s": 0.758810221621201,
+        "root_vertical_hf_position_rms_m": 1.6713015893894583e-05,
+        "root_vertical_acceleration_rms": 0.2321588376775203,
+        "root_vertical_acceleration_peak": 1.1028427732229118,
+        "joint_acceleration_rms": 17.703498522306937,
+        "joint_jerk_rms": 3095.9180686502464
+      },
+      "exit": {
+        "samples": 601,
+        "ankle_hf_position_rms_rad": [
+          0.0018714120353241254,
+          0.0006559621506100716,
+          0.001408103666898305,
+          0.0004843891086746067
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.3244413805726027,
+          0.08958403497014146,
+          0.29978708459509085,
+          0.05526048575517378
+        ],
+        "ankle_hf_position_max_rad": 0.0018714120353241254,
+        "ankle_hf_velocity_max_rad_s": 0.3244413805726027,
+        "root_vertical_hf_position_rms_m": 6.20294729867917e-05,
+        "root_vertical_acceleration_rms": 0.40578880101212306,
+        "root_vertical_acceleration_peak": 3.981636397229311,
+        "joint_acceleration_rms": 13.074042946637606,
+        "joint_jerk_rms": 2322.6209909196273
+      },
+      "settle": {
+        "samples": 1001,
+        "ankle_hf_position_rms_rad": [
+          1.4428873089756163e-08,
+          4.4985824406902286e-08,
+          1.8030980129926752e-08,
+          4.71168874140798e-08
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          4.1686397862893543e-07,
+          5.922691101735981e-07,
+          2.3541533284042255e-07,
+          5.977349732483047e-07
+        ],
+        "ankle_hf_position_max_rad": 4.71168874140798e-08,
+        "ankle_hf_velocity_max_rad_s": 5.977349732483047e-07,
+        "root_vertical_hf_position_rms_m": 4.587686438416367e-10,
+        "root_vertical_acceleration_rms": 0.0007305806818082942,
+        "root_vertical_acceleration_peak": 0.004943067315219041,
+        "joint_acceleration_rms": 0.012495773327384836,
+        "joint_jerk_rms": 0.3636667421412946
+      },
+      "standing": {
+        "samples": 401,
+        "ankle_hf_position_rms_rad": [
+          5.583858409451906e-06,
+          1.088815324454124e-06,
+          6.260444729684763e-06,
+          5.140042389638774e-06
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.0001713148667875888,
+          4.650841015146e-05,
+          0.0003774215565007844,
+          0.0012458322345620266
+        ],
+        "ankle_hf_position_max_rad": 6.260444729684763e-06,
+        "ankle_hf_velocity_max_rad_s": 0.0012458322345620266,
+        "root_vertical_hf_position_rms_m": 1.0043481335879947e-06,
+        "root_vertical_acceleration_rms": 0.7183019798089247,
+        "root_vertical_acceleration_peak": 8.176799376927146,
+        "joint_acceleration_rms": 3.3926457933957437,
+        "joint_jerk_rms": 426.2525373352105
+      },
+      "joint_rmse": 0.10401877772377793,
+      "dance_joint_rmse": 0.1216592117369117
+    },
+    "hardware_ready": false
+  },
+  {
+    "name": "ramp_kd_125",
+    "kp_ankle_factor": 1.0,
+    "kd_ankle_factor": 1.25,
+    "ramp": true,
+    "steps": 1798,
+    "expected_steps": 1798,
+    "completed": true,
+    "failure": null,
+    "wall_seconds": 2.7938961320001,
+    "metrics": {
+      "dance": {
+        "samples": 4593,
+        "ankle_hf_position_rms_rad": [
+          0.002884538298822089,
+          0.0019235058657150338,
+          0.006285140654845559,
+          0.003067248714980619
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.4470664214684697,
+          0.24937914992475407,
+          0.6859556581990816,
+          0.33519378426532737
+        ],
+        "ankle_hf_position_max_rad": 0.006285140654845559,
+        "ankle_hf_velocity_max_rad_s": 0.6859556581990816,
+        "root_vertical_hf_position_rms_m": 0.00019208282706869169,
+        "root_vertical_acceleration_rms": 2.5299476816915325,
+        "root_vertical_acceleration_peak": 22.216283524093488,
+        "joint_acceleration_rms": 31.801420579872865,
+        "joint_jerk_rms": 5126.262817554854
+      },
+      "entry": {
+        "samples": 601,
+        "ankle_hf_position_rms_rad": [
+          0.003738009327090288,
+          0.0007211703352505567,
+          7.099334849032801e-05,
+          0.00012578126845468152
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.738511193853788,
+          0.13903911122139437,
+          0.006933296229287655,
+          0.018694714641476824
+        ],
+        "ankle_hf_position_max_rad": 0.003738009327090288,
+        "ankle_hf_velocity_max_rad_s": 0.738511193853788,
+        "root_vertical_hf_position_rms_m": 1.3491491779761841e-05,
+        "root_vertical_acceleration_rms": 0.2355794300196009,
+        "root_vertical_acceleration_peak": 1.3325716553805123,
+        "joint_acceleration_rms": 17.416004129405607,
+        "joint_jerk_rms": 3058.662273760147
+      },
+      "exit": {
+        "samples": 601,
+        "ankle_hf_position_rms_rad": [
+          0.0018626479371799223,
+          0.0005215417802142872,
+          0.0014255123404944173,
+          0.0003772912544536457
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.3744731943884694,
+          0.09620346216158004,
+          0.32345578852724755,
+          0.04356576758189041
+        ],
+        "ankle_hf_position_max_rad": 0.0018626479371799223,
+        "ankle_hf_velocity_max_rad_s": 0.3744731943884694,
+        "root_vertical_hf_position_rms_m": 5.603998879340399e-05,
+        "root_vertical_acceleration_rms": 0.3963528620404865,
+        "root_vertical_acceleration_peak": 3.8352219591890857,
+        "joint_acceleration_rms": 14.512210354644528,
+        "joint_jerk_rms": 2622.638967578652
+      },
+      "settle": {
+        "samples": 1001,
+        "ankle_hf_position_rms_rad": [
+          1.1094321178354647e-07,
+          1.865217218516705e-07,
+          2.7405434254034825e-08,
+          4.936557141422132e-08
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          8.48386543131251e-06,
+          1.3675509244719783e-05,
+          1.3532479999344448e-06,
+          1.3674267201230108e-06
+        ],
+        "ankle_hf_position_max_rad": 1.865217218516705e-07,
+        "ankle_hf_velocity_max_rad_s": 1.3675509244719783e-05,
+        "root_vertical_hf_position_rms_m": 3.569238108340504e-09,
+        "root_vertical_acceleration_rms": 0.0006910221212057818,
+        "root_vertical_acceleration_peak": 0.004488036620299264,
+        "joint_acceleration_rms": 0.012594836334419945,
+        "joint_jerk_rms": 0.31609314179609
+      },
+      "standing": {
+        "samples": 401,
+        "ankle_hf_position_rms_rad": [
+          5.501503337579278e-06,
+          1.0705597108366063e-06,
+          6.002532363408409e-06,
+          5.136171072282976e-06
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.00017066636756145117,
+          4.3012447105317675e-05,
+          0.0003576473184128286,
+          0.0012141198604767416
+        ],
+        "ankle_hf_position_max_rad": 6.002532363408409e-06,
+        "ankle_hf_velocity_max_rad_s": 0.0012141198604767416,
+        "root_vertical_hf_position_rms_m": 1.0013374746838432e-06,
+        "root_vertical_acceleration_rms": 0.7183380040613391,
+        "root_vertical_acceleration_peak": 8.176799376927146,
+        "joint_acceleration_rms": 3.2941698340297707,
+        "joint_jerk_rms": 411.2329090350005
+      },
+      "joint_rmse": 0.10839412429034066,
+      "dance_joint_rmse": 0.12746209152775498
+    },
+    "hardware_ready": false
+  }
+]

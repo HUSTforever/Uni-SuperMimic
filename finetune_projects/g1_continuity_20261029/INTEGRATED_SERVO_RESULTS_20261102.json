@@ -1,0 +1,304 @@
+{
+  "scope": "simulation-only integrated servo diagnostic",
+  "rows": [
+    {
+      "name": "servo_fast_baseline_20261102",
+      "kd_factor": 1.0,
+      "bundle": "finetune_projects/g1_continuity_20261029/data/fast_integrated_base_v1",
+      "output": "finetune_projects/g1_continuity_20261029/evaluation/servo_fast_baseline_20261102",
+      "policy_sha256": "4a8a0871c3b2500a00b2f82685ebcd856a7586750dceec15775c322397b8cc74",
+      "reference_sha256": "6ccc196b5b450acd5a3aed323c538a4a22add87cf79d2078bf9f888e69ce967d",
+      "manifest_sha256": "0998c66b93d00bcd4bed8dd57a954547a8fce344440b6400a9bb46aa69c91db7",
+      "source_manifest_sha256": "0998c66b93d00bcd4bed8dd57a954547a8fce344440b6400a9bb46aa69c91db7",
+      "physical_complete": true,
+      "full_pass": false,
+      "original_style": {
+        "complete": true,
+        "anchor_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa",
+        "dance_joint_rmse_rad": 0.12981387559985214,
+        "main_joint_indices": [
+          0,
+          3,
+          6,
+          9,
+          15,
+          16,
+          17,
+          18,
+          22,
+          23,
+          24,
+          25
+        ],
+        "amplitude_ratios": {
+          "0": 0.8214230754830435,
+          "3": 0.8872241997395691,
+          "6": 0.9933972996926972,
+          "9": 0.8267398496351056,
+          "15": 0.9647794106248841,
+          "16": 0.9071763187489787,
+          "17": 1.0473706694189504,
+          "18": 0.969738669017219,
+          "22": 1.0239614457940889,
+          "23": 0.9250041102049182,
+          "24": 1.029203722914273,
+          "25": 1.058035557524358
+        },
+        "correlations": {
+          "0": 0.9265608557038537,
+          "3": 0.9413025378522276,
+          "6": 0.9121805986701965,
+          "9": 0.906912201313459,
+          "15": 0.9701723959752498,
+          "16": 0.9762557706988364,
+          "17": 0.9533274175957003,
+          "18": 0.941929070582,
+          "22": 0.9926368636929943,
+          "23": 0.9887560837016824,
+          "24": 0.9919076149220225,
+          "25": 0.9863256112429823
+        },
+        "limits": {
+          "dance_joint_rmse_rad": 0.13,
+          "amplitude_ratio_min": 0.8,
+          "correlation_min": 0.9
+        },
+        "passed": true
+      },
+      "finish": {
+        "complete": true,
+        "passed": true,
+        "recovery_seconds": 1.1099999999985002,
+        "max_recovery_seconds": 1.5,
+        "stable_detection_seconds": 0.5,
+        "required_hold_seconds": 10.0,
+        "final_hold_passed": true,
+        "dance_end_seconds": 27.96,
+        "final_joint_error_max": 0.06759603019799519,
+        "final_joint_speed_rms_max": 0.006489131224059294,
+        "final_root_speed_max": 0.004039752376645191,
+        "final_tilt_max": 0.017460705894717037,
+        "limits": {
+          "joint_rmse_rad": 0.1,
+          "joint_velocity_rms": 0.3,
+          "root_speed": 0.1,
+          "tilt_rad": 0.2
+        }
+      },
+      "worst_hf": 0.00736060324935456,
+      "phase_hf": {
+        "dance": 0.0033325728473623637,
+        "entry": 0.0034553520467849467,
+        "exit": 0.0013562554633082308,
+        "settle": 2.9951121635576455e-06,
+        "standing": 4.663746158734565e-06
+      },
+      "exit_continuity": {
+        "spectral_extension": "none",
+        "completed": true,
+        "samples": 161,
+        "start_time": 27.959999999998722,
+        "end_time": 28.759999999998563,
+        "ankle_hf_position_rms_rad": [
+          0.0013562554633082308,
+          0.001290739595778213,
+          7.973933903856943e-05,
+          3.204908221987481e-05
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.45766270959055355,
+          0.47505159685170734,
+          0.007745239108909053,
+          0.005280787388776037
+        ],
+        "ankle_hf_position_max_rad": 0.0013562554633082308,
+        "ankle_hf_velocity_max_rad_s": 0.47505159685170734,
+        "root_vertical_hf_position_rms_m": 1.2913612564379715e-05,
+        "root_vertical_acceleration_rms": 0.478267390598211,
+        "root_vertical_acceleration_peak": 1.32520562574173,
+        "joint_acceleration_rms": 13.470344916710022,
+        "joint_jerk_rms": 2425.5410017852982,
+        "ankle_passed": true,
+        "root_vertical_passed": true,
+        "passed": true
+      },
+      "baseline_max_abs_qpos_difference": 0.0
+    },
+    {
+      "name": "servo_fast_kd125_20261102",
+      "kd_factor": 1.25,
+      "bundle": "finetune_projects/g1_continuity_20261029/data/servo_fast_kd125_20261102",
+      "output": "finetune_projects/g1_continuity_20261029/evaluation/servo_fast_kd125_20261102",
+      "policy_sha256": "4a8a0871c3b2500a00b2f82685ebcd856a7586750dceec15775c322397b8cc74",
+      "reference_sha256": "6ccc196b5b450acd5a3aed323c538a4a22add87cf79d2078bf9f888e69ce967d",
+      "manifest_sha256": "724a7a8d4c6a8481c550d2365055a8ab3d746f5d2e88f5ae7119cf772b491361",
+      "source_manifest_sha256": "0998c66b93d00bcd4bed8dd57a954547a8fce344440b6400a9bb46aa69c91db7",
+      "physical_complete": false,
+      "full_pass": false,
+      "original_style": {
+        "complete": false,
+        "passed": false,
+        "anchor_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa"
+      },
+      "finish": {
+        "complete": false,
+        "passed": false,
+        "recovery_seconds": null,
+        "max_recovery_seconds": 1.5,
+        "stable_detection_seconds": 0.5,
+        "required_hold_seconds": 10.0,
+        "final_hold_passed": false,
+        "dance_end_seconds": 27.96,
+        "final_joint_error_max": null,
+        "final_joint_speed_rms_max": null,
+        "final_root_speed_max": null,
+        "final_tilt_max": null,
+        "limits": {
+          "joint_rmse_rad": 0.1,
+          "joint_velocity_rms": 0.3,
+          "root_speed": 0.1,
+          "tilt_rad": 0.2
+        }
+      },
+      "worst_hf": 0.03761599839902093,
+      "phase_hf": {
+        "dance": 0.010546116423873082,
+        "entry": 0.003234556720715564,
+        "exit": 0.029836326322424604,
+        "settle": null,
+        "standing": 4.323442448120125e-06
+      },
+      "exit_continuity": {
+        "spectral_extension": "none",
+        "completed": false,
+        "samples": 121,
+        "start_time": 27.959999999998722,
+        "end_time": 28.559999999998603,
+        "ankle_hf_position_rms_rad": [
+          0.010918060080905425,
+          0.029836326322424604,
+          0.02429958448584398,
+          0.02069124717532839
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          1.3634675294925973,
+          11.819560329651072,
+          2.674695755054975,
+          4.914789047561825
+        ],
+        "ankle_hf_position_max_rad": 0.029836326322424604,
+        "ankle_hf_velocity_max_rad_s": 11.819560329651072,
+        "root_vertical_hf_position_rms_m": 0.0014192095798519731,
+        "root_vertical_acceleration_rms": 16.17703914323994,
+        "root_vertical_acceleration_peak": 35.43218509423206,
+        "joint_acceleration_rms": 173.19159441171783,
+        "joint_jerk_rms": 30411.642557418374,
+        "ankle_passed": false,
+        "root_vertical_passed": false,
+        "passed": false
+      }
+    },
+    {
+      "name": "servo_fast_kd150_20261102",
+      "kd_factor": 1.5,
+      "bundle": "finetune_projects/g1_continuity_20261029/data/servo_fast_kd150_20261102",
+      "output": "finetune_projects/g1_continuity_20261029/evaluation/servo_fast_kd150_20261102",
+      "policy_sha256": "4a8a0871c3b2500a00b2f82685ebcd856a7586750dceec15775c322397b8cc74",
+      "reference_sha256": "6ccc196b5b450acd5a3aed323c538a4a22add87cf79d2078bf9f888e69ce967d",
+      "manifest_sha256": "910ac292497040d5345ebc5babf37da96401713423ef8d545357c1f7ca6af9d5",
+      "source_manifest_sha256": "0998c66b93d00bcd4bed8dd57a954547a8fce344440b6400a9bb46aa69c91db7",
+      "physical_complete": false,
+      "full_pass": false,
+      "original_style": {
+        "complete": false,
+        "passed": false,
+        "anchor_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa"
+      },
+      "finish": {
+        "complete": false,
+        "passed": false,
+        "recovery_seconds": null,
+        "max_recovery_seconds": 1.5,
+        "stable_detection_seconds": 0.5,
+        "required_hold_seconds": 10.0,
+        "final_hold_passed": false,
+        "dance_end_seconds": 27.96,
+        "final_joint_error_max": null,
+        "final_joint_speed_rms_max": null,
+        "final_root_speed_max": null,
+        "final_tilt_max": null,
+        "limits": {
+          "joint_rmse_rad": 0.1,
+          "joint_velocity_rms": 0.3,
+          "root_speed": 0.1,
+          "tilt_rad": 0.2
+        }
+      },
+      "worst_hf": 0.03123371419318029,
+      "phase_hf": {
+        "dance": 0.028508444279564723,
+        "entry": 0.02321683218486712,
+        "exit": null,
+        "settle": null,
+        "standing": 4.004466738283091e-06
+      },
+      "exit_continuity": {
+        "passed": false,
+        "completed": false,
+        "samples": 0
+      }
+    },
+    {
+      "name": "servo_fast_kd200_20261102",
+      "kd_factor": 2.0,
+      "bundle": "finetune_projects/g1_continuity_20261029/data/servo_fast_kd200_20261102",
+      "output": "finetune_projects/g1_continuity_20261029/evaluation/servo_fast_kd200_20261102",
+      "policy_sha256": "4a8a0871c3b2500a00b2f82685ebcd856a7586750dceec15775c322397b8cc74",
+      "reference_sha256": "6ccc196b5b450acd5a3aed323c538a4a22add87cf79d2078bf9f888e69ce967d",
+      "manifest_sha256": "8d0724b51e2989fdbf39cdf1408bc416401730c7b460d8972f32a9cc2846b78d",
+      "source_manifest_sha256": "0998c66b93d00bcd4bed8dd57a954547a8fce344440b6400a9bb46aa69c91db7",
+      "physical_complete": false,
+      "full_pass": false,
+      "original_style": {
+        "complete": false,
+        "passed": false,
+        "anchor_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa"
+      },
+      "finish": {
+        "complete": false,
+        "passed": false,
+        "recovery_seconds": null,
+        "max_recovery_seconds": 1.5,
+        "stable_detection_seconds": 0.5,
+        "required_hold_seconds": 10.0,
+        "final_hold_passed": false,
+        "dance_end_seconds": 27.96,
+        "final_joint_error_max": null,
+        "final_joint_speed_rms_max": null,
+        "final_root_speed_max": null,
+        "final_tilt_max": null,
+        "limits": {
+          "joint_rmse_rad": 0.1,
+          "joint_velocity_rms": 0.3,
+          "root_speed": 0.1,
+          "tilt_rad": 0.2
+        }
+      },
+      "worst_hf": 0.03577807712160081,
+      "phase_hf": {
+        "dance": 0.03090200875527175,
+        "entry": 0.026340613121852152,
+        "exit": null,
+        "settle": null,
+        "standing": 4.302011484992249e-06
+      },
+      "exit_continuity": {
+        "passed": false,
+        "completed": false,
+        "samples": 0
+      }
+    }
+  ],
+  "hardware_ready": false,
+  "goal_complete_claimed": false
+}

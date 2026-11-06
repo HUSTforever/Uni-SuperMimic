@@ -131,7 +131,7 @@ class FakeEnv:
 class FakePolicy:
     instances = []
 
-    def __init__(self, obs_dim, goal_dim, hist, z_dim, num_joints, hidden):
+    def __init__(self, obs_dim, goal_dim, hist, z_dim, num_joints, hidden, action_smoothing=1.0):
         self.obs_dim = obs_dim
         self.goal_dim = goal_dim
         self.hist = hist
@@ -380,3 +380,41 @@ def test_eval_parser_accepts_backend(backend: str) -> None:
     )
 
     assert args.backend == backend
+
+
+def test_recorded_motion_and_policy_settings_are_restored(tmp_path):
+    from unisupermimic.tasks.motion_tracking.g1.supermimic.evaluate import evaluation_config
+
+    (tmp_path / "run_config.json").write_text(
+        json.dumps(
+            {
+                "config": {
+                    "algo": {"hist": 7, "goal_frames": 4},
+                    "env": {
+                        "commands": {
+                            "motion": {"motion_files": ["demo/motion/custom.csv"], "src_fps": 30}
+                        }
+                    },
+                }
+            }
+        )
+    )
+    cfg = evaluation_config(tmp_path, "mujoco")
+    assert list(cfg.env.commands.motion.motion_files) == ["demo/motion/custom.csv"]
+    assert cfg.algo.hist == 7
+    assert cfg.algo.goal_frames == 4
+    assert cfg.training.sim_backend == "mujoco"
+    assert cfg.training.play_only
+
+
+def test_explicit_new_reference_does_not_modify_recorded_run(tmp_path):
+    from unisupermimic.tasks.motion_tracking.g1.supermimic.evaluate import evaluation_config
+
+    path = tmp_path / "run_config.json"
+    original = json.dumps(
+        {"config": {"env": {"commands": {"motion": {"motion_files": ["old.csv"]}}}}}
+    )
+    path.write_text(original)
+    cfg = evaluation_config(tmp_path, "mujoco", motion_files=["new.csv"])
+    assert list(cfg.env.commands.motion.motion_files) == ["new.csv"]
+    assert path.read_text() == original

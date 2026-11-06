@@ -1,0 +1,97 @@
+{
+  "rows": [
+    {
+      "gain": 0.1,
+      "checkpoint": "finetune_projects/g1_continuity_20261029/run_013_wrist_head/wrist_010.pt",
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/wrist013_010",
+      "physical_complete": false,
+      "worst_hf": 0.014750236924533141,
+      "original_style": {
+        "complete": true,
+        "anchor_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa",
+        "dance_joint_rmse_rad": 0.11939156796555234,
+        "main_joint_indices": [
+          0,
+          3,
+          6,
+          9,
+          15,
+          16,
+          17,
+          18,
+          22,
+          23,
+          24,
+          25
+        ],
+        "amplitude_ratios": {
+          "0": 0.7997748449567549,
+          "3": 0.9052977245273289,
+          "6": 1.0869010880849022,
+          "9": 0.8171961535183222,
+          "15": 0.9979688461907845,
+          "16": 0.9076033996858279,
+          "17": 1.0390930372539882,
+          "18": 1.0821716319988446,
+          "22": 1.0609082415905386,
+          "23": 0.9368089295434299,
+          "24": 1.0307262525401892,
+          "25": 1.0731560124127881
+        },
+        "correlations": {
+          "0": 0.9377796564294442,
+          "3": 0.9492922800618325,
+          "6": 0.8989425443297566,
+          "9": 0.9304729081849521,
+          "15": 0.9713426989912441,
+          "16": 0.9777353888324074,
+          "17": 0.9546697292729929,
+          "18": 0.9458657364209707,
+          "22": 0.9875921044342489,
+          "23": 0.9903196449718867,
+          "24": 0.9919352019784186,
+          "25": 0.9866768337178167
+        },
+        "limits": {
+          "dance_joint_rmse_rad": 0.13,
+          "amplitude_ratio_min": 0.8,
+          "correlation_min": 0.9
+        },
+        "passed": false
+      },
+      "full_pass": false,
+      "hardware_ready": false
+    },
+    {
+      "gain": 0.25,
+      "checkpoint": "finetune_projects/g1_continuity_20261029/run_013_wrist_head/wrist_025.pt",
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/wrist013_025",
+      "physical_complete": false,
+      "worst_hf": 0.027609203067910502,
+      "original_style": {
+        "complete": false,
+        "passed": false,
+        "anchor_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa"
+      },
+      "full_pass": false,
+      "hardware_ready": false
+    },
+    {
+      "gain": 0.5,
+      "checkpoint": "finetune_projects/g1_continuity_20261029/run_013_wrist_head/wrist_050.pt",
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/wrist013_050",
+      "physical_complete": false,
+      "worst_hf": 0.022783067683437443,
+      "original_style": {
+        "complete": false,
+        "passed": false,
+        "anchor_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa"
+      },
+      "full_pass": false,
+      "hardware_ready": false
+    }
+  ],
+  "selected": null,
+  "goal_complete_claimed": false,
+  "hardware_ready": false
+}

@@ -1,0 +1,15 @@
+{
+  "method": "critic_clock_cuda_smoke_only",
+  "run": "finetune_projects/g1_continuity_20261029/run_clock_smoke",
+  "source_checkpoint": "finetune_projects/g1_continuity_20261029/run_012_focus_spectral/ckpt_000125.pt",
+  "source_sha256": "260e5e9559455096bc700711a0ec5e1daf9354fc4724a27a5d9597438a39736b",
+  "old_critic_inputs": 914,
+  "clock_critic_inputs": 915,
+  "initial_pi_wm_unchanged": true,
+  "critic_warmup_pi_wm_unchanged": true,
+  "actor_update_changed_pi": true,
+  "world_model_and_policy_normalizers_unchanged": true,
+  "controlled_500_iteration_trial_executed": false,
+  "adopted_for_deployment": false,
+  "hardware_ready": false
+}

@@ -1,0 +1,7 @@
+{
+  "camera": "static",
+  "flip_test": true,
+  "camera_relative_rotation_max_degrees": 10.868701934814453,
+  "camera_relative_rotation_median_degrees": 3.416384220123291,
+  "rejected_simplevo_max_degrees": 177.31
+}

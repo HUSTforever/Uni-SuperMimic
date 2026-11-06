@@ -1,0 +1,11 @@
+{
+  "pi": true,
+  "wm": true,
+  "critic": true,
+  "changed_config_fields": {
+    "measured_velocity_multiplier": [
+      1.0,
+      20.0
+    ]
+  }
+}

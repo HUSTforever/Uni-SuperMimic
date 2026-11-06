@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-02",
+  "baseline_max_abs_qpos_difference": 0.0,
+  "base_servo_profile": {
+    "ankle_kd_factor": 2.0,
+    "name": "ankle_kd200",
+    "simulation_only": true,
+    "source_manifest_sha256": "004c19b0e0465462c65b697fa1501c05cd29ace84bc77eae3e28cdb3f67a5a14"
+  },
+  "rows": [
+    {
+      "name": "servo_fast_baseline_20261102",
+      "factor_relative_to_base": 1.0,
+      "ankle_kd": [
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692,
+        3.628891373169692
+      ],
+      "policy_reference_kp_and_other_metadata_unchanged": true,
+      "raw_metrics_recomputed": true,
+      "full_native_passed": false,
+      "failure": null,
+      "steps": 2038,
+      "worst_hf": 0.00736060324935456
+    },
+    {
+      "name": "servo_fast_kd125_20261102",
+      "factor_relative_to_base": 1.25,
+      "ankle_kd": [
+        4.536114216462115,
+        4.536114216462115,
+        4.536114216462115,
+        4.536114216462115
+      ],
+      "policy_reference_kp_and_other_metadata_unchanged": true,
+      "raw_metrics_recomputed": true,
+      "full_native_passed": false,
+      "failure": "reference height deviation exceeds 0.25m",
+      "steps": 1427,
+      "worst_hf": 0.03761599839902093
+    },
+    {
+      "name": "servo_fast_kd150_20261102",
+      "factor_relative_to_base": 1.5,
+      "ankle_kd": [
+        5.443337059754538,
+        5.443337059754538,
+        5.443337059754538,
+        5.443337059754538
+      ],
+      "policy_reference_kp_and_other_metadata_unchanged": true,
+      "raw_metrics_recomputed": true,
+      "full_native_passed": false,
+      "failure": "reference height deviation exceeds 0.25m",
+      "steps": 329,
+      "worst_hf": 0.03123371419318029
+    },
+    {
+      "name": "servo_fast_kd200_20261102",
+      "factor_relative_to_base": 2.0,
+      "ankle_kd": [
+        7.257782746339384,
+        7.257782746339384,
+        7.257782746339384,
+        7.257782746339384
+      ],
+      "policy_reference_kp_and_other_metadata_unchanged": true,
+      "raw_metrics_recomputed": true,
+      "full_native_passed": false,
+      "failure": "reference height deviation exceeds 0.25m",
+      "steps": 428,
+      "worst_hf": 0.03577807712160081
+    }
+  ],
+  "default_policy_or_parameters_changed": false,
+  "goal_complete_claimed": false,
+  "hardware_ready": false
+}

@@ -1,0 +1,17 @@
+{
+  "dance_samples": 256,
+  "means": {
+    "track": 0.09077265136875212,
+    "action_rate": 0.5556261495221406,
+    "balance_penalty": 0.0027950250831310086,
+    "ankle_rate_penalty": 0.0024056119551971733,
+    "ankle_command_velocity_error": 2.2895293135588872,
+    "ankle_measured_velocity_error": 0.23216531369007498
+  },
+  "ankle_penalty_fraction_of_tracking": 0.02650150589327491,
+  "source_bundle": "finetune_projects/g1_continuity_20261029/candidates/run002_000250",
+  "sampled_action_std": 0.03,
+  "current_ankle_rate_weight": 0.05,
+  "diagnostic_only": true,
+  "hardware_ready": false
+}

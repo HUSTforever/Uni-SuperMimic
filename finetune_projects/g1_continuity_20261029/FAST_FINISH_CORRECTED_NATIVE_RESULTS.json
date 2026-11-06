@@ -1,0 +1,292 @@
+{
+  "nominal": {
+    "case": "nominal",
+    "perturbation": {},
+    "physical_complete": true,
+    "finish": {
+      "complete": true,
+      "passed": true,
+      "recovery_seconds": 1.1199999999984982,
+      "max_recovery_seconds": 1.5,
+      "stable_detection_seconds": 0.5,
+      "required_hold_seconds": 10.0,
+      "final_hold_passed": true,
+      "dance_end_seconds": 27.96,
+      "final_joint_error_max": 0.08604513606716337,
+      "final_joint_speed_rms_max": 0.008997982409252715,
+      "final_root_speed_max": 0.008480215686278124,
+      "final_tilt_max": 0.014497460356796697,
+      "limits": {
+        "joint_rmse_rad": 0.1,
+        "joint_velocity_rms": 0.3,
+        "root_speed": 0.1,
+        "tilt_rad": 0.2
+      }
+    },
+    "exit_continuity": {
+      "spectral_extension": "none",
+      "completed": true,
+      "samples": 161,
+      "start_time": 27.959999999998722,
+      "end_time": 28.759999999998563,
+      "ankle_hf_position_rms_rad": [
+        0.0009814063926020698,
+        0.00035598726739042956,
+        6.69934878548316e-05,
+        0.00011141256782197886
+      ],
+      "ankle_hf_velocity_rms_rad_s": [
+        0.30593427671434037,
+        0.10866676063180705,
+        0.007193246709429437,
+        0.009585897310623787
+      ],
+      "ankle_hf_position_max_rad": 0.0009814063926020698,
+      "ankle_hf_velocity_max_rad_s": 0.30593427671434037,
+      "root_vertical_hf_position_rms_m": 1.7114165510148127e-05,
+      "root_vertical_acceleration_rms": 0.5348786512367487,
+      "root_vertical_acceleration_peak": 1.3677351548634578,
+      "joint_acceleration_rms": 15.857417302780968,
+      "joint_jerk_rms": 2565.214618953788,
+      "ankle_passed": true,
+      "root_vertical_passed": true,
+      "passed": true
+    },
+    "global_continuity_passed": false,
+    "hardware_ready": false,
+    "ending_passed": true
+  },
+  "corrected_mass_stress": [
+    {
+      "case": "preview",
+      "seed": 21,
+      "bundle": "finetune_projects/g1_continuity_20261029/data/fast_finish_experimental_0800_v2",
+      "physical_complete": true,
+      "finish": {
+        "complete": true,
+        "passed": true,
+        "recovery_seconds": 1.1799999999984863,
+        "max_recovery_seconds": 1.5,
+        "stable_detection_seconds": 0.5,
+        "required_hold_seconds": 10.0,
+        "final_hold_passed": true,
+        "dance_end_seconds": 27.96,
+        "final_joint_error_max": 0.08406569115483313,
+        "final_joint_speed_rms_max": 0.015435931345650963,
+        "final_root_speed_max": 0.01871219241546684,
+        "final_tilt_max": 0.018095551846692978,
+        "limits": {
+          "joint_rmse_rad": 0.1,
+          "joint_velocity_rms": 0.3,
+          "root_speed": 0.1,
+          "tilt_rad": 0.2
+        }
+      },
+      "original_style": {
+        "complete": true,
+        "anchor_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa",
+        "dance_joint_rmse_rad": 0.14246996558618877,
+        "main_joint_indices": [
+          0,
+          3,
+          6,
+          9,
+          15,
+          16,
+          17,
+          18,
+          22,
+          23,
+          24,
+          25
+        ],
+        "amplitude_ratios": {
+          "0": 0.7897430207067101,
+          "3": 0.9494464150183078,
+          "6": 0.9865555197762627,
+          "9": 0.8149113242104922,
+          "15": 0.9992182225820512,
+          "16": 0.8963401149002727,
+          "17": 1.0541872127796528,
+          "18": 0.9980828342066147,
+          "22": 1.0947495381535897,
+          "23": 0.9627591189600825,
+          "24": 1.0101751229079015,
+          "25": 1.0452404349133988
+        },
+        "correlations": {
+          "0": 0.9278755094404423,
+          "3": 0.9317776782538989,
+          "6": 0.8996768414233115,
+          "9": 0.9313437783339575,
+          "15": 0.9741664341750446,
+          "16": 0.9766875865117112,
+          "17": 0.9389503083512755,
+          "18": 0.9346674464544021,
+          "22": 0.9864754836980126,
+          "23": 0.9933662897567603,
+          "24": 0.9926006525578911,
+          "25": 0.9856520092888977
+        },
+        "limits": {
+          "dance_joint_rmse_rad": 0.13,
+          "amplitude_ratio_min": 0.8,
+          "correlation_min": 0.9
+        },
+        "passed": false
+      },
+      "worst_hf": 0.010082249337789416,
+      "ending_passed": true,
+      "mass_constants_consistent": true,
+      "output": "finetune_projects/g1_continuity_20261029/evaluation/corrected_mass_preview_21",
+      "hardware_ready": false,
+      "exit_continuity": {
+        "spectral_extension": "none",
+        "completed": true,
+        "samples": 161,
+        "start_time": 27.959999999998722,
+        "end_time": 28.759999999998563,
+        "ankle_hf_position_rms_rad": [
+          0.0012733389805087677,
+          0.000605694667158338,
+          3.1808985493893364e-05,
+          7.16770872299245e-05
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.44635235514627175,
+          0.1907511996429325,
+          0.005448342707675918,
+          0.005139817664689439
+        ],
+        "ankle_hf_position_max_rad": 0.0012733389805087677,
+        "ankle_hf_velocity_max_rad_s": 0.44635235514627175,
+        "root_vertical_hf_position_rms_m": 1.6366450122276063e-05,
+        "root_vertical_acceleration_rms": 0.48637046672692436,
+        "root_vertical_acceleration_peak": 1.148137806827208,
+        "joint_acceleration_rms": 16.91220387624528,
+        "joint_jerk_rms": 2738.8862474577836,
+        "ankle_passed": true,
+        "root_vertical_passed": true,
+        "passed": true
+      }
+    },
+    {
+      "case": "preview",
+      "seed": 22,
+      "bundle": "finetune_projects/g1_continuity_20261029/data/fast_finish_experimental_0800_v2",
+      "physical_complete": true,
+      "finish": {
+        "complete": true,
+        "passed": true,
+        "recovery_seconds": 1.1999999999984823,
+        "max_recovery_seconds": 1.5,
+        "stable_detection_seconds": 0.5,
+        "required_hold_seconds": 10.0,
+        "final_hold_passed": true,
+        "dance_end_seconds": 27.96,
+        "final_joint_error_max": 0.07899344088148876,
+        "final_joint_speed_rms_max": 0.032749373047006466,
+        "final_root_speed_max": 0.03493630616196495,
+        "final_tilt_max": 0.018376855480531966,
+        "limits": {
+          "joint_rmse_rad": 0.1,
+          "joint_velocity_rms": 0.3,
+          "root_speed": 0.1,
+          "tilt_rad": 0.2
+        }
+      },
+      "original_style": {
+        "complete": true,
+        "anchor_sha256": "7773170ed06cfcc43e5830e79fe7786c70b696a0709bd8aa33ab7ed7ec033daa",
+        "dance_joint_rmse_rad": 0.1432733628791316,
+        "main_joint_indices": [
+          0,
+          3,
+          6,
+          9,
+          15,
+          16,
+          17,
+          18,
+          22,
+          23,
+          24,
+          25
+        ],
+        "amplitude_ratios": {
+          "0": 0.8169341614552226,
+          "3": 0.9614165393211852,
+          "6": 0.9729377199311535,
+          "9": 0.8250867675893524,
+          "15": 0.9981894009370504,
+          "16": 0.893279883726008,
+          "17": 1.0518431418540128,
+          "18": 0.997782259638447,
+          "22": 1.1156079637870633,
+          "23": 0.9811048219934466,
+          "24": 1.0033675629157242,
+          "25": 1.0411472927558054
+        },
+        "correlations": {
+          "0": 0.9283020916861876,
+          "3": 0.9272757465959719,
+          "6": 0.9059251532314803,
+          "9": 0.9266904446630554,
+          "15": 0.97408324313429,
+          "16": 0.9776078419439569,
+          "17": 0.9393640370402584,
+          "18": 0.932656705292341,
+          "22": 0.9862247946031247,
+          "23": 0.9931714430731982,
+          "24": 0.9930616578014038,
+          "25": 0.9841395232902548
+        },
+        "limits": {
+          "dance_joint_rmse_rad": 0.13,
+          "amplitude_ratio_min": 0.8,
+          "correlation_min": 0.9
+        },
+        "passed": false
+      },
+      "worst_hf": 0.010656426768971518,
+      "ending_passed": true,
+      "mass_constants_consistent": true,
+      "output": "finetune_projects/g1_continuity_20261029/evaluation/corrected_mass_preview_22",
+      "hardware_ready": false,
+      "exit_continuity": {
+        "spectral_extension": "none",
+        "completed": true,
+        "samples": 161,
+        "start_time": 27.959999999998722,
+        "end_time": 28.759999999998563,
+        "ankle_hf_position_rms_rad": [
+          0.001495107760137536,
+          0.0005949688173080617,
+          3.82159264185805e-05,
+          6.196000524590444e-05
+        ],
+        "ankle_hf_velocity_rms_rad_s": [
+          0.522253465687456,
+          0.17976890545530397,
+          0.0064788663621437315,
+          0.007446741841112144
+        ],
+        "ankle_hf_position_max_rad": 0.001495107760137536,
+        "ankle_hf_velocity_max_rad_s": 0.522253465687456,
+        "root_vertical_hf_position_rms_m": 1.9088495709658042e-05,
+        "root_vertical_acceleration_rms": 0.5293054960373569,
+        "root_vertical_acceleration_peak": 1.269682734691866,
+        "joint_acceleration_rms": 19.57590493815756,
+        "joint_jerk_rms": 3296.183492220168,
+        "ankle_passed": true,
+        "root_vertical_passed": true,
+        "passed": true
+      }
+    }
+  ],
+  "mass_constant_fix": "mujoco.mj_setConst after nonunit mass/inertia scaling; compiled constants already valid at mass1",
+  "legacy_stress_superseded": true,
+  "ending_acceptance_passed": true,
+  "hardware_ready": false,
+  "goal_complete_claimed": false
+}

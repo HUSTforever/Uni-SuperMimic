@@ -1,0 +1,201 @@
+{
+  "method": "fixed_policy_world_model_recalibration",
+  "source_checkpoint_sha256": "06fee315aa2b029238110882b91c2c2eeb2c3a3f65933a38f7905830f42d31b0",
+  "training_dataset_sha256": "e8816d7b7015823f068bce42ba76e95f33785c0a3c4a621be1e4be8f375697de",
+  "updates_per_arm": 600,
+  "phase_transition_counts": {
+    "dance": 22602,
+    "entry": 4660,
+    "exit": 3209,
+    "settle": 4687,
+    "standing": 3242
+  },
+  "frozen_proof": {
+    "control": {
+      "pi": true,
+      "critic": true,
+      "wm_in_norm": true,
+      "wm_out_norm": true
+    },
+    "weighted": {
+      "pi": true,
+      "critic": true,
+      "wm_in_norm": true,
+      "wm_out_norm": true
+    }
+  },
+  "heldout": {
+    "initial": {
+      "nominal": {
+        "dance": {
+          "ankle_velocity_rmse_rad_s": 0.480996310710907,
+          "joint_position_rmse_rad": 0.004624033346772194,
+          "cost_ratio": 0.7047304511070251
+        },
+        "entry": {
+          "ankle_velocity_rmse_rad_s": 0.35521379113197327,
+          "joint_position_rmse_rad": 0.0039275758899748325,
+          "cost_ratio": 0.10032882541418076
+        },
+        "exit": {
+          "ankle_velocity_rmse_rad_s": 0.19049642980098724,
+          "joint_position_rmse_rad": 0.004046507179737091,
+          "cost_ratio": 0.2914764881134033
+        },
+        "settle": {
+          "ankle_velocity_rmse_rad_s": 0.011313840746879578,
+          "joint_position_rmse_rad": 0.002584763104096055,
+          "cost_ratio": 3.8945491313934326
+        },
+        "standing": {
+          "ankle_velocity_rmse_rad_s": 0.01376340351998806,
+          "joint_position_rmse_rad": 0.003416865598410368,
+          "cost_ratio": 1.851044774055481
+        }
+      },
+      "friction_noise": {
+        "dance": {
+          "ankle_velocity_rmse_rad_s": 0.6101345419883728,
+          "joint_position_rmse_rad": 0.0045050098560750484,
+          "cost_ratio": 0.5849477648735046
+        },
+        "entry": {
+          "ankle_velocity_rmse_rad_s": 0.15369246900081635,
+          "joint_position_rmse_rad": 0.004018445499241352,
+          "cost_ratio": 0.24137552082538605
+        },
+        "exit": {
+          "ankle_velocity_rmse_rad_s": 0.1542208343744278,
+          "joint_position_rmse_rad": 0.0037142126820981503,
+          "cost_ratio": 0.346275269985199
+        },
+        "settle": {
+          "ankle_velocity_rmse_rad_s": 0.00973204430192709,
+          "joint_position_rmse_rad": 0.003365037962794304,
+          "cost_ratio": 3.54188871383667
+        },
+        "standing": {
+          "ankle_velocity_rmse_rad_s": 0.015140899457037449,
+          "joint_position_rmse_rad": 0.0032454400788992643,
+          "cost_ratio": 1.9912675619125366
+        }
+      }
+    },
+    "control": {
+      "nominal": {
+        "dance": {
+          "ankle_velocity_rmse_rad_s": 0.47691890597343445,
+          "joint_position_rmse_rad": 0.003960861824452877,
+          "cost_ratio": 0.6806642413139343
+        },
+        "entry": {
+          "ankle_velocity_rmse_rad_s": 0.3547654449939728,
+          "joint_position_rmse_rad": 0.003726089373230934,
+          "cost_ratio": 0.08954552561044693
+        },
+        "exit": {
+          "ankle_velocity_rmse_rad_s": 0.18480263650417328,
+          "joint_position_rmse_rad": 0.0038895676843822002,
+          "cost_ratio": 0.3098059594631195
+        },
+        "settle": {
+          "ankle_velocity_rmse_rad_s": 0.0194728821516037,
+          "joint_position_rmse_rad": 0.002689450979232788,
+          "cost_ratio": 9.808539390563965
+        },
+        "standing": {
+          "ankle_velocity_rmse_rad_s": 0.010525314137339592,
+          "joint_position_rmse_rad": 0.0032797367312014103,
+          "cost_ratio": 1.951078176498413
+        }
+      },
+      "friction_noise": {
+        "dance": {
+          "ankle_velocity_rmse_rad_s": 0.6107383966445923,
+          "joint_position_rmse_rad": 0.003923631738871336,
+          "cost_ratio": 0.5606059432029724
+        },
+        "entry": {
+          "ankle_velocity_rmse_rad_s": 0.15459077060222626,
+          "joint_position_rmse_rad": 0.0038627919275313616,
+          "cost_ratio": 0.2105906456708908
+        },
+        "exit": {
+          "ankle_velocity_rmse_rad_s": 0.16685599088668823,
+          "joint_position_rmse_rad": 0.003582603996619582,
+          "cost_ratio": 0.4713798463344574
+        },
+        "settle": {
+          "ankle_velocity_rmse_rad_s": 0.010042120702564716,
+          "joint_position_rmse_rad": 0.003310756292194128,
+          "cost_ratio": 3.655743360519409
+        },
+        "standing": {
+          "ankle_velocity_rmse_rad_s": 0.012099788524210453,
+          "joint_position_rmse_rad": 0.003154703648760915,
+          "cost_ratio": 2.1971614360809326
+        }
+      }
+    },
+    "weighted": {
+      "nominal": {
+        "dance": {
+          "ankle_velocity_rmse_rad_s": 0.47930052876472473,
+          "joint_position_rmse_rad": 0.003989153541624546,
+          "cost_ratio": 0.6782335638999939
+        },
+        "entry": {
+          "ankle_velocity_rmse_rad_s": 0.3560667932033539,
+          "joint_position_rmse_rad": 0.0037798883859068155,
+          "cost_ratio": 0.09244903922080994
+        },
+        "exit": {
+          "ankle_velocity_rmse_rad_s": 0.18152451515197754,
+          "joint_position_rmse_rad": 0.0038881374057382345,
+          "cost_ratio": 0.30690544843673706
+        },
+        "settle": {
+          "ankle_velocity_rmse_rad_s": 0.0284966342151165,
+          "joint_position_rmse_rad": 0.002777538727968931,
+          "cost_ratio": 18.239835739135742
+        },
+        "standing": {
+          "ankle_velocity_rmse_rad_s": 0.013243341818451881,
+          "joint_position_rmse_rad": 0.003350648796185851,
+          "cost_ratio": 2.174037456512451
+        }
+      },
+      "friction_noise": {
+        "dance": {
+          "ankle_velocity_rmse_rad_s": 0.607495903968811,
+          "joint_position_rmse_rad": 0.003964046947658062,
+          "cost_ratio": 0.5579709410667419
+        },
+        "entry": {
+          "ankle_velocity_rmse_rad_s": 0.15486213564872742,
+          "joint_position_rmse_rad": 0.003942409064620733,
+          "cost_ratio": 0.2149409055709839
+        },
+        "exit": {
+          "ankle_velocity_rmse_rad_s": 0.16579246520996094,
+          "joint_position_rmse_rad": 0.0035893793683499098,
+          "cost_ratio": 0.4662979543209076
+        },
+        "settle": {
+          "ankle_velocity_rmse_rad_s": 0.017052803188562393,
+          "joint_position_rmse_rad": 0.003308035433292389,
+          "cost_ratio": 6.370957374572754
+        },
+        "standing": {
+          "ankle_velocity_rmse_rad_s": 0.014924397692084312,
+          "joint_position_rmse_rad": 0.0032448063138872385,
+          "cost_ratio": 2.5887367725372314
+        }
+      }
+    }
+  },
+  "selected_for_policy_training": null,
+  "reason": "Weighted loss did not materially improve independent contact-velocity predictions; no policy change claimed",
+  "hardware_ready": false,
+  "goal_complete_claimed": false
+}

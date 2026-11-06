@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-02",
+  "scope": "complete nominal candidate evaluation audit; no sim2sim completion",
+  "arms": [
+    {
+      "results_file": "FAST_INTEGRATED_CONTROL_RESULTS.json",
+      "results_sha256": "dd18087da9b294a084dde0430343d7d5fbee48568d4118397391f8f1b8833b2b",
+      "actor_checkpoint_count": 38,
+      "physical_complete_count": 32,
+      "style_pass_count": 10,
+      "finish_pass_count": 31,
+      "full_pass_count": 0,
+      "best_hf_with_style_and_finish": {
+        "iteration": 800,
+        "worst_hf": 0.008761080199724837,
+        "bundle": "finetune_projects/g1_continuity_20261029/candidates/fast014_000800"
+      }
+    },
+    {
+      "results_file": "FAST_INTEGRATED_STRONG_RESULTS.json",
+      "results_sha256": "c3d9b1139c9ce95b7a2f7caf4eb8cdf0c5219e55e9298ca69bc6434e7d383c59",
+      "actor_checkpoint_count": 38,
+      "physical_complete_count": 29,
+      "style_pass_count": 5,
+      "finish_pass_count": 29,
+      "full_pass_count": 0,
+      "best_hf_with_style_and_finish": {
+        "iteration": 300,
+        "worst_hf": 0.009294970215736562,
+        "bundle": "finetune_projects/g1_continuity_20261029/candidates/fast015_000300"
+      }
+    },
+    {
+      "results_file": "CRITIC_CLOCK_CONTROL_RESULTS.json",
+      "results_sha256": "9228d41bc75714ece195a14bf18aeeecb130c0ad46ae673c327deed22103db18",
+      "actor_checkpoint_count": 18,
+      "physical_complete_count": 15,
+      "style_pass_count": 6,
+      "finish_pass_count": 15,
+      "full_pass_count": 0,
+      "best_hf_with_style_and_finish": {
+        "iteration": 100,
+        "worst_hf": 0.008429771251996624,
+        "bundle": "finetune_projects/g1_continuity_20261029/candidates/clock016_000100"
+      }
+    },
+    {
+      "results_file": "CRITIC_CLOCK_RESULTS.json",
+      "results_sha256": "0cdeb5ad7efc6bb43ce90d35b9a39dc05c59afa06d9ad3b3105ed20571afaf03",
+      "actor_checkpoint_count": 18,
+      "physical_complete_count": 16,
+      "style_pass_count": 7,
+      "finish_pass_count": 16,
+      "full_pass_count": 0,
+      "best_hf_with_style_and_finish": {
+        "iteration": 100,
+        "worst_hf": 0.008696095080461862,
+        "bundle": "finetune_projects/g1_continuity_20261029/candidates/clock017_000100"
+      }
+    }
+  ],
+  "best_candidates_rechecked_from_raw_physics": [
+    {
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/fast014_000800",
+      "recomputed_actual_raw_physics_metrics": true,
+      "continuity_passed": false,
+      "style_passed": true,
+      "finish_passed": true,
+      "worst_hf": 0.008761080199724837
+    },
+    {
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/fast015_000300",
+      "recomputed_actual_raw_physics_metrics": true,
+      "continuity_passed": false,
+      "style_passed": true,
+      "finish_passed": true,
+      "worst_hf": 0.009294970215736562
+    },
+    {
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/clock016_000100",
+      "recomputed_actual_raw_physics_metrics": true,
+      "continuity_passed": false,
+      "style_passed": true,
+      "finish_passed": true,
+      "worst_hf": 0.008429771251996624
+    },
+    {
+      "bundle": "finetune_projects/g1_continuity_20261029/candidates/clock017_000100",
+      "recomputed_actual_raw_physics_metrics": true,
+      "continuity_passed": false,
+      "style_passed": true,
+      "finish_passed": true,
+      "worst_hf": 0.008696095080461862
+    }
+  ],
+  "incomplete_legacy_failed_reports": [],
+  "full_native_pass_count": 0,
+  "clock_enabled_by_default": false,
+  "global_default_policy_promoted": false,
+  "source_engine_dds_stress_for_new_policies": "not run: no nominal candidate qualifies",
+  "goal_complete_claimed": false,
+  "hardware_ready": false
+}
